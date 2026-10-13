@@ -62,5 +62,5 @@ sources:
   - {name: GitHub New LLM Repos, url: "https://api.github.com/search/repositories?q=topic:llm+created:>{since}&sort=stars&order=desc&per_page=20", kind: github_search}
 
   # --- Jobs
-  - {name: HN Who is Hiring, url: "https://hnrss.org/whoishiring/jobs", kind: rss}
+  - {name: HN Who is Hiring, url: "https://hnrss.org/whoishiring/jobs", kind: rss, ai_filter: true}
   - {name: Remotive AI Jobs, url: "https://remotive.com/api/remote-jobs?search=AI&limit=30", kind: remotive}
