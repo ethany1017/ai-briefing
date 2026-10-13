@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Atom</title>
+<entry><title>Release v5.0</title><link href="https://example.org/release/5"/>
+<updated>2026-10-12T08:30:00Z</updated><summary>Machine learning release notes</summary></entry>
+</feed>

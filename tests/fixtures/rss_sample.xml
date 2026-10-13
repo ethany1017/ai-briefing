@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Sample</title>
+<item><title>OpenAI ships a new model</title><link>https://example.com/a?utm_source=rss</link>
+<pubDate>Mon, 12 Oct 2026 10:00:00 GMT</pubDate><description>&lt;p&gt;A &lt;b&gt;new&lt;/b&gt; AI model.&lt;/p&gt;</description></item>
+<item><title>Old story</title><link>https://example.com/old</link>
+<pubDate>Thu, 01 Oct 2026 10:00:00 GMT</pubDate><description>old</description></item>
+<item><title>Undated story</title><link>https://example.com/undated</link><description>no date</description></item>
+<item><title>Quarterly earnings for a bank</title><link>https://example.com/bank</link>
+<pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate><description>Nothing about the topic.</description></item>
+</channel></rss>
