@@ -1,0 +1,37 @@
+[
+  {
+    "text": "AI Briefing for 2026-10-12: 2 stories. https://ethany1017.github.io/ai-briefing/2026-10-12.html",
+    "blocks": [
+      {
+        "type": "header",
+        "text": {
+          "type": "plain_text",
+          "text": "AI Briefing · Monday, October 12, 2026"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*AI Models &amp; Releases*\n• Acme releases Model &lt;X&gt; &amp; friends  <https://ethany1017.github.io/ai-briefing/2026-10-12.html#acme-releases-model-x-friends|Explained> · <https://acme.example/blog/model-x?a=1&b=2|Source>"
+        }
+      },
+      {
+        "type": "section",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*AI Jobs &amp; Career Opportunities*\n• Startup hires junior ML engineers  <https://ethany1017.github.io/ai-briefing/2026-10-12.html#startup-hires-junior-ml-engineers|Explained> · <https://jobs.example/1%7C2|Source>"
+        }
+      },
+      {
+        "type": "context",
+        "elements": [
+          {
+            "type": "mrkdwn",
+            "text": "2 stories from 41 sources · <https://ethany1017.github.io/ai-briefing/2026-10-12.html|Full briefing>"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · {{ pretty }}</title>
+<style>
+{% include "base.css.j2" %}
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">{{ pretty }} · {{ count }} {{ "story" if count == 1 else "stories" }}, explained in plain English</p>
+{% if not groups %}
+<p>No notable AI news today.</p>
+{% else %}
+<ul class="toc">
+{% for cat, items in groups %}
+{% for it in items %}
+  <li><a href="#{{ it.anchor }}">{{ it.headline }}</a></li>
+{% endfor %}
+{% endfor %}
+</ul>
+{% for cat, items in groups %}
+<h2 class="cat">{{ cat }}</h2>
+{% for it in items %}
+<section class="story" id="{{ it.anchor }}">
+  <h3>{{ it.headline }}</h3>
+  <div class="meta"><a href="{{ it.url }}" rel="noopener">{{ it.source }}</a> · <a href="#{{ it.anchor }}">link</a></div>
+  <h4>What happened</h4>
+  <p>{{ it.explained.what_happened }}</p>
+  <h4>Why it matters</h4>
+  <p>{{ it.explained.why_it_matters }}</p>
+  <h4>What it means for you</h4>
+  <p>{{ it.explained.what_it_means_for_you }}</p>
+</section>
+{% endfor %}
+{% endfor %}
+{% endif %}
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>

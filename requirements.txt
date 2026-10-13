@@ -5,3 +5,4 @@ jinja2>=3.1
 pyyaml>=6.0
 python-dotenv>=1.0
 pytest>=8.0
+lxml_html_clean>=0.4  # trafilatura on older Pythons imports lxml.html.clean

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing</title>
+<style>
+{% include "base.css.j2" %}
+</style>
+</head>
+<body>
+<main>
+<h1>AI Briefing</h1>
+<p class="sub">Daily AI news, explained in plain English.</p>
+{% if days %}
+<ul class="days">
+{% for d in days %}
+  <li><a href="{{ d.date }}.html">{{ d.pretty }}</a> · {{ d.count }} {{ "story" if d.count == 1 else "stories" }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No briefings yet.</p>
+{% endif %}
+</main>
+</body>
+</html>

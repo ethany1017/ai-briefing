@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T07:52:00-07:00",
+  "items": [
+    {"id": 4, "category": "AI Models & Releases", "headline": "Acme releases Model <X> & friends", "url": "https://acme.example/blog/model-x?a=1&b=2", "source": "Acme Blog", "published": "2026-10-12T10:00:00+00:00",
+     "explained": {"what_happened": "Acme released a model.", "why_it_matters": "It is faster, like a <bigger> engine.", "what_it_means_for_you": "You can try it for free."}, "anchor": "acme-releases-model-x-friends"},
+    {"id": 9, "category": "AI Jobs & Career Opportunities", "headline": "Startup hires junior ML engineers", "url": "https://jobs.example/1|2", "source": "Remotive", "published": "2026-10-12T08:00:00+00:00",
+     "explained": {"what_happened": "A startup is hiring.", "why_it_matters": "Entry roles are rare.", "what_it_means_for_you": "Apply if you know Python."}, "anchor": "startup-hires-junior-ml-engineers"}
+  ],
+  "stats": {"sources_total": 42, "sources_ok": 41, "failed_sources": ["FTC"], "fetched": 115, "candidates": 110, "ranked": 2, "selected": 2}
+}
