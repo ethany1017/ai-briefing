@@ -25,8 +25,11 @@ def extract_one(item: dict, getter=http_get) -> str:
     return text[: config.ARTICLE_CHARS]
 
 
-def extract_all(items: list[dict], getter=http_get, workers: int = 8) -> dict[int, str]:
-    """Return {id: text<=ARTICLE_CHARS} for each item."""
+def extract_all(items: list[dict], getter=http_get, workers: int | None = None) -> dict[int, str]:
+    """Return {id: text<=ARTICLE_CHARS} for each item, fetched in parallel (bounded pool)."""
+    if not items:
+        return {}
+    workers = max(1, min(workers or config.EXTRACT_WORKERS, len(items)))
     with ThreadPoolExecutor(max_workers=workers) as pool:
         texts = list(pool.map(lambda it: extract_one(it, getter), items))
     return {it["id"]: t for it, t in zip(items, texts)}

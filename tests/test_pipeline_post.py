@@ -155,6 +155,19 @@ def test_post_success_records_status(paths):
     assert again == "already-posted"
 
 
+def test_post_multi_message_records_status_only_after_all_sent(paths, monkeypatch):
+    write_day(paths)
+    monkeypatch.setattr(post.slack, "build", lambda record: [{"text": "1", "blocks": []}, {"text": "2", "blocks": []}])
+    with pytest.raises(BriefingError, match="message 2/2"):
+        post.post(DAY, False, data_dir=paths.data, status_path=paths.slack_status, webhook="https://hooks.example/x",
+                  sender=lambda url, json, timeout: Resp(200 if json["text"] == "1" else 500, "err"))
+    assert post.load_status(paths.slack_status) == {}  # partial send is not "posted"
+    sent = []
+    assert post.post(DAY, False, data_dir=paths.data, status_path=paths.slack_status, webhook="https://hooks.example/x",
+                     sender=lambda url, json, timeout: sent.append(json["text"]) or Resp(200), now_iso="T") == "posted"
+    assert sent == ["1", "2"] and post.load_status(paths.slack_status) == {DAY: "T"}
+
+
 def test_post_dry_run_never_sends(paths, capsys):
     write_day(paths)
     assert post.post(DAY, True, data_dir=paths.data, status_path=paths.slack_status,

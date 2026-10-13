@@ -4,8 +4,9 @@ from __future__ import annotations
 import json
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor
 
-from . import claude_cli
+from . import claude_cli, config
 
 log = logging.getLogger(__name__)
 
@@ -77,9 +78,36 @@ def make_validator(ids: list[int]):
     return validate
 
 
-def explain(stories: list[dict], runner=claude_cli.run_cli) -> dict[int, dict]:
-    """stories: [{id, headline, title, source, text}]. Returns {id: {what_happened, ...}}."""
+def chunks(stories: list[dict], size: int) -> list[list[dict]]:
+    size = max(1, size)
+    return [stories[i : i + size] for i in range(0, len(stories), size)]
+
+
+def explain(stories: list[dict], runner=claude_cli.run_cli, chunk_size: int | None = None,
+            workers: int | None = None) -> dict[int, dict]:
+    """stories: [{id, headline, title, source, text}]. Returns {id: {what_happened, ...}}.
+
+    Stories go to Claude in chunks of EXPLAIN_CHUNK, each its own call with the usual one
+    retry. A chunk that is invalid twice (or a CLI error) fails the whole run.
+    """
     if not stories:
         return {}
-    validate = make_validator([s["id"] for s in stories])
-    return claude_cli.call_json(build_prompt(stories), validate, "explain", runner)
+    parts = chunks(stories, chunk_size or config.EXPLAIN_CHUNK)
+
+    def one(n_part):
+        n, part = n_part
+        label = "explain" if len(parts) == 1 else f"explain (chunk {n}/{len(parts)})"
+        validate = make_validator([s["id"] for s in part])
+        return claude_cli.call_json(build_prompt(part), validate, label, runner)
+
+    jobs = list(enumerate(parts, 1))
+    n_workers = max(1, min(workers or config.EXPLAIN_WORKERS, len(parts)))
+    if n_workers == 1:
+        results = [one(j) for j in jobs]  # sequential: stops at the first failing chunk
+    else:
+        with ThreadPoolExecutor(max_workers=n_workers) as pool:
+            results = list(pool.map(one, jobs))
+    out: dict[int, dict] = {}
+    for r in results:
+        out.update(r)
+    return out

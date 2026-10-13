@@ -2,8 +2,8 @@
 
 A small daily AI news briefing. Every morning around 8:00 Phoenix time a GitHub Action
 fetches AI news from known feeds, has Claude pick and categorize the most important
-stories (at most 20), publishes a plain-English "Explained" page on GitHub Pages, and
-posts one-line bullets to Slack.
+stories (up to 5 per category, never padded, so at most 60), publishes a plain-English
+"Explained" page on GitHub Pages, and posts one-line bullets to Slack.
 
 Code does the fetching. Claude only ranks, categorizes and writes, and only about
 articles the code fetched. **Claude never outputs a URL**: it refers to stories by
@@ -23,12 +23,16 @@ fetch.py ------ parallel, 20s timeout, real User-Agent, gzip
 dedupe.py ----- canonical URLs (no utm_*, fragments, trailing /),
       |         near-duplicate titles, and anything in data/seen.json
       v
-rank.py ------- Claude call 1: [{id, category, headline}] (<= 20, 12 fixed categories)
-      |         unknown ids / bad categories dropped; bad JSON -> 1 retry -> fail
+rank.py ------- Claude call 1: [{id, category, headline}] (12 fixed categories,
+      |         <= 5 per category best-first, <= 60 total; extras over the cap dropped
+      |         in the model's order); unknown ids / bad categories dropped;
+      |         bad JSON -> 1 retry -> fail
       v
-extract.py ---- full article text for selected stories only (trafilatura), 4000 chars max
+extract.py ---- full article text for selected stories only (trafilatura), 4000 chars
+      |         max, 8 parallel fetches
       v
-explain.py ---- Claude call 2: what happened / why it matters / what it means for you
+explain.py ---- Claude calls 2..n: what happened / why it matters / what it means for
+      |         you, in chunks of 12 stories (so up to 5 calls), each with 1 retry
       v
 store.py ------ data/YYYY-MM-DD.json (URLs joined back by id) + data/seen.json
       v
@@ -50,6 +54,13 @@ Categories, in Slack/page order: AI Models & Releases; AI Agents & Automation; A
 Developer Tools; AI Startups & Y Combinator; AI Business & Industry Adoption; AI Research &
 Breakthroughs; AI Hardware & Infrastructure; AI Finance & Investments; AI Government &
 Regulations; AI Open Source; AI Jobs & Career Opportunities; AI Security & Safety.
+
+**How many stories:** each category gets up to 5 bullets (`MAX_PER_CATEGORY` in
+`briefing/config.py`), 5 only when there are 5 genuinely worthwhile, distinct stories.
+Nothing is padded: a category with 2 real stories shows 2, and a category with nothing
+worth reading is left out. One item per real-world event. The ceiling is 12 x 5 = 60 a
+day (`MAX_TOTAL`). In Slack that is one message (header, one section per category,
+footer: at most 14 blocks); it only splits past Slack's 50-block limit.
 
 ### Daily schedule (`.github/workflows/daily.yml`)
 

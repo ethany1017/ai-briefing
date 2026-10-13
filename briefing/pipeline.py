@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import logging
+import time
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -60,7 +61,18 @@ def run(opts: RunOptions, paths: Paths = Paths(), *, fetcher=None, ranker=None, 
             print(f"{day} already built but not posted; skipping generation, `post` will send it")
             return _state(paths, "skipped-built")
 
+    t0 = time.monotonic()
+    timings: dict[str, float] = {}
+
+    def lap(stage: str) -> None:
+        nonlocal t0
+        t1 = time.monotonic()
+        timings[stage] = round(t1 - t0, 1)
+        t0 = t1
+        print(f"timing: {stage} {timings[stage]}s")
+
     items, report = fetcher()
+    lap("fetch")
     print(fetch.format_report(report))
     ok_sources = sum(1 for r in report if r["ok"])
 
@@ -78,12 +90,15 @@ def run(opts: RunOptions, paths: Paths = Paths(), *, fetcher=None, ranker=None, 
     print(f"{len(items)} fetched items -> {len(candidates)} candidates after dedupe")
 
     ranked = ranker(candidates) if candidates else []
+    lap("rank")
     print(f"rank: {len(ranked)} stories selected")
     by_id = {c["id"]: c for c in candidates}
     chosen = [dict(by_id[r["id"]], headline=r["headline"]) for r in ranked]
     texts = extractor(chosen) if chosen else {}
+    lap("extract")
     stories = [dict(c, text=texts.get(c["id"]) or c["snippet"]) for c in chosen]
     explained = explainer(stories) if stories else {}
+    lap("explain")
 
     stats = {
         "sources_total": len(report),
@@ -99,6 +114,7 @@ def run(opts: RunOptions, paths: Paths = Paths(), *, fetcher=None, ranker=None, 
     store.write_record(record, paths.data)
     markdown.write(record, paths.briefings)
     pages.write(record, store.list_days(paths.data), paths.docs)
+    lap("render")
     print(f"wrote data/{day}.json, briefings/{day}.md, docs/{day}.html ({len(record['items'])} stories)")
 
     if use_seen and not opts.dry_run:

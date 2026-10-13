@@ -103,10 +103,56 @@ def test_rank_fails_after_two_bad_replies():
         rank.rank(CANDS, runner=FakeClaude("nope", '{"not": "a list", "x": 1}'))
 
 
-def test_rank_caps_at_max(monkeypatch):
-    monkeypatch.setattr(rank.config, "MAX_STORIES", 2)
-    reply = json.dumps([{"id": i, "category": "AI Open Source", "headline": f"h{i}"} for i in (1, 2, 3)])
-    assert len(rank.rank(CANDS, runner=FakeClaude(reply))) == 2
+def _many_cands(n):
+    return [{"id": i, "title": f"t{i}", "url": f"https://x.example/{i}", "source": "S", "published": "", "snippet": "s"} for i in range(1, n + 1)]
+
+
+def test_rank_caps_per_category_in_model_order():
+    cands = _many_cands(10)
+    reply = json.dumps(
+        [{"id": i, "category": "AI Open Source", "headline": f"h{i}"} for i in (6, 2, 9, 1, 4, 7)]  # 6 valid in one category
+        + [{"id": 3, "category": "AI Models & Releases", "headline": "h3"},
+           {"id": 5, "category": "AI Models & Releases", "headline": "h5"}]  # a category with only 2 stays at 2
+    )
+    out = rank.rank(cands, runner=FakeClaude(reply))
+    assert [o["id"] for o in out if o["category"] == "AI Open Source"] == [6, 2, 9, 1, 4]  # 6th (id 7) dropped
+    assert [o["id"] for o in out if o["category"] == "AI Models & Releases"] == [3, 5]
+    assert len(out) == 7
+
+
+def test_rank_per_category_cap_does_not_count_invalid_entries():
+    cands = _many_cands(8)
+    reply = json.dumps(
+        [{"id": 99, "category": "AI Open Source", "headline": "ghost"}]
+        + [{"id": i, "category": "AI Open Source", "headline": f"h{i}"} for i in (1, 2, 3, 4, 5)]
+    )
+    assert [o["id"] for o in rank.rank(cands, runner=FakeClaude(reply))] == [1, 2, 3, 4, 5]
+
+
+def test_rank_total_cap():
+    assert rank.config.MAX_PER_CATEGORY == 5
+    assert rank.config.MAX_TOTAL == 60 == 5 * len(rank.config.CATEGORIES)
+    cands = _many_cands(100)
+    # 8 per category for all 12 categories -> 5 each = 60
+    reply = json.dumps([{"id": n * 8 + k + 1, "category": c, "headline": f"h{n}-{k}"}
+                        for n, c in enumerate(rank.config.CATEGORIES) for k in range(8) if n * 8 + k + 1 <= 96])
+    out = rank.rank(cands, runner=FakeClaude(reply))
+    assert len(out) == 60
+    assert all(sum(o["category"] == c for o in out) == 5 for c in rank.config.CATEGORIES)
+
+
+def test_rank_total_cap_is_a_safety_net(monkeypatch):
+    monkeypatch.setattr(rank.config, "MAX_TOTAL", 3)
+    reply = json.dumps([{"id": i, "category": c, "headline": f"h{i}"}
+                        for i, c in zip((1, 2, 3, 4), rank.config.CATEGORIES)])
+    assert [o["id"] for o in rank.rank(_many_cands(4), runner=FakeClaude(reply))] == [1, 2, 3]
+
+
+def test_rank_prompt_states_per_category_cap_and_no_padding():
+    p = rank.build_prompt(CANDS)
+    assert "Up to 5 stories per category" in p
+    assert "Never pad" in p and "best-first" in p
+    assert "in total" not in p
 
 
 def test_rank_empty_day_is_valid():
@@ -150,6 +196,96 @@ def test_explain_retries_when_most_missing():
     fake = FakeClaude(bad, good)
     assert set(explain.explain(STORIES, runner=fake)) == {1, 2}
     assert len(fake.prompts) == 2
+
+
+def _reply_for(prompt, skip=()):
+    """Answer an explain prompt for every story id in it (except `skip`)."""
+    rows = json.loads(prompt.split("Stories:\n", 1)[1].split("\n\nYOUR PREVIOUS REPLY", 1)[0])
+    return json.dumps([{"id": r["id"], "what_happened": f"a{r['id']}", "why_it_matters": "b", "what_it_means_for_you": "c"}
+                       for r in rows if r["id"] not in skip])
+
+
+class EchoClaude:
+    """Answers each explain chunk correctly; `bad` maps call number -> bad reply to send instead."""
+
+    def __init__(self, bad=None):
+        self.bad = bad or {}
+        self.prompts = []
+
+    def __call__(self, prompt):
+        self.prompts.append(prompt)
+        n = len(self.prompts)
+        return self.bad[n] if n in self.bad else _reply_for(prompt)
+
+
+def _stories(n):
+    return [{"id": i, "headline": f"h{i}", "title": f"t{i}", "source": "S", "text": "body"} for i in range(1, n + 1)]
+
+
+def _ids_in(prompt):
+    return [r["id"] for r in json.loads(prompt.split("Stories:\n", 1)[1].split("\n\nYOUR PREVIOUS REPLY", 1)[0])]
+
+
+def test_explain_chunks_sixty_stories_into_calls_of_twelve():
+    assert explain.config.EXPLAIN_CHUNK == 12
+    fake = EchoClaude()
+    out = explain.explain(_stories(60), runner=fake)
+    assert len(fake.prompts) == 5
+    assert [_ids_in(p) for p in fake.prompts] == [list(range(i, i + 12)) for i in range(1, 61, 12)]
+    assert set(out) == set(range(1, 61)) and out[60]["what_happened"] == "a60"
+
+
+def test_explain_small_batch_is_one_call():
+    fake = EchoClaude()
+    assert set(explain.explain(_stories(5), runner=fake)) == {1, 2, 3, 4, 5}
+    assert len(fake.prompts) == 1
+
+
+def test_explain_uneven_last_chunk():
+    fake = EchoClaude()
+    explain.explain(_stories(13), runner=fake, chunk_size=12)
+    assert [len(_ids_in(p)) for p in fake.prompts] == [12, 1]
+
+
+def test_explain_retries_only_the_bad_chunk():
+    fake = EchoClaude(bad={2: "not json"})  # chunk 2's first attempt is garbage
+    out = explain.explain(_stories(30), runner=fake, chunk_size=12)
+    assert set(out) == set(range(1, 31))
+    assert len(fake.prompts) == 4  # 3 chunks + 1 retry
+    assert "PREVIOUS REPLY WAS INVALID" in fake.prompts[2] and _ids_in(fake.prompts[2]) == list(range(13, 25))
+
+
+def test_explain_chunk_failing_twice_fails_the_run():
+    fake = EchoClaude(bad={2: "nope", 3: "still nope"})
+    with pytest.raises(BriefingError, match=r"explain \(chunk 2/3\): Claude returned invalid JSON twice"):
+        explain.explain(_stories(30), runner=fake, chunk_size=12)
+    assert len(fake.prompts) == 3  # sequential: chunk 3 never sent
+
+
+def test_explain_parallel_workers_merge_all_chunks():
+    import threading
+
+    lock = threading.Lock()
+    prompts = []
+
+    def runner(prompt):
+        with lock:
+            prompts.append(prompt)
+        return _reply_for(prompt)
+
+    out = explain.explain(_stories(60), runner=runner, chunk_size=12, workers=3)
+    assert set(out) == set(range(1, 61)) and len(prompts) == 5
+
+
+def test_explain_partial_chunk_drops_missing_only():
+    calls = []
+
+    def runner(prompt):
+        calls.append(prompt)
+        return _reply_for(prompt, skip={3})
+
+    out = explain.explain(_stories(12), runner=runner)
+    assert set(out) == set(range(1, 13)) - {3} and len(calls) == 1
 
 
 # ---- extract ----------------------------------------------------------------
@@ -198,3 +334,29 @@ def test_slugify_cuts_on_word_boundary():
     assert s == "meta-releases-muse-wonder-its-first-frontier-model-larger"
     assert len(s) <= 60 and store.slugify("!!!") == "story"
     assert store.slugify("x" * 80) == "x" * 60
+
+
+def test_extract_runs_in_parallel_with_bounded_workers():
+    import threading
+    import time
+
+    lock = threading.Lock()
+    state = {"now": 0, "peak": 0}
+
+    def getter(url):
+        with lock:
+            state["now"] += 1
+            state["peak"] = max(state["peak"], state["now"])
+        time.sleep(0.05)
+        with lock:
+            state["now"] -= 1
+        raise IOError("offline")
+
+    items = [{"id": i, "url": f"https://x/{i}", "snippet": f"s{i}"} for i in range(1, 25)]
+    start = time.monotonic()
+    texts = extract.extract_all(items, getter=getter)
+    elapsed = time.monotonic() - start
+    assert texts == {i: f"s{i}" for i in range(1, 25)}
+    assert 1 < state["peak"] <= extract.config.EXTRACT_WORKERS
+    assert elapsed < 24 * 0.05  # faster than sequential
+    assert extract.extract_all([], getter=getter) == {}

@@ -23,7 +23,6 @@ MODEL = "claude-sonnet-5-5"
 PAGES_BASE_URL = os.environ.get("PAGES_BASE_URL", "https://ethany1017.github.io/ai-briefing/")
 
 WINDOW_HOURS = 36
-MAX_STORIES = 20
 ARTICLE_CHARS = 4000
 SNIPPET_CHARS = 500
 FETCH_TIMEOUT = 20
@@ -51,6 +50,15 @@ CATEGORIES = [
     "AI Jobs & Career Opportunities",
     "AI Security & Safety",
 ]
+
+# Selection caps: up to MAX_PER_CATEGORY stories per category (never padded), so at most
+# MAX_TOTAL a day. MAX_TOTAL is a safety net derived from the per-category cap.
+MAX_PER_CATEGORY = 5
+MAX_TOTAL = MAX_PER_CATEGORY * len(CATEGORIES)  # 60
+
+EXPLAIN_CHUNK = 12    # stories per explain call (keeps each prompt/reply a sane size)
+EXPLAIN_WORKERS = 1   # explain calls in flight at once
+EXTRACT_WORKERS = 8   # parallel article fetches in extract.py
 
 
 def now() -> datetime:

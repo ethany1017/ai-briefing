@@ -1,0 +1,857 @@
+{
+ "date": "2026-10-12",
+ "generated_at": "2026-10-12T07:52:00-07:00",
+ "items": [
+  {
+   "id": 1,
+   "category": "AI Models & Releases",
+   "headline": "Story 1 & <AI Models & Releases> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-1?utm_campaign=x&ref=feed|1",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-1-plain-english-headline-words"
+  },
+  {
+   "id": 2,
+   "category": "AI Models & Releases",
+   "headline": "Story 2 & <AI Models & Releases> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-2?utm_campaign=x&ref=feed|2",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-2-plain-english-headline-words"
+  },
+  {
+   "id": 3,
+   "category": "AI Models & Releases",
+   "headline": "Story 3 & <AI Models & Releases> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-3?utm_campaign=x&ref=feed|3",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-3-plain-english-headline-words"
+  },
+  {
+   "id": 4,
+   "category": "AI Models & Releases",
+   "headline": "Story 4 & <AI Models & Releases> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-4?utm_campaign=x&ref=feed|4",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-4-plain-english-headline-words"
+  },
+  {
+   "id": 5,
+   "category": "AI Models & Releases",
+   "headline": "Story 5 & <AI Models & Releases> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-5?utm_campaign=x&ref=feed|5",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-5-plain-english-headline-words"
+  },
+  {
+   "id": 6,
+   "category": "AI Agents & Automation",
+   "headline": "Story 6 & <AI Agents & Automation> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-6?utm_campaign=x&ref=feed|6",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-6-plain-english-headline-words"
+  },
+  {
+   "id": 7,
+   "category": "AI Agents & Automation",
+   "headline": "Story 7 & <AI Agents & Automation> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-7?utm_campaign=x&ref=feed|7",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-7-plain-english-headline-words"
+  },
+  {
+   "id": 8,
+   "category": "AI Agents & Automation",
+   "headline": "Story 8 & <AI Agents & Automation> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-8?utm_campaign=x&ref=feed|8",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-8-plain-english-headline-words"
+  },
+  {
+   "id": 9,
+   "category": "AI Agents & Automation",
+   "headline": "Story 9 & <AI Agents & Automation> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-9?utm_campaign=x&ref=feed|9",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-9-plain-english-headline-words"
+  },
+  {
+   "id": 10,
+   "category": "AI Agents & Automation",
+   "headline": "Story 10 & <AI Agents & Automation> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headl",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-10?utm_campaign=x&ref=feed|10",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-10-plain-english-headline-words"
+  },
+  {
+   "id": 11,
+   "category": "AI Coding & Developer Tools",
+   "headline": "Story 11 & <AI Coding & Developer Tools> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-11?utm_campaign=x&ref=feed|11",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-11-plain-english-headline-words"
+  },
+  {
+   "id": 12,
+   "category": "AI Coding & Developer Tools",
+   "headline": "Story 12 & <AI Coding & Developer Tools> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-12?utm_campaign=x&ref=feed|12",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-12-plain-english-headline-words"
+  },
+  {
+   "id": 13,
+   "category": "AI Coding & Developer Tools",
+   "headline": "Story 13 & <AI Coding & Developer Tools> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-13?utm_campaign=x&ref=feed|13",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-13-plain-english-headline-words"
+  },
+  {
+   "id": 14,
+   "category": "AI Coding & Developer Tools",
+   "headline": "Story 14 & <AI Coding & Developer Tools> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-14?utm_campaign=x&ref=feed|14",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-14-plain-english-headline-words"
+  },
+  {
+   "id": 15,
+   "category": "AI Coding & Developer Tools",
+   "headline": "Story 15 & <AI Coding & Developer Tools> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-15?utm_campaign=x&ref=feed|15",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-15-plain-english-headline-words"
+  },
+  {
+   "id": 16,
+   "category": "AI Startups & Y Combinator",
+   "headline": "Story 16 & <AI Startups & Y Combinator> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English h",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-16?utm_campaign=x&ref=feed|16",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-16-plain-english-headline-words"
+  },
+  {
+   "id": 17,
+   "category": "AI Startups & Y Combinator",
+   "headline": "Story 17 & <AI Startups & Y Combinator> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English h",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-17?utm_campaign=x&ref=feed|17",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-17-plain-english-headline-words"
+  },
+  {
+   "id": 18,
+   "category": "AI Startups & Y Combinator",
+   "headline": "Story 18 & <AI Startups & Y Combinator> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English h",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-18?utm_campaign=x&ref=feed|18",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-18-plain-english-headline-words"
+  },
+  {
+   "id": 19,
+   "category": "AI Startups & Y Combinator",
+   "headline": "Story 19 & <AI Startups & Y Combinator> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English h",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-19?utm_campaign=x&ref=feed|19",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-19-plain-english-headline-words"
+  },
+  {
+   "id": 20,
+   "category": "AI Startups & Y Combinator",
+   "headline": "Story 20 & <AI Startups & Y Combinator> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English h",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-20?utm_campaign=x&ref=feed|20",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-20-plain-english-headline-words"
+  },
+  {
+   "id": 21,
+   "category": "AI Business & Industry Adoption",
+   "headline": "Story 21 & <AI Business & Industry Adoption> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engl",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-21?utm_campaign=x&ref=feed|21",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-21-plain-english-headline-words"
+  },
+  {
+   "id": 22,
+   "category": "AI Business & Industry Adoption",
+   "headline": "Story 22 & <AI Business & Industry Adoption> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engl",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-22?utm_campaign=x&ref=feed|22",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-22-plain-english-headline-words"
+  },
+  {
+   "id": 23,
+   "category": "AI Business & Industry Adoption",
+   "headline": "Story 23 & <AI Business & Industry Adoption> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engl",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-23?utm_campaign=x&ref=feed|23",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-23-plain-english-headline-words"
+  },
+  {
+   "id": 24,
+   "category": "AI Business & Industry Adoption",
+   "headline": "Story 24 & <AI Business & Industry Adoption> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engl",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-24?utm_campaign=x&ref=feed|24",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-24-plain-english-headline-words"
+  },
+  {
+   "id": 25,
+   "category": "AI Business & Industry Adoption",
+   "headline": "Story 25 & <AI Business & Industry Adoption> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engl",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-25?utm_campaign=x&ref=feed|25",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-25-plain-english-headline-words"
+  },
+  {
+   "id": 26,
+   "category": "AI Research & Breakthroughs",
+   "headline": "Story 26 & <AI Research & Breakthroughs> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-26?utm_campaign=x&ref=feed|26",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-26-plain-english-headline-words"
+  },
+  {
+   "id": 27,
+   "category": "AI Research & Breakthroughs",
+   "headline": "Story 27 & <AI Research & Breakthroughs> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-27?utm_campaign=x&ref=feed|27",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-27-plain-english-headline-words"
+  },
+  {
+   "id": 28,
+   "category": "AI Research & Breakthroughs",
+   "headline": "Story 28 & <AI Research & Breakthroughs> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-28?utm_campaign=x&ref=feed|28",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-28-plain-english-headline-words"
+  },
+  {
+   "id": 29,
+   "category": "AI Research & Breakthroughs",
+   "headline": "Story 29 & <AI Research & Breakthroughs> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-29?utm_campaign=x&ref=feed|29",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-29-plain-english-headline-words"
+  },
+  {
+   "id": 30,
+   "category": "AI Research & Breakthroughs",
+   "headline": "Story 30 & <AI Research & Breakthroughs> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-30?utm_campaign=x&ref=feed|30",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-30-plain-english-headline-words"
+  },
+  {
+   "id": 31,
+   "category": "AI Hardware & Infrastructure",
+   "headline": "Story 31 & <AI Hardware & Infrastructure> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-31?utm_campaign=x&ref=feed|31",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-31-plain-english-headline-words"
+  },
+  {
+   "id": 32,
+   "category": "AI Hardware & Infrastructure",
+   "headline": "Story 32 & <AI Hardware & Infrastructure> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-32?utm_campaign=x&ref=feed|32",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-32-plain-english-headline-words"
+  },
+  {
+   "id": 33,
+   "category": "AI Hardware & Infrastructure",
+   "headline": "Story 33 & <AI Hardware & Infrastructure> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-33?utm_campaign=x&ref=feed|33",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-33-plain-english-headline-words"
+  },
+  {
+   "id": 34,
+   "category": "AI Hardware & Infrastructure",
+   "headline": "Story 34 & <AI Hardware & Infrastructure> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-34?utm_campaign=x&ref=feed|34",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-34-plain-english-headline-words"
+  },
+  {
+   "id": 35,
+   "category": "AI Hardware & Infrastructure",
+   "headline": "Story 35 & <AI Hardware & Infrastructure> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-35?utm_campaign=x&ref=feed|35",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-35-plain-english-headline-words"
+  },
+  {
+   "id": 36,
+   "category": "AI Finance & Investments",
+   "headline": "Story 36 & <AI Finance & Investments> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English hea",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-36?utm_campaign=x&ref=feed|36",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-36-plain-english-headline-words"
+  },
+  {
+   "id": 37,
+   "category": "AI Finance & Investments",
+   "headline": "Story 37 & <AI Finance & Investments> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English hea",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-37?utm_campaign=x&ref=feed|37",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-37-plain-english-headline-words"
+  },
+  {
+   "id": 38,
+   "category": "AI Finance & Investments",
+   "headline": "Story 38 & <AI Finance & Investments> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English hea",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-38?utm_campaign=x&ref=feed|38",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-38-plain-english-headline-words"
+  },
+  {
+   "id": 39,
+   "category": "AI Finance & Investments",
+   "headline": "Story 39 & <AI Finance & Investments> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English hea",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-39?utm_campaign=x&ref=feed|39",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-39-plain-english-headline-words"
+  },
+  {
+   "id": 40,
+   "category": "AI Finance & Investments",
+   "headline": "Story 40 & <AI Finance & Investments> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English hea",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-40?utm_campaign=x&ref=feed|40",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-40-plain-english-headline-words"
+  },
+  {
+   "id": 41,
+   "category": "AI Government & Regulations",
+   "headline": "Story 41 & <AI Government & Regulations> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-41?utm_campaign=x&ref=feed|41",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-41-plain-english-headline-words"
+  },
+  {
+   "id": 42,
+   "category": "AI Government & Regulations",
+   "headline": "Story 42 & <AI Government & Regulations> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-42?utm_campaign=x&ref=feed|42",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-42-plain-english-headline-words"
+  },
+  {
+   "id": 43,
+   "category": "AI Government & Regulations",
+   "headline": "Story 43 & <AI Government & Regulations> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-43?utm_campaign=x&ref=feed|43",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-43-plain-english-headline-words"
+  },
+  {
+   "id": 44,
+   "category": "AI Government & Regulations",
+   "headline": "Story 44 & <AI Government & Regulations> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-44?utm_campaign=x&ref=feed|44",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-44-plain-english-headline-words"
+  },
+  {
+   "id": 45,
+   "category": "AI Government & Regulations",
+   "headline": "Story 45 & <AI Government & Regulations> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-45?utm_campaign=x&ref=feed|45",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-45-plain-english-headline-words"
+  },
+  {
+   "id": 46,
+   "category": "AI Open Source",
+   "headline": "Story 46 & <AI Open Source> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline word",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-46?utm_campaign=x&ref=feed|46",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-46-plain-english-headline-words"
+  },
+  {
+   "id": 47,
+   "category": "AI Open Source",
+   "headline": "Story 47 & <AI Open Source> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline word",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-47?utm_campaign=x&ref=feed|47",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-47-plain-english-headline-words"
+  },
+  {
+   "id": 48,
+   "category": "AI Open Source",
+   "headline": "Story 48 & <AI Open Source> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline word",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-48?utm_campaign=x&ref=feed|48",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-48-plain-english-headline-words"
+  },
+  {
+   "id": 49,
+   "category": "AI Open Source",
+   "headline": "Story 49 & <AI Open Source> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline word",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-49?utm_campaign=x&ref=feed|49",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-49-plain-english-headline-words"
+  },
+  {
+   "id": 50,
+   "category": "AI Open Source",
+   "headline": "Story 50 & <AI Open Source> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline word",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-50?utm_campaign=x&ref=feed|50",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-50-plain-english-headline-words"
+  },
+  {
+   "id": 51,
+   "category": "AI Jobs & Career Opportunities",
+   "headline": "Story 51 & <AI Jobs & Career Opportunities> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-51?utm_campaign=x&ref=feed|51",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-51-plain-english-headline-words"
+  },
+  {
+   "id": 52,
+   "category": "AI Jobs & Career Opportunities",
+   "headline": "Story 52 & <AI Jobs & Career Opportunities> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-52?utm_campaign=x&ref=feed|52",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-52-plain-english-headline-words"
+  },
+  {
+   "id": 53,
+   "category": "AI Jobs & Career Opportunities",
+   "headline": "Story 53 & <AI Jobs & Career Opportunities> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-53?utm_campaign=x&ref=feed|53",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-53-plain-english-headline-words"
+  },
+  {
+   "id": 54,
+   "category": "AI Jobs & Career Opportunities",
+   "headline": "Story 54 & <AI Jobs & Career Opportunities> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-54?utm_campaign=x&ref=feed|54",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-54-plain-english-headline-words"
+  },
+  {
+   "id": 55,
+   "category": "AI Jobs & Career Opportunities",
+   "headline": "Story 55 & <AI Jobs & Career Opportunities> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-Engli",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-55?utm_campaign=x&ref=feed|55",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-55-plain-english-headline-words"
+  },
+  {
+   "id": 56,
+   "category": "AI Security & Safety",
+   "headline": "Story 56 & <AI Security & Safety> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headlin",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-56?utm_campaign=x&ref=feed|56",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-56-plain-english-headline-words"
+  },
+  {
+   "id": 57,
+   "category": "AI Security & Safety",
+   "headline": "Story 57 & <AI Security & Safety> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headlin",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-57?utm_campaign=x&ref=feed|57",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-57-plain-english-headline-words"
+  },
+  {
+   "id": 58,
+   "category": "AI Security & Safety",
+   "headline": "Story 58 & <AI Security & Safety> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headlin",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-58?utm_campaign=x&ref=feed|58",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-58-plain-english-headline-words"
+  },
+  {
+   "id": 59,
+   "category": "AI Security & Safety",
+   "headline": "Story 59 & <AI Security & Safety> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headlin",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-59?utm_campaign=x&ref=feed|59",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-59-plain-english-headline-words"
+  },
+  {
+   "id": 60,
+   "category": "AI Security & Safety",
+   "headline": "Story 60 & <AI Security & Safety> plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headline words plain-English headlin",
+   "url": "https://news.example.com/2026/10/12/very-long-article-slug-very-long-article-slug-very-long-article-slug-very-long-article-slug-60?utm_campaign=x&ref=feed|60",
+   "source": "Example News",
+   "published": "2026-10-12T10:00:00+00:00",
+   "explained": {
+    "what_happened": "a",
+    "why_it_matters": "b",
+    "what_it_means_for_you": "c"
+   },
+   "anchor": "story-60-plain-english-headline-words"
+  }
+ ],
+ "stats": {
+  "sources_total": 42,
+  "sources_ok": 41,
+  "failed_sources": [
+   "FTC"
+  ],
+  "fetched": 400,
+  "candidates": 350,
+  "ranked": 60,
+  "selected": 60
+ }
+}
