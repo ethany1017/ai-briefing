@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.tmp/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
