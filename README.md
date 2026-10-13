@@ -134,6 +134,22 @@ Or with the CLI:
 gh api -X POST repos/ethany1017/ai-briefing/pages -f 'source[branch]=main' -f 'source[path]=/docs'
 ```
 
+## Dashboard
+
+Ethan's local agent dashboard (the `My Ai` repo, `tools/dashboard_sync_bots.py`) pulls
+from this repo. Nothing here pushes to it, and it needs no secrets. While the dashboard
+server is running, every 15 minutes it:
+
+- fetches `briefings/<date>.md` for today and yesterday (Phoenix time) from
+  `raw.githubusercontent.com` into the News tab's `ai-news` column, posts "Daily briefing
+  ready" with a link to the Pages page, and records the bot's daily heartbeat;
+- reads `data/slack_status.json` to say whether the Slack post went out;
+- checks the latest completed `daily.yml` run through the public Actions API and raises an
+  error in its feed if the run failed, timed out or was cancelled.
+
+If the dashboard isn't running, it catches up on today and yesterday the next time it
+starts. Anything older than yesterday isn't back-filled.
+
 ## Later (skipped in v1)
 
 - Paywalled: Bloomberg, The Information, Crunchbase, PitchBook, CB Insights
