@@ -13,7 +13,10 @@ _SLUG = re.compile(r"[^a-z0-9]+")
 
 def slugify(text: str, max_len: int = 60) -> str:
     s = _SLUG.sub("-", text.lower()).strip("-")
-    return (s[:max_len].rstrip("-")) or "story"
+    if len(s) > max_len:
+        cut = s[: max_len + 1]
+        s = cut[: cut.rfind("-")] if "-" in cut else s[:max_len]
+    return s.strip("-") or "story"
 
 
 def build_record(day: str, candidates: list[dict], ranked: list[dict], explained: dict[int, dict], stats: dict, generated_at: str) -> dict:

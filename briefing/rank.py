@@ -16,7 +16,8 @@ Below is a JSON array of candidate items fetched today. Each has a numeric "id",
 
 Choose the most important and genuinely newsworthy AI stories. Rules:
 - At most {max_stories} stories in total. Quality over quantity: on a slow day return fewer. Never pad.
-- Skip duplicates (the same story from several sources: keep the single best item), minor product tweaks, listicles, marketing fluff, opinion without news, and anything not about AI.
+- One item per real-world event: if several candidates cover the same announcement, release or study (even from different angles), keep only the single most informative one.
+- Skip minor product tweaks, listicles, marketing fluff, opinion without news, and anything not about AI.
 - For "AI Jobs & Career Opportunities", favor internships, new-grad and entry-level roles and notable hiring trends; skip senior-only postings.
 - Put each story in exactly one category, copied exactly from this list:
 {categories}

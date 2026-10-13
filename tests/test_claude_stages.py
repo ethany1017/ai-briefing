@@ -191,3 +191,10 @@ def test_build_record_skips_unexplained():
     ranked = [{"id": 1, "category": "AI Models & Releases", "headline": "x"}]
     rec = store.build_record("2026-10-12", CANDS, ranked, {}, {}, "t")
     assert rec["items"] == []
+
+
+def test_slugify_cuts_on_word_boundary():
+    s = store.slugify("Meta releases Muse Wonder, its first frontier model, larger and more capable than before")
+    assert s == "meta-releases-muse-wonder-its-first-frontier-model-larger"
+    assert len(s) <= 60 and store.slugify("!!!") == "story"
+    assert store.slugify("x" * 80) == "x" * 60
