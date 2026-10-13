@@ -1,0 +1,174 @@
+name: Daily AI briefing
+
+on:
+  schedule:
+    - cron: '45 14 * * *'   # 07:45 America/Phoenix (no DST); scheduler lag lands it near 08:00
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Rebuild today's briefing and post again even if already built/posted
+        type: boolean
+        default: false
+      dry_run:
+        description: Build and print the Slack payload; commit nothing, post nothing
+        type: boolean
+        default: false
+      ignore_seen:
+        description: Ignore data/seen.json for this run (and do not update it)
+        type: boolean
+        default: false
+
+concurrency:
+  group: briefing
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: read   # for polling pages/builds/latest
+
+env:
+  TZ: America/Phoenix
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out
+        id: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install Python dependencies
+        id: deps
+        run: pip install -r requirements.txt
+
+      - name: Install Claude Code CLI
+        id: cli
+        run: |
+          npm i -g @anthropic-ai/claude-code
+          claude --version
+
+      - name: Build briefing
+        id: run
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          IN_FORCE: ${{ inputs.force && 'true' || 'false' }}
+          IN_IGNORE_SEEN: ${{ inputs.ignore_seen && 'true' || 'false' }}
+        run: |
+          args=()
+          if [ "$IN_FORCE" = "true" ]; then args+=(--force); fi
+          if [ "$IN_IGNORE_SEEN" = "true" ]; then args+=(--no-seen); fi
+          python -m briefing run "${args[@]}"
+          echo "state=$(cat .tmp/run_state)" >> "$GITHUB_OUTPUT"
+          echo "day=$(date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit briefing
+        id: commit
+        if: ${{ !inputs.dry_run && (steps.run.outputs.state == 'built' || steps.run.outputs.state == 'bootstrap') }}
+        env:
+          STATE: ${{ steps.run.outputs.state }}
+          DAY: ${{ steps.run.outputs.day }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "$STATE" = "bootstrap" ]; then
+            git add data/seen.json
+            msg="briefing: bootstrap seen list $DAY"
+          else
+            git add data docs briefings
+            msg="briefing: $DAY"
+          fi
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "$msg"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for GitHub Pages build
+        id: pages
+        if: ${{ !inputs.dry_run && steps.run.outputs.state == 'built' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          for i in $(seq 1 18); do
+            out=$(gh api "repos/${{ github.repository }}/pages/builds/latest" --jq '.status + " " + .commit' 2>/dev/null || true)
+            pstatus="${out%% *}"; commit="${out##* }"
+            if [ "$pstatus" = "built" ] && [ "$commit" = "$SHA" ]; then
+              echo "Pages built for $SHA"; exit 0
+            fi
+            echo "waiting for Pages (${out:-no build info}) [$i/18]"
+            sleep 10
+          done
+          echo "::warning::Pages build for $SHA not confirmed after 3 minutes; posting anyway"
+
+      - name: Post to Slack
+        id: post
+        if: ${{ !inputs.dry_run && (steps.run.outputs.state == 'built' || steps.run.outputs.state == 'skipped-built') }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          DRY_RUN: '0'
+        run: python -m briefing post
+
+      - name: Commit Slack status
+        id: status
+        if: ${{ !inputs.dry_run && steps.post.outcome == 'success' }}
+        env:
+          DAY: ${{ steps.run.outputs.day }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/slack_status.json
+          if git diff --cached --quiet; then
+            echo "slack status unchanged"
+          else
+            git commit -m "briefing: slack status $DAY"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Report failure to Slack
+        if: ${{ failure() || cancelled() }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+          OUTCOMES: >-
+            Check out=${{ steps.checkout.outcome }};Set up Python=${{ steps.python.outcome }};Install Python dependencies=${{ steps.deps.outcome }};Install Claude Code CLI=${{ steps.cli.outcome }};Build briefing=${{ steps.run.outcome }};Commit briefing=${{ steps.commit.outcome }};Post to Slack=${{ steps.post.outcome }};Commit Slack status=${{ steps.status.outcome }}
+        run: |
+          reason=""
+          if [ -s .tmp/failure_reason ]; then
+            reason="$(head -c 300 .tmp/failure_reason | tr -d '\n')"
+          fi
+          if [ -z "$reason" ]; then
+            failed="$(echo "$OUTCOMES" | tr ';' '\n' | grep '=failure$' | head -n1 | cut -d= -f1)"
+            if [ -n "$failed" ]; then
+              reason="step '$failed' failed"
+            else
+              reason="job $JOB_STATUS (timeout or cancellation)"
+            fi
+          fi
+          text="Briefing failed: $reason ($RUN_URL)"
+          echo "$text"
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "::warning::SLACK_WEBHOOK_URL not set; cannot report failure"; exit 0
+          fi
+          payload="$(python3 -c 'import json, sys; print(json.dumps({"text": sys.argv[1]}))' "$text")"
+          curl -sS --fail --max-time 20 -X POST -H 'Content-Type: application/json' --data "$payload" "$SLACK_WEBHOOK_URL" \
+            || echo "::warning::could not post the failure message to Slack"
