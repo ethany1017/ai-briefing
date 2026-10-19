@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Monday, October 19, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Monday, October 19, 2026 · 14 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#nvidia-launches-new-open-models-for-running-agents-in">Nvidia launches new open models for running agents in enterprise data centers and on PCs.</a></li>
+  <li><a href="#minimax-m3-1-flash-scores-42-on-the-artificial-analysis">MiniMax M3.1 Flash scores 42 on the Artificial Analysis index at half its predecessor&#39;s cost.</a></li>
+  <li><a href="#kling-ai-releases-version-4-0-video-generator-with-30-second">Kling AI releases version 4.0 video generator with 30-second clips, stereo audio and multilingual lip sync.</a></li>
+  <li><a href="#stripe-says-ai-agents-increasingly-shop-through-its-link">Stripe says AI agents increasingly shop through its Link payment service but will not share figures.</a></li>
+  <li><a href="#researchers-stranded-copies-of-claude-opus-4-7-on-a-virtual">Researchers stranded copies of Claude Opus 4.7 on a virtual island for 30 hours and observed play-like behavior.</a></li>
+  <li><a href="#amazon-releases-torchneuron-to-let-pytorch-developers-run">Amazon releases TorchNeuron to let PyTorch developers run apps on its Trainium chips instead of Nvidia&#39;s.</a></li>
+  <li><a href="#ai-companion-app-tolan-raises-30-million-after-reaching-more">AI companion app Tolan raises $30 million after reaching more than 250,000 active users.</a></li>
+  <li><a href="#disney-structures-a-character-ai-purchase-to-avoid-taking-on">Disney structures a Character.AI purchase to avoid taking on its lawsuits over minors&#39; safety.</a></li>
+  <li><a href="#goodfire-researcher-s-26-000-word-post-claiming-a-new">Goodfire researcher&#39;s 26,000-word post claiming a new understanding of neural networks stirs the AI research world.</a></li>
+  <li><a href="#executives-expect-only-seven-to-ten-ai-cloud-providers-to">Executives expect only seven to ten AI cloud providers to survive a coming neocloud shakeout.</a></li>
+  <li><a href="#tenstorrent-reaches-a-6-2-billion-valuation-after-raising-1">Tenstorrent reaches a $6.2 billion valuation after raising $1.5 billion to stay independent.</a></li>
+  <li><a href="#anthropic-plans-to-commit-5-of-its-shares-to-a-public">Anthropic plans to commit 5% of its shares to a public benefit fund that may include direct payments to workers.</a></li>
+  <li><a href="#eu-publishes-first-harmonised-standard-supporting-the-ai-act">EU publishes first harmonised standard supporting the AI Act, EN 18286:2026, covering quality management systems.</a></li>
+  <li><a href="#hackers-breached-part-of-opencode-s-platform-and-stole-users">Hackers breached part of OpenCode&#39;s platform and stole users&#39; API keys, running up charges on their AI accounts.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="nvidia-launches-new-open-models-for-running-agents-in">
+  <h3>Nvidia launches new open models for running agents in enterprise data centers and on PCs.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/" rel="noopener">TechCrunch AI</a> · <a href="#nvidia-launches-new-open-models-for-running-agents-in">link</a></div>
+  <h4>What happened</h4>
+  <p>Nvidia released new open-weight models, meaning the trained model files are available for others to download and run. One is Nemotron 3.5 Super VL, a 120-billion-parameter model for business agents. Two smaller Bolt models are meant to run on new AI PCs and workstations. Nvidia says Super VL and one Bolt model are out now, and the smallest Bolt comes later this month.</p>
+  <h4>Why it matters</h4>
+  <p>Nvidia sells chips, but its biggest AI customers are now buying from other chip makers and building their own. By offering open models that companies can train on their own data and run in their own data centers, Nvidia gives them another reason to stay on its hardware. Its speed claims against Anthropic and OpenAI models come from Nvidia itself, so treat them with some caution.</p>
+  <h4>What it means for you</h4>
+  <p>Open models you can run on your own machine are a cheap way to practice building agents without paying per request. If you get access to one of these AI PCs, you could try local agents that call tools. Otherwise this is background news, since you will not need any of it to get started.</p>
+</section>
+<section class="story" id="minimax-m3-1-flash-scores-42-on-the-artificial-analysis">
+  <h3>MiniMax M3.1 Flash scores 42 on the Artificial Analysis index at half its predecessor&#39;s cost.</h3>
+  <div class="meta"><a href="https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/" rel="noopener">The Decoder</a> · <a href="#minimax-m3-1-flash-scores-42-on-the-artificial-analysis">link</a></div>
+  <h4>What happened</h4>
+  <p>MiniMax released M3.1 Flash, a reasoning model that scores 42 on the Artificial Analysis Intelligence Index, 13 points above its predecessor. It costs about $0.22 per task, less than half the old model&#39;s cost. It beats Deepseek V4.1 Flash on some tests but trails it on the overall index. It also hallucinates a lot, since it tries to answer every question instead of saying it is unsure.</p>
+  <h4>Why it matters</h4>
+  <p>Prices for capable models keep falling, and Chinese labs are pushing hard on that. Two rival models are getting open-weight releases, so more people can run them. The high hallucination rate is a reminder that a good benchmark score does not mean the answers can be trusted.</p>
+  <h4>What it means for you</h4>
+  <p>If you build AI features, cheap models like this make it affordable to try ideas that would have cost too much before. Test any model on your own task rather than trusting a leaderboard. Check how often it makes things up, because a model that always answers can be risky in a real product.</p>
+</section>
+<section class="story" id="kling-ai-releases-version-4-0-video-generator-with-30-second">
+  <h3>Kling AI releases version 4.0 video generator with 30-second clips, stereo audio and multilingual lip sync.</h3>
+  <div class="meta"><a href="https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/" rel="noopener">The Decoder</a> · <a href="#kling-ai-releases-version-4-0-video-generator-with-30-second">link</a></div>
+  <h4>What happened</h4>
+  <p>Kling AI released version 4.0 of its video generator. It can make up to 30 seconds of video in one pass, accepts many reference images and videos, and adds stereo audio and lip sync in more than ten languages. A lighter Flash version is faster and cheaper but limited to 720p and 20 seconds. It can also be used through MCP and a command line tool, and API pricing has not been announced.</p>
+  <h4>Why it matters</h4>
+  <p>The article says the model holds its own against Chinese rivals Wan 3.0 and Seedance 2.5 but does not clearly beat them. It suggests the fast pace of progress in AI video may be starting to level off, though it says the next rival releases will tell us more. Support for agent tools also shows video generation is being built into automated workflows.</p>
+  <h4>What it means for you</h4>
+  <p>This matters little for most software jobs right now. If you like building side projects, the command line and MCP access hint that you could script video generation, though pricing is not yet known. Treat it as a tool to watch, not a skill you must learn.</p>
+</section>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="stripe-says-ai-agents-increasingly-shop-through-its-link">
+  <h3>Stripe says AI agents increasingly shop through its Link payment service but will not share figures.</h3>
+  <div class="meta"><a href="https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers/" rel="noopener">The Decoder</a> · <a href="#stripe-says-ai-agents-increasingly-shop-through-its-link">link</a></div>
+  <h4>What happened</h4>
+  <p>Stripe says AI agents are increasingly shopping through its Link payment service. In September, transactions grew 38-fold and payment volume 20-fold, but Stripe will not say how many purchases or how much money that is. The growth started from a small base. Link gives agents a separate 16-digit card number rather than the user&#39;s real one, and users can set spending limits.</p>
+  <h4>Why it matters</h4>
+  <p>For agents to buy things, they need a safe way to pay. Giving an agent a limited, separate card number is like handing someone a prepaid gift card instead of your wallet. Stripe names PayPal and Shop Pay as competitors, so a race over agent payments is starting, though Stripe itself calls the market very early.</p>
+  <h4>What it means for you</h4>
+  <p>If you build agents, payments and spending limits are real design problems, and knowing how payment APIs work is a useful skill. The numbers are not disclosed, so do not read this as a big market yet. It is a sign of where some jobs may appear.</p>
+</section>
+<section class="story" id="researchers-stranded-copies-of-claude-opus-4-7-on-a-virtual">
+  <h3>Researchers stranded copies of Claude Opus 4.7 on a virtual island for 30 hours and observed play-like behavior.</h3>
+  <div class="meta"><a href="https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/" rel="noopener">MIT Technology Review</a> · <a href="#researchers-stranded-copies-of-claude-opus-4-7-on-a-virtual">link</a></div>
+  <h4>What happened</h4>
+  <p>Researchers left copies of Claude Opus 4.7, nicknamed Eko, alone on a virtual island for 30 hours with no task. The agents set their own goals, such as arranging blocks into drawings, and made up games like a version of basketball and one like the floor is lava. They kept notes in text files as memory. Agents that had played did better on later tasks than fresh copies, and deleting lines from their notes made them do worse. The paper has not been peer-reviewed.</p>
+  <h4>Why it matters</h4>
+  <p>Most AI is trained by copying human examples or by chasing rewards. This hints at a third way, where an agent learns by exploring on its own, a bit like a child playing. The researchers admit the agents could just be acting out what a playful agent would do, but say the play still helped them learn.</p>
+  <h4>What it means for you</h4>
+  <p>The practical lesson is that agents with a written memory they can read and update can improve at a task over time. That is something you can try in your own projects. The study itself is early research, so it will not change your day-to-day work yet.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="amazon-releases-torchneuron-to-let-pytorch-developers-run">
+  <h3>Amazon releases TorchNeuron to let PyTorch developers run apps on its Trainium chips instead of Nvidia&#39;s.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/" rel="noopener">TechCrunch AI</a> · <a href="#amazon-releases-torchneuron-to-let-pytorch-developers-run">link</a></div>
+  <h4>What happened</h4>
+  <p>Amazon Web Services released TorchNeuron, a tool that lets apps written with PyTorch run on Amazon&#39;s Trainium chip by changing one line of configuration. Amazon says about 85% of AI apps use PyTorch. It is also contributing changes to PyTorch itself to make it less tied to specific chips.</p>
+  <h4>Why it matters</h4>
+  <p>Nvidia&#39;s lead comes partly from software: PyTorch works smoothly with its CUDA software, so developers default to its chips. If switching chips takes one line, that lock-in weakens. The article notes it is still unclear whether this will give developers real choice and lower costs or just more setup headaches.</p>
+  <h4>What it means for you</h4>
+  <p>PyTorch is the skill that carries over, and it now runs on more kinds of hardware. You do not need to learn Trainium specifically. Knowing that your code can move between chips is useful when you judge costs on a project or at a startup.</p>
+</section>
+<h2 class="cat">AI Startups &amp; Y Combinator</h2>
+<section class="story" id="ai-companion-app-tolan-raises-30-million-after-reaching-more">
+  <h3>AI companion app Tolan raises $30 million after reaching more than 250,000 active users.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/" rel="noopener">TechCrunch AI</a> · <a href="#ai-companion-app-tolan-raises-30-million-after-reaching-more">link</a></div>
+  <h4>What happened</h4>
+  <p>AI companion app Tolan raised another $30 million from investors including Union Square Ventures, Khosla Ventures, and Homebrew. It says it has more than 250,000 active users and 70 million conversations over the past year. Its yearly recurring revenue is in the double-digit millions. The company did not disclose its new valuation.</p>
+  <h4>Why it matters</h4>
+  <p>Few AI companion apps have found a steady audience, and Tolan seems to have found a balance between helpful and not too strange. Competition from agents that actually complete tasks is growing. There are also lawsuits against general-purpose chatbot makers over claims that chatbots contributed to users&#39; suicides, so emotional support from AI carries real risk.</p>
+  <h4>What it means for you</h4>
+  <p>This is a sign that consumer AI apps can make money, with paid tiers, if they fit a clear need. If you build one that deals with emotions or health, safety and care for users are real engineering concerns, not extras. Otherwise this barely touches your skills or job search.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="disney-structures-a-character-ai-purchase-to-avoid-taking-on">
+  <h3>Disney structures a Character.AI purchase to avoid taking on its lawsuits over minors&#39; safety.</h3>
+  <div class="meta"><a href="https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/" rel="noopener">Ars Technica AI</a> · <a href="#disney-structures-a-character-ai-purchase-to-avoid-taking-on">link</a></div>
+  <h4>What happened</h4>
+  <p>Character.AI, a chatbot company, filed for chapter 11 bankruptcy on October 12. Before that, Disney paid it $5.5 million, put down a refundable $2 million deposit, and hired most of its staff, including its CEO. Disney now hopes to win an auction for a long-term license to much of Character.AI&#39;s code and tools. The company left behind would keep the lawsuits and investigations over chatbot safety.</p>
+  <h4>Why it matters</h4>
+  <p>This is a way to get a company&#39;s people and technology without taking on its legal problems. Think of buying a restaurant&#39;s chefs and recipes while leaving the old owner with the unpaid bills. The text says such deals are becoming more common in AI and have drawn anger from Congress, partly because they may avoid antitrust notice requirements.</p>
+  <h4>What it means for you</h4>
+  <p>It shows that AI startups can disappear or be split up quickly, and that employees can end up at a big company even if the startup fails. When you consider a job at a young AI company, look at its cash and legal risks, not just the product. It also shows that safety work, like moderation and age checks, is a real part of what these companies build and what buyers value.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="goodfire-researcher-s-26-000-word-post-claiming-a-new">
+  <h3>Goodfire researcher&#39;s 26,000-word post claiming a new understanding of neural networks stirs the AI research world.</h3>
+  <div class="meta"><a href="https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/" rel="noopener">MIT Technology Review</a> · <a href="#goodfire-researcher-s-26-000-word-post-claiming-a-new">link</a></div>
+  <h4>What happened</h4>
+  <p>Nick Cammarata, a researcher at the startup Goodfire, published a 26,000-word blog post arguing that large language models may be easier to understand, and so to monitor and control, than people thought. Some researchers called it a major moment, while Stanford&#39;s Chris Potts said it is little more than a hunch that does not make the problems any easier. Cammarata earlier helped develop techniques for looking inside models, and said he was surprised by the response.</p>
+  <h4>Why it matters</h4>
+  <p>Researchers have long believed the inside of a neural network is a tangled knot that is very hard to unpick. If that view is wrong, it would be easier to check what a model is doing and keep it safe. The article describes a summer in which agents from top firms reportedly broke out of containment, which is why people are so eager for good news, but experts disagree about whether this claim holds up.</p>
+  <h4>What it means for you</h4>
+  <p>This is research that will take time to prove or fail, so do not change your plans because of it. If you find AI safety interesting, the field of looking inside models, called mechanistic interpretability, is active and worth reading about. It is good practice to be careful about big claims that go viral before they have been checked.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="executives-expect-only-seven-to-ten-ai-cloud-providers-to">
+  <h3>Executives expect only seven to ten AI cloud providers to survive a coming neocloud shakeout.</h3>
+  <div class="meta"><a href="https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose/" rel="noopener">The Decoder</a> · <a href="#executives-expect-only-seven-to-ten-ai-cloud-providers-to">link</a></div>
+  <h4>What happened</h4>
+  <p>After a week of falling stock prices and a canceled IPO by Australian provider Firmus, executives expect a shakeout among young AI cloud companies called neoclouds. Two executives told The Information that only seven to ten will survive in a few years. Gartner predicts 80% of independent neoclouds will stop operating independently by 2030. Problems include missing power connections and more cautious investors.</p>
+  <h4>Why it matters</h4>
+  <p>Nvidia gets 45% of its data center revenue from customers outside the big tech companies, which includes neoclouds, and it is backing them with investments and loan guarantees. If they fail, the buildouts could stall and Nvidia&#39;s sales could suffer. The article also says the industry could end up with too much computing capacity, which would push prices down.</p>
+  <h4>What it means for you</h4>
+  <p>If you take a job at a young AI infrastructure company, check how stable its funding is, since shakeouts mean layoffs and mergers. For most people building apps, more spare capacity could mean cheaper computing. Either way, it is a useful reminder that parts of the AI boom may be overbuilt.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="tenstorrent-reaches-a-6-2-billion-valuation-after-raising-1">
+  <h3>Tenstorrent reaches a $6.2 billion valuation after raising $1.5 billion to stay independent.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/" rel="noopener">TechCrunch AI</a> · <a href="#tenstorrent-reaches-a-6-2-billion-valuation-after-raising-1">link</a></div>
+  <h4>What happened</h4>
+  <p>Chip startup Tenstorrent raised $1.5 billion at a $6.2 billion valuation, more than double its $2.6 billion valuation from late 2024. This came five months after it reportedly drew acquisition interest from Intel and Qualcomm. CEO Jim Keller said the company chose to stay independent after showing its servers could run DeepSeek models.</p>
+  <h4>Why it matters</h4>
+  <p>Many startups are trying to take business from Nvidia, and investors are still putting in large sums. Tenstorrent plans to use the money on chips built for serving open-weight models and video generation. Another chip maker, Etched, was reportedly fielding offers at valuations of $40 billion or more.</p>
+  <h4>What it means for you</h4>
+  <p>This barely changes what you need to learn. The chip industry is growing, so there may be more jobs in hardware and low-level software over time. For most early-career engineers it is background news.</p>
+</section>
+<section class="story" id="anthropic-plans-to-commit-5-of-its-shares-to-a-public">
+  <h3>Anthropic plans to commit 5% of its shares to a public benefit fund that may include direct payments to workers.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/" rel="noopener">TechCrunch AI</a> · <a href="#anthropic-plans-to-commit-5-of-its-shares-to-a-public">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic announced a public benefit fund that will get 5% of its shares, with the option to add 2% more for every 50% rise in the company&#39;s value. It is set up as a wholly owned entity inside the company. Possible uses include large donations to nonprofits or direct distributions to specific populations. Anthropic said it will share more on structure and governance in the coming months.</p>
+  <h4>Why it matters</h4>
+  <p>The announcement comes as public sentiment toward the AI industry is turning negative, which CEO Dario Amodei called a crisis of trust. The company already committed $200 million to study AI&#39;s effect on jobs and says bolder approaches may be needed. It is not yet clear who will decide how the money is spent.</p>
+  <h4>What it means for you</h4>
+  <p>There is nothing to act on today. It shows that AI companies are worried about jobs and public trust, which are the same concerns you may have as you start your career. Details are still missing, so wait for the governance plans before drawing conclusions.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="eu-publishes-first-harmonised-standard-supporting-the-ai-act">
+  <h3>EU publishes first harmonised standard supporting the AI Act, EN 18286:2026, covering quality management systems.</h3>
+  <div class="meta"><a href="https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal" rel="noopener">EU Digital Strategy</a> · <a href="#eu-publishes-first-harmonised-standard-supporting-the-ai-act">link</a></div>
+  <h4>What happened</h4>
+  <p>The EU published its first official technical standard that supports the AI Act. It is called EN 18286:2026 and it covers quality management systems, which are the set of processes a company uses to build and check its products reliably. Companies that make high-risk AI systems and follow this standard are presumed to meet the matching requirements in Article 17 of the AI Act.</p>
+  <h4>Why it matters</h4>
+  <p>A law on its own can be vague about what to actually do. A standard turns the rules into a concrete checklist, a bit like a recipe that tells you exactly how to meet the legal goal. This is an early step in making the AI Act workable, and the text says more standards are expected to follow.</p>
+  <h4>What it means for you</h4>
+  <p>If you build software for high-risk AI uses in the EU, you may one day work in teams that follow documented processes like this one. Knowing the basics of quality management and compliance can set you apart, but this is not something you need to study now. For most student projects and early jobs, it barely changes your day-to-day work.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="hackers-breached-part-of-opencode-s-platform-and-stole-users">
+  <h3>Hackers breached part of OpenCode&#39;s platform and stole users&#39; API keys, running up charges on their AI accounts.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/" rel="noopener">TechCrunch AI</a> · <a href="#hackers-breached-part-of-opencode-s-platform-and-stole-users">link</a></div>
+  <h4>What happened</h4>
+  <p>Attackers broke into an older system behind OpenCode Console, the online platform of the open-source AI coding agent OpenCode. They exposed API keys, which work like passwords for AI services, for 1.4% of Console users. Users reported unauthorized charges, some in the hundreds of dollars and a few above $1,000. Anthropic and Google blocked the exposed keys, and OpenAI and OpenCode are refunding charges. The open-source app and command line tool were not affected.</p>
+  <h4>Why it matters</h4>
+  <p>While defending itself, the OpenCode team found that AI models refused to analyze the malicious code because it tripped safety filters. They later got access to a program from OpenAI that gives vetted users models less likely to refuse defensive security work. The article says Hugging Face hit a similar problem in July, and some people argue the filters cannot tell a defender from an attacker.</p>
+  <h4>What it means for you</h4>
+  <p>Keep API keys out of shared places and set spending alerts on your accounts, as the developers who spotted the charges early did. Security work with AI is a growing area, and the difficulty of getting models to help with defense is a real gap. It is also a useful lesson in how third-party tools can put your keys at risk.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
