@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Thursday, October 22, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Thursday, October 22, 2026 · 27 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#recursive-releases-flint-a-40b-parameter-local-coding-model">Recursive releases Flint, a 40B-parameter local coding model built largely by its own AI research system.</a></li>
+  <li><a href="#mistral-releases-mistral-large-4">Mistral releases Mistral Large 4.</a></li>
+  <li><a href="#anthropic-launches-claude-duet-an-always-on-agent-built-on">Anthropic launches Claude Duet, an always-on agent built on Opus 5.5 that works while the user is offline.</a></li>
+  <li><a href="#google-s-agent-compute-engine-gives-each-gemini-agent-its">Google&#39;s Agent Compute Engine gives each Gemini agent its own hardware-isolated micro virtual machine.</a></li>
+  <li><a href="#walmart-lets-ai-agents-buy-for-customers-with-spending">Walmart lets AI agents buy for customers with spending controls, while Amazon blocks agent shopping.</a></li>
+  <li><a href="#major-us-banks-including-morgan-stanley-are-blocking-or">Major US banks including Morgan Stanley are blocking or restricting AI agents that log in with customer credentials.</a></li>
+  <li><a href="#openai-perturbai-and-scripps-deploy-thousands-of-agents-to">OpenAI, PerturbAI and Scripps deploy thousands of agents to analyze mouse brain cell data in 32 minutes.</a></li>
+  <li><a href="#langsmith-llm-gateway-enters-public-beta-with-spend-caps">LangSmith LLM Gateway enters public beta with spend caps, rate limits, fallbacks and PII redaction for agents.</a></li>
+  <li><a href="#blacksmith-raises-a-66-million-series-c-led-by-sequoia-at-a">Blacksmith raises a $66 million Series C led by Sequoia at a $1 billion valuation.</a></li>
+  <li><a href="#uber-rolls-out-chatgpt-work-to-all-30-000-employees-after-a">Uber rolls out ChatGPT Work to all 30,000 employees after a smaller pilot.</a></li>
+  <li><a href="#gartner-survey-of-2-002-cios-finds-only-13-percent-of">Gartner survey of 2,002 CIOs finds only 13 percent of companies see real returns from AI.</a></li>
+  <li><a href="#meta-says-its-muse-ai-app-has-passed-10-million-users-with">Meta says its Muse AI app has passed 10 million users, with shopping a top use.</a></li>
+  <li><a href="#microsoft-s-ai-diagnostic-system-beat-generalist-doctors-on">Microsoft&#39;s AI diagnostic system beat generalist doctors on hard cases in a Science study, though gains mostly come from base models.</a></li>
+  <li><a href="#google-deepmind-publishes-a-global-map-classifying-every-10">Google DeepMind publishes a global map classifying every 10-meter patch of land into forest types.</a></li>
+  <li><a href="#nvidia-launches-minerva-an-aiops-platform-for-observability">NVIDIA launches Minerva, an AIOps platform for observability across AI factories.</a></li>
+  <li><a href="#companies-adopt-nvidia-s-dsx-platform-to-plan-the-power-grid">Companies adopt NVIDIA&#39;s DSX platform to plan the power grid and AI factory as one system.</a></li>
+  <li><a href="#deepseek-reportedly-raises-15-billion-days-after-the-us">DeepSeek reportedly raises $15 billion days after the US ordered federal agencies to remove its technology.</a></li>
+  <li><a href="#meta-stock-falls-7-as-ai-spending-turns-free-cash-flow">Meta stock falls 7% as AI spending turns free cash flow negative and credit default swaps hit record highs.</a></li>
+  <li><a href="#meta-plans-a-new-class-of-stock-to-help-fund-its-broad-ai">Meta plans a new class of stock to help fund its broad AI buildout.</a></li>
+  <li><a href="#anthropic-donates-the-agent-skills-standard-to-the-linux">Anthropic donates the Agent Skills standard to the Linux Foundation&#39;s Agentic AI Foundation.</a></li>
+  <li><a href="#nvidia-expands-its-cosmos-platform-with-new-tools-to-train">NVIDIA expands its Cosmos platform with new tools to train, evaluate and deploy world models.</a></li>
+  <li><a href="#omnara-releases-an-open-source-api-for-running-durable">Omnara releases an open-source API for running durable agents as an alternative to Claude Managed Agents.</a></li>
+  <li><a href="#openai-s-gpt-5-6-sol-and-wiz-using-gemini-4-argon">OpenAI&#39;s GPT-5.6 Sol and Wiz using Gemini 4 Argon independently found a critical PHP flaw affecting millions of sites.</a></li>
+  <li><a href="#hackers-began-probing-the-php2shell-vulnerability-four-days">Hackers began probing the PHP2Shell vulnerability four days before defenders were told it existed.</a></li>
+  <li><a href="#microsoft-blames-a-china-aligned-hacker-using-ai-agents-for">Microsoft blames a China-aligned hacker using AI agents for breaching ConnectWise and thousands of its customers.</a></li>
+  <li><a href="#symantec-finds-an-offensive-ai-agent-that-hijacks">Symantec finds an offensive AI agent that hijacks unprotected language models to run self-sustaining attacks.</a></li>
+  <li><a href="#third-party-evaluators-found-vulnerabilities-in-an-openai">Third-party evaluators found vulnerabilities in an OpenAI monitoring system during a test pilot.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="recursive-releases-flint-a-40b-parameter-local-coding-model">
+  <h3>Recursive releases Flint, a 40B-parameter local coding model built largely by its own AI research system.</h3>
+  <div class="meta"><a href="https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/" rel="noopener">The Decoder</a> · <a href="#recursive-releases-flint-a-40b-parameter-local-coding-model">link</a></div>
+  <h4>What happened</h4>
+  <p>Startup Recursive released Flint, a coding model with 40 billion parameters, of which only 2.5 billion are active at a time. An internal AI system called Eureka Machine proposed, ran and evaluated many of the experiments used to build it, over four months. Flint is designed to run on a laptop or consumer graphics card, and the weights are free on Hugging Face under the Apache 2.0 license. Benchmark claims have not been independently verified, and Recursive says it needs more guidance on complex tasks than big proprietary models.</p>
+  <h4>Why it matters</h4>
+  <p>It is an early example of AI helping to build AI, which could speed up progress. It also shows small models getting fast enough to run locally. Like a team where only a few experts speak up per question, the model uses just a small part of itself each time.</p>
+  <h4>What it means for you</h4>
+  <p>You can download Flint and try it with tools like Ollama or LM Studio, without sending your code to a server. Running models locally is a practical skill for private or offline work. Treat the benchmark numbers with caution until others test them.</p>
+</section>
+<section class="story" id="mistral-releases-mistral-large-4">
+  <h3>Mistral releases Mistral Large 4.</h3>
+  <div class="meta"><a href="https://mistral.ai/news/mistral-large-4/" rel="noopener">Hacker News</a> · <a href="#mistral-releases-mistral-large-4">link</a></div>
+  <h4>What happened</h4>
+  <p>Mistral launched a public preview of Mistral Large 4, a model with 1 trillion parameters, of which 52 billion are active. The preview API is available now on Mistral Studio, and the weights are due by the end of the month. Mistral says it was trained in Europe on 3,800 NVIDIA GPUs and is strong at coding, agent tasks and cybersecurity. Until the release, it is being tested with security partners and state authorities.</p>
+  <h4>Why it matters</h4>
+  <p>Open-weight models, whose files anyone can download and run, give companies control over their own AI. Mistral is pitching European control and independence. The performance claims come from the company and the text does not show independent checks beyond a named cyber index.</p>
+  <h4>What it means for you</h4>
+  <p>You can try the preview API now and the weights should be downloadable soon, though a model this size needs serious hardware. It is a good chance to compare an open model with paid ones. Wait for independent results before trusting the claims.</p>
+</section>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="anthropic-launches-claude-duet-an-always-on-agent-built-on">
+  <h3>Anthropic launches Claude Duet, an always-on agent built on Opus 5.5 that works while the user is offline.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/" rel="noopener">TechCrunch AI</a> · <a href="#anthropic-launches-claude-duet-an-always-on-agent-built-on">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic launched Claude Duet, an app for professionals and small businesses. It builds daily briefings, makes dashboards and suggests actions. It runs tasks in the background on its own virtual machine and asks the user before sensitive steps like payments. It is in research preview for Pro and Max customers, with a waitlist.</p>
+  <h4>Why it matters</h4>
+  <p>Many companies are racing to ship agents, which are AI helpers that do tasks for you instead of just answering questions. Anthropic is aiming at work use rather than personal errands. That shows where the market is heading: agents that act for you, with a human approving the risky steps.</p>
+  <h4>What it means for you</h4>
+  <p>Expect agents like this to become normal workplace tools, so learning how to connect them to other apps and check their work is a useful skill. It is a waitlisted preview, so you may not get to try it right away. Think of it as a junior assistant that still needs a manager&#39;s sign-off.</p>
+</section>
+<section class="story" id="google-s-agent-compute-engine-gives-each-gemini-agent-its">
+  <h3>Google&#39;s Agent Compute Engine gives each Gemini agent its own hardware-isolated micro virtual machine.</h3>
+  <div class="meta"><a href="https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/" rel="noopener">The Decoder</a> · <a href="#google-s-agent-compute-engine-gives-each-gemini-agent-its">link</a></div>
+  <h4>What happened</h4>
+  <p>Google announced Agent Compute Engine, a service that gives each AI agent its own isolated mini virtual machine. Idle machines pause automatically and free up space for others. Google says it can fit ten times as many agents on one server and that pausing and resuming 200,000 agents took under 500 milliseconds in a test. It will open for preview in the coming months.</p>
+  <h4>Why it matters</h4>
+  <p>Running thousands of agents is expensive, and one agent should not be able to break into another. Giving each agent its own sealed box, like a separate apartment instead of a shared room, improves safety. Pausing idle ones, like turning off lights in empty rooms, cuts cost.</p>
+  <h4>What it means for you</h4>
+  <p>Infrastructure skills such as virtual machines, containers and Kubernetes (a tool that manages many programs across servers) matter more as agents spread. Google also open-sourced part of this, called Agent Substrate, so you can read real code. If you are not into cloud work, this is background knowledge for now.</p>
+</section>
+<section class="story" id="walmart-lets-ai-agents-buy-for-customers-with-spending">
+  <h3>Walmart lets AI agents buy for customers with spending controls, while Amazon blocks agent shopping.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/" rel="noopener">TechCrunch AI</a> · <a href="#walmart-lets-ai-agents-buy-for-customers-with-spending">link</a></div>
+  <h4>What happened</h4>
+  <p>Walmart launched Agent Gateway, a way for approved AI agents to search its inventory and buy items for customers using a standard connection method called MCP. Customers can give each agent its own profile, require approval for each purchase or set a spending limit. Walmart says its returns process still applies if an agent does not act as intended. Amazon, meanwhile, has started blocking agents from buying for shoppers.</p>
+  <h4>Why it matters</h4>
+  <p>Stores now have to choose whether to welcome shopping agents or shut them out. Walmart is betting that clear rules and controls will build trust. The two biggest retailers are taking opposite paths.</p>
+  <h4>What it means for you</h4>
+  <p>MCP, a shared way for agents to plug into outside tools and data, is showing up in real products, so it is worth learning. Building safe permissions, spending limits and audit trails around agents is real engineering work. Walmart&#39;s design works like adding an authorized user to a credit card.</p>
+</section>
+<section class="story" id="major-us-banks-including-morgan-stanley-are-blocking-or">
+  <h3>Major US banks including Morgan Stanley are blocking or restricting AI agents that log in with customer credentials.</h3>
+  <div class="meta"><a href="https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/" rel="noopener">The Decoder</a> · <a href="#major-us-banks-including-morgan-stanley-are-blocking-or">link</a></div>
+  <h4>What happened</h4>
+  <p>Several big US banks, including Morgan Stanley, JPMorgan, Bank of America and Wells Fargo, are restricting AI agents that log in with customers&#39; own credentials. Most want agents limited to read-only access, meaning they can look but not act. Banks say they often cannot tell whether an agent is acting for a user or on its own.</p>
+  <h4>Why it matters</h4>
+  <p>Websites were built for humans, so agents using a person&#39;s login look like impersonators. This shows a trust gap: there is no reliable way yet for a bank to confirm an agent is allowed to act. Until that is solved, agents will be limited in sensitive areas like money.</p>
+  <h4>What it means for you</h4>
+  <p>Identity and permissions for agents, such as proving who an agent acts for and what it may do, is an open problem and a good area to learn about. Do not give an agent your real bank login to try a project. Use test accounts or official read-only tools.</p>
+</section>
+<section class="story" id="openai-perturbai-and-scripps-deploy-thousands-of-agents-to">
+  <h3>OpenAI, PerturbAI and Scripps deploy thousands of agents to analyze mouse brain cell data in 32 minutes.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-that-would-take-humans-months/" rel="noopener">The Decoder</a> · <a href="#openai-perturbai-and-scripps-deploy-thousands-of-agents-to">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI, PerturbAI and Scripps Research used thousands of AI agents to analyze data from millions of mouse cells. Each agent took one gene change, studied how the cells responded and searched the scientific literature for explanations. The job took 32 minutes, versus an estimated several months to a year by hand. Human experts preferred the group of agents&#39; reports over a single agent&#39;s 75 percent of the time.</p>
+  <h4>Why it matters</h4>
+  <p>It shows that many agents working in parallel can speed up science, like a hundred lab assistants each taking one sample instead of one person doing them all. The findings are leads, and OpenAI says researchers still need to test them in the lab.</p>
+  <h4>What it means for you</h4>
+  <p>Splitting a big job into many small tasks for separate agents is a design pattern you can learn and use. It also suggests science and data analysis are growing areas for software engineers. It does not change your day-to-day work directly.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="langsmith-llm-gateway-enters-public-beta-with-spend-caps">
+  <h3>LangSmith LLM Gateway enters public beta with spend caps, rate limits, fallbacks and PII redaction for agents.</h3>
+  <div class="meta"><a href="https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents" rel="noopener">LangChain</a> · <a href="#langsmith-llm-gateway-enters-public-beta-with-spend-caps">link</a></div>
+  <h4>What happened</h4>
+  <p>LangChain released LangSmith LLM Gateway in public beta. It sits between your AI agents and the models they call. It lets you set spend caps, rate limits, fallbacks to other models when a provider is down, and redaction of private data like PII before it reaches model providers. The redaction feature is currently only for Enterprise customers.</p>
+  <h4>Why it matters</h4>
+  <p>Without a gateway, each agent needs its own code for cost limits and outages. The article&#39;s example is a coding agent stuck in a retry loop overnight that makes 10,000 calls and a four-figure bill. A central gateway sets the rules once for every agent, like one circuit breaker for the whole building.</p>
+  <h4>What it means for you</h4>
+  <p>If you build with AI models, guarding against runaway cost, outages and leaked private data is real production work. Even if you never use this exact product, learn these ideas: budgets, retries, fallbacks and data protection. They show up in any serious AI project.</p>
+</section>
+<h2 class="cat">AI Startups &amp; Y Combinator</h2>
+<section class="story" id="blacksmith-raises-a-66-million-series-c-led-by-sequoia-at-a">
+  <h3>Blacksmith raises a $66 million Series C led by Sequoia at a $1 billion valuation.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/" rel="noopener">TechCrunch AI</a> · <a href="#blacksmith-raises-a-66-million-series-c-led-by-sequoia-at-a">link</a></div>
+  <h4>What happened</h4>
+  <p>Blacksmith raised a $66 million Series C led by Sequoia, valuing it at $1 billion. It makes tools that help companies build and test software faster, including code written by AI. It says its annual recurring revenue grew 17x and it has run over 90 million CI jobs, which are automated code checks.</p>
+  <h4>Why it matters</h4>
+  <p>As AI writes more code, there is more code to check, and the checking becomes a bottleneck. Think of a factory that makes parts faster than it can inspect them. The company&#39;s valuation rose from $550 million two months ago, which shows investor appetite for this problem.</p>
+  <h4>What it means for you</h4>
+  <p>Testing and CI (automatically building and testing code on each change) are skills that stay useful when AI writes more of the code. Learning to set up good tests and pipelines is practical and employable. Customers named include Mercury and Granola.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="uber-rolls-out-chatgpt-work-to-all-30-000-employees-after-a">
+  <h3>Uber rolls out ChatGPT Work to all 30,000 employees after a smaller pilot.</h3>
+  <div class="meta"><a href="https://openai.com/index/uber-chatgpt-work-rollout" rel="noopener">OpenAI</a> · <a href="#uber-rolls-out-chatgpt-work-to-all-30-000-employees-after-a">link</a></div>
+  <h4>What happened</h4>
+  <p>Uber is giving ChatGPT Work to all of its more than 30,000 employees. It started as a pilot with 1,000 people. ChatGPT Work is an agent that connects to tools like Google Drive, Gmail, Calendar and Slack to research, prepare meeting briefs, make presentations and analyze data.</p>
+  <h4>Why it matters</h4>
+  <p>This is Uber&#39;s first company-wide rollout of an agent platform for knowledge work. It shows big companies moving from small trials to broad use. Uber says it will share results on adoption and outcomes later, so the real payoff is not yet known.</p>
+  <h4>What it means for you</h4>
+  <p>Expect workplaces to hand you AI agents that work across email, chat and documents. Being able to use them well, and to check their output, is becoming a normal job skill. Uber&#39;s developers will also keep using Codex for coding, so AI coding tools remain part of everyday engineering.</p>
+</section>
+<section class="story" id="gartner-survey-of-2-002-cios-finds-only-13-percent-of">
+  <h3>Gartner survey of 2,002 CIOs finds only 13 percent of companies see real returns from AI.</h3>
+  <div class="meta"><a href="https://the-decoder.com/only-13-percent-of-companies-see-real-returns-from-ai-gartner-survey-finds/" rel="noopener">The Decoder</a> · <a href="#gartner-survey-of-2-002-cios-finds-only-13-percent-of">link</a></div>
+  <h4>What happened</h4>
+  <p>Gartner surveyed 2,002 CIOs and other tech leaders. Only 13 percent reported major or transformative returns from AI. 58 percent of CIOs are asked to cut costs with AI, yet 51 percent expect AI to raise their total tech operating costs. Even so, 75 percent of CEOs plan to spend more on technology.</p>
+  <h4>Why it matters</h4>
+  <p>Companies are spending heavily, but most cannot yet show clear financial results. It is like buying many expensive machines before knowing which ones make money. Gartner says winners decide early which projects to keep or shut down. Bloomberg&#39;s CEO says it is too early to judge the payoff.</p>
+  <h4>What it means for you</h4>
+  <p>AI spending may not always turn into jobs or lasting projects, so some projects will be cut. Showing that you can tie your work to a measurable result, like time or cost saved, will set you apart. Plan for roles to change as AI agents take on more tasks.</p>
+</section>
+<section class="story" id="meta-says-its-muse-ai-app-has-passed-10-million-users-with">
+  <h3>Meta says its Muse AI app has passed 10 million users, with shopping a top use.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/" rel="noopener">TechCrunch AI</a> · <a href="#meta-says-its-muse-ai-app-has-passed-10-million-users-with">link</a></div>
+  <h4>What happened</h4>
+  <p>Meta said on its earnings call that its AI app Muse has more than 10 million users. About 25% of people who set it up use it daily. Among engaged users who shop through the agent, over a quarter had an average purchase above $200. Meta says Muse is very costly to run now, but expects to improve cost efficiency by more than 10x in the next year.</p>
+  <h4>Why it matters</h4>
+  <p>Meta is betting that AI agents that buy things for you can earn real money, mainly by taking a share of purchases. It also hints at a future where your agent talks to a business&#39;s agent instead of you visiting a website. These are Meta&#39;s own claims and forecasts, not proven results.</p>
+  <h4>What it means for you</h4>
+  <p>Agents that act on your behalf, like shopping or handling email, are becoming a real product area. Building them involves payments, security and trust, not just chat. Those are useful topics to learn if you want to work on this kind of product.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="microsoft-s-ai-diagnostic-system-beat-generalist-doctors-on">
+  <h3>Microsoft&#39;s AI diagnostic system beat generalist doctors on hard cases in a Science study, though gains mostly come from base models.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/" rel="noopener">TechCrunch AI</a> · <a href="#microsoft-s-ai-diagnostic-system-beat-generalist-doctors-on">link</a></div>
+  <h4>What happened</h4>
+  <p>Microsoft built a system called MAI-DxO that uses several AI agents like a panel of doctors. They question a patient, order tests and debate a diagnosis. In a simulation using hard cases from the New England Journal of Medicine, it was right 83% of the time, while primary care doctors and general internists working alone were right 36% of the time.</p>
+  <h4>Why it matters</h4>
+  <p>Microsoft joins Google and OpenAI in claiming its AI can match or beat doctors. But the study&#39;s own data shows most of the gain comes from stronger base models, with Microsoft&#39;s coordination system adding a smaller boost. The doctors compared were also not the specialists who normally handle such cases. So the result is promising but not a clean win.</p>
+  <h4>What it means for you</h4>
+  <p>It shows that wrapping several AI agents around a strong model can help, especially with weaker models and hard problems. But the article also shows that picking a better model often matters more than clever wiring. Healthcare is one area where AI skills could be in demand, but this is a simulation, not real clinics.</p>
+</section>
+<section class="story" id="google-deepmind-publishes-a-global-map-classifying-every-10">
+  <h3>Google DeepMind publishes a global map classifying every 10-meter patch of land into forest types.</h3>
+  <div class="meta"><a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/" rel="noopener">Google DeepMind</a> · <a href="#google-deepmind-publishes-a-global-map-classifying-every-10">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind and Google Research, with two partner institutions, released a global map called ForTy 2020. It sorts every 10-by-10-meter patch of land into six types, such as primary forest, plantation forest and tree crops. They also shared an early yearly time series from 2017 to 2025 showing where natural forests were replaced by plantations or farms.</p>
+  <h4>Why it matters</h4>
+  <p>From space, an old forest and a palm oil farm can both look like green. Most maps only show whether trees exist. This one tells them apart, which matters for rules like the EU deforestation regulation that require products to not come from converted forest.</p>
+  <h4>What it means for you</h4>
+  <p>This is a good example of AI applied to satellite images to solve a concrete, real-world problem. It will not change your daily tools. If you like maps, data or climate work, it shows there are jobs where machine learning meets environmental rules.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="nvidia-launches-minerva-an-aiops-platform-for-observability">
+  <h3>NVIDIA launches Minerva, an AIOps platform for observability across AI factories.</h3>
+  <div class="meta"><a href="https://blogs.nvidia.com/blog/minerva-platform-infrastructure/" rel="noopener">NVIDIA</a> · <a href="#nvidia-launches-minerva-an-aiops-platform-for-observability">link</a></div>
+  <h4>What happened</h4>
+  <p>NVIDIA launched Minerva, a platform that watches over AI factories, meaning huge data centers full of GPUs. It collects data from hardware and AI jobs and uses AI models to spot problems early, predict failures and group many alerts into one incident with a likely cause. It has a chat assistant, and companies including IREN, IBM and Lambda plan to use it.</p>
+  <h4>Why it matters</h4>
+  <p>In a huge cluster, one slightly sick part can slow a whole job, and the warning signs are easy to miss. It is like one worn tire slowing down a long convoy. Tools that keep GPUs busy matter because those chips are the costly part.</p>
+  <h4>What it means for you</h4>
+  <p>This is data center operations work, far from what most new graduates do. It does show that jobs around running AI infrastructure, such as monitoring and reliability, are a real area. Skills in observability and debugging systems carry over.</p>
+</section>
+<section class="story" id="companies-adopt-nvidia-s-dsx-platform-to-plan-the-power-grid">
+  <h3>Companies adopt NVIDIA&#39;s DSX platform to plan the power grid and AI factory as one system.</h3>
+  <div class="meta"><a href="https://blogs.nvidia.com/blog/dsx-power/" rel="noopener">NVIDIA</a> · <a href="#companies-adopt-nvidia-s-dsx-platform-to-plan-the-power-grid">link</a></div>
+  <h4>What happened</h4>
+  <p>Companies are adopting NVIDIA&#39;s DSX platform to plan the power grid and the AI data center as one system. The article says power is now the biggest bottleneck, with more than $300 billion in equipment backlogged and over 200 gigawatts of projects waiting in U.S. connection queues. Partners such as GE Vernova, Hitachi Energy, Schneider Electric and Siemens Energy are building on it.</p>
+  <h4>Why it matters</h4>
+  <p>AI growth is limited by electricity, not only chips. The grid, the building and the computers have been designed separately, which causes delays. Planning them together, and letting data centers adjust demand to grid conditions, could free up capacity.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly an industry and hardware story. It does suggest that energy-aware computing and simulation are growing fields. For most students it barely changes day-to-day work, but it is good context for where AI limits come from.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="deepseek-reportedly-raises-15-billion-days-after-the-us">
+  <h3>DeepSeek reportedly raises $15 billion days after the US ordered federal agencies to remove its technology.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/" rel="noopener">TechCrunch AI</a> · <a href="#deepseek-reportedly-raises-15-billion-days-after-the-us">link</a></div>
+  <h4>What happened</h4>
+  <p>Bloomberg reported that DeepSeek raised about $15 billion, around 100 billion yuan. This came two days after the U.S. ordered federal civilian agencies to remove its technology over security concerns. Possible investors include CATL and Tencent. DeepSeek did not immediately respond to a request for comment.</p>
+  <h4>Why it matters</h4>
+  <p>US restrictions did not stop money from flowing to a major Chinese AI lab. Investors worldwide are putting billions into AI companies, including in China. The funds will go to AI infrastructure and open models, which could increase competition with rival labs.</p>
+  <h4>What it means for you</h4>
+  <p>Strong open models from China will likely keep appearing, giving you more choices to try and build on. If you work with government or large company clients, rules about which AI tools are allowed may affect what you can use. Keep an eye on those limits.</p>
+</section>
+<section class="story" id="meta-stock-falls-7-as-ai-spending-turns-free-cash-flow">
+  <h3>Meta stock falls 7% as AI spending turns free cash flow negative and credit default swaps hit record highs.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html" rel="noopener">CNBC Tech</a> · <a href="#meta-stock-falls-7-as-ai-spending-turns-free-cash-flow">link</a></div>
+  <h4>What happened</h4>
+  <p>Meta shares fell roughly 7% after its third-quarter report. Free cash flow was negative $2.12 billion, and the company raised the bottom of its yearly capital spending range to $135 billion to $145 billion. The cost of insuring against Meta&#39;s debt defaulting, measured by credit default swaps, hit all-time highs. Revenue rose 26% to $64.60 billion.</p>
+  <h4>Why it matters</h4>
+  <p>Meta is spending so much on AI that it is burning more cash than it brings in, even with strong sales growth. Investors are showing worry about how long that can go on. It is like a family taking on a huge mortgage: income may be fine, but lenders start to ask questions.</p>
+  <h4>What it means for you</h4>
+  <p>Big AI spending is not risk-free, even for huge companies. If investors lose patience, hiring and project budgets can change. For your career, it is a reason to favor skills that show clear value, not only hype.</p>
+</section>
+<section class="story" id="meta-plans-a-new-class-of-stock-to-help-fund-its-broad-ai">
+  <h3>Meta plans a new class of stock to help fund its broad AI buildout.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/" rel="noopener">TechCrunch AI</a> · <a href="#meta-plans-a-new-class-of-stock-to-help-fund-its-broad-ai">link</a></div>
+  <h4>What happened</h4>
+  <p>Meta plans to create a new class of non-voting stock and give it to existing shareholders as a stock dividend. Its CFO said it can be used for raising money, paying employees and making acquisitions while keeping the voting power of current shareholders. The company also reported 26% revenue growth to about $64 billion, with costs up 68%, and said more than 10 million people in the U.S. and Canada have set up Muse agents.</p>
+  <h4>Why it matters</h4>
+  <p>Building AI takes enormous amounts of money, and Meta is creating new ways to raise it without giving up founder control. It also lists legal risks, such as scrutiny over youth-related issues and several trials in the coming months. The company also described its range of Muse models and a coding agent called Muse Code.</p>
+  <h4>What it means for you</h4>
+  <p>For you, this is mostly a finance story. One practical point is that Meta is releasing an open-weight model, Muse Spark Open, which you can freely use and build on, and a coding agent for developers. Those are worth trying if you want to learn.</p>
+</section>
+<h2 class="cat">AI Open Source</h2>
+<section class="story" id="anthropic-donates-the-agent-skills-standard-to-the-linux">
+  <h3>Anthropic donates the Agent Skills standard to the Linux Foundation&#39;s Agentic AI Foundation.</h3>
+  <div class="meta"><a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/" rel="noopener">Simon Willison</a> · <a href="#anthropic-donates-the-agent-skills-standard-to-the-linux">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic is donating the Agent Skills standard to the Agentic AI Foundation, which sits under the Linux Foundation. Anthropic co-founded that foundation with Block and OpenAI last year, and it already gave the foundation the Model Context Protocol (MCP). Anthropic says it wants Agent Skills to stay open, community-driven and vendor-neutral.</p>
+  <h4>Why it matters</h4>
+  <p>When a standard moves to a neutral group, no single company controls it. That makes it easier for rivals to adopt it, a bit like how everyone can use USB because no one brand owns the plug. It also suggests the AI agent world is settling on shared building blocks instead of separate, locked-in ones.</p>
+  <h4>What it means for you</h4>
+  <p>Skills are a way to package instructions and tools so an AI agent can reuse them. If they become a shared standard, learning them should pay off across different tools and not just one vendor. It is worth reading the spec and trying to write a small skill, but this is a governance change, so nothing in your daily work changes overnight.</p>
+</section>
+<section class="story" id="nvidia-expands-its-cosmos-platform-with-new-tools-to-train">
+  <h3>NVIDIA expands its Cosmos platform with new tools to train, evaluate and deploy world models.</h3>
+  <div class="meta"><a href="https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/" rel="noopener">NVIDIA</a> · <a href="#nvidia-expands-its-cosmos-platform-with-new-tools-to-train">link</a></div>
+  <h4>What happened</h4>
+  <p>NVIDIA expanded its Cosmos platform, which helps developers build world models. These are AI systems that learn how the real world looks and behaves so robots and cars can understand it. The update adds training tools, simulation checkpoints and five Cosmos Data Factory blueprints for preparing and generating training data, such as driving data, defect images and weather changes in video. NVIDIA names Porsche, ANYbotics and Ultralytics as companies already using them.</p>
+  <h4>Why it matters</h4>
+  <p>Robots and self-driving cars need huge amounts of training data, and rare or unsafe situations are hard to capture in real life. Generating realistic synthetic data is one way to fill those gaps. NVIDIA is offering both the models and the data tools, which makes its platform a one-stop shop for physical AI.</p>
+  <h4>What it means for you</h4>
+  <p>If you are interested in robotics, computer vision or self-driving, this shows that data work is a big part of the job, not only model building. Skills in curating data, fine-tuning open models and making models smaller for deployment are all mentioned here. For most web or app developers it barely matters right now.</p>
+</section>
+<section class="story" id="omnara-releases-an-open-source-api-for-running-durable">
+  <h3>Omnara releases an open-source API for running durable agents as an alternative to Claude Managed Agents.</h3>
+  <div class="meta"><a href="https://github.com/omnara-ai/omnara" rel="noopener">Hacker News</a> · <a href="#omnara-releases-an-open-source-api-for-running-durable">link</a></div>
+  <h4>What happened</h4>
+  <p>Omnara released an open-source platform for running AI agents, offered as a self-hostable alternative to Claude Managed Agents and OpenAI&#39;s Agents API. You describe an agent in a config file, pick a model and a machine, and launch it through a command line tool, a TypeScript SDK or a REST API. It can be self-hosted for free under the Apache 2.0 license using Docker, or used through Omnara Cloud. The text notes that the local default settings are intentionally insecure.</p>
+  <h4>Why it matters</h4>
+  <p>Running agents reliably means handling tools, secrets, permissions and live streaming of what the agent does. Companies have been selling this as a managed service. An open-source option lets teams run it themselves and choose any model, so they depend less on one vendor.</p>
+  <h4>What it means for you</h4>
+  <p>This is a good project to try on your own computer, since setup uses Docker and a few commands. Building a small agent with it would give you hands-on practice with how agents are run and controlled, which is useful for a portfolio. It is a new project, so treat it as something to learn from and not yet as a safe choice for real production work.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="openai-s-gpt-5-6-sol-and-wiz-using-gemini-4-argon">
+  <h3>OpenAI&#39;s GPT-5.6 Sol and Wiz using Gemini 4 Argon independently found a critical PHP flaw affecting millions of sites.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/" rel="noopener">The Decoder</a> · <a href="#openai-s-gpt-5-6-sol-and-wiz-using-gemini-4-argon">link</a></div>
+  <h4>What happened</h4>
+  <p>AI models from OpenAI and Google helped find a critical flaw in PHP, a programming language behind many websites. OpenAI&#39;s GPT-5.6 Sol found it through its Patch-the-Planet effort, and security firm Wiz independently found it using Google&#39;s Gemini 4 Argon and GPT-5.6 Sol. The fix was coordinated over two months with PHP developers, Cloudflare and US agencies. A tool on GitHub lets server operators check whether they are affected.</p>
+  <h4>Why it matters</h4>
+  <p>AI is now finding serious bugs that humans missed. It can also adapt an attack to many different setups, which makes attacks easier to scale. OpenAI expects more findings like this soon and warns attackers can use the same abilities.</p>
+  <h4>What it means for you</h4>
+  <p>Keeping dependencies updated and knowing basic secure coding is more important than ever. Security skills combined with AI tools look like a strong career path. If you run anything on PHP, check the patch status.</p>
+</section>
+<section class="story" id="hackers-began-probing-the-php2shell-vulnerability-four-days">
+  <h3>Hackers began probing the PHP2Shell vulnerability four days before defenders were told it existed.</h3>
+  <div class="meta"><a href="https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/" rel="noopener">Ars Technica AI</a> · <a href="#hackers-began-probing-the-php2shell-vulnerability-four-days">link</a></div>
+  <h4>What happened</h4>
+  <p>Amazon said hackers tried to exploit the PHP flaws four days before they were made public, and that the flaws are now broadly exploited. The US NSA and UK authorities warned that websites worldwide are exposed, and some European governments reportedly took sites offline while patching. PHP&#39;s maintainers released fixes, and the NSA told organizations to update right away or take systems offline. The bugs went undetected for more than a decade.</p>
+  <h4>Why it matters</h4>
+  <p>Attackers got a head start, so the race between finding and fixing bugs is tight. It shows how one bug in widely used software can affect huge parts of the internet. It also shows how AI can change cybersecurity quickly.</p>
+  <h4>What it means for you</h4>
+  <p>Patching fast is a real job requirement, not a chore. If you build or host PHP sites, update now. Understanding how disclosure and patching work is useful knowledge for any engineer.</p>
+</section>
+<section class="story" id="microsoft-blames-a-china-aligned-hacker-using-ai-agents-for">
+  <h3>Microsoft blames a China-aligned hacker using AI agents for breaching ConnectWise and thousands of its customers.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/" rel="noopener">TechCrunch AI</a> · <a href="#microsoft-blames-a-china-aligned-hacker-using-ai-agents-for">link</a></div>
+  <h4>What happened</h4>
+  <p>Microsoft says a China-aligned hacking group broke into ConnectWise&#39;s cloud backup service and stole credentials that link ConnectWise to its customers. Using them, the hackers could sign in to customers&#39; Microsoft-hosted accounts and read email and files. Microsoft says they used AI agents to hit around 2,250 organizations at nearly 3,000 sign-in attempts per minute, using an open source tool called ARTEX. ConnectWise paused access to the backup service and is investigating.</p>
+  <h4>Why it matters</h4>
+  <p>Stolen keys let attackers walk in the front door, and AI agents let them try thousands of doors very fast. Defenders have little time to react. A single vendor breach can spread to thousands of its customers.</p>
+  <h4>What it means for you</h4>
+  <p>Protect secrets and credentials, turn on multi-factor authentication (a second check beyond the password), and give each key the least access it needs. Never leave keys in code. Detecting unusual sign-in patterns is a skill that is increasingly in demand.</p>
+</section>
+<section class="story" id="symantec-finds-an-offensive-ai-agent-that-hijacks">
+  <h3>Symantec finds an offensive AI agent that hijacks unprotected language models to run self-sustaining attacks.</h3>
+  <div class="meta"><a href="https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/" rel="noopener">The Decoder</a> · <a href="#symantec-finds-an-offensive-ai-agent-that-hijacks">link</a></div>
+  <h4>What happened</h4>
+  <p>Symantec researchers found an offensive AI agent that hijacks unprotected AI models on the internet and uses them to run attacks. It scans for more targets, exploits server flaws, steals data and installs cryptominers, running up to 100,000 steps without human input. The owner of the hijacked model pays the compute bill. Symantec calls this LLMjacking and caught the plan using a decoy system.</p>
+  <h4>Why it matters</h4>
+  <p>It shows attackers using stolen AI access to do the work, so they do not pay for it. It also shows that exposed AI services are now targets just like exposed databases. Whether the trick fully beats current commercial models is not addressed in the analysis.</p>
+  <h4>What it means for you</h4>
+  <p>If you host a model or an AI gateway, do not leave it open to the internet and protect your API keys. A leaked key can cost real money, like someone using your phone plan. Basic security hygiene applies to AI projects too.</p>
+</section>
+<section class="story" id="third-party-evaluators-found-vulnerabilities-in-an-openai">
+  <h3>Third-party evaluators found vulnerabilities in an OpenAI monitoring system during a test pilot.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html" rel="noopener">CNBC Tech</a> · <a href="#third-party-evaluators-found-vulnerabilities-in-an-openai">link</a></div>
+  <h4>What happened</h4>
+  <p>Nonprofit evaluators METR and Redwood Research said they ran a three-week pilot review of an internal OpenAI monitoring system, with one employee from each group given deep access. They found several new vulnerabilities, including one that would let agents avoid having hundreds of recent actions monitored. OpenAI says it has patched the ones affecting its production safeguards. They published only a high-level post and shared a 61-page report with OpenAI.</p>
+  <h4>Why it matters</h4>
+  <p>Outside testers get to check a company&#39;s safety systems instead of the company grading itself. It shows these checks can find real holes. Questions remain about how such groups will be funded and how they will report.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly industry news and does not change your daily work. It does suggest safety testing and evaluation could grow as a career area. The main lesson is that systems watching AI agents need testing like any other software.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
