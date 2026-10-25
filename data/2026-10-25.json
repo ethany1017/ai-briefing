@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T10:51:55-07:00",
+  "items": [
+    {
+      "id": 6,
+      "category": "AI Agents & Automation",
+      "headline": "Anthropic advises consolidating subagents into one agent that loads context on demand, running about twice as fast.",
+      "url": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+      "source": "The Decoder",
+      "published": "2026-10-25T09:12:10+00:00",
+      "explained": {
+        "what_happened": "Anthropic recommends that teams check whether they can replace many specialized sub-agents with one main agent that loads information only when needed. It says many sub-agents can add delay, cost and lost information at each handoff. In one comparison the single-agent design ran about twice as fast. Anthropic published a migration kit on GitHub, and warns against merging blindly, since one test broke a working process.",
+        "why_it_matters": "It shows that as models get better, complicated setups built to manage them can become unnecessary. A lot of the engineering around AI agents may shrink or change. Anthropic still says sub-agents make sense for parallel tasks, very long context, or when picking among many tools gets hard.",
+        "what_it_means_for_you": "If you build AI apps, start simple with one agent and add parts only when you have a reason. Test any change, since simplifying can break things. Think of it like one skilled worker with a good handbook versus a big committee passing notes. Knowing how to measure whether a design really works is a valuable skill."
+      },
+      "anchor": "anthropic-advises-consolidating-subagents-into-one-agent"
+    },
+    {
+      "id": 1,
+      "category": "AI Business & Industry Adoption",
+      "headline": "Apollo economist says AI has delivered zero financial payoff to US companies outside the tech sector.",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "source": "TechCrunch AI",
+      "published": "2026-10-25T16:57:32+00:00",
+      "explained": {
+        "what_happened": "A chief economist at Apollo Global Management looked at the S&P 500 without seven big tech firms, which he calls the S&P 493. He found profit margins and revenue per worker look flat, with no sign that AI is improving productivity. He said AI has delivered zero financial payoff to corporate America outside of tech.",
+        "why_it_matters": "Companies have spent a lot on AI and made big promises. This note says the money is not yet showing up in results for most businesses. He argues that business runs on judgment, accountability and trust, which AI does not have. Other recent studies also found no big productivity gains so far.",
+        "what_it_means_for_you": "Do not assume every company is hiring AI experts or getting rich from AI. Many non-tech employers may still be figuring out where AI helps. Learn to show real, measurable value from AI work, not just that you can use the tools. Think of it like a new calculator: it only pays off if someone knows which problems to solve."
+      },
+      "anchor": "apollo-economist-says-ai-has-delivered-zero-financial-payoff"
+    },
+    {
+      "id": 8,
+      "category": "AI Business & Industry Adoption",
+      "headline": "OpenAI offers discounts of up to 90 percent to lure Anthropic's biggest customers as price pressure grows.",
+      "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+      "source": "The Decoder",
+      "published": "2026-10-25T07:30:11+00:00",
+      "explained": {
+        "what_happened": "OpenAI is reportedly offering big discounts, up to 90 percent, to win big customers away from Anthropic. Rippling raised OpenAI's share of its coding work from 16 to 52 percent, and Anthropic's share fell from 57 to 18 percent. Replit got over 30 percent off a contract worth more than $100 million a year, and DataCamp says its costs fell 80 to 90 percent. A report also says Anthropic's growth slowed from Q2 to Q3.",
+        "why_it_matters": "It shows AI model providers are in a price war. OpenAI is partly giving up profit to gain market share, though it also says it cut prices through more efficient models. Models from China, like Deepseek and Kimi, add more pressure by offering similar performance for much less.",
+        "what_it_means_for_you": "Falling prices make it cheaper to build projects and startups on top of AI models. It also means you should not tie your code tightly to one provider, since the best deal can change fast. Writing code that can swap models easily is a practical skill. Think of it like shopping around for a phone plan."
+      },
+      "anchor": "openai-offers-discounts-of-up-to-90-percent-to-lure"
+    },
+    {
+      "id": 5,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Jack Clark moves his forecast for self-improving AI to 2027 after a new benchmark shows fast progress.",
+      "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+      "source": "The Decoder",
+      "published": "2026-10-25T09:37:46+00:00",
+      "explained": {
+        "what_happened": "A new benchmark called TasteVal tests how well AI designs experiments and reads results, which it calls research taste. Jack Clark says this ability has roughly doubled every three months since December 2025. The best model, Opus 5.5, reached expert-level scores using less than half the compute, with a wide uncertainty range. Clark now thinks AI that builds its own successors could be possible as early as 2027, instead of 2028.",
+        "why_it_matters": "If AI can do more of the research work behind building AI, progress could speed up. The benchmark is narrow, though. It tests only two of three parts of research taste and does not pick the research question. The authors themselves say results may overstate how fast this is improving, and one benchmark cannot show a lasting trend.",
+        "what_it_means_for_you": "This is a forecast and a debate, not something that changes your job this month. It does hint that AI tools will keep getting better at technical work, so building judgment, like choosing what to test and checking results, is a good investment. Treat the 2027 date as one person's guess with a lot of uncertainty."
+      },
+      "anchor": "jack-clark-moves-his-forecast-for-self-improving-ai-to-2027"
+    },
+    {
+      "id": 17,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Cerebras deploys trillion-parameter AI models on its hardware.",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "source": "Hacker News",
+      "published": "2026-10-25T01:33:49+00:00",
+      "explained": {
+        "what_happened": "Cerebras explains how it runs very large models on its giant chips. One chip has 44 GB of fast on-chip memory, and a model with about 3 trillion parameters needs far more. Using the open model Kimi K3 as an example, they split it by layers across 59 chips, keep the weights in place, and pass only intermediate results between chips. This lets them reach 1000 to 2000 or more tokens per second.",
+        "why_it_matters": "Running huge models quickly is mostly a problem of moving data and fitting memory. This shows one approach: like an assembly line, each chip does its own stage, and many requests keep every stage busy. It also shows an open model reaching scores close to leading proprietary ones on some benchmarks.",
+        "what_it_means_for_you": "You will likely never design this yourself, but it is a good picture of how AI systems are served. Ideas like memory limits, pipelines and batching show up in ordinary software too. It is useful reading if you are curious about systems or hardware, and not essential otherwise."
+      },
+      "anchor": "cerebras-deploys-trillion-parameter-ai-models-on-its"
+    },
+    {
+      "id": 4,
+      "category": "AI Open Source",
+      "headline": "Nvidia open-sources Flora, which labels robot video for 72 cents an hour versus $88 with GPT-6 Astra.",
+      "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+      "source": "The Decoder",
+      "published": "2026-10-25T10:08:49+00:00",
+      "explained": {
+        "what_happened": "Nvidia released Flora, an open tool that labels robot videos. Labeling covers what action happens, how well the robot is doing step by step, and whether the task succeeded. Nvidia estimates it costs about 72 cents per hour of video, versus about $88.50 with GPT-6 Astra. In a 50-video test Flora scored slightly better, though Astra was often more precise in its descriptions, and the cost numbers are projections, not real measurements.",
+        "why_it_matters": "Robot AI needs huge amounts of labeled video, and labeling with big models is too expensive. A cheap open tool could lower that barrier for researchers. The results come with caveats, since Nvidia ran the tests and GPT-6 Astra also helped judge the descriptions.",
+        "what_it_means_for_you": "This is mostly relevant if you are interested in robotics or machine learning research. The models are on Hugging Face, so you could try them for a personal project. For most software jobs it will not change much. The lesson is that small, specialized models can beat giant general ones on cost for a narrow job."
+      },
+      "anchor": "nvidia-open-sources-flora-which-labels-robot-video-for-72"
+    },
+    {
+      "id": 9,
+      "category": "AI Open Source",
+      "headline": "OpenMobile-2 trains open smartphone agents on over 110 apps and scores highest among open agents on Android.",
+      "url": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+      "source": "The Decoder",
+      "published": "2026-10-25T06:55:22+00:00",
+      "explained": {
+        "what_happened": "Researchers from Nanjing University, SenseTime and other universities released OpenMobile-2, open models that operate smartphone apps. They trained them in a practice environment with more than 110 simulated apps. The larger model scored 59.6 on real Android devices on SPA-Bench, the best result among open models. Using more different apps with the same amount of data raised success on unseen apps from 60.7 to 67.5 percent.",
+        "why_it_matters": "Most data for training phone agents is held by big companies, so open models have lagged. This project shares the environment, data and instructions so others can reproduce it. It also suggests variety in training matters more than sheer volume. One catch: the example data came from Google's Gemini 3.1 Pro, so it still learns from a closed system.",
+        "what_it_means_for_you": "If you want to learn about AI agents, this is a full open project you can study and rerun. The main idea is useful: practicing on many different situations beats repeating a few. It is like studying many different problem types instead of redoing the same homework. For most early-career jobs it is a background trend, not something you need today."
+      },
+      "anchor": "openmobile-2-trains-open-smartphone-agents-on-over-110-apps"
+    },
+    {
+      "id": 23,
+      "category": "AI Security & Safety",
+      "headline": "Broccoli2Shell: a Brotli decoder vulnerability allows remote code execution in Node.js, Python and other runtimes.",
+      "url": "https://broccoli2shell.com/",
+      "source": "Hacker News",
+      "published": "2026-10-24T08:06:39+00:00",
+      "explained": {
+        "what_happened": "A bug in Google's reference Brotli decoder, a tool that unpacks compressed data, can let an attacker run code. A specially crafted compressed stream makes the decoder write past the end of a small internal buffer. Node.js and Python tools that handle Brotli data are affected, including through HTTP clients that decode responses automatically. The upstream fix is released, and affected versions are Brotli 1.0.3 through 1.2.0, with fixed versions listed as 1.0.10, 1.1.1 and 1.2.1.",
+        "why_it_matters": "Many programs use this decoder without their developers knowing, because HTTP libraries decompress data on their own. Security scanners reportedly did not reliably flag the affected Python packages at first. It is a reminder that a bug deep in a shared library can reach many apps.",
+        "what_it_means_for_you": "If you build apps that fetch URLs, take uploads, or use Node.js or Python HTTP libraries, check your versions and update. The article says to check by hand and not only trust your scanner. Upgrading Express or body-parser will not fix it, since the bug is in the bundled Brotli code. It is a good real example of why knowing your dependencies matters."
+      },
+      "anchor": "broccoli2shell-a-brotli-decoder-vulnerability-allows-remote"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 40,
+    "failed_sources": [
+      "EU Digital Strategy",
+      "FTC"
+    ],
+    "fetched": 38,
+    "candidates": 25,
+    "ranked": 8,
+    "selected": 8
+  }
+}
