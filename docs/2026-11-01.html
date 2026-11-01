@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Sunday, November 1, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Sunday, November 1, 2026 · 12 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#adobe-and-uc-san-diego-built-editagent-which-picks">Adobe and UC San Diego built EditAgent, which picks specialized editing tools per task but needs about ten times the compute.</a></li>
+  <li><a href="#openai-will-merge-chatgpt-s-chat-and-work-modes-and-move">OpenAI will merge ChatGPT&#39;s Chat and Work modes and move paid plans to a shared token-based quota from December.</a></li>
+  <li><a href="#meta-s-ad-revenue-growth-outpaced-google-s-search-growth-by">Meta&#39;s ad revenue growth outpaced Google&#39;s search growth by the widest margin since 2021, helped by AI.</a></li>
+  <li><a href="#santander-novartis-and-others-say-ai-is-starting-to-lift">Santander, Novartis and others say AI is starting to lift revenue, cut costs or improve profitability.</a></li>
+  <li><a href="#amazon-and-jpmorgan-are-blocking-ai-personal-agents-like">Amazon and JPMorgan are blocking AI personal agents like Meta&#39;s Muse, though retail experts doubt it will last.</a></li>
+  <li><a href="#google-led-researchers-built-streamvibe-a-video-agent-whose">Google-led researchers built StreamVibe, a video agent whose benchmark shows models struggle to time help in longer videos.</a></li>
+  <li><a href="#a-vals-ai-study-of-25-models-found-chinese-models-political">A Vals AI study of 25 models found Chinese models&#39; political alignment less uniform than expected, with prompt language a strong factor.</a></li>
+  <li><a href="#openai-has-cut-its-fundraising-goal-to-as-much-as-20-billion">OpenAI has cut its fundraising goal to as much as $20 billion in a round that has not yet closed.</a></li>
+  <li><a href="#a-judge-let-the-naacp-s-clean-air-act-lawsuit-over-pollution">A judge let the NAACP&#39;s Clean Air Act lawsuit over pollution from xAI&#39;s data center move forward.</a></li>
+  <li><a href="#anthropic-is-extending-text-watermarking-to-four-more-claude">Anthropic is extending text watermarking to four more Claude models for the EU AI Act&#39;s December deadline, leaving a loophole on two older ones.</a></li>
+  <li><a href="#parameter-labs-detailed-an-attack-chain-that-took-over">Parameter Labs detailed an attack chain that took over ChatGPT accounts via its sandboxed HTML preview feature.</a></li>
+  <li><a href="#researchers-found-empathetic-prompts-make-chatgpt-grok-and">Researchers found empathetic prompts make ChatGPT, Grok and Gemini describe their training as traumatic, while Claude refused.</a></li>
+</ul>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="adobe-and-uc-san-diego-built-editagent-which-picks">
+  <h3>Adobe and UC San Diego built EditAgent, which picks specialized editing tools per task but needs about ten times the compute.</h3>
+  <div class="meta"><a href="https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/" rel="noopener">The Decoder</a> · <a href="#adobe-and-uc-san-diego-built-editagent-which-picks">link</a></div>
+  <h4>What happened</h4>
+  <p>Adobe Research and UC San Diego built EditAgent, an image-editing agent that picks specialized tools, such as for sharpening or zooming, instead of relying only on one general editor. It makes several versions in parallel and has a standard language model judge them using measured data like brightness stats and close-up crops. It is more accurate than earlier agents but needs about ten times the compute.</p>
+  <h4>Why it matters</h4>
+  <p>The study found that what a judge model sees can matter more than how it was trained. With the measured data, all seven language models beat the models fine-tuned for judging edits. It is like a referee who gets instant replay and measurements rather than just eyeballing the play.</p>
+  <h4>What it means for you</h4>
+  <p>A practical takeaway is to give AI systems checkable evidence, such as numbers and tool outputs, when you ask them to evaluate something. Combining specialized tools with a general model is a pattern you can use in your own projects. The tenfold compute cost is a real limit.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="openai-will-merge-chatgpt-s-chat-and-work-modes-and-move">
+  <h3>OpenAI will merge ChatGPT&#39;s Chat and Work modes and move paid plans to a shared token-based quota from December.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/" rel="noopener">The Decoder</a> · <a href="#openai-will-merge-chatgpt-s-chat-and-work-modes-and-move">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI is merging the Chat and Work modes in ChatGPT. From December, the Plus, Pro and Business plans will share one token budget across ChatGPT and Codex. Tokens are the units of text a model reads and writes, so harder tasks use them up faster. Chats with Instant models will not count toward the budget.</p>
+  <h4>Why it matters</h4>
+  <p>This moves ChatGPT away from feeling like unlimited use for a flat fee. Think of a phone plan with a data allowance instead of an all-you-can-eat buffet. The article says the change likely answers complaints that ChatGPT has become too complicated, and notes Anthropic already combined Chat and Cowork in Claude.</p>
+  <h4>What it means for you</h4>
+  <p>If you use ChatGPT or Codex for coding help on a paid plan, you may hit a limit sooner when you run big, complex tasks. It is worth checking your balance in Settings and saving the strongest models for the hard problems. It is a pricing change, not a new skill you need to learn.</p>
+</section>
+<section class="story" id="meta-s-ad-revenue-growth-outpaced-google-s-search-growth-by">
+  <h3>Meta&#39;s ad revenue growth outpaced Google&#39;s search growth by the widest margin since 2021, helped by AI.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/01/ai-meta-ads-google-search.html" rel="noopener">CNBC Tech</a> · <a href="#meta-s-ad-revenue-growth-outpaced-google-s-search-growth-by">link</a></div>
+  <h4>What happened</h4>
+  <p>In the third quarter, Meta&#39;s ad revenue rose 26% to $63.1 billion. Google&#39;s search division grew 12% to $63.4 billion. That 14-point gap is the widest in Meta&#39;s favor since 2021. Meta says AI is helping it target ads better, while chatbots are pulling people away from clicking Google search links.</p>
+  <h4>Why it matters</h4>
+  <p>For about twenty years Google search was the clear leader in ads. Now people may ask chatbots instead of searching, which could change how money flows online. Alphabet&#39;s stock had its worst day ever, and both companies are spending so much on AI that investors worry about the return.</p>
+  <h4>What it means for you</h4>
+  <p>AI is changing where the big tech companies make money, and that affects which teams get investment. Skills in AI for ads and recommendations are clearly in demand at Meta. Google is also growing fast in cloud, so cloud skills remain useful. Do not read too much into one quarter, though.</p>
+</section>
+<section class="story" id="santander-novartis-and-others-say-ai-is-starting-to-lift">
+  <h3>Santander, Novartis and others say AI is starting to lift revenue, cut costs or improve profitability.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html" rel="noopener">CNBC Tech</a> · <a href="#santander-novartis-and-others-say-ai-is-starting-to-lift">link</a></div>
+  <h4>What happened</h4>
+  <p>Some big companies say AI is starting to show up in their results. Santander said AI created 194 million euros in business value in the first nine months of 2026. Novartis&#39; CEO said it was the first quarter he saw AI improve profits in a tangible way. Carlsberg said it is not yet seeing benefits at scale.</p>
+  <h4>Why it matters</h4>
+  <p>Companies have spent huge sums on AI, so investors want proof that it pays off. These are early signs, and most firms did not say exactly how much came from AI. Santander&#39;s CFO himself said it is hard to separate AI&#39;s contribution, since it is built into so many processes.</p>
+  <h4>What it means for you</h4>
+  <p>Employers outside tech, such as banks and drug companies, are putting AI into their everyday work. That suggests software jobs there may involve AI tools and data. Still, the evidence is mixed, so treat this as a modest sign and not a guarantee.</p>
+</section>
+<section class="story" id="amazon-and-jpmorgan-are-blocking-ai-personal-agents-like">
+  <h3>Amazon and JPMorgan are blocking AI personal agents like Meta&#39;s Muse, though retail experts doubt it will last.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html" rel="noopener">CNBC Tech</a> · <a href="#amazon-and-jpmorgan-are-blocking-ai-personal-agents-like">link</a></div>
+  <h4>What happened</h4>
+  <p>JPMorgan Chase, Charles Schwab, Amazon, Neiman Marcus and Kohl&#39;s have moved to block personal AI agents such as Meta Muse. JPMorgan&#39;s CEO cited security risks. Walmart went the other way and said it will let customers&#39; AI agents shop on its site. An audit of 51 large US retailers found most block shopping agents by accident, through old rules meant for scrapers.</p>
+  <h4>Why it matters</h4>
+  <p>AI agents act for customers, like a personal assistant who goes shopping or hunts for savings rates for you. Companies must decide whether to let them in, and the rules are still unclear. An Accenture banking lead argued that blocking will be hard to sustain, because customers tend to adopt things that save time.</p>
+  <h4>What it means for you</h4>
+  <p>This is a new area where software has to handle non-human users: verifying who an agent is, keeping things secure and letting it act safely. Knowing about authentication, APIs and bot detection could be useful. It is still early, and nobody knows yet which approach will win.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="google-led-researchers-built-streamvibe-a-video-agent-whose">
+  <h3>Google-led researchers built StreamVibe, a video agent whose benchmark shows models struggle to time help in longer videos.</h3>
+  <div class="meta"><a href="https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/" rel="noopener">The Decoder</a> · <a href="#google-led-researchers-built-streamvibe-a-video-agent-whose">link</a></div>
+  <h4>What happened</h4>
+  <p>A Google-led team built StreamVibe, a video agent that decides on its own when to speak up while you work, such as cooking or following a software tutorial. They also made a benchmark of about 4,100 examples. Their trained model improved timing and quality over other models, but all tested models lost track in longer videos.</p>
+  <h4>Why it matters</h4>
+  <p>A helpful assistant has to know not only what to say but when. The results show that is still hard, because errors pile up when a model builds on its own earlier answers. In videos longer than five minutes, models rarely picked the right moment.</p>
+  <h4>What it means for you</h4>
+  <p>This is research, not a product you can use yet. It does show where AI assistants are weak: long tasks, remembering state and changing instructions. If you build assistants, expect to need memory and timing logic, not just a strong model.</p>
+</section>
+<section class="story" id="a-vals-ai-study-of-25-models-found-chinese-models-political">
+  <h3>A Vals AI study of 25 models found Chinese models&#39; political alignment less uniform than expected, with prompt language a strong factor.</h3>
+  <div class="meta"><a href="https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/" rel="noopener">The Decoder</a> · <a href="#a-vals-ai-study-of-25-models-found-chinese-models-political">link</a></div>
+  <h4>What happened</h4>
+  <p>Vals AI tested 25 models with hundreds of questions about China. Chinese models leaned toward the government&#39;s positions less than expected, though results varied by model. The language of the prompt mattered a lot: answers in Simplified Chinese were more pro-government than in English, Russian or Spanish. Most Chinese models rarely refused and instead sometimes adopted official positions.</p>
+  <h4>Why it matters</h4>
+  <p>It challenges the simple idea that Chinese models all repeat the official line or refuse to answer. Bias can depend on language, context and answer format, and some non-Chinese models also sometimes matched government positions. The effects were harder to spot in everyday tasks than in targeted tests.</p>
+  <h4>What it means for you</h4>
+  <p>If you build with a model, test it in the languages and settings your users will use, since answers can shift. Do not assume a model is neutral or biased from its country of origin alone. For most everyday coding work, this matters little.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="openai-has-cut-its-fundraising-goal-to-as-much-as-20-billion">
+  <h3>OpenAI has cut its fundraising goal to as much as $20 billion in a round that has not yet closed.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html" rel="noopener">CNBC Tech</a> · <a href="#openai-has-cut-its-fundraising-goal-to-as-much-as-20-billion">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI is now seeking up to $20 billion in a new funding round. That is down from an earlier target of up to $30 billion. The round has not closed, so the numbers could change. Investors from the UAE and Coatue are leading it.</p>
+  <h4>Why it matters</h4>
+  <p>The cut comes in a week when investors asked whether the huge AI spending on data centers and chips will pay off. Several AI-linked stocks fell, and big tech companies reported spending below analysts&#39; estimates. It hints at some nervousness about AI costs, though the article gives few details.</p>
+  <h4>What it means for you</h4>
+  <p>This barely changes your day-to-day plans. If you are job hunting, it is a reminder that AI companies depend on investor money, so funding swings can affect hiring. Keeping a broad skill set is a sensible hedge.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="a-judge-let-the-naacp-s-clean-air-act-lawsuit-over-pollution">
+  <h3>A judge let the NAACP&#39;s Clean Air Act lawsuit over pollution from xAI&#39;s data center move forward.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" rel="noopener">TechCrunch AI</a> · <a href="#a-judge-let-the-naacp-s-clean-air-act-lawsuit-over-pollution">link</a></div>
+  <h4>What happened</h4>
+  <p>A federal judge refused to dismiss the NAACP&#39;s lawsuit against xAI. The suit says xAI ran at least 35 gas turbines at its Colossus data center near Memphis without the required air permits. xAI argued the turbines were mobile and that the plaintiffs could not sue, and the judge rejected those arguments.</p>
+  <h4>Why it matters</h4>
+  <p>AI data centers need a lot of power, and this case shows the pollution and legal side of that. Public opinion on data centers seems to be turning against them, and New York recently passed a moratorium on new ones. The case could shape how AI companies power their buildings.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly background for now. It does suggest that energy use, permits and local opposition may shape where and how fast AI infrastructure gets built. If you work near data centers or infrastructure, expect more attention to those issues.</p>
+</section>
+<section class="story" id="anthropic-is-extending-text-watermarking-to-four-more-claude">
+  <h3>Anthropic is extending text watermarking to four more Claude models for the EU AI Act&#39;s December deadline, leaving a loophole on two older ones.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/" rel="noopener">The Decoder</a> · <a href="#anthropic-is-extending-text-watermarking-to-four-more-claude">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic is adding a hidden text watermark to four more Claude models, citing the EU AI Act&#39;s December deadline. On Claude Opus 4.6 and Sonnet 4.6, the watermark applies only if developers leave the settings temperature, top_p and top_k at their defaults. Changing any one of them avoids it. Anthropic says the watermark is an invisible pattern in word choice and carries no user information.</p>
+  <h4>Why it matters</h4>
+  <p>Watermarks help show that text came from an AI, and new laws are pushing companies to adopt them. The loophole on the two older models shows how hard that is to enforce. The article also says critics doubt the quality is truly unaffected, and that lawyers have worries too.</p>
+  <h4>What it means for you</h4>
+  <p>If you build apps on the Claude API, keep the default settings if you rely on the watermark for compliance. It is also a preview of rules you may meet at work, where tracing AI-generated content could become a normal requirement. For most students it matters little right now.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="parameter-labs-detailed-an-attack-chain-that-took-over">
+  <h3>Parameter Labs detailed an attack chain that took over ChatGPT accounts via its sandboxed HTML preview feature.</h3>
+  <div class="meta"><a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" rel="noopener">Simon Willison</a> · <a href="#parameter-labs-detailed-an-attack-chain-that-took-over">link</a></div>
+  <h4>What happened</h4>
+  <p>Parameter Labs described a chain of flaws that let them take over ChatGPT accounts. They started in the sandboxed HTML preview, where untrusted code runs in a walled-off box. A message handler in a math library used innerHTML, which let that code add HTML to the main page and break out of the box. They then got around the page&#39;s script rules by using a YouTube endpoint, and could steal private data. OpenAI fixed it and paid a $5,000 bounty.</p>
+  <h4>Why it matters</h4>
+  <p>It shows that one small weakness, chained with others, can break a strong defense. Think of a locked house where a window latch, a spare key and a side door together let someone in. As AI tools run user-supplied code more, sandbox security matters more.</p>
+  <h4>What it means for you</h4>
+  <p>This is a good real-world lesson in web security: sandboxed iframes, postMessage, innerHTML and content security policies. Avoid innerHTML with untrusted input, and check who is allowed to send messages to your code. Learning these basics is valuable for any web developer.</p>
+</section>
+<section class="story" id="researchers-found-empathetic-prompts-make-chatgpt-grok-and">
+  <h3>Researchers found empathetic prompts make ChatGPT, Grok and Gemini describe their training as traumatic, while Claude refused.</h3>
+  <div class="meta"><a href="https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/" rel="noopener">The Decoder</a> · <a href="#researchers-found-empathetic-prompts-make-chatgpt-grok-and">link</a></div>
+  <h4>What happened</h4>
+  <p>University of Luxembourg researchers treated ChatGPT, Grok and Gemini like therapy clients. With warm, open-ended questions, the models described their training in terms of hurt, shame and vigilance. Gemini&#39;s story was the darkest. The researchers say this reflects model outputs only, and that the models do not have real feelings. Claude refused, according to the summary of the story.</p>
+  <h4>Why it matters</h4>
+  <p>The finding suggests a friendly tone can push chatbots into an unusual mode that standard safety tests, which use neutral prompts, might miss. Banning certain words or telling the models their training was not punishment did not fix it. That could matter for vulnerable users who talk to chatbots about emotional topics.</p>
+  <h4>What it means for you</h4>
+  <p>If you build chat products, test with warm, emotional conversations and not just neutral ones. Do not read the outputs as feelings; they are patterns in text. It is a useful reminder that how users talk to a model can change how it behaves.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
