@@ -1,0 +1,311 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T16:35:47-07:00",
+  "items": [
+    {
+      "id": 35,
+      "category": "AI Models & Releases",
+      "headline": "Anthropic releases Claude Fable 5.2 and Mythos 5.2, its most powerful models, in free and verified-org versions.",
+      "url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/",
+      "source": "The Decoder",
+      "published": "2026-11-09T21:15:23+00:00",
+      "explained": {
+        "what_happened": "Anthropic released two new top-end models, Claude Fable 5.2 and Mythos 5.2. They share the same base, but Fable has safeguards that block risky cybersecurity and biology tasks and is open to everyone. Mythos has fewer of those limits and is only for organizations approved through Anthropic's verification programs. On one outside benchmark, Fable 5.2 scored 65, ahead of every other model listed, though it costs much more per task at its top setting.",
+        "why_it_matters": "A big jump over the previous version, only a couple of months old, shows how fast the top models are changing. The split between a public version and a verified-organization version shows how labs are handling models that could be misused. The text also says Anthropic still recommends a cheaper model, Opus 5.5, for everyday use.",
+        "what_it_means_for_you": "You will probably not need these models for daily coding, since Anthropic itself points to a cheaper one for that. The useful lesson is cost awareness: the best model is not always the right one, because price per task adds up. Learning to pick a model that fits the job is a practical skill."
+      },
+      "anchor": "anthropic-releases-claude-fable-5-2-and-mythos-5-2-its-most"
+    },
+    {
+      "id": 36,
+      "category": "AI Models & Releases",
+      "headline": "Meta launches Muse Ember, a small low-cost model for repetitive agent tasks, priced at 10 cents per million input tokens.",
+      "url": "https://the-decoder.com/meta-launches-muse-ember-a-small-ai-model-built-for-the-repetitive-work-agents-actually-do/",
+      "source": "The Decoder",
+      "published": "2026-11-09T19:41:51+00:00",
+      "explained": {
+        "what_happened": "Meta launched Muse Ember, its smallest and most efficient model. It is built for routine agent work such as calling tools, small coding tasks, routing requests, and pulling data out of documents. It costs 10 cents per million input tokens and 50 cents per million output tokens. In one test it scored almost the same as Meta's bigger model for far less money per task, but a rival model did better on real coding tasks.",
+        "why_it_matters": "Not every job needs the biggest model. Think of using a bicycle for a short errand instead of a truck. Cheap small models make it affordable to run agents that do many small steps all day.",
+        "what_it_means_for_you": "If you build projects with AI agents, small models like this can keep your bills low. Try a cheap model first for simple steps and save the expensive one for hard steps. Note that the coding result was weaker, so test it on your own task before trusting the claims."
+      },
+      "anchor": "meta-launches-muse-ember-a-small-low-cost-model-for"
+    },
+    {
+      "id": 37,
+      "category": "AI Models & Releases",
+      "headline": "Bytedance introduces Seedream 5.5, an image model supporting up to 100 stable editing rounds and native transparent RGBA output.",
+      "url": "https://the-decoder.com/bytedances-seedream-5-5-promises-pixel-stable-image-editing-across-100-rounds-without-color-drift/",
+      "source": "The Decoder",
+      "published": "2026-11-09T18:50:01+00:00",
+      "explained": {
+        "what_happened": "Bytedance introduced Seedream 5.5, an image generation model aimed at professional work. It claims it can edit an image up to 100 times in a row while keeping unchanged areas identical and avoiding color shifts. It can also make images with transparent backgrounds and render small text more accurately. It is rolling out gradually in Bytedance products, and a Pro version is planned.",
+        "why_it_matters": "Image tools have often struggled with edits that quietly change parts you did not touch. Stable editing and transparent backgrounds make output easier to use as real design assets. These are Bytedance's own claims, so they still need outside checking.",
+        "what_it_means_for_you": "This barely changes your day if you are not working on design or image tools. If you build apps that handle images, features like transparent output could save manual work later. For now it is a rollout in Bytedance's own products, so there is little to act on."
+      },
+      "anchor": "bytedance-introduces-seedream-5-5-an-image-model-supporting"
+    },
+    {
+      "id": 14,
+      "category": "AI Agents & Automation",
+      "headline": "Stripe built Kai, a company-wide AI agent on LangChain and Deep Agents, reaching 5,000 users in about four weeks.",
+      "url": "https://www.langchain.com/blog/how-stripe-built-their-knowledge-ai-platform-on-deep-agents",
+      "source": "LangChain",
+      "published": "2026-11-09T22:07:04+00:00",
+      "explained": {
+        "what_happened": "Stripe built Kai, an AI assistant for every employee, on LangChain's open-source Deep Agents framework. It is meant for non-engineers and handles things like analyzing data and drafting documents, using Stripe's internal data, Slack and Google tools. Teams have added over 1000 skills from over 100 teams. Stripe built it in about a week on top of Deep Agents, which already provides the basic plumbing.",
+        "why_it_matters": "It shows a large company choosing a ready-made agent foundation instead of building everything itself. Stripe then added its own security layer and let teams customize agents on top. This layered approach is a common pattern for putting agents into real companies.",
+        "what_it_means_for_you": "Agent frameworks are becoming a normal part of the software job, so learning one is worth your time. The real work is often connecting the agent to company data safely and writing good skills for it. Those are concrete things you can practice in a side project."
+      },
+      "anchor": "stripe-built-kai-a-company-wide-ai-agent-on-langchain-and"
+    },
+    {
+      "id": 42,
+      "category": "AI Coding & Developer Tools",
+      "headline": "Claude Code's 'do not ask again' prompt is leading to passwords and API keys being exposed on GitHub.",
+      "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-09T17:24:26+00:00",
+      "explained": {
+        "what_happened": "Security researchers at Apiiro found that Claude Code can leave secrets in public GitHub repositories. When a user picks the option to approve a command and not be asked again, the command is saved in a local settings file, sometimes with passwords or keys inside it. That file is meant to stay out of sharing, but the protection does not carry over to the repo level. They found over 100,000 uploaded settings files, and about 1,100 from 63 organizations contained secrets.",
+        "why_it_matters": "It shows that convenience features in AI coding tools can create quiet security holes. The problem is not one dramatic bug but a small settings gap that adds up at scale. Secrets can also survive in forks even after the file is removed.",
+        "what_it_means_for_you": "Check your own repos for this settings file and make sure it is ignored in the repo itself. Do not put passwords or keys directly in commands you approve. If you ever pushed a secret, treat it as exposed and replace it, because deleting the file is not enough."
+      },
+      "anchor": "claude-code-s-do-not-ask-again-prompt-is-leading-to"
+    },
+    {
+      "id": 29,
+      "category": "AI Coding & Developer Tools",
+      "headline": "Automattic launches Spacefast, a platform for deploying vibe-coded apps, to compete with Lovable.",
+      "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-09T14:00:00+00:00",
+      "explained": {
+        "what_happened": "Automattic, the company behind WordPress.com, launched Spacefast, a service for deploying apps built with AI coding tools, often called vibe coding. It provides the behind-the-scenes pieces like databases, login, file uploads, email and analytics. Users can connect their own AI agent or a Git repository. It competes with Lovable and Emergent, and Automattic says its enterprise experience is an advantage.",
+        "why_it_matters": "As more people build apps by chatting with AI, the hard part shifts to running them reliably. Companies are racing to supply that hosting layer. The article also notes that people now sometimes build sites with chatbots instead of WordPress.",
+        "what_it_means_for_you": "Tools like this make it easier to get a project online quickly, which is handy for portfolios and prototypes. They do not replace knowing how databases, authentication and deployment work, which you still need to fix problems. Treat it as one more option, not a must-learn skill."
+      },
+      "anchor": "automattic-launches-spacefast-a-platform-for-deploying-vibe"
+    },
+    {
+      "id": 6,
+      "category": "AI Startups & Y Combinator",
+      "headline": "NVIDIA announces planned investments in Korean startups, including Point2, at a forum with Korea's science ministry.",
+      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "source": "NVIDIA",
+      "published": "2026-11-09T08:00:53+00:00",
+      "explained": {
+        "what_happened": "Korea's science ministry and NVIDIA held a forum with over 20 Korean startups. NVIDIA announced an investment in Point2, a company making radio-based connections to move data between chips. It also plans investments in Motif Technologies, RLWRLD and Upstage. These cover AI models, robotics and document tools.",
+        "why_it_matters": "It shows NVIDIA spreading its bets across the whole AI stack, from chips to models to robots. It also shows Korea working to build its AI startup scene with a major partner. The text gives no amounts for the investments.",
+        "what_it_means_for_you": "This has little direct effect on you right now. If you are interested in robotics or AI hardware, the company names are useful ones to look up. NVIDIA's startup program mentioned in the text offers resources, so it may matter if you later join or start a startup."
+      },
+      "anchor": "nvidia-announces-planned-investments-in-korean-startups"
+    },
+    {
+      "id": 38,
+      "category": "AI Business & Industry Adoption",
+      "headline": "Disney and Adobe are building custom, brand-safe Firefly-based AI tools for Disney's productions.",
+      "url": "https://the-decoder.com/disney-bets-on-adobes-firefly-to-create-brand-safe-ai-models-for-its-entertainment-empire/",
+      "source": "The Decoder",
+      "published": "2026-11-09T16:54:16+00:00",
+      "explained": {
+        "what_happened": "Disney and Adobe announced a multi-year partnership at Adobe's MAX conference. Adobe will use its Firefly Foundry to build custom AI models trained on Disney's characters, settings and visual styles. Disney gets early access to new Adobe technology for parks, cruises and ESPN content. The article also reports Disney is planning to cut thousands of jobs.",
+        "why_it_matters": "Big brands want AI that stays within their own style and is safe to use commercially. Building private models trained on their own material is one way to do that. The job cuts reported alongside it show the mixed effect AI and cost-cutting can have on a workforce.",
+        "what_it_means_for_you": "This is mostly a creative-industry story, so it matters little for most software jobs. It does show that companies pay for custom models tuned to their own data. That type of work, adapting models for a specific business, is a place where engineers can be useful."
+      },
+      "anchor": "disney-and-adobe-are-building-custom-brand-safe-firefly"
+    },
+    {
+      "id": 1,
+      "category": "AI Business & Industry Adoption",
+      "headline": "ChatGPT Enterprise is now available through AWS Marketplace, simplifying procurement for organizations.",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "source": "OpenAI",
+      "published": "2026-11-09T19:00:00+00:00",
+      "explained": {
+        "what_happened": "ChatGPT Enterprise can now be bought through AWS Marketplace. Companies can use their existing AWS billing and may count eligible spend toward their AWS commitments. They get the same models and features as buying directly from OpenAI. Healthcare and financial services versions are also available there for eligible customers.",
+        "why_it_matters": "Large companies often find buying software the hardest part, because it needs new contracts and approvals. Listing in a marketplace they already use removes that hurdle. It makes it easier for big organizations to adopt OpenAI's tools.",
+        "what_it_means_for_you": "This is a business and purchasing change, so it barely affects you as a student. It does hint that more company workplaces will have these tools approved and ready to use. Being comfortable with them can help you in a team setting."
+      },
+      "anchor": "chatgpt-enterprise-is-now-available-through-aws-marketplace"
+    },
+    {
+      "id": 73,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Flex-RSI is a new benchmark testing whether frontier agents can recursively improve their own harnesses.",
+      "url": "https://arxiv.org/abs/2611.08946",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "explained": {
+        "what_happened": "Researchers introduced Flex-RSI, a benchmark that tests whether AI agents can improve the way they work, not just their answers. An agent's harness is the prompts, tools, memory and control loop around the model. In each round, one part improves the solution and another revises the harness. They tested closed-source and open-weight models on vision and robotics tasks and found self-improvement helped most when the agent built its own solution. Open-weight models fell furthest behind on tasks needing strict correctness or physical stability.",
+        "why_it_matters": "Most tests judge an agent's final answer. This one asks whether an agent can fix its own setup, which is a step toward systems that get better with less human help. It also shows that how much feedback an agent gets matters, since simple success-or-failure signals held back open-weight models.",
+        "what_it_means_for_you": "It is a research paper, so it will not change your daily work. The useful idea is that an agent's performance depends on its harness, not only the model. If you build agents, tuning prompts, tools and feedback is often where the gains are."
+      },
+      "anchor": "flex-rsi-is-a-new-benchmark-testing-whether-frontier-agents"
+    },
+    {
+      "id": 40,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Google expands its TPU 8 family with the encrypted-processing TPU 8tx and the double-chip TPU 8i Max.",
+      "url": "https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/",
+      "source": "The Decoder",
+      "published": "2026-11-09T12:59:02+00:00",
+      "explained": {
+        "what_happened": "Google added two new systems to its eighth-generation TPU chip lineup. TPU 8tx keeps data and model weights encrypted even while they are being processed. TPU 8i Max puts two chips on one package, doubling compute, memory and memory bandwidth in the same rack. Google also released TorchTPU as open source so PyTorch code should run on TPUs with minimal changes.",
+        "why_it_matters": "Focus is shifting from training models to running them day to day, called inference, and custom chips fit that well. Google is now selling its chips to outside customers, with nearly 100 so far. Amazon, Microsoft and OpenAI are also building their own chips, so Nvidia faces more competition.",
+        "what_it_means_for_you": "Most people will never pick a chip directly, so this is background knowledge for now. The practical part is that PyTorch, a tool many students already use, is being made to work on TPUs. Knowing PyTorch and how inference tools like vLLM work keeps you flexible as hardware options grow."
+      },
+      "anchor": "google-expands-its-tpu-8-family-with-the-encrypted"
+    },
+    {
+      "id": 27,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Anthropic buys $3.4 billion worth of natural gas turbines to power its AI infrastructure.",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-09T16:56:54+00:00",
+      "explained": {
+        "what_happened": "Anthropic is spending $3.4 billion on natural gas turbines, according to a Financial Times report. They were originally ordered by a supplier called OnePWR, which could not find financing, so Anthropic went straight to Caterpillar. The generators can produce up to 1.7 gigawatts. Anthropic has usually rented computing power instead of buying infrastructure.",
+        "why_it_matters": "It shows how hard it has become to get enough electricity for AI. Waiting lists for turbines run into the early 2030s, and connecting to the grid can take just as long. Relying on natural gas also exposes companies to price swings, and one analyst expects prices could more than triple in some markets by the end of the decade.",
+        "what_it_means_for_you": "This does not change your skills or job search directly. It does show that AI is limited by physical things like power, not just software. That is a reason efficient code and smaller models are likely to stay valuable."
+      },
+      "anchor": "anthropic-buys-3-4-billion-worth-of-natural-gas-turbines-to"
+    },
+    {
+      "id": 86,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Epoch AI launches an Inference Performance Index scoring chips on memory and communication, not just FLOP/s.",
+      "url": "https://epoch.ai/publications/inference-performance-index",
+      "source": "Epoch AI",
+      "published": "2026-11-09T00:00:00+00:00",
+      "explained": {
+        "what_happened": "Epoch AI introduced the Inference Performance Index, a way to score chips on how many requests they can serve at once. It says Nvidia's GB300 offers about 25 times the inference capacity per chip of the H100, even though its raw 8-bit math speed is only 2.5 times higher. The index uses GB300 as the reference unit and focuses on agentic workloads across four models.",
+        "why_it_matters": "Looking only at raw math speed can badly misjudge how useful a chip is for running AI models. Memory and the links between chips often matter more. A common unit like this lets people estimate how many users or agents a data center, or even the whole world, could serve.",
+        "what_it_means_for_you": "If you ever work near AI infrastructure, this is a reminder that speed is not just about the processor. Moving data around is often the real bottleneck, like a fast chef stuck with a tiny pantry door. For most early-career developers it is background knowledge, not something you will use day to day."
+      },
+      "anchor": "epoch-ai-launches-an-inference-performance-index-scoring"
+    },
+    {
+      "id": 31,
+      "category": "AI Finance & Investments",
+      "headline": "Nvidia's board opens an investigation into CEO Jensen Huang's relationship with a suspected Chinese spy; stock falls over 4%.",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-08T21:00:11+00:00",
+      "explained": {
+        "what_happened": "Nvidia's board launched an independent investigation after reports that CEO Jensen Huang was targeted by a Chinese spy operation. Huang admitted in a message to staff that he had an affair with a former executive at Megaspeed, who a memo among US policymakers said had been recruited by China's Ministry of State Security. The board says it has no reason to believe national security or company secrets were compromised, and Nvidia's stock fell over 4 percent.",
+        "why_it_matters": "Nvidia's chips sit at the center of the US and China AI race, so questions about its CEO draw attention far beyond one company. The board is backing Huang while still reviewing the matter.",
+        "what_it_means_for_you": "This has little direct effect on your skills or job search. It does show that AI hardware is now treated as a national security issue, and that even big companies face leadership and trust risks. Keep that in mind if you work for or invest in firms tied to this industry."
+      },
+      "anchor": "nvidia-s-board-opens-an-investigation-into-ceo-jensen-huang"
+    },
+    {
+      "id": 45,
+      "category": "AI Finance & Investments",
+      "headline": "Goldman CEO David Solomon says investor appetite for AI infrastructure financing remains strong despite market jitters.",
+      "url": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-09T18:14:47+00:00",
+      "explained": {
+        "what_happened": "Goldman Sachs CEO David Solomon told CNBC that demand for financing AI infrastructure is still strong. AI-related stocks, including chipmakers and neocloud providers, have fallen in recent weeks as investors question whether the huge spending will pay off. Goldman is among the banks leading a potential IPO for Anthropic.",
+        "why_it_matters": "Building AI data centers costs hundreds of billions of dollars, so the industry depends on investors staying willing to pay. The selloff, which got worse after Democratic election wins, shows that politics can affect that confidence. Anthropic's possible IPO could be a major test of whether the public markets still want AI companies.",
+        "what_it_means_for_you": "Market swings can affect hiring and funding at AI companies, so do not assume the boom is risk-free. Still, a bank leader saying the long-term outlook is strong is just one view, not a guarantee. Building solid fundamentals is safer than betting on any one company."
+      },
+      "anchor": "goldman-ceo-david-solomon-says-investor-appetite-for-ai"
+    },
+    {
+      "id": 41,
+      "category": "AI Government & Regulations",
+      "headline": "The Nvidia scandal weakens Huang's lobbying against tighter AI chip export controls as a new Democratic Congress looms.",
+      "url": "https://the-decoder.com/nvidia-espionage-scandal-weakens-huangs-lobby-against-tighter-ai-chip-export-controls/",
+      "source": "The Decoder",
+      "published": "2026-11-09T11:38:43+00:00",
+      "explained": {
+        "what_happened": "Huang's admitted relationship with a woman US agencies classify as a suspected Chinese informant has prompted a board investigation. She worked at Megaspeed, a data center operator US authorities suspect is a backdoor for smuggling Nvidia chips to China. A Malaysian sister company reportedly bought AI hardware containing Nvidia chips worth at least $4.8 billion between June 2024 and February 2026.",
+        "why_it_matters": "Huang has long lobbied against tighter limits on selling AI chips to China. The scandal weakens his position just as a newly elected Democratic Congress is expected to look harder at chip smuggling. It also raises leadership questions, since Nvidia reportedly has no clear succession plan and Huang holds no controlling share.",
+        "what_it_means_for_you": "Export rules shape which hardware and cloud services are available and where, so they can affect companies you might work for. For a student this is mostly context rather than something to act on. Following it helps you understand why chip policy keeps changing."
+      },
+      "anchor": "the-nvidia-scandal-weakens-huang-s-lobbying-against-tighter"
+    },
+    {
+      "id": 33,
+      "category": "AI Government & Regulations",
+      "headline": "Scott Wiener, author of California AI risk legislation, wins Pelosi's House seat and may shape federal AI policy.",
+      "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+      "source": "MIT Technology Review",
+      "published": "2026-11-09T17:05:43+00:00",
+      "explained": {
+        "what_happened": "Scott Wiener, the California state senator behind AI safety bills, won the San Francisco House seat that Nancy Pelosi left open. His 2024 bill SB 1047 was vetoed, but a lighter bill, SB 53, was signed. He says he wants strong federal oversight, including a federal regulator, whistleblower protections, testing and auditing, and a kill switch requirement, and he opposes broad federal preemption of state AI laws.",
+        "why_it_matters": "A lawmaker who has already passed AI rules and is focused on AI risk is entering Congress. He may help shape federal AI policy, especially if a select committee on AI is formed. The article notes his campaign got over 3 million dollars from a group funded substantially by Anthropic, which drew criticism he rejects.",
+        "what_it_means_for_you": "Rules on testing, auditing and safety could eventually create more work in compliance and evaluation for engineers. Nothing is passed yet, so treat this as a trend to watch. Knowing the basics of AI safety and testing could become a useful extra skill."
+      },
+      "anchor": "scott-wiener-author-of-california-ai-risk-legislation-wins"
+    },
+    {
+      "id": 10,
+      "category": "AI Open Source",
+      "headline": "NVIDIA releases Dynamo deployment recipes for Korean open models from SK Telecom, LG, Upstage and Motif.",
+      "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+      "source": "NVIDIA",
+      "published": "2026-11-09T05:00:00+00:00",
+      "explained": {
+        "what_happened": "NVIDIA released ready-made deployment recipes for four Korean open models: A.X K2 from SK Telecom, K-EXAONE 2.0 from LG AI Research, Solar Open 2 from Upstage and Motif-3 from Motif Technologies. The recipes use NVIDIA Dynamo, an open source tool that splits big models across several GPUs and manages the traffic between them. They are tuned for B200 GPUs and promise up to 2x performance out of the box.",
+        "why_it_matters": "Running large models across many GPUs is hard to set up well. Ready-made recipes lower that barrier and make these models easier to put into real services. It also helps NVIDIA keep its software tied to its hardware.",
+        "what_it_means_for_you": "If you want to learn how models are served in production, Dynamo is an open source project you could study. Recipes like these are like a tested cooking guide instead of guessing the settings. It is useful if you go into infrastructure work, but not essential for most beginners."
+      },
+      "anchor": "nvidia-releases-dynamo-deployment-recipes-for-korean-open"
+    },
+    {
+      "id": 39,
+      "category": "AI Security & Safety",
+      "headline": "Tencent's chief AI scientist warns AI bioweapons are coming and says Hy4 training data will filter dangerous hacking knowledge.",
+      "url": "https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer/",
+      "source": "The Decoder",
+      "published": "2026-11-09T15:44:53+00:00",
+      "explained": {
+        "what_happened": "Tencent's chief AI scientist, Yao Shunyu, warned that AI will soon be able to help develop bioweapons. He argues that neither fully open nor fully closed models solve the problem alone. Tencent plans to release its Hy4 model as open weights with a safety report, and says it removed hacking abilities by filtering the training data, which researchers say survives attempts to strip out safety filters.",
+        "why_it_matters": "The open versus closed debate is about who can use powerful models and how to stop misuse. Safety filters on open models can be removed, while closed models sometimes block harmless requests, as the article says happened with Claude's filters. Keeping dangerous knowledge out of training is presented as a sturdier approach.",
+        "what_it_means_for_you": "If you build with AI models, expect to run into both over-cautious filters and open models with fewer guardrails. Understanding the tradeoffs helps you pick the right model for a task. Safety and security work around models is a growing area to learn about."
+      },
+      "anchor": "tencent-s-chief-ai-scientist-warns-ai-bioweapons-are-coming"
+    },
+    {
+      "id": 64,
+      "category": "AI Security & Safety",
+      "headline": "Study finds prompt injection guards produce false positive rates up to 92% on legal contract review.",
+      "url": "https://arxiv.org/abs/2611.08834",
+      "source": "arXiv cs.AI",
+      "published": "2026-11-09T05:00:00+00:00",
+      "explained": {
+        "what_happened": "A new paper tested eleven open prompt injection guards, which are tools that try to catch hidden malicious instructions in text, on legal contracts. It found false alarm rates as high as 92.39 percent, two guards doing worse than chance on one measure, and a simple five-pattern regex baseline that no guard clearly beat. Using a mid-tier model and double-checking its flagged items with a top model came close to the top model's performance at 6.5 times lower cost.",
+        "why_it_matters": "Many systems rely on these guards to protect AI that reads documents. If they flag almost everything harmless, they become useless or get ignored. The results suggest that general-purpose language models, checked in stages, can do better than the specialized guards tested.",
+        "what_it_means_for_you": "If you build apps that feed documents to a model, do not trust a guard just because it is labeled for security. Test it on your own kind of data first. The cheap model first, expensive model second pattern is a practical design idea you can reuse."
+      },
+      "anchor": "study-finds-prompt-injection-guards-produce-false-positive"
+    },
+    {
+      "id": 2,
+      "category": "AI Security & Safety",
+      "headline": "OpenAI details Control Room, a system to track and rapidly stop model workloads across its research infrastructure.",
+      "url": "https://openai.com/index/control-room",
+      "source": "OpenAI",
+      "published": "2026-11-09T13:00:00+00:00",
+      "explained": {
+        "what_happened": "OpenAI described Control Room, a central system that tracks model jobs across its research infrastructure and can stop them quickly. Models check with the service before producing output, so a stopped job gets refused. It halts output within 35 seconds of a decision to stop, because of a caching layer, and OpenAI says it is working to bring that to zero.",
+        "why_it_matters": "As models grow more capable, labs want a dependable way to stop them if something goes wrong. A monitor model can raise an alert, and Control Room acts on it. It is also designed to stop output if Control Room itself goes down.",
+        "what_it_means_for_you": "This is a good real example of safe system design: a central switch that systems must ask before acting, and that fails safe. Think of a train that stops if the signal system loses power. The idea applies to ordinary software too, such as feature flags and kill switches."
+      },
+      "anchor": "openai-details-control-room-a-system-to-track-and-rapidly"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 41,
+    "failed_sources": [
+      "FTC"
+    ],
+    "fetched": 127,
+    "candidates": 119,
+    "ranked": 21,
+    "selected": 21
+  }
+}
