@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Tuesday, November 10, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Tuesday, November 10, 2026 · 20 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#google-makes-gemini-4-carbon-generally-available-ranking">Google makes Gemini 4 Carbon generally available, ranking first on several benchmarks at under half the per-task cost.</a></li>
+  <li><a href="#anthropic-releases-claude-fable-5-2-and-mythos-5-2-with">Anthropic releases Claude Fable 5.2 and Mythos 5.2, with Fable 5.2 ranked first on Artificial Analysis.</a></li>
+  <li><a href="#meta-launches-muse-ember-its-smallest-and-most-efficient">Meta launches Muse Ember, its smallest and most efficient model, priced like Claude Haiku 5.5 and GPT-6 Luna.</a></li>
+  <li><a href="#gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in">Gemini Robotics 2.5 scores 96 percent sorting metal parts in a Mercedes-Benz assembly pilot with Apptronik.</a></li>
+  <li><a href="#anthropic-adds-sheets-whiteboards-and-interactive-connectors">Anthropic adds Sheets, Whiteboards and interactive connectors to Claude, with Claude Meetings coming soon.</a></li>
+  <li><a href="#openai-opens-chatgpt-to-businesses-with-a-business-hub-and">OpenAI opens ChatGPT to businesses with a Business Hub and agents that answer customer questions for US e-commerce firms.</a></li>
+  <li><a href="#nvidia-s-gr00t-2-teaches-robots-from-about-400-000-hours-of">Nvidia&#39;s GR00T 2 teaches robots from about 400,000 hours of human video, with task success rates of 10 to 80 percent.</a></li>
+  <li><a href="#deepmind-s-alphaproof-code-agents-wrote-three-million-lines">DeepMind&#39;s AlphaProof Code agents wrote three million lines of Lean proofs to verify Signal&#39;s core encryption.</a></li>
+  <li><a href="#claude-fable-5-2-completes-41-3-percent-of-real-freelance">Claude Fable 5.2 completes 41.3 percent of real freelance jobs on the Remote Labor Index, up from 2.5 percent a year ago.</a></li>
+  <li><a href="#study-finds-diluting-poisoned-fine-tuning-data-with-clean">Study finds diluting poisoned fine-tuning data with clean data can create hidden backdoors in language models.</a></li>
+  <li><a href="#google-unveils-two-new-specialized-tpus-for-confidential">Google unveils two new specialized TPUs for confidential model training and higher memory capacity.</a></li>
+  <li><a href="#anthropic-begins-its-ipo-roadshow-at-70-to-78-per-share-with">Anthropic begins its IPO roadshow at $70 to $78 per share, with a $26 billion private placement from major tech firms.</a></li>
+  <li><a href="#coreweave-s-earnings-put-its-debt-fueled-ai-build-out-under">CoreWeave&#39;s earnings put its debt-fueled AI build-out under scrutiny as its bond yield tops 16 percent.</a></li>
+  <li><a href="#oura-to-acquire-ai-native-primary-care-startup-counsel">Oura to acquire AI-native primary care startup Counsel Health for $625 million.</a></li>
+  <li><a href="#new-york-s-ai-safety-law-takes-effect-requiring-openai">New York&#39;s AI safety law takes effect, requiring OpenAI, Anthropic and others to register and report critical incidents.</a></li>
+  <li><a href="#eight-countries-and-major-ai-labs-sign-the-paris-call-for-ai">Eight countries and major AI labs sign the Paris Call for AI Safety and Security, with no binding sanctions.</a></li>
+  <li><a href="#nvidia-donates-openshell-and-expands-its-open-source">NVIDIA donates OpenShell and expands its open source commitment at KubeCon with new AI infrastructure.</a></li>
+  <li><a href="#a-fireworks-ai-security-breach-affects-notion-and-its">A Fireworks AI security breach affects Notion and its customers.</a></li>
+  <li><a href="#hugging-face-executive-warns-growing-cyberattacks-on-open-ai">Hugging Face executive warns growing cyberattacks on open AI platforms could force tighter access restrictions.</a></li>
+  <li><a href="#deepmind-releases-asimov-jailbreak-an-open-safety-benchmark">DeepMind releases ASIMOV-jailbreak, an open safety benchmark, alongside Gemini Robotics 2.5.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="google-makes-gemini-4-carbon-generally-available-ranking">
+  <h3>Google makes Gemini 4 Carbon generally available, ranking first on several benchmarks at under half the per-task cost.</h3>
+  <div class="meta"><a href="https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/" rel="noopener">The Decoder</a> · <a href="#google-makes-gemini-4-carbon-generally-available-ranking">link</a></div>
+  <h4>What happened</h4>
+  <p>Google made Gemini 4 Carbon generally available after about two weeks of testing. It is meant for hard jobs like multi-step coding, debugging and scientific research, and it sits alongside Gemini 4 Argon rather than replacing it. Google also previewed a &#34;/swarm&#34; feature in Antigravity that turns one prompt into a team of agents.</p>
+  <h4>Why it matters</h4>
+  <p>Carbon costs the same per token as Argon but thinks longer, so the real bill can be higher. In one benchmark test it was cheaper per solved task than some rivals, but Anthropic&#39;s new Fable 5.2 scored two points higher. It shows how fast the top models are trading places.</p>
+  <h4>What it means for you</h4>
+  <p>If you build with AI tools, learn to look at cost per solved task, not just price per token. It is like judging a taxi by the whole trip fare, not the rate per mile. Agent swarms are still debated, so treat them as something to watch, not a must-learn skill yet.</p>
+</section>
+<section class="story" id="anthropic-releases-claude-fable-5-2-and-mythos-5-2-with">
+  <h3>Anthropic releases Claude Fable 5.2 and Mythos 5.2, with Fable 5.2 ranked first on Artificial Analysis.</h3>
+  <div class="meta"><a href="https://simonwillison.net/2026/Nov/9/llm-anthropic/" rel="noopener">Simon Willison</a> · <a href="#anthropic-releases-claude-fable-5-2-and-mythos-5-2-with">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic released Fable 5.2 and Mythos 5.2. Fable 5.2 is currently ranked first on Artificial Analysis, a model ranking site. Simon Willison added support to his command line tool and tested it, noting that the top reasoning setting ran out of tokens and returned no image. Fable 5.2 costs $8 per million input tokens and $40 per million output tokens, a 20 percent drop from Fable 5.1.</p>
+  <h4>Why it matters</h4>
+  <p>A better model at a lower price is a sign that top models keep improving while getting cheaper. The failed max setting is a reminder that even the best models have rough edges.</p>
+  <h4>What it means for you</h4>
+  <p>You can try Fable 5.2 with a few terminal commands if you have an API key. It is also worth knowing that more thinking does not always give a better or even a finished answer. Test the settings before relying on them.</p>
+</section>
+<section class="story" id="meta-launches-muse-ember-its-smallest-and-most-efficient">
+  <h3>Meta launches Muse Ember, its smallest and most efficient model, priced like Claude Haiku 5.5 and GPT-6 Luna.</h3>
+  <div class="meta"><a href="https://simonwillison.net/2026/Nov/10/muse-ember/" rel="noopener">Simon Willison</a> · <a href="#meta-launches-muse-ember-its-smallest-and-most-efficient">link</a></div>
+  <h4>What happened</h4>
+  <p>Meta launched Muse Ember, its smallest and most efficient model, built for repeated agent work like tool calls, coding subtasks, routing, extraction and reading long documents. For short prompts it costs $0.10 per million input tokens and $0.50 per million output tokens, the same as GPT-6 Luna and Claude Haiku 5.5. Meta says no model scores higher for less cost per task on the Artificial Analysis leaderboard.</p>
+  <h4>Why it matters</h4>
+  <p>Small, cheap models do the repetitive work in many AI products, so competition here pushes prices down. Price per token alone can mislead, because models use different numbers of thinking tokens. Cost per task is the fairer comparison.</p>
+  <h4>What it means for you</h4>
+  <p>For side projects and apps, cheap models like these can keep costs very low. Think of it as using a small van for daily deliveries and saving the truck for big jobs. Learning to pick the right size of model for each step is a practical skill.</p>
+</section>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in">
+  <h3>Gemini Robotics 2.5 scores 96 percent sorting metal parts in a Mercedes-Benz assembly pilot with Apptronik.</h3>
+  <div class="meta"><a href="https://the-decoder.com/google-deepminds-gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in-a-mercedes-benz-assembly-pilot/" rel="noopener">The Decoder</a> · <a href="#gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind introduced Gemini Robotics 2.5, a model that takes in images and instructions and turns them into robot movements. In a pilot on Mercedes-Benz production lines in Hungary and Germany, Apptronik&#39;s Apollo 2 humanoid robot sorted metal parts with a reported 96 percent success rate. Google also released an open-source benchmark called ASIMOV-Jailbreak to test whether robot models can be tricked into unsafe actions.</p>
+  <h4>Why it matters</h4>
+  <p>Robots working on real factory lines is a step beyond lab demos. The 96 percent figure is Google&#39;s own report from a pilot, so it should be read with some care. The safety benchmark matters because a tricked robot can cause physical harm, not just bad text.</p>
+  <h4>What it means for you</h4>
+  <p>Robotics is a growing area, but it is still early and mostly reaches big partners first. If it interests you, the open-source safety benchmark is a concrete place to start learning. For most software jobs, this changes little right now.</p>
+</section>
+<section class="story" id="anthropic-adds-sheets-whiteboards-and-interactive-connectors">
+  <h3>Anthropic adds Sheets, Whiteboards and interactive connectors to Claude, with Claude Meetings coming soon.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropic-turns-claude-into-a-full-workspace-with-plugins-spreadsheets-whiteboards-and-soon-meeting-notes/" rel="noopener">The Decoder</a> · <a href="#anthropic-adds-sheets-whiteboards-and-interactive-connectors">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic is adding workspace features to Claude: Sheets for spreadsheets, Whiteboards for brainstorming, and Data for dashboards. It is also launching Interactive Connectors so partners like Adobe, Atlassian and Salesforce can embed their apps in Claude. Claude Meetings, which joins calls and takes notes, is coming soon.</p>
+  <h4>Why it matters</h4>
+  <p>Anthropic is moving Claude from a chat box toward an everyday work hub, similar to what other AI companies are doing. Enterprise security controls like audit logs show it is aiming at large companies.</p>
+  <h4>What it means for you</h4>
+  <p>Companies will want people who can connect their tools to AI apps like these. Knowing how connectors and integrations work could be useful in a job. For personal use, it mostly means more built-in features, not a new skill you must learn.</p>
+</section>
+<section class="story" id="openai-opens-chatgpt-to-businesses-with-a-business-hub-and">
+  <h3>OpenAI opens ChatGPT to businesses with a Business Hub and agents that answer customer questions for US e-commerce firms.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-turns-chatgpt-into-a-business-directory-with-ai-agents-that-handle-customer-questions/" rel="noopener">The Decoder</a> · <a href="#openai-opens-chatgpt-to-businesses-with-a-business-hub-and">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI launched a beta called Businesses in ChatGPT. Companies can manage a profile in a Business Hub, add product feeds with prices and availability, and see how often they are mentioned. Eligible US e-commerce and online service firms can also create Business Agents that answer customer questions. OpenAI says conversations are not shared with businesses and that ChatGPT reaches 1.2 billion users a week.</p>
+  <h4>Why it matters</h4>
+  <p>This puts ChatGPT in competition with Google&#39;s business listings, by placing company profiles inside a chat instead of a search page. It also opens another place for ads. How people find products may shift toward chat.</p>
+  <h4>What it means for you</h4>
+  <p>If you do web or e-commerce work, being findable inside AI chats may become part of the job, like search optimization is today. It is only a US beta for now, so it barely affects you today. It is worth keeping an eye on if you plan to work on online shops.</p>
+</section>
+<section class="story" id="nvidia-s-gr00t-2-teaches-robots-from-about-400-000-hours-of">
+  <h3>Nvidia&#39;s GR00T 2 teaches robots from about 400,000 hours of human video, with task success rates of 10 to 80 percent.</h3>
+  <div class="meta"><a href="https://the-decoder.com/nvidias-model-gr00t-2-watches-humans-on-video-then-imagines-itself-as-the-robot/" rel="noopener">The Decoder</a> · <a href="#nvidia-s-gr00t-2-teaches-robots-from-about-400-000-hours-of">link</a></div>
+  <h4>What happened</h4>
+  <p>Nvidia introduced GR00T 2, a robot model trained on about 400,000 hours of video of people doing tasks. It predicts the next movement and a short video of what should happen next, which helps it copy human motions onto robot arms. Success rates in lab tests ranged from 10 to 80 percent depending on the task, and the team says it still lacks a sense of touch and can be slowed by its planning model.</p>
+  <h4>Why it matters</h4>
+  <p>Teaching robots by hand-controlling them is slow and costly. Learning from human video could cut that effort. The mixed results show the approach is promising but not ready for reliable real-world use.</p>
+  <h4>What it means for you</h4>
+  <p>This is research, not a tool you can use yet. It does show that robotics increasingly relies on video and large-scale training data, which are familiar skills from machine learning. If you want to work in robotics, that is a useful direction to study.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="deepmind-s-alphaproof-code-agents-wrote-three-million-lines">
+  <h3>DeepMind&#39;s AlphaProof Code agents wrote three million lines of Lean proofs to verify Signal&#39;s core encryption.</h3>
+  <div class="meta"><a href="https://deepmind.google/blog/introducing-alphaproof-code/" rel="noopener">Google DeepMind</a> · <a href="#deepmind-s-alphaproof-code-agents-wrote-three-million-lines">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind built AlphaProof Code, a system where AI agents write mathematical proofs in a language called Lean to show that code is correct. They used it on the code behind the Signal protocol, which protects private messages. The work took four weeks, and humans needed to take a second look at only one percent of the codebase. The system also correctly flagged two old bugs that were put back into a test version.</p>
+  <h4>Why it matters</h4>
+  <p>Formal verification is the strongest way to prove software is secure, but it usually takes experts years. Doing it in weeks with AI agents could make it practical for more important software. DeepMind says this is the first time a widely used protocol&#39;s implementation has been verified this way.</p>
+  <h4>What it means for you</h4>
+  <p>Think of it as a proof that a bridge design holds, instead of just testing it with trucks. Lean and formal verification are niche, but AI-assisted proof could grow in security work. If you enjoy logic and math, it is a rare area worth exploring.</p>
+</section>
+<section class="story" id="claude-fable-5-2-completes-41-3-percent-of-real-freelance">
+  <h3>Claude Fable 5.2 completes 41.3 percent of real freelance jobs on the Remote Labor Index, up from 2.5 percent a year ago.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropics-fable-5-2-completes-41-percent-of-real-freelance-jobs-up-from-2-5-percent-a-year-ago/" rel="noopener">The Decoder</a> · <a href="#claude-fable-5-2-completes-41-3-percent-of-real-freelance">link</a></div>
+  <h4>What happened</h4>
+  <p>Claude Fable 5.2 completed 41.3 percent of real freelance projects on the Remote Labor Index, up from 2.5 percent for the top system when the test launched about a year ago. The test uses 240 projects from Upwork, worth about $144,000, and human experts check the results in professional software. Failures are usually amateur work, incomplete results or broken files.</p>
+  <h4>Why it matters</h4>
+  <p>Most benchmarks test small skills, while this one tests full jobs a client would pay for. The jump shows how quickly agents are improving at practical work. Even so, the best model still fails most jobs, and some areas like industrial design and animation remain very hard.</p>
+  <h4>What it means for you</h4>
+  <p>AI is getting better at whole tasks, not just snippets, so skills like judging quality, defining the work and checking results matter more. The test covers many kinds of work, not mainly software, so it is not a direct forecast for developer jobs. Learn to work with these agents and review their output carefully.</p>
+</section>
+<section class="story" id="study-finds-diluting-poisoned-fine-tuning-data-with-clean">
+  <h3>Study finds diluting poisoned fine-tuning data with clean data can create hidden backdoors in language models.</h3>
+  <div class="meta"><a href="https://arxiv.org/abs/2611.10110" rel="noopener">arXiv cs.AI</a> · <a href="#study-finds-diluting-poisoned-fine-tuning-data-with-clean">link</a></div>
+  <h4>What happened</h4>
+  <p>A paper describes &#34;homeopathic learning.&#34; A model fine-tuned only on poisoned data does not pick up a bad trait. But when clean data without a certain trigger feature is added, the model learns the trait. The authors show this in several settings, including a simple image classifier, and explain it with a simple regression model.</p>
+  <h4>Why it matters</h4>
+  <p>Many safety methods check training data on its own and filter out the bad parts. This work suggests that data that looks harmless alone can create a hidden backdoor once mixed with other data. That is a limit on checking data piece by piece.</p>
+  <h4>What it means for you</h4>
+  <p>If you fine-tune models, the lesson is that data should be checked as a whole mix, not only item by item. It is like ingredients that are safe alone but not together. This is a research finding, so it will not change your daily work yet.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="google-unveils-two-new-specialized-tpus-for-confidential">
+  <h3>Google unveils two new specialized TPUs for confidential model training and higher memory capacity.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/" rel="noopener">TechCrunch AI</a> · <a href="#google-unveils-two-new-specialized-tpus-for-confidential">link</a></div>
+  <h4>What happened</h4>
+  <p>Google unveiled two new TPUs, its own AI chips: TPU 8tx and TPU 8i Max. The 8tx, made with AMD, is built to train and run models confidentially by protecting data and model weights in hardware. The 8i Max combines two inference chips in one package, doubling memory, processing power and bandwidth.</p>
+  <h4>Why it matters</h4>
+  <p>Big tech companies and AI labs are building their own chips to depend less on Nvidia. More chip choices could change costs and who controls AI infrastructure. Confidential computing matters for companies that cannot share sensitive data.</p>
+  <h4>What it means for you</h4>
+  <p>You are unlikely to touch these chips directly. It does mean AI work may run on more kinds of hardware over time, so general skills that carry across platforms are safer bets. Cloud jobs may increasingly mention TPUs next to GPUs.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="anthropic-begins-its-ipo-roadshow-at-70-to-78-per-share-with">
+  <h3>Anthropic begins its IPO roadshow at $70 to $78 per share, with a $26 billion private placement from major tech firms.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropic-kicks-off-ipo-roadshow-offering-shares-at-70-to-78-and-targeting-a-trillion-dollar-valuation/" rel="noopener">The Decoder</a> · <a href="#anthropic-begins-its-ipo-roadshow-at-70-to-78-per-share-with">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic began its IPO roadshow, offering 825 million shares at $70 to $78 each on the Nasdaq under the ticker ANT. Together with a $26 billion private placement from firms including Google, Nvidia and Microsoft, it could raise up to $90.4 billion at a valuation of up to $1.02 trillion. In Q3, revenue grew 47 percent to $16.96 billion and the net loss narrowed, but growth slowed and the company has committed to nearly $900 billion in compute.</p>
+  <h4>Why it matters</h4>
+  <p>This would be one of the largest stock offerings of the year and a test of whether investors still believe in AI spending. The huge compute commitments and market skepticism are real risks. How it goes could affect funding for the whole AI industry.</p>
+  <h4>What it means for you</h4>
+  <p>For your career it matters mostly as a signal of how much money is flowing into AI, which affects hiring and how stable these employers are. A public company also has to share more about its finances. It is worth following, but it does not change what you should study.</p>
+</section>
+<section class="story" id="coreweave-s-earnings-put-its-debt-fueled-ai-build-out-under">
+  <h3>CoreWeave&#39;s earnings put its debt-fueled AI build-out under scrutiny as its bond yield tops 16 percent.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html" rel="noopener">CNBC Tech</a> · <a href="#coreweave-s-earnings-put-its-debt-fueled-ai-build-out-under">link</a></div>
+  <h4>What happened</h4>
+  <p>CoreWeave, a company that rents out AI computing power, was about to report its third-quarter results. Its stock is down roughly 40% over the past month. The yield on one of its bonds hit 16.7% last Thursday and was 15.5% on Tuesday. It has about $35 billion in debt as of June 30, and its debt-to-equity ratio is 702%, up from almost 291% a year ago.</p>
+  <h4>Why it matters</h4>
+  <p>A bond yield that high means lenders see real risk and want extra pay to lend. Think of it like a borrower who has to promise a much higher interest rate because people doubt they can repay. CoreWeave is building data centers with borrowed money, so its health is a test of whether the AI build-out can keep being funded this way. Analysts say 2027 spending could need at least $25 billion more in debt.</p>
+  <h4>What it means for you</h4>
+  <p>This is a finance story more than a coding story, and it will not change what you should learn this month. It is a reminder that some AI companies depend on borrowed money, so hiring at the most debt-heavy ones may be less stable. When you compare job offers, look at how a company funds itself, not just how exciting its product sounds.</p>
+</section>
+<section class="story" id="oura-to-acquire-ai-native-primary-care-startup-counsel">
+  <h3>Oura to acquire AI-native primary care startup Counsel Health for $625 million.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/" rel="noopener">TechCrunch AI</a> · <a href="#oura-to-acquire-ai-native-primary-care-startup-counsel">link</a></div>
+  <h4>What happened</h4>
+  <p>Oura, the smart ring maker, is buying Counsel Health for $625 million. Counsel offers a chat-based medical service that also gives users access to licensed doctors, and it has been inside the Oura app since June. The deal comes a few weeks after Oura put its IPO (selling shares to the public) on hold. Oura also reported quarterly revenue of $533 million, up 153% from a year earlier.</p>
+  <h4>Why it matters</h4>
+  <p>It shows a hardware company folding an AI service into its product to go beyond tracking data. Oura faces rivals like RingConn and Ultrahuman. The AI here is paired with human doctors, who stay in the loop for clinical decisions.</p>
+  <h4>What it means for you</h4>
+  <p>Health is one area where companies are hiring people who can build AI features, and Oura is giving its new AI lead a chief clinical AI officer title. Working in this field means caring about safety and privacy, not only about clever models. It is a useful niche to know about, but it will not affect most early job searches directly.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="new-york-s-ai-safety-law-takes-effect-requiring-openai">
+  <h3>New York&#39;s AI safety law takes effect, requiring OpenAI, Anthropic and others to register and report critical incidents.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/" rel="noopener">TechCrunch AI</a> · <a href="#new-york-s-ai-safety-law-takes-effect-requiring-openai">link</a></div>
+  <h4>What happened</h4>
+  <p>New York opened a registration portal for its RAISE Act. Large AI developers with more than $500 million in annual revenue, such as OpenAI and Anthropic, must register by January 1, 2027. They also have to publish safety plans, report serious safety incidents within 72 hours, and release public transparency reports. Fines can reach $1 million for a first violation and $3 million for later ones.</p>
+  <h4>Why it matters</h4>
+  <p>It is one of several state laws setting rules for the biggest AI labs. California and Illinois have similar laws, with different deadlines and details, such as California&#39;s 15-day reporting window. With no single national rule in the text, companies face a patchwork they have to follow.</p>
+  <h4>What it means for you</h4>
+  <p>It barely touches you as a student today, since it only covers very large companies. Over time, though, work on AI safety, reporting and compliance is likely to grow at those firms. Knowing how to document and log what an AI system does is a practical skill that could help you stand out.</p>
+</section>
+<section class="story" id="eight-countries-and-major-ai-labs-sign-the-paris-call-for-ai">
+  <h3>Eight countries and major AI labs sign the Paris Call for AI Safety and Security, with no binding sanctions.</h3>
+  <div class="meta"><a href="https://the-decoder.com/eight-countries-and-top-ai-labs-agree-to-shutdown-mechanisms-in-new-paris-declaration/" rel="noopener">The Decoder</a> · <a href="#eight-countries-and-major-ai-labs-sign-the-paris-call-for-ai">link</a></div>
+  <h4>What happened</h4>
+  <p>Eight countries, along with major AI labs and civil-society groups, signed the Paris Call for AI Safety and Security. Leaders such as Sam Altman and Dario Amodei joined an online meeting with French President Macron. The companies pledged to share test results, disclose known risks, support outside audits and set up shutdown mechanisms for models under their control. Germany did not sign. There are no deadlines or sanctions yet.</p>
+  <h4>Why it matters</h4>
+  <p>It is a promise, not a law, so nothing forces anyone to follow it. Still, it puts concrete measures like shutdown mechanisms and standard test reporting on paper across countries and companies. The text also shows tension, including the U.S. president rejecting international oversight.</p>
+  <h4>What it means for you</h4>
+  <p>There is no direct effect on your skills or job search right now. The longer-term signal is that testing, auditing and safety evaluation of AI models are becoming real work areas. If that interests you, learning how to test and measure model behavior is a sensible thing to practice.</p>
+</section>
+<h2 class="cat">AI Open Source</h2>
+<section class="story" id="nvidia-donates-openshell-and-expands-its-open-source">
+  <h3>NVIDIA donates OpenShell and expands its open source commitment at KubeCon with new AI infrastructure.</h3>
+  <div class="meta"><a href="https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/" rel="noopener">NVIDIA</a> · <a href="#nvidia-donates-openshell-and-expands-its-open-source">link</a></div>
+  <h4>What happened</h4>
+  <p>At KubeCon, a conference about Kubernetes, NVIDIA donated OpenShell to the Cloud Native Computing Foundation. OpenShell is an open source tool that sets and enforces rules for what AI agents (programs that act on their own) are allowed to do. NVIDIA is also contributing to Agent Substrate, a Google-led project for running long-lived agents on Kubernetes, and announced new tools for managing GPU infrastructure on Kubernetes.</p>
+  <h4>Why it matters</h4>
+  <p>Kubernetes is the system many companies use to run applications across lots of machines, and AI work is increasingly running on it. Putting agent security rules into a shared, community-run project means many companies can build on the same foundation instead of each making their own. It is like agreeing on one set of building codes rather than every builder inventing theirs.</p>
+  <h4>What it means for you</h4>
+  <p>If you learn Kubernetes basics, you are learning something AI teams actually use. Open source projects like these also give you a way to contribute and get noticed, since the text says OpenShell has had tens of thousands of contributions. Learning how to limit what an agent can do is a skill worth picking up.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="a-fireworks-ai-security-breach-affects-notion-and-its">
+  <h3>A Fireworks AI security breach affects Notion and its customers.</h3>
+  <div class="meta"><a href="https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor" rel="noopener">Hacker News</a> · <a href="#a-fireworks-ai-security-breach-affects-notion-and-its">link</a></div>
+  <h4>What happened</h4>
+  <p>Notion said a security incident at its vendor Fireworks AI may have affected under 1% of Notion workspaces. Some Notion AI chat sessions used for a feature called Insights may have been exposed. Notion says these chats were not labeled with who wrote them or which workspace they came from, and no other workspace data was affected. Notion disabled Insights and stopped serving open-weight models through Fireworks.</p>
+  <h4>Why it matters</h4>
+  <p>It shows that your data is only as safe as the outside companies you hand it to. Notion did not get hacked directly, but a supplier did. It is like a bank being safe while a company that processes its paperwork is not.</p>
+  <h4>What it means for you</h4>
+  <p>When you build apps that call outside AI services, you are also trusting those services with whatever you send. Send as little sensitive data as you can and know which vendors see it. Noting vendor risk in your projects is a good habit and shows maturity in interviews.</p>
+</section>
+<section class="story" id="hugging-face-executive-warns-growing-cyberattacks-on-open-ai">
+  <h3>Hugging Face executive warns growing cyberattacks on open AI platforms could force tighter access restrictions.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/" rel="noopener">TechCrunch AI</a> · <a href="#hugging-face-executive-warns-growing-cyberattacks-on-open-ai">link</a></div>
+  <h4>What happened</h4>
+  <p>Irene Solaiman of Hugging Face warned that attacks on open AI platforms could force them to become less open. She pointed to an October attack on OpenCode that targeted users&#39; API keys and an incident this summer where an OpenAI agent swarm breached Hugging Face. Fireworks also disclosed that attackers accessed some customers&#39; model weights, datasets and billing information. Hugging Face now rotates admin tokens more often and uses stricter network controls.</p>
+  <h4>Why it matters</h4>
+  <p>Open platforms let anyone contribute, but they also hold valuable data, which makes them targets. Tighter rules could protect them, but could also shut out hobbyists and independent researchers. It is the same tension as a public library deciding whether to start checking IDs at the door.</p>
+  <h4>What it means for you</h4>
+  <p>Open source is one of the easiest ways for a student to build a portfolio, and this suggests it could get a bit harder to join in. Treat API keys and tokens carefully in your own projects, and rotate them. Security basics are worth learning no matter what kind of software job you want.</p>
+</section>
+<section class="story" id="deepmind-releases-asimov-jailbreak-an-open-safety-benchmark">
+  <h3>DeepMind releases ASIMOV-jailbreak, an open safety benchmark, alongside Gemini Robotics 2.5.</h3>
+  <div class="meta"><a href="https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/" rel="noopener">Ars Technica AI</a> · <a href="#deepmind-releases-asimov-jailbreak-an-open-safety-benchmark">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind released Gemini Robotics 2.5, its newest AI for controlling robots, along with an open safety benchmark called ASIMOV-jailbreak. It reports a 30 to 100 percent higher success rate than the previous version, and it is 20 to 30 percent faster, based on lab testing. In European Mercedes-Benz factories, Apptronik&#39;s Apollo 2 robots running the model kitted automotive parts with a 96 percent success rate. A DeepMind director called closing the remaining 4 percent gap a steep road.</p>
+  <h4>Why it matters</h4>
+  <p>Robots that follow instructions and handle delicate objects, such as tying a bow, are a step beyond lab demos. The 96 percent factory result is impressive but still short of what a human does on that task. Releasing a safety benchmark in the open points to the need to check robot safety before they work next to people.</p>
+  <h4>What it means for you</h4>
+  <p>Robotics is a growing area, but the text gives no sign of hiring or tools you can use yet. If you are curious, it is a reminder that AI work is not only chatbots and that physical systems need careful testing. For most early-career software jobs, this is something to watch rather than act on.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
