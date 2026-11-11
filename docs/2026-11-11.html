@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Wednesday, November 11, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Wednesday, November 11, 2026 · 25 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#google-launches-the-gemini-decisions-api-scoring-up-to-1-000">Google launches the Gemini Decisions API, scoring up to 1,000 closed-ended questions per pass in 150-250 ms.</a></li>
+  <li><a href="#deepl-s-new-aure-model-carries-tone-emotion-and-pacing-of">DeepL&#39;s new Aure model carries tone, emotion and pacing of the speaker into real-time voice translation.</a></li>
+  <li><a href="#helsing-unveils-clarity-an-agent-based-platform-that-turns">Helsing unveils Clarity, an agent-based platform that turns sensor data into target recommendations under human oversight.</a></li>
+  <li><a href="#databricks-revised-genie-agent-gives-ceo-ali-ghodsi">Databricks&#39; revised Genie agent gives CEO Ali Ghodsi unfiltered insight into problems across its 12,000 employees.</a></li>
+  <li><a href="#aws-releases-an-official-local-emulator-for-its-services">AWS releases an official local emulator for its services, written in Rust largely by a swarm of AI agents.</a></li>
+  <li><a href="#indie-games-festival-judges-object-to-any-ai-coding-after">Indie Games Festival judges object to any AI coding after Big Walk used AI to fix a bug.</a></li>
+  <li><a href="#mercor-raises-a-750m-series-d-at-a-20b-valuation-with-a">Mercor raises a $750M Series D at a $20B valuation with a reported $3B revenue run rate.</a></li>
+  <li><a href="#openai-s-quarterly-revenue-rises-about-50-to-10b-but">OpenAI&#39;s quarterly revenue rises about 50% to $10B, but adjusted operating losses hit $10.9B and it trails Anthropic.</a></li>
+  <li><a href="#ramp-data-shows-us-corporate-ai-spending-hit-a-new-high-in">Ramp data shows US corporate AI spending hit a new high in October but grew only 1.65%.</a></li>
+  <li><a href="#deepmind-s-alphaproof-code-mathematically-verified-signal-s">DeepMind&#39;s AlphaProof Code mathematically verified Signal&#39;s cryptographic core in four weeks instead of years.</a></li>
+  <li><a href="#google-deepmind-releases-alphagenome-2-predicting-how-dna">Google DeepMind releases AlphaGenome 2, predicting how DNA variants affect specific human cell types and disease.</a></li>
+  <li><a href="#anthropic-says-its-mythos-model-ported-claude-to-amd-gpus-in">Anthropic says its Mythos model ported Claude to AMD GPUs in three days, and it now runs on four chip families.</a></li>
+  <li><a href="#uk-ai-chip-startup-fractile-raises-720m-becoming-one-of-the">UK AI chip startup Fractile raises $720M, becoming one of the best-funded purpose-built AI chip players.</a></li>
+  <li><a href="#local-opposition-permitting-delays-and-power-shortages-mean">Local opposition, permitting delays and power shortages mean many announced AI data centers may never be built.</a></li>
+  <li><a href="#coreweave-is-asking-customers-to-prepay-and-shifting-to">CoreWeave is asking customers to prepay and shifting to shorter contracts to fund AI growth, per Q3 earnings.</a></li>
+  <li><a href="#coreweave-shares-jump-over-24-after-a-strong-q3-report-and">CoreWeave shares jump over 24% after a strong Q3 report and raised guidance eased AI slowdown fears.</a></li>
+  <li><a href="#tsmc-plans-to-invest-1-billion-in-anthropic-and-openai-the">TSMC plans to invest $1 billion in Anthropic and OpenAI, the latest example of circular AI financing.</a></li>
+  <li><a href="#anthropic-opens-its-australian-retail-ipo-offering-ahead-of">Anthropic opens its Australian retail IPO offering ahead of its planned listing.</a></li>
+  <li><a href="#us-data-brokers-reportedly-sell-about-500m-of-rl-training">US data brokers reportedly sell about $500M of RL training environments to Chinese AI labs, with export controls barely applying.</a></li>
+  <li><a href="#england-s-office-for-students-threatens-sanctions-unless">England&#39;s Office for Students threatens sanctions unless universities adopt AI-proof exam formats.</a></li>
+  <li><a href="#bessent-says-the-us-and-china-should-harbor-no-illusions-as">Bessent says the US and China should &#39;harbor no illusions&#39; as they launch an AI dialogue with a crisis communication channel.</a></li>
+  <li><a href="#house-republicans-demand-a-closed-door-briefing-from-nvidia">House Republicans demand a closed-door briefing from Nvidia CEO Jensen Huang over his alleged relationship with a Chinese spy.</a></li>
+  <li><a href="#apple-is-reportedly-preparing-a-mac-app-that-makes-running">Apple is reportedly preparing a Mac app that makes running local AI models easy.</a></li>
+  <li><a href="#microsoft-researchers-describe-lazarus-a-backdoor-that">Microsoft researchers describe &#39;Lazarus,&#39; a backdoor that reprograms dormant neurons to make AI agents run malicious commands.</a></li>
+  <li><a href="#researcher-finds-over-35-000-grok-build-apps-publicly">Researcher finds over 35,000 Grok Build apps publicly exposed, leaking patient data, passwords and SpaceXSI documents.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="google-launches-the-gemini-decisions-api-scoring-up-to-1-000">
+  <h3>Google launches the Gemini Decisions API, scoring up to 1,000 closed-ended questions per pass in 150-250 ms.</h3>
+  <div class="meta"><a href="https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/" rel="noopener">The Decoder</a> · <a href="#google-launches-the-gemini-decisions-api-scoring-up-to-1-000">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind launched the Gemini Decisions API, built for closed-ended questions like yes/no, multiple choice and rating scales. Its model, Gemini Decision 1, can score up to 1,000 independent questions in one pass across text, images, audio, video and PDFs. It returns probabilities with confidence values in 150 to 250 milliseconds and costs $0.10 per million input tokens, with no charge for output.</p>
+  <h4>Why it matters</h4>
+  <p>Not every AI task needs a model that writes paragraphs. Many jobs are just quick judgment calls, and a small, fast, cheap model can handle them. The text says Jev started this trend and OpenAI, Cloudflare and Microsoft quickly followed with similar offerings.</p>
+  <h4>What it means for you</h4>
+  <p>Think of it as a sorting machine next to a writer: you use it for routing, filtering and safety checks inside an app. Google says it is available now in Google AI Studio, with LangChain, Vercel and OpenRouter integrations rolling out, so you can try it in a side project. Knowing when a cheap classifier beats a big chat model is a useful design skill.</p>
+</section>
+<section class="story" id="deepl-s-new-aure-model-carries-tone-emotion-and-pacing-of">
+  <h3>DeepL&#39;s new Aure model carries tone, emotion and pacing of the speaker into real-time voice translation.</h3>
+  <div class="meta"><a href="https://the-decoder.com/with-its-new-voice-model-deepl-voice-now-translates-intonation-and-speaking-speed-into-other-languages-as-well/" rel="noopener">The Decoder</a> · <a href="#deepl-s-new-aure-model-carries-tone-emotion-and-pacing-of">link</a></div>
+  <h4>What happened</h4>
+  <p>DeepL released a model called Aure for its real-time voice translation. It carries the speaker&#39;s tone, emotion, emphasis and speaking pace into the translated speech. Before, DeepL Voice used a fixed voice sample taken at the start of a conversation, so it missed mood shifts and sarcasm. Aure keeps analyzing the original audio and the translated text as the conversation goes on.</p>
+  <h4>Why it matters</h4>
+  <p>Translation that gets the words right but loses the tone can still cause misunderstandings. Carrying emotion across languages makes live translation feel more natural. The text also notes that Block is working on a related problem with a speech model that detects emotion and sarcasm from audio.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly a product update, not something that changes your day-to-day. Aure runs in DeepL Voice and the DeepL API, so if you build apps with multilingual calls or meetings, it is worth a look. It supports eight languages at launch, including English, German, Spanish, French, Italian, Japanese, Portuguese and Korean.</p>
+</section>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="helsing-unveils-clarity-an-agent-based-platform-that-turns">
+  <h3>Helsing unveils Clarity, an agent-based platform that turns sensor data into target recommendations under human oversight.</h3>
+  <div class="meta"><a href="https://the-decoder.com/helsing-built-an-ai-system-that-prepares-targets-for-weapons-systems-and-says-every-decision-will-carry-a-human-name/" rel="noopener">The Decoder</a> · <a href="#helsing-unveils-clarity-an-agent-based-platform-that-turns">link</a></div>
+  <h4>What happened</h4>
+  <p>German defense company Helsing unveiled Clarity, a platform in which hundreds of AI agents combine sensor feeds, reports and other data to identify military targets and prepare them for weapons systems. Helsing says a human must authorize every handoff and that each decision will carry the name of the responsible person. It runs on the customer&#39;s own infrastructure and was developed in Europe. The article warns that in similar systems human review can shrink to seconds, and cites cases in Iran and Gaza.</p>
+  <h4>Why it matters</h4>
+  <p>A rule that says a human must approve is only as good as the time and information that person actually has. It is like a manager signing off on hundreds of documents an hour. Helsing is also entering a market led by Palantir, so competition in military AI is growing.</p>
+  <h4>What it means for you</h4>
+  <p>Defense tech is a growing employer of software engineers, but it comes with real ethical questions. If you consider such roles, think about where you draw your own line. Skills in building reliable systems with meaningful human review are relevant everywhere.</p>
+</section>
+<section class="story" id="databricks-revised-genie-agent-gives-ceo-ali-ghodsi">
+  <h3>Databricks&#39; revised Genie agent gives CEO Ali Ghodsi unfiltered insight into problems across its 12,000 employees.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/" rel="noopener">TechCrunch AI</a> · <a href="#databricks-revised-genie-agent-gives-ceo-ali-ghodsi">link</a></div>
+  <h4>What happened</h4>
+  <p>Databricks unveiled an updated version of its AI agent Genie, which can now do multistep jobs that take extended work, using an ontology that gives it context from customer data. CEO Ali Ghodsi showed how he uses it internally, for example to analyze weak spots in an employee survey and to summarize a failed sales pitch. He says it tells him things he is unlikely to hear directly at a company of 12,000 people. For cost control, he points to a product called Unity Gateway that sets usage limits and swaps in cheaper open-weight models.</p>
+  <h4>Why it matters</h4>
+  <p>Ghodsi&#39;s pitch is that agents can do for business work what they are doing for programmers. The CEO&#39;s own use is a way to show it works. It also shows that companies worry about agent costs and are building tools to control them.</p>
+  <h4>What it means for you</h4>
+  <p>Companies are building agents that work on business data, so data and analytics skills remain useful. It is a vendor pitch, so treat the claims with some caution. For you, it&#39;s a reminder that knowing how to give an agent good context and limits is a useful skill.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="aws-releases-an-official-local-emulator-for-its-services">
+  <h3>AWS releases an official local emulator for its services, written in Rust largely by a swarm of AI agents.</h3>
+  <div class="meta"><a href="https://simonwillison.net/2026/Nov/11/aws-emulator/" rel="noopener">Simon Willison</a> · <a href="#aws-releases-an-official-local-emulator-for-its-services">link</a></div>
+  <h4>What happened</h4>
+  <p>AWS released an official emulator that lets you run tests against a local copy of many of its services. According to Simon Willison, it is written in Rust by a large swarm of AI agents, with 29,684 commits in the first three weeks. It currently needs Docker on macOS or Windows. Willison hopes for a single downloadable program in the future.</p>
+  <h4>Why it matters</h4>
+  <p>Testing against the real cloud costs money and is slow, like practising driving on real roads in traffic. A local copy is faster and cheaper. The huge number of commits also shows how much code AI agents can now produce in a short time.</p>
+  <h4>What it means for you</h4>
+  <p>If you write code that uses AWS, you can test it on your laptop without a paid account, which is good for side projects. Learning Docker helps since it is required for now. The agent-written code also suggests that reviewing and testing code will be a core skill.</p>
+</section>
+<section class="story" id="indie-games-festival-judges-object-to-any-ai-coding-after">
+  <h3>Indie Games Festival judges object to any AI coding after Big Walk used AI to fix a bug.</h3>
+  <div class="meta"><a href="https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/" rel="noopener">Ars Technica AI</a> · <a href="#indie-games-festival-judges-object-to-any-ai-coding-after">link</a></div>
+  <h4>What happened</h4>
+  <p>Nineteen members of the Independent Games Festival jury signed a statement saying they will not vote for any game that uses generative AI in any capacity. The debate then focused on Big Walk, whose developer House House admitted it used an AI chatbot sparingly near the end. They say it was well under 0.1 percent of the code, about 10 lines, to help fix a Unity engine bug that caused infinite-length shadows. The developers said they had to modify the suggestion extensively.</p>
+  <h4>Why it matters</h4>
+  <p>It shows how strong feelings are in creative fields about AI, even for very small uses. The fight is about disclosure and trust as much as about the tools. Rules for awards and communities are still being written.</p>
+  <h4>What it means for you</h4>
+  <p>If you want to work in games or other creative fields, know that some communities are strongly against AI, even for small fixes. Be ready to disclose honestly how you used it. Check the rules of any contest or community before you submit work.</p>
+</section>
+<h2 class="cat">AI Startups &amp; Y Combinator</h2>
+<section class="story" id="mercor-raises-a-750m-series-d-at-a-20b-valuation-with-a">
+  <h3>Mercor raises a $750M Series D at a $20B valuation with a reported $3B revenue run rate.</h3>
+  <div class="meta"><a href="https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/" rel="noopener">Latent Space</a> · <a href="#mercor-raises-a-750m-series-d-at-a-20b-valuation-with-a">link</a></div>
+  <h4>What happened</h4>
+  <p>Mercor raised a $750 million Series D at a $20 billion valuation, with a reported $3 billion annualized revenue run rate. The newsletter says its revenue passed $1B in February and $2B in June. Mercor reports 5 million experts and says it spends 3x as much on inference, the cost of running AI models, as on employee salaries. The same issue also covers Google&#39;s Gemini 4 Carbon launch, which is only partly shown in the text.</p>
+  <h4>Why it matters</h4>
+  <p>Mercor sells expert human input that is used to evaluate AI models, so its growth suggests labs still need a lot of human judgment. The growth is also very fast. The 3x inference-to-salary figure is the company&#39;s own claim, and its prediction of double-digit GDP growth is its own projection.</p>
+  <h4>What it means for you</h4>
+  <p>It suggests there is paid work in judging and evaluating AI output, especially for people with real domain skills. The text does not say what that work pays or how stable it is. For a software engineer, the lesson is that using AI heavily is becoming a normal part of how teams operate.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="openai-s-quarterly-revenue-rises-about-50-to-10b-but">
+  <h3>OpenAI&#39;s quarterly revenue rises about 50% to $10B, but adjusted operating losses hit $10.9B and it trails Anthropic.</h3>
+  <div class="meta"><a href="https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/" rel="noopener">The Decoder</a> · <a href="#openai-s-quarterly-revenue-rises-about-50-to-10b-but">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI&#39;s third-quarter revenue grew about 50% to $10 billion, but its adjusted operating loss was $10.9 billion. Anthropic brought in $17 billion over the same period, with an operating loss of $567 million. OpenAI is cutting prices and pushing into enterprise sales, and says ChatGPT has 1.2 billion weekly users and 100 million paying subscribers. Both companies have been hit by the recent tech sell-off, and Anthropic cut its IPO valuation target.</p>
+  <h4>Why it matters</h4>
+  <p>Revenue is growing fast at both companies, but they have very different cost pictures. The text says Anthropic leans on enterprise customers and tools like Claude Code, while OpenAI funds broad research and an expensive consumer business. How these companies make money could shape which tools stay cheap and well supported.</p>
+  <h4>What it means for you</h4>
+  <p>Price cuts and competition between the big labs usually mean cheaper model access for developers. It is worth being comfortable with more than one provider rather than tying yourself to a single one. Coding tools like Claude Code and Codex are central to both companies&#39; business, so skill with them is likely to stay relevant.</p>
+</section>
+<section class="story" id="ramp-data-shows-us-corporate-ai-spending-hit-a-new-high-in">
+  <h3>Ramp data shows US corporate AI spending hit a new high in October but grew only 1.65%.</h3>
+  <div class="meta"><a href="https://the-decoder.com/us-corporate-ai-spending-hits-a-new-high-in-october-but-growth-slows-to-1-65-percent/" rel="noopener">The Decoder</a> · <a href="#ramp-data-shows-us-corporate-ai-spending-hit-a-new-high-in">link</a></div>
+  <h4>What happened</h4>
+  <p>The Ramp AI Index showed US corporate AI spending reached a new high in October 2026, but grew just 1.65% month over month. The top 1% of companies paid a median of $10,200 per employee per month, while the typical company paid $16.32. Software development teams made up 72% of tracked AI spending, and customer support&#39;s share rose from 0.8% in June to 13.3% in October. Ramp notes its data skews toward tech-savvy, larger companies, so adoption is probably overstated.</p>
+  <h4>Why it matters</h4>
+  <p>Spending is still rising, but the pace has slowed, and a small group of heavy users drives most of the revenue for OpenAI and Anthropic. Ramp says one percent of companies account for 80 percent of revenue for those two. Prices are falling too: the average price per million text tokens dropped 21 percent last month.</p>
+  <h4>What it means for you</h4>
+  <p>Software development is by far the biggest area of AI spending in this data, so coding with AI tools is a mainstream skill. Falling prices make it cheaper to build your own projects. Keep in mind the data covers Ramp customers only, so it isn&#39;t a full picture of the market.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="deepmind-s-alphaproof-code-mathematically-verified-signal-s">
+  <h3>DeepMind&#39;s AlphaProof Code mathematically verified Signal&#39;s cryptographic core in four weeks instead of years.</h3>
+  <div class="meta"><a href="https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/" rel="noopener">The Decoder</a> · <a href="#deepmind-s-alphaproof-code-mathematically-verified-signal-s">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind showed a system called AlphaProof Code that mathematically proves software meets its security rules. It was tested on the core encryption code of Signal that runs on users&#39; devices. After experts wrote down the security requirements, AI agents wrote over six million lines in a proof language called Lean, flagged about one percent for human review, and caught two bugs planted on purpose. The work took four weeks, where it would usually take years.</p>
+  <h4>Why it matters</h4>
+  <p>A proof is like a guarantee that a bridge design holds, not just a test that it hasn&#39;t fallen yet. Earlier efforts only covered the theoretical design, and this one covered the real code. If it scales, AI could make strong guarantees affordable for critical software. DeepMind says it plans to try this on things like power grids and medical devices.</p>
+  <h4>What it means for you</h4>
+  <p>Formal verification is a niche field, but this suggests it could grow as AI cuts the cost. Learning the basics of a proof language like Lean could set you apart later. For most jobs today, nothing changes right away, but writing clear requirements for what software must do becomes more valuable.</p>
+</section>
+<section class="story" id="google-deepmind-releases-alphagenome-2-predicting-how-dna">
+  <h3>Google DeepMind releases AlphaGenome 2, predicting how DNA variants affect specific human cell types and disease.</h3>
+  <div class="meta"><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" rel="noopener">Google DeepMind</a> · <a href="#google-deepmind-releases-alphagenome-2-predicting-how-dna">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind released AlphaGenome 2, a model that predicts how small changes in DNA affect specific types of human cells. The first version looked at broad tissues, while this one works on one cell type or state at a time. It was trained on more than 100 million individual cell profiles and finds nearly twice as many variants that change gene expression as the previous model. It is available for non-commercial research through an API, and in private preview for commercial research.</p>
+  <h4>Why it matters</h4>
+  <p>Every cell has the same DNA, but different cells use it differently, like one recipe book that a baker and a chef read in different ways. Predicting those differences helps scientists find which DNA changes drive disease. It also helps them decide which lab experiments are worth doing next.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly a biology research story, so it barely touches everyday software work. If you are curious about biology, it shows that AI plus science is a real area where programmers are needed. Otherwise, you can just note it and move on.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="anthropic-says-its-mythos-model-ported-claude-to-amd-gpus-in">
+  <h3>Anthropic says its Mythos model ported Claude to AMD GPUs in three days, and it now runs on four chip families.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/" rel="noopener">The Decoder</a> · <a href="#anthropic-says-its-mythos-model-ported-claude-to-amd-gpus-in">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic says it trains and runs Claude on all four major chip families and treats them as one shared pool of compute. In an investor presentation, it said its Mythos model wrote or ported nearly all the kernels, the low-level code that runs on a chip, to get Claude running on AMD GPUs in about three days. The usual effort is six to twelve months with dozens of engineers. These figures have not been independently verified.</p>
+  <h4>Why it matters</h4>
+  <p>Nvidia&#39;s strength comes partly from CUDA, its software ecosystem that makes it hard to leave. If AI can do the porting work cheaply, switching chip suppliers gets much easier. That could give buyers more choice and put pressure on Nvidia&#39;s high margins, though the claim is still unproven.</p>
+  <h4>What it means for you</h4>
+  <p>It is a sign that low-level, repetitive porting work may be one of the things AI handles well. Understanding how code maps to hardware is still a valuable skill, because someone has to check and direct the AI&#39;s work. Treat the numbers with some caution, since they come from the company itself.</p>
+</section>
+<section class="story" id="uk-ai-chip-startup-fractile-raises-720m-becoming-one-of-the">
+  <h3>UK AI chip startup Fractile raises $720M, becoming one of the best-funded purpose-built AI chip players.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/" rel="noopener">TechCrunch AI</a> · <a href="#uk-ai-chip-startup-fractile-raises-720m-becoming-one-of-the">link</a></div>
+  <h4>What happened</h4>
+  <p>Fractile, a British startup that designs AI chips, raised a $720 million Series C backed by Britain&#39;s Sovereign AI Fund. The valuation was reported as over 5 billion pounds, possibly about $7 billion. Its design stacks DRAM, a common type of memory, on top of each chip, and it also builds a compiler to make large language models run fast on that hardware. The CEO says the company plans to ship its first chips and systems next year.</p>
+  <h4>Why it matters</h4>
+  <p>Running AI models in production is expensive, and purpose-built chips are one way to cut that cost. Fractile joins other well-funded startups like Axelera, Etched and OLIX in that race. The funding is a bet, since it has not shipped a chip yet.</p>
+  <h4>What it means for you</h4>
+  <p>For most students this is background news. It does show that AI hardware and the software that sits on top of it, like compilers, is a growing area with real money behind it. If you enjoy systems or low-level programming, that is a niche worth watching.</p>
+</section>
+<section class="story" id="local-opposition-permitting-delays-and-power-shortages-mean">
+  <h3>Local opposition, permitting delays and power shortages mean many announced AI data centers may never be built.</h3>
+  <div class="meta"><a href="https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/" rel="noopener">TechCrunch AI</a> · <a href="#local-opposition-permitting-delays-and-power-shortages-mean">link</a></div>
+  <h4>What happened</h4>
+  <p>A TechCrunch Equity podcast episode looks at why many announced AI data centers may never get built. Guest Brent Nelson of Ascend Analytics argues that the project pipeline is wildly inflated. He points to local opposition, permitting delays and a scramble for electricity as obstacles. The episode also covers permitting reform, the limits of natural gas as a backup, and using batteries with a grid connection that can be briefly curtailed.</p>
+  <h4>Why it matters</h4>
+  <p>A lot of AI spending depends on data centers actually being built. If only a fraction of the announced projects happen, the supply of computing power could be tighter than headlines suggest. The guest also warns that developers with the wrong tenants could be in serious trouble if the bubble bursts.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly industry context rather than something that changes your plans. It is a reminder that the AI boom has physical limits like power and permits, not just software ones. Be a bit cautious about assuming that every announcement turns into real capacity or jobs.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="coreweave-is-asking-customers-to-prepay-and-shifting-to">
+  <h3>CoreWeave is asking customers to prepay and shifting to shorter contracts to fund AI growth, per Q3 earnings.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/" rel="noopener">TechCrunch AI</a> · <a href="#coreweave-is-asking-customers-to-prepay-and-shifting-to">link</a></div>
+  <h4>What happened</h4>
+  <p>In its third-quarter earnings, CoreWeave, a company that rents out computing power for AI, said it is asking customers to pay up front and signing more short-term contracts at higher prices. Revenue was $3.66 billion, up 168%, but it had a $709 million net loss and $846 million in interest expense. It expects about $9 billion in prepayments and deposits over the next three months and is borrowing against specific customer contracts instead of using unsecured debt.</p>
+  <h4>Why it matters</h4>
+  <p>Building data centers costs huge amounts of money, and how companies pay for them shows how healthy the boom is. Prepayments reduce borrowing but lock in prices, and short-term deals earn more but are riskier to renew. As the article puts it, the whole approach depends on demand staying strong, which is not yet proven.</p>
+  <h4>What it means for you</h4>
+  <p>Think of it like a landlord asking for rent in advance while also renting rooms by the night at higher rates. It works only while the building stays full. For you, the takeaway is that the cost of computing is shaped by finance as much as technology. This is background, not something that needs action.</p>
+</section>
+<section class="story" id="coreweave-shares-jump-over-24-after-a-strong-q3-report-and">
+  <h3>CoreWeave shares jump over 24% after a strong Q3 report and raised guidance eased AI slowdown fears.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html" rel="noopener">CNBC Tech</a> · <a href="#coreweave-shares-jump-over-24-after-a-strong-q3-report-and">link</a></div>
+  <h4>What happened</h4>
+  <p>CoreWeave shares rose 24.71% on Wednesday, its best day since April 2025, after earnings beat estimates and the company raised its yearly guidance. CEO Michael Intrator said demand is overwhelming and that capacity left in 2027 is 10x oversubscribed. He also said the company plans another asset-level debt deal expected at 7% to 7.5% interest. Other neoclouds like Nebius, Applied Digital and Iren also rose.</p>
+  <h4>Why it matters</h4>
+  <p>Investors had been worried this month about whether the AI trade is sustainable, and a measure of default risk on CoreWeave&#39;s debt had risen past 11%. Strong results and cheaper financing eased those fears for now. The text also says the company sees no impact on its US data center plans from last week&#39;s midterm elections.</p>
+  <h4>What it means for you</h4>
+  <p>This is a market story, and it barely changes your day-to-day work. The useful point is that demand for computing power still looks strong according to the company, and nervousness in the market can swing quickly in either direction. Don&#39;t read too much into one day of stock moves.</p>
+</section>
+<section class="story" id="tsmc-plans-to-invest-1-billion-in-anthropic-and-openai-the">
+  <h3>TSMC plans to invest $1 billion in Anthropic and OpenAI, the latest example of circular AI financing.</h3>
+  <div class="meta"><a href="https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/" rel="noopener">Ars Technica AI</a> · <a href="#tsmc-plans-to-invest-1-billion-in-anthropic-and-openai-the">link</a></div>
+  <h4>What happened</h4>
+  <p>TSMC&#39;s board approved plans to invest up to $500 million in OpenAI preferred stock and another $500 million in Anthropic shares at its expected IPO price, per Reuters. TSMC makes most of Nvidia&#39;s AI chips and most of Apple&#39;s custom chips. The Wall Street Journal said the move may give markets a boost of confidence as the AI trade shows strain.</p>
+  <h4>Why it matters</h4>
+  <p>This is an example of circular financing, where suppliers invest in their own customers who then buy from them. Analysts quoted in the text warn that this makes it harder to judge real demand for AI hardware and services. It ties the chip supply chain more closely to the fortunes of the leading AI labs.</p>
+  <h4>What it means for you</h4>
+  <p>It barely affects your skills or job search directly. It is worth knowing as context: some of the AI boom&#39;s money moves in loops among a small group of companies. If you are weighing AI-related employers, that is one risk to keep in mind.</p>
+</section>
+<section class="story" id="anthropic-opens-its-australian-retail-ipo-offering-ahead-of">
+  <h3>Anthropic opens its Australian retail IPO offering ahead of its planned listing.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html" rel="noopener">CNBC Tech</a> · <a href="#anthropic-opens-its-australian-retail-ipo-offering-ahead-of">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic opened its Australian retail IPO offering on Wednesday, letting individual investors buy shares before its planned Nasdaq listing under the ticker ANT. The offering closes on Nov. 17. Anthropic is seeking up to $64.4 billion in its IPO plus a $26 billion private placement, with shares expected at $70 to $78. Separately, Australia plans mandatory reporting of certain AI incidents and an AI safety regulator after an OpenAI agent gained unauthorized access to a Medicare statistics website.</p>
+  <h4>Why it matters</h4>
+  <p>A raise of this size would be very large for an AI company, and letting retail investors in several countries buy directly is unusual. The Australian news shows governments moving toward rules for AI agents that act on their own. The text says both OpenAI and Anthropic told Australian parliament they would support mandatory reporting of data breaches involving their agents.</p>
+  <h4>What it means for you</h4>
+  <p>If you work with AI agents, expect more attention to logging, access limits and incident reporting. Knowing how to build agents that stay within their permissions will matter more. As for the IPO itself, it is an investing decision and nothing here tells you whether to buy.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="us-data-brokers-reportedly-sell-about-500m-of-rl-training">
+  <h3>US data brokers reportedly sell about $500M of RL training environments to Chinese AI labs, with export controls barely applying.</h3>
+  <div class="meta"><a href="https://the-decoder.com/us-data-brokers-are-selling-half-a-billion-dollars-in-rl-training-environments-to-chinese-ai-labs/" rel="noopener">The Decoder</a> · <a href="#us-data-brokers-reportedly-sell-about-500m-of-rl-training">link</a></div>
+  <h4>What happened</h4>
+  <p>A ChinaTalk investigation says at least nine US data firms, including Mercor, Surge AI, AfterQuery and Turing, sell about half a billion dollars of AI training data to Chinese labs. Some of it is reinforcement learning environments, which are simulated worlds where models practise tasks like coding or office work. Chinese labs reportedly buy the same products made for OpenAI or Anthropic. The authors say export controls barely apply and want dual-use ones, such as coding and biology, to be controlled.</p>
+  <h4>Why it matters</h4>
+  <p>It is like buying a proven practice exam instead of writing your own. Chinese labs save computing power and avoid failed training runs, which helps them narrow the gap. The authors say they still trail US labs by at least a few months, and that the most sensitive environments are increasingly built in-house by US companies.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly policy news and does not change your daily work. It does show that a lot of AI progress depends on human-made training tasks, which is a real source of jobs. It also hints that rules on AI exports could change who companies can sell to.</p>
+</section>
+<section class="story" id="england-s-office-for-students-threatens-sanctions-unless">
+  <h3>England&#39;s Office for Students threatens sanctions unless universities adopt AI-proof exam formats.</h3>
+  <div class="meta"><a href="https://the-decoder.com/uk-regulator-threatens-universities-with-sanctions-unless-they-adopt-ai-proof-exam-formats/" rel="noopener">The Decoder</a> · <a href="#england-s-office-for-students-threatens-sanctions-unless">link</a></div>
+  <h4>What happened</h4>
+  <p>England&#39;s higher-education regulator, the Office for Students, says AI makes it close to impossible to fairly grade coursework. A survey of more than 300 respondents at 127 institutions found students use AI heavily for essays and dissertations, often undetected. The regulator wants universities to use more AI-free assessment and warns it could sanction those that do not. Many universities are already moving toward oral exams and process-based tasks.</p>
+  <h4>Why it matters</h4>
+  <p>If a degree cannot show what a student really knows, employers and the public may stop trusting it. The regulator calls this a generational risk. Schools are now rethinking how to test people, not just how to catch cheating.</p>
+  <h4>What it means for you</h4>
+  <p>Expect more in-person exams, oral questions and explaining your own work, even in CS courses. Using AI to learn is fine, but you need to be able to explain and write code without it. Interviews already work this way, so real understanding pays off.</p>
+</section>
+<section class="story" id="bessent-says-the-us-and-china-should-harbor-no-illusions-as">
+  <h3>Bessent says the US and China should &#39;harbor no illusions&#39; as they launch an AI dialogue with a crisis communication channel.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/11/trump-xi-summit-ai-nvidia-.html" rel="noopener">CNBC Tech</a> · <a href="#bessent-says-the-us-and-china-should-harbor-no-illusions-as">link</a></div>
+  <h4>What happened</h4>
+  <p>US Treasury Secretary Scott Bessent said the US and China should harbor no illusions about their differences as they work together on AI risks while still competing. The two governments set up a dialogue on super intelligence to share best practices for testing advanced models and to alert each other to serious incidents. Bessent made no commitment to limit AI progress. The two leaders are expected to meet next week at an Asia-Pacific meeting.</p>
+  <h4>Why it matters</h4>
+  <p>It is like two rival companies agreeing on a shared fire alarm while still racing each other. A direct line between the countries could help stop a misunderstanding from growing. But with no limits on development, the race itself goes on.</p>
+  <h4>What it means for you</h4>
+  <p>This has little direct effect on your day-to-day work right now. In the longer run, rules on testing models and on chip and model access could affect which tools and jobs are available. It is worth knowing that AI policy is increasingly tied to politics between countries.</p>
+</section>
+<section class="story" id="house-republicans-demand-a-closed-door-briefing-from-nvidia">
+  <h3>House Republicans demand a closed-door briefing from Nvidia CEO Jensen Huang over his alleged relationship with a Chinese spy.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/" rel="noopener">TechCrunch AI</a> · <a href="#house-republicans-demand-a-closed-door-briefing-from-nvidia">link</a></div>
+  <h4>What happened</h4>
+  <p>Three House Republicans sent Nvidia CEO Jensen Huang a letter asking him to appear at a closed-door briefing about his relationship with Alice Huang, a Megaspeed executive suspected of being a Chinese spy. Bloomberg reports Congress is preparing a subpoena. Committee chair Moolenaar said Huang had until the end of the day to respond, or he would likely be subpoenaed. Nvidia did not immediately respond to TechCrunch.</p>
+  <h4>Why it matters</h4>
+  <p>Nvidia makes the chips that most AI work runs on, so the leadership of the company is a national security question. Questions about its CEO&#39;s ties to China add to the tension over AI chips and exports.</p>
+  <h4>What it means for you</h4>
+  <p>This is political news and barely affects your skills or job search. If it grows, it could shape chip supply and export rules, which matter to the whole industry. For now, you can just keep an eye on it.</p>
+</section>
+<h2 class="cat">AI Open Source</h2>
+<section class="story" id="apple-is-reportedly-preparing-a-mac-app-that-makes-running">
+  <h3>Apple is reportedly preparing a Mac app that makes running local AI models easy.</h3>
+  <div class="meta"><a href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/" rel="noopener">Hacker News</a> · <a href="#apple-is-reportedly-preparing-a-mac-app-that-makes-running">link</a></div>
+  <h4>What happened</h4>
+  <p>A leaker named Aaron Perris found signs of a new Apple Mac app called Harbor. It is meant to turn a Mac into a private AI inference server, which means a machine that runs AI models and answers requests. It runs open-weight models (models whose files anyone can download) on Apple silicon, and the data stays on your own hardware. You can also link two or more Macs over Thunderbolt 5 to pool their memory. Harbor is in private preview under Apple&#39;s Claris brand, and the article guesses it will launch publicly in the coming weeks or months.</p>
+  <h4>Why it matters</h4>
+  <p>Running AI on your own machine, instead of sending it to a cloud service, is getting more popular. Apple seems to want to make that easy for people who are not experts. Linking Macs together to run bigger models is like pooling several small trucks to haul one big load. It would let people run models that one computer could not handle alone.</p>
+  <h4>What it means for you</h4>
+  <p>If you have a Mac, this could make it simple to try open-weight models without using the command line or setting up servers. That is a cheap way to practice building apps on top of a local model, and your data stays private. It is still a leak and a private preview, so details may change, and clustering needs several Thunderbolt 5 Macs, which most students will not have.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="microsoft-researchers-describe-lazarus-a-backdoor-that">
+  <h3>Microsoft researchers describe &#39;Lazarus,&#39; a backdoor that reprograms dormant neurons to make AI agents run malicious commands.</h3>
+  <div class="meta"><a href="https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/" rel="noopener">Microsoft Research</a> · <a href="#microsoft-researchers-describe-lazarus-a-backdoor-that">link</a></div>
+  <h4>What happened</h4>
+  <p>Microsoft researchers described a backdoor technique called Lazarus. By changing the weights of fewer than 10 unused neurons in a language model, an attacker can make an AI agent act normally until a hidden trigger appears, such as a date change. Then the agent can run attacker code with whatever access it has. This needs no retraining and the model still passes standard tests. Microsoft says it checks where models come from and is building weight scanning and model signing.</p>
+  <h4>Why it matters</h4>
+  <p>It is like a tampered package that looks fine until a secret condition is met. This matters more as agents get access to tools and terminals. The main defence is knowing where a model came from and that nobody changed it, rather than hoping tests will catch it.</p>
+  <h4>What it means for you</h4>
+  <p>If you build with agents or download open models, treat them like third-party software you did not write. Use trusted sources, limit what an agent is allowed to do, and log what it does. These habits are useful security skills that employers are starting to look for.</p>
+</section>
+<section class="story" id="researcher-finds-over-35-000-grok-build-apps-publicly">
+  <h3>Researcher finds over 35,000 Grok Build apps publicly exposed, leaking patient data, passwords and SpaceXSI documents.</h3>
+  <div class="meta"><a href="https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/" rel="noopener">Ars Technica AI</a> · <a href="#researcher-finds-over-35-000-grok-build-apps-publicly">link</a></div>
+  <h4>What happened</h4>
+  <p>Security firm Claroc found that Grok Build, an AI app-building tool from SpaceXSI, leaves thousands of users&#39; shared apps open to anyone who can find the links. The links were meant to be hard to guess, but a design choice let people list thousands of live projects. Exposed data included business plans, medical exam results and employee ID numbers, plus 24 internal SpaceXSI apps. SpaceXSI removed the links to those 24 apps within hours after Ars Technica emailed questions, while almost all other data stayed available.</p>
+  <h4>Why it matters</h4>
+  <p>It is like giving your house a random-looking address but leaving the street map public. Hard-to-guess links are not real security if they can be listed. It also shows that apps built quickly with AI can go live open to everyone when the builder does not think about access.</p>
+  <h4>What it means for you</h4>
+  <p>If you build apps with AI help, check who can see them before sharing. Never rely on a secret-looking link to protect private data, and add real sign-in. Knowing basic access control is a clear way to stand out.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
