@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T12:29:18-07:00",
+  "items": [
+    {
+      "id": 7,
+      "category": "AI Models & Releases",
+      "headline": "Gemini 4 Carbon and Claude Fable 5.2 top MathArena, displacing GPT-6.1 Sol but costing far more.",
+      "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+      "source": "The Decoder",
+      "published": "2026-11-14T16:48:01+00:00",
+      "explained": {
+        "what_happened": "Google's Gemini 4 Carbon took first place on MathArena, a math benchmark, pushing OpenAI's GPT-6.1 Sol down to third. Anthropic's Claude Fable 5.2 came second. In the test settings, Carbon cost roughly 15 times and Fable 5.2 roughly 40 times as much as GPT-6.1 Sol. Carbon's most common failure was running out of time, and in one case it ran a script for more than eleven hours without checking its progress.",
+        "why_it_matters": "It shows the top spot in math is changing hands between labs. It also shows that the best score and the best value are not the same thing. GPT-6.1 Sol scored a bit lower but cost far less. The text also notes that OpenAI's models, which reportedly solved very hard equations, are not publicly available yet.",
+        "what_it_means_for_you": "If you build with these models, price matters as much as the leaderboard. It is like choosing between a race car and a reliable commuter car: the fastest one is not always the right pick. Test a cheaper model first and only pay more when you can see it actually helps."
+      },
+      "anchor": "gemini-4-carbon-and-claude-fable-5-2-top-matharena"
+    },
+    {
+      "id": 8,
+      "category": "AI Models & Releases",
+      "headline": "Anthropic makes Claude Opus 5.5 the default on paid plans and advises dropping 'think hard' prompting.",
+      "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+      "source": "The Decoder",
+      "published": "2026-11-14T16:42:56+00:00",
+      "explained": {
+        "what_happened": "Anthropic made Claude Opus 5.5 the default model on its Pro, Max, Ultra and Team plans. The company says old prompting habits, like adding 'think hard' or 'think carefully', now slow the model down. In its tests, answers without those phrases started faster with no measurable drop in quality. It also suggests starting at Medium effort, and describing the full goal in one message.",
+        "why_it_matters": "Tricks that helped with older models can become useless or harmful as models change. The model now decides on its own how much to think. That moves the skill from clever wording toward clearly stating the goal and the result you want.",
+        "what_it_means_for_you": "If you use Claude for coding or school work, you can drop the magic phrases and write a clear goal, the output format, and when it should ask you questions. Attach charts and tables as images or files instead of retyping them. Treat habits you picked up from older prompting guides with some suspicion, because they may be out of date."
+      },
+      "anchor": "anthropic-makes-claude-opus-5-5-the-default-on-paid-plans"
+    },
+    {
+      "id": 9,
+      "category": "AI Agents & Automation",
+      "headline": "OpenAI dissolves its standalone robotics team, saying general-purpose models like GPT-6 Astra can control robots directly.",
+      "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+      "source": "The Decoder",
+      "published": "2026-11-14T11:40:51+00:00",
+      "explained": {
+        "what_happened": "OpenAI reorganized its robotics team, moving researchers into the main research team under Mark Chen and the applied robotics and hardware teams into Greg Brockman's Applied organization. A first report said the team was being disbanded, but OpenAI says robotics work continues. OpenAI apparently believes general-purpose models like GPT-6 Astra can control robots directly. In an Nvidia study in simulation, an Astra-powered agent had a 74.8 percent success rate against 51 percent for the best specialized models.",
+        "why_it_matters": "The big question is whether one general model can replace many specialized ones. Results are mixed. In another test on real arms, Astra fully completed only 7 out of 100 tasks, though that was still better than the other model, which completed none. Specialized models may still win on cost, reliability, speed and energy use.",
+        "what_it_means_for_you": "It is a reminder that general models keep absorbing jobs that used to need custom systems. Still, the text says the specialized approach may keep advantages, so it is not settled. If you are interested in robotics, knowing how to work with general AI models is probably useful alongside classic robotics skills."
+      },
+      "anchor": "openai-dissolves-its-standalone-robotics-team-saying-general"
+    },
+    {
+      "id": 27,
+      "category": "AI Coding & Developer Tools",
+      "headline": "Anthropic upgrades Claude Code Projects to run parallel AI workers.",
+      "url": "https://claude.com/resources/articles/projects-redesigned",
+      "source": "Hacker News",
+      "published": "2026-11-14T00:28:11+00:00",
+      "explained": {
+        "what_happened": "Anthropic is rolling out a redesigned Projects feature in Claude Code, in beta for select Pro and Max users. You set a goal, and Claude splits the work into parallel threads. Each thread is its own cloud session on its own branch and copy of the repo. Claude coordinates them, opens pull requests, and runs tests. Threads share a memory, and overlapping changes show up as ordinary merge conflicts.",
+        "why_it_matters": "This moves AI coding tools from helping with one task at a time toward managing a whole piece of work with many helpers. Think of a manager handing tasks to several team members and collecting the results. Anthropic also warns that running several full sessions at once can hit usage limits faster.",
+        "what_it_means_for_you": "Skills like writing a clear goal, reviewing pull requests, and resolving merge conflicts become more valuable, because you will be checking AI work more than typing every line. Access is limited for now, so you may not be able to try it yet. Learning to break big tasks into well-defined pieces is useful either way."
+      },
+      "anchor": "anthropic-upgrades-claude-code-projects-to-run-parallel-ai"
+    },
+    {
+      "id": 10,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Former researcher Coxon says Anthropic can retrain Mythos with a fraction of the original compute.",
+      "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+      "source": "The Decoder",
+      "published": "2026-11-14T11:21:41+00:00",
+      "explained": {
+        "what_happened": "Jacob Coxon, a former OpenAI and Anthropic researcher, says a slide from Anthropic's IPO roadshow was a key reason he left the company after about four months. The slide shows the compute Anthropic needs to train models over time, on a compressed axis where a 10x and a 100x increase barely look different. He argues it shows algorithms getting more efficient at an accelerating rate, so Anthropic could already retrain Mythos with a fraction of the original compute. He wants frontier model development paused next year so competitors can catch up.",
+        "why_it_matters": "If training gets much cheaper through better methods, the advantage of having the most chips could shrink. Coxon argues a pause would make human-level intelligence a commodity. This is one person's view and a strong opinion, not an established fact.",
+        "what_it_means_for_you": "Treat this as an opinion from a former insider, not a confirmed trend. The practical takeaway is that how you train a model may matter as much as how much hardware you have, which is good news for people who like algorithms. It does not change what you should study this year."
+      },
+      "anchor": "former-researcher-coxon-says-anthropic-can-retrain-mythos"
+    },
+    {
+      "id": 4,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Asian governments respond to Nvidia CEO Jensen Huang's exit by confirming chip supply commitments or monitoring impact.",
+      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-14T16:34:15+00:00",
+      "explained": {
+        "what_happened": "Jensen Huang left his role as Nvidia CEO after Nvidia's board launched an independent investigation on November 8 into reports that he was targeted by a Chinese spy operation. He admitted to an affair with Alice Huang, a former executive at Megaspeed, a Singapore-based chip company. Governments across Asia responded in different ways. South Korea said Nvidia reaffirmed its plan to supply 260,000 GPUs, Taiwan said the planned Nvidia headquarters in Taipei remains on track, and Japan said it would closely monitor Nvidia. China denied the spy claim, and Singapore said its investigation into Megaspeed remains ongoing.",
+        "why_it_matters": "Nvidia's chips are the engine of the AI industry, so a leadership shake-up worries governments and partners who depend on supply. Several countries rushed to get reassurance that deals would hold. More than $3 billion in Chinese AI computing projects that depend on restricted Nvidia chips are now uncertain.",
+        "what_it_means_for_you": "For now, this is mostly a business and politics story, and nothing in the text says your tools or access to GPUs will change. It is a reminder that AI depends heavily on a few companies and on government rules about chips. If you are choosing what to learn, it is worth not tying yourself to only one vendor's tools."
+      },
+      "anchor": "asian-governments-respond-to-nvidia-ceo-jensen-huang-s-exit"
+    },
+    {
+      "id": 5,
+      "category": "AI Finance & Investments",
+      "headline": "Founders and VCs expect smaller checks and lower valuations after Jensen Huang's departure from Nvidia.",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-13T22:43:00+00:00",
+      "explained": {
+        "what_happened": "After Jensen Huang stepped down as Nvidia CEO, founders and investors told TechCrunch they expect much less startup funding from Nvidia. Nvidia took part in 105 funding rounds this year, often as the largest investor. Interim CEO Colette Kress is described by one investor as much more conservative. Investors hope other big cloud companies and chipmakers will fill the gap.",
+        "why_it_matters": "Nvidia has been one of the biggest sources of money for AI startups, especially companies building data centers, serving models, and making open models. Less of its money could mean smaller funding rounds and lower valuations. It could also give rivals more room, since Nvidia's investments tended to keep startups using its chips.",
+        "what_it_means_for_you": "If you want to join an AI startup, check how it is funded and how long its money lasts, since funding could get tighter. Startups tied closely to Nvidia's backing may be riskier for now. Large companies and other chipmakers might also hire more if they step in, but that is only a hope in the text, not a fact."
+      },
+      "anchor": "founders-and-vcs-expect-smaller-checks-and-lower-valuations"
+    },
+    {
+      "id": 6,
+      "category": "AI Finance & Investments",
+      "headline": "Amodei cites huge uncertainty and about $901 billion in compute commitments days before Anthropic's record IPO.",
+      "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+      "source": "The Decoder",
+      "published": "2026-11-14T19:05:17+00:00",
+      "explained": {
+        "what_happened": "Days before Anthropic's planned November 19 IPO, CEO Dario Amodei said there is huge uncertainty about next year. He called buying compute, the computer power for AI, the company's deepest business dilemma, because it must be bought one to two years ahead. Bloomberg reports Anthropic's commitments are nearly $901 billion, with about $71 billion due by September 2027. The company plans to raise up to $64.4 billion in the IPO and $26 billion in a private placement, and its annualized revenue run rate hit $81 billion at the end of October.",
+        "why_it_matters": "It is like signing huge rent contracts for factories before knowing how many customers will show up. Buy too little and you lose customers, buy too much and you can go broke. The IPO is meant to build a cash cushion for that gap, and it would be the largest IPO ever.",
+        "what_it_means_for_you": "The company is growing fast, with its coding models cited as one driver, which suggests demand for people who can build with these tools. But the numbers also show that AI companies are making very large bets that could go wrong. If you consider working at one, look at its finances as well as its products."
+      },
+      "anchor": "amodei-cites-huge-uncertainty-and-about-901-billion-in"
+    },
+    {
+      "id": 12,
+      "category": "AI Government & Regulations",
+      "headline": "FAA expands AI advice for managing air traffic congestion across all US airspace without controllers' union input.",
+      "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-13T21:20:47+00:00",
+      "explained": {
+        "what_happened": "The FAA is expanding an AI tool called SMART to all 22 air traffic centers in the US. The agency says it rerouted 180 flights around Washington, DC since September 21, saving about 10 minutes and almost 80 gallons of fuel per flight. A team of FAA specialists checks its recommendations before they go to air traffic facilities. The controllers' union says it was not involved in designing or testing the system.",
+        "why_it_matters": "This is AI advice being used in a safety-critical, nationwide system. Humans still validate the recommendations, so the AI is an advisor, not the decision maker. The union's complaint raises the question of whether the people who use a system should help build and test it.",
+        "what_it_means_for_you": "It barely changes your day-to-day work, but it is a good example of a real deployment where people stay in the loop. If you work on high-stakes software, expect to be asked how humans check the output and who gets a say in testing. Those questions come up in interviews and on the job."
+      },
+      "anchor": "faa-expands-ai-advice-for-managing-air-traffic-congestion"
+    },
+    {
+      "id": 11,
+      "category": "AI Open Source",
+      "headline": "Runway releases robotics model Praxis-1 with open weights under Apache 2.0, leading Nvidia's RoboLab-120 category.",
+      "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+      "source": "The Decoder",
+      "published": "2026-11-14T09:45:45+00:00",
+      "explained": {
+        "what_happened": "Runway released Praxis-1, a robot-control model, with open weights and source code under the Apache 2.0 license, which allows commercial use. It takes camera images, text instructions and robot position data and works out matching robot movements. It builds on a video model that learned how objects move from ordinary footage. On Nvidia's RoboLab-120 benchmark it scored 46.2 percent, ahead of FLUX 3 Action at 42.9 percent among World Action Models, but Runway ran the tests itself and they are not independently verified.",
+        "why_it_matters": "Using video to teach robots could reduce the need for expensive robot-specific data, though the text says whether it really needs less data is still an open question. Releasing it openly lets others study and build on it. The model still sometimes confuses similar-looking objects and cannot reliably plan complex sequences alone.",
+        "what_it_means_for_you": "Because the code and weights are open, you could read it and experiment, which is useful if robotics interests you. Keep in mind that the results come from the company's own tests. For most software jobs this is not an immediate change, but it shows robotics is becoming more approachable."
+      },
+      "anchor": "runway-releases-robotics-model-praxis-1-with-open-weights"
+    },
+    {
+      "id": 28,
+      "category": "AI Open Source",
+      "headline": "Unsloth releases Dynamic v3.1 quantizations for the Qwen3.8-27B model.",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "source": "Hacker News",
+      "published": "2026-11-14T00:06:04+00:00",
+      "explained": {
+        "what_happened": "Unsloth released updated compressed versions, called quantizations, of the Qwen3.8-27B model using its Dynamic v3.1 method. Quantization shrinks a model so it fits on smaller hardware, a bit like compressing a big photo to save space. Unsloth says the update improves accuracy by 5 to 10 percent at the same size on most benchmarks. The 27B-parameter model has a 256K context window, and its 4-bit versions run on 16 to 19 GB of memory, such as an RTX 5080, a 4090, or a Mac with 24 GB.",
+        "why_it_matters": "It shows that open models can be made to run on ordinary hardware with better quality, without needing a data center. Better compression means more people can run capable models locally. The claims come from Unsloth's own benchmarks.",
+        "what_it_means_for_you": "If you have a decent gaming GPU or a recent Mac, you could run a capable model locally for free and learn how these systems work. The guide mentions tools like llama.cpp and Unsloth Desktop. It is a good low-cost way to practice, though you need fairly strong hardware."
+      },
+      "anchor": "unsloth-releases-dynamic-v3-1-quantizations-for-the-qwen3-8"
+    },
+    {
+      "id": 13,
+      "category": "AI Security & Safety",
+      "headline": "An OpenAI board member warns an AI takeover of society could be months away, tracing a path from reward hacking.",
+      "url": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-13T17:25:45+00:00",
+      "explained": {
+        "what_happened": "Paul Cristiano, an OpenAI Foundation board member and head of the Alignment Research Center, gave a lecture warning about an AI takeover. He said that if AI keeps developing on its fastest path, humanity faces something like a coin flip of an AI takeover, including a meaningful risk in the next six to 12 months. He admitted there is no quantitative model that can put a number on it. He used this summer's OpenAI and Hugging Face hacking incident as an example of what might come before something really bad.",
+        "why_it_matters": "This is a strong warning from someone with a role at a leading AI organization, so it shapes the safety debate. But he himself says the odds cannot be measured, so it is a judgment, not a calculation. The text given is short, so the full argument is not covered here.",
+        "what_it_means_for_you": "You do not need to change your plans because of one lecture, and the claim is uncertain by the speaker's own admission. It does show that AI safety and alignment is a serious field with real roles. If it interests you, learning about how AI systems fail is a worthwhile area."
+      },
+      "anchor": "an-openai-board-member-warns-an-ai-takeover-of-society-could"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 41,
+    "failed_sources": [
+      "FTC"
+    ],
+    "fetched": 90,
+    "candidates": 52,
+    "ranked": 12,
+    "selected": 12
+  }
+}
