@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Sunday, November 15, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Sunday, November 15, 2026 · 5 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#meituan-releases-weights-for-longcat-2-5-a-1-6-trillion">Meituan releases weights for LongCat-2.5, a 1.6-trillion-parameter agent model trained entirely on Chinese hardware.</a></li>
+  <li><a href="#claude-fable-5-2-creates-images-by-writing-code-that-places">Claude Fable 5.2 creates images by writing code that places hundreds of thousands of simulated brushstrokes.</a></li>
+  <li><a href="#firm-tied-to-jensen-huang-s-former-partner-reportedly">Firm tied to Jensen Huang&#39;s former partner reportedly brokered nearly $12 billion in Nvidia chip orders for China.</a></li>
+  <li><a href="#anthropic-s-ipo-lands-with-the-tech-industry-hoping-it-gives">Anthropic&#39;s IPO lands, with the tech industry hoping it gives the struggling AI trade some positive momentum.</a></li>
+  <li><a href="#australia-s-central-bank-finds-early-signs-ai-is-hitting">Australia&#39;s central bank finds early signs AI is hitting young entry-level workers in software and customer service.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="meituan-releases-weights-for-longcat-2-5-a-1-6-trillion">
+  <h3>Meituan releases weights for LongCat-2.5, a 1.6-trillion-parameter agent model trained entirely on Chinese hardware.</h3>
+  <div class="meta"><a href="https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/" rel="noopener">The Decoder</a> · <a href="#meituan-releases-weights-for-longcat-2-5-a-1-6-trillion">link</a></div>
+  <h4>What happened</h4>
+  <p>Meituan, a Chinese food delivery company, released the weights of LongCat-2.5. Weights are the learned numbers that make up a model, so anyone can download and run it. It has 1.6 trillion parameters, was trained entirely on Chinese hardware, and is built for agents that do long multi-step tasks like coding. It comes under the MIT license, which allows commercial use.</p>
+  <h4>Why it matters</h4>
+  <p>Meituan says the model scores close to top Western models on several coding and command-line benchmarks, though it trails on the harder ones. It also shows that a large model can be trained and run without Nvidia chips. Those scores come from Meituan&#39;s own table, so treat them with some caution.</p>
+  <h4>What it means for you</h4>
+  <p>You can try the model in a chat interface or call it through an API that works with the OpenAI and Anthropic formats. That makes it easy to test as a cheap alternative in your own coding tools. The sample self-hosting setup needs 194 Huawei chips, so running it yourself is not realistic. Using it through the API is the practical route.</p>
+</section>
+<section class="story" id="claude-fable-5-2-creates-images-by-writing-code-that-places">
+  <h3>Claude Fable 5.2 creates images by writing code that places hundreds of thousands of simulated brushstrokes.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/" rel="noopener">The Decoder</a> · <a href="#claude-fable-5-2-creates-images-by-writing-code-that-places">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic&#39;s new model Claude Fable 5.2 can make paintings by writing Python code that places brushstrokes on a virtual canvas. The code simulates things like bristle texture and wet paint. In one demo, it used roughly 700,000 strokes for a photo-like scene. In another, it painted a bird with 111 strokes and painted over its own mistakes.</p>
+  <h4>Why it matters</h4>
+  <p>Most image tools, like Midjourney, start from noise and gradually clean it up. This model instead plans, acts, looks at the result and fixes it, like a human painter would. The article says the same step-by-step planning and self-correcting skill carries over to robots. On Anthropic&#39;s own simulation benchmark it scored 64.9 percent against 29.8 percent for OpenAI&#39;s GPT-6 Astra, but it fell behind in speed and fine motor control with a real robot arm.</p>
+  <h4>What it means for you</h4>
+  <p>The useful lesson is the pattern: a language model writes code, checks the output, and revises. That loop is the same one behind coding agents, so it is worth learning to build. The painting itself is a fun demo and probably will not affect your job soon.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="firm-tied-to-jensen-huang-s-former-partner-reportedly">
+  <h3>Firm tied to Jensen Huang&#39;s former partner reportedly brokered nearly $12 billion in Nvidia chip orders for China.</h3>
+  <div class="meta"><a href="https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/" rel="noopener">The Decoder</a> · <a href="#firm-tied-to-jensen-huang-s-former-partner-reportedly">link</a></div>
+  <h4>What happened</h4>
+  <p>The Wall Street Journal reports that a firm called Megaspeed arranged nearly $12 billion of Nvidia chip orders for Chinese companies between March 2024 and June 2025. These were several hundred thousand chips that US export controls were meant to keep out of China. Megaspeed says it did legitimate and lawful business, and that its controlling owner Alice Huang left on August 30, 2025.</p>
+  <h4>Why it matters</h4>
+  <p>Export controls only work if chips cannot be rerouted through middlemen. This report suggests a lot of high-end chips may have reached China anyway. One short-selling firm estimates more than 20 percent of Nvidia&#39;s revenue came from China, while Nvidia&#39;s own figure was 7 percent over six months. The gap hints that much of the China business may have flowed through indirect channels.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly a business and politics story, and it will not change your daily work. It does show that access to AI chips is a tightly controlled resource, and rules about it can shift fast. If you work near cloud or hardware companies, expect compliance and supply questions to matter more over time.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="anthropic-s-ipo-lands-with-the-tech-industry-hoping-it-gives">
+  <h3>Anthropic&#39;s IPO lands, with the tech industry hoping it gives the struggling AI trade some positive momentum.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html" rel="noopener">CNBC Tech</a> · <a href="#anthropic-s-ipo-lands-with-the-tech-industry-hoping-it-gives">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic is expected to list on the Nasdaq on Thursday, with an expected price of $70 to $78 a share. The IPO could raise over $90 billion, on top of $132 billion in existing cash. The company reported a net loss of $104 billion in the first nine months of 2026, and has spending commitments of over $900 billion. Several big tech firms are putting in a combined $26 billion at the IPO price.</p>
+  <h4>Why it matters</h4>
+  <p>The tech industry is under strain from rising interest rates, an AI backlash, political change in Washington and the sudden ouster of Nvidia&#39;s CEO. Anthropic and OpenAI drive a large share of the AI buildout, so many companies depend on their spending. Some of the contracts are very long, and one expert says anything past three to four years is guesswork. It is a big bet that demand will keep growing.</p>
+  <h4>What it means for you</h4>
+  <p>For daily work, little changes right away. It does tell you the AI industry is putting huge sums into infrastructure, which supports demand for engineers who can build on these tools. It also shows the risk, since the trade depends on large losses turning into lasting revenue. Do not treat any single employer in AI as a guaranteed safe bet.</p>
+</section>
+<h2 class="cat">AI Jobs &amp; Career Opportunities</h2>
+<section class="story" id="australia-s-central-bank-finds-early-signs-ai-is-hitting">
+  <h3>Australia&#39;s central bank finds early signs AI is hitting young entry-level workers in software and customer service.</h3>
+  <div class="meta"><a href="https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/" rel="noopener">The Decoder</a> · <a href="#australia-s-central-bank-finds-early-signs-ai-is-hitting">link</a></div>
+  <h4>What happened</h4>
+  <p>An analysis for Australia&#39;s central bank looked at where AI might hit jobs first. It found AI has barely displaced any jobs so far. But job postings have fallen since ChatGPT launched, most in highly exposed fields like programming and customer service. In those fields, young workers aged 15 to 24 and young graduates have weaker employment and higher unemployment than older workers. The author warns that this does not prove AI is the cause.</p>
+  <h4>Why it matters</h4>
+  <p>Other studies in the text point the same way. One Stanford study found employment among 22- to 25-year-olds in exposed jobs down 13 percent in relative terms, and nearly 20 percent for young software developers. Another analysis found the problems began in early 2022, before ChatGPT, so interest rates and the post-pandemic hiring correction may matter more. A Danish study found no measurable change in wages or hours despite 64 percent AI adoption.</p>
+  <h4>What it means for you</h4>
+  <p>This is directly about you, and the honest answer is mixed. Entry-level software hiring does look weaker, but the cause is not settled. Practical steps are to build real projects, get comfortable working with AI tools, and aim for internships. The text also says AI-related job postings grew sixfold in one year, so AI skills are in demand.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
