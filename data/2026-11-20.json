@@ -1,0 +1,311 @@
+{
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T14:58:49-07:00",
+  "items": [
+    {
+      "id": 19,
+      "category": "AI Agents & Automation",
+      "headline": "Apple is building an AI agent that controls devices while raising barriers for rival agents.",
+      "url": "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/",
+      "source": "The Decoder",
+      "published": "2026-11-20T15:03:25+00:00",
+      "explained": {
+        "what_happened": "Apple is reportedly building its own AI agent that can control devices, and it is hiring a senior engineer to lead the project. Bloomberg says it could arrive as early as late next year but is at an early stage. Meanwhile macOS 27.3 now takes 14 steps instead of four to let third-party agents like ChatGPT control a Mac.",
+        "why_it_matters": "Agents that click and type on your behalf are becoming a main battleground among big tech firms. Apple controls the operating system, so it can make life harder for rivals. Apple says the extra steps protect users, but some AI companies see an effort to slow competitors.",
+        "what_it_means_for_you": "If you build agent tools for Mac, expect more friction for users and more permission rules. Privacy, permissions and sandboxing (running code in a protected space) are likely to matter more in this kind of work. Otherwise it is mostly a trend to watch."
+      },
+      "anchor": "apple-is-building-an-ai-agent-that-controls-devices-while"
+    },
+    {
+      "id": 17,
+      "category": "AI Agents & Automation",
+      "headline": "Google brings Computer Use to Gemini for Mac, running desktop tasks in a background window.",
+      "url": "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/",
+      "source": "The Decoder",
+      "published": "2026-11-20T18:50:31+00:00",
+      "explained": {
+        "what_happened": "Google added a Computer Use feature to its Gemini Mac app. You describe a goal, and Gemini clicks, types and navigates apps, files and websites in an isolated background window. You choose which apps it can use, watch each step, pause anytime and approve key actions. It is rolling out in English in the US.",
+        "why_it_matters": "It shows agents moving from chat answers to doing real desktop work. Running in the background means you can keep using your computer, like having an assistant at a spare desk. The text notes OpenAI has also focused on Computer Use and is pulling well ahead with its Astra model.",
+        "what_it_means_for_you": "These tools could handle repetitive chores like filling forms or editing batches of files. If you build software, think about how an agent would use your app's interface. It is also worth being careful about which apps and files you let an agent touch."
+      },
+      "anchor": "google-brings-computer-use-to-gemini-for-mac-running-desktop"
+    },
+    {
+      "id": 22,
+      "category": "AI Agents & Automation",
+      "headline": "Nous Research's open-source Hermes Agent will run inside Microsoft Teams with a feature sharing skills across teams.",
+      "url": "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/",
+      "source": "The Decoder",
+      "published": "2026-11-20T09:59:51+00:00",
+      "explained": {
+        "what_happened": "Nous Research says companies will soon be able to run its open-source Hermes Agent inside Microsoft Teams. Employees can hand off tasks like financial analysis, document drafting or inbox sorting and check the results in the same chat. Hermes turns successful workflows into reusable skills, and a new feature called Collective Wisdom lets staff share those skills with their team after review.",
+        "why_it_matters": "It shows open-source AI agents moving into everyday workplace tools. The agents run in isolated virtual machines, and the shared knowledge stays inside the company rather than feeding any AI provider's training data. Nous says Hermes is the most widely used open agent on OpenRouter, processing nearly two trillion tokens per day.",
+        "what_it_means_for_you": "Agents that live inside chat tools are becoming normal, so building, testing and safely connecting them is a skill employers may want. You can try Hermes since it is open source. Think of a skill as a saved recipe that one person cooks well and the whole team can reuse."
+      },
+      "anchor": "nous-research-s-open-source-hermes-agent-will-run-inside"
+    },
+    {
+      "id": 106,
+      "category": "AI Coding & Developer Tools",
+      "headline": "Epic Games is turning to AI coding for Unreal Engine development.",
+      "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+      "source": "Hacker News",
+      "published": "2026-11-20T12:16:36+00:00",
+      "explained": {
+        "what_happened": "Epic Games is changing Unreal Engine to work better with AI coding tools. A developer used Claude Code to make a shut-down online game playable without Amazon servers in about four hours. Epic plans to remove Blueprints, its visual scripting system, in Unreal Engine 6 and move gameplay code to a text-based language called Verse.",
+        "why_it_matters": "AI tools handle text code far better than visual boxes wired together, so tools built for humans clicking around are being reshaped for AI. Epic's operating chief says any fixed set of features can eventually be copied, so the company is pushing for speed. It raises a question of whether game engines can keep up with model improvements.",
+        "what_it_means_for_you": "If you are interested in games, text-based code skills look more valuable than visual scripting alone. Learning how AI tools connect to software, for example through Model Context Protocol, which lets AI send commands to programs, is also useful. The article is cut off, so the full picture for UE6 is not clear."
+      },
+      "anchor": "epic-games-is-turning-to-ai-coding-for-unreal-engine"
+    },
+    {
+      "id": 8,
+      "category": "AI Research & Breakthroughs",
+      "headline": "An AI-assisted proof of the Riemann Hypothesis has emerged alongside a competing human-written solution.",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-20T19:32:08+00:00",
+      "explained": {
+        "what_happened": "Mathematician Levent Alpöge, who works at Anthropic, announced a Lean-checkable solution to the Riemann Hypothesis that he found working with Claude. Lean is an open source language that helps verify proofs. Separately, Stanford postdoc Alessandro Masullo posted an all-human proof of the General Riemann Hypothesis after 12 years of work.",
+        "why_it_matters": "The Riemann Hypothesis, from 1859, is one of the biggest open problems in mathematics. Most mathematicians seem confident the Lean-checked result will hold, but it will take a while to be understood. Alpöge admits it lacks a human-readable explanation, so people still need to make sense of it.",
+        "what_it_means_for_you": "Lean is a good example of a tool where a computer checks the proof, so you do not have to trust the AI. If you like math or formal methods, it may be worth a look. The bigger lesson is that AI output still needs checking and human understanding."
+      },
+      "anchor": "an-ai-assisted-proof-of-the-riemann-hypothesis-has-emerged"
+    },
+    {
+      "id": 14,
+      "category": "AI Research & Breakthroughs",
+      "headline": "METR's updated time horizon report finds some AI capabilities still improve exponentially but lag on judgment tasks.",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Technology Review",
+      "published": "2026-11-20T18:15:15+00:00",
+      "explained": {
+        "what_happened": "METR, an AI evaluation nonprofit, updated its time horizon plot, which rates models by how long the tasks they can finish take humans. The update adds longer and more open-ended tasks. Some abilities still improve exponentially, but models fell short on judgment tasks, such as designing useful AI evaluations and scoring philosophical arguments.",
+        "why_it_matters": "AI is very good at tasks that can be checked automatically, like coding and math, because it can practice them with clear pass or fail feedback. Judgment tasks have no such clear score, so progress there is harder to train and harder to measure. This matters for whether AI can automate AI research itself.",
+        "what_it_means_for_you": "Coding is where AI is strongest, so expect tools to keep getting better at it. Skills like judging what is worth building, and deciding what good looks like, are where humans still lead in this report. Build those alongside your coding skills."
+      },
+      "anchor": "metr-s-updated-time-horizon-report-finds-some-ai"
+    },
+    {
+      "id": 107,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Frostbite, a new CPU architecture, was reportedly discovered, designed and verified by AI.",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "source": "Hacker News",
+      "published": "2026-11-20T10:01:41+00:00",
+      "explained": {
+        "what_happened": "A company says its AI systems discovered, designed and verified Frostbite, a new CPU with a new instruction set, end to end. It is built on interaction nets, a way of representing programs as graphs where work happens in small local steps. On 25 workloads, 15 held out until the end, it reports 4.59 times better performance per watt than a modern dual-issue, in-order CPU core.",
+        "why_it_matters": "If this holds up, AI could help redesign chips and not just write software. Single-core CPU speed has largely stalled since the early 2000s, so a big gain would be notable. The claim comes from the company's own post, so it needs outside checking.",
+        "what_it_means_for_you": "For most students this is something to watch, not act on. If you are curious about hardware, ideas like interaction nets and parallel-friendly program design are worth reading about. Treat the numbers as unverified for now."
+      },
+      "anchor": "frostbite-a-new-cpu-architecture-was-reportedly-discovered"
+    },
+    {
+      "id": 20,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Nvidia is reportedly close to acquiring diffusion-model startup Inception for at least $500 million.",
+      "url": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+      "source": "The Decoder",
+      "published": "2026-11-20T14:53:50+00:00",
+      "explained": {
+        "what_happened": "Nvidia is reportedly close to buying a startup called Inception for at least $500 million, according to three people who spoke to The Information. Inception builds language models that use diffusion, a method known from image generation, where the model refines a whole answer step by step instead of writing it word by word. The deal includes bonuses for the 30-plus employees, and the three co-founders are expected to join Nvidia full time.",
+        "why_it_matters": "Nvidia wants stronger open-source models, called Nemotron, and models for robots. It is also competing with OpenAI and Anthropic, which are building their own chips for running models. Buying a team that works on a different way of generating text suggests Nvidia is hedging beyond the standard approach.",
+        "what_it_means_for_you": "You will not feel this directly in the near term. It is a useful sign that the word-by-word approach behind ChatGPT and Claude is not the only one, so it is worth reading up on diffusion models for text. Think of it as learning about a second kind of engine, even if the first is still the one everyone drives."
+      },
+      "anchor": "nvidia-is-reportedly-close-to-acquiring-diffusion-model"
+    },
+    {
+      "id": 10,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Nvidia reported healthy earnings amid CEO turmoil and said it will stop selling H200 chips in China.",
+      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-20T14:55:44+00:00",
+      "explained": {
+        "what_happened": "Nvidia reported its latest earnings this week with healthy growth and promises of more good times. This came while the company deals with fallout from ousting its CEO, Jensen Huang. The text given here is mostly a podcast blurb, and the headline also says Nvidia will stop selling H200 chips in China, but the text does not explain that.",
+        "why_it_matters": "Nvidia is a central company in the AI boom, so turmoil at the top gets attention. The podcast also notes that Anthropic going public will test the industry's circular funding model, where companies fund each other and the money loops back around. The supplied text does not go into more detail than that.",
+        "what_it_means_for_you": "This barely changes your day-to-day as a student or junior engineer. If you follow AI companies as possible employers, it is a reminder that even very strong firms can have leadership drama. The details are thin here, so treat it as background news."
+      },
+      "anchor": "nvidia-reported-healthy-earnings-amid-ceo-turmoil-and-said"
+    },
+    {
+      "id": 23,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Meta is re-evaluating its 2030 net-zero goal amid record emissions from AI data centers.",
+      "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-20T21:47:10+00:00",
+      "explained": {
+        "what_happened": "Meta said in its latest sustainability report that it is re-evaluating its 2030 goal of net-zero emissions. Its total emissions rose from 15.6 million metric tonnes of carbon dioxide equivalent in 2024 to more than 21.7 million in 2025, largely from things like data center servers. Meta blamed AI infrastructure demand growing faster than almost anyone expected.",
+        "why_it_matters": "Amazon, Google and Microsoft have so far stuck with their original climate goals, so Meta stepping back is a notable public admission. It shows how hard it is to build huge AI data centers and cut emissions at the same time. Many of these sites still depend on burning natural gas for power.",
+        "what_it_means_for_you": "Day to day, this does not change your skills or job search. Over time, energy use and efficiency are becoming real constraints on AI, so knowing how to make software and models cheaper to run is a useful strength. It may also matter if you care about the environmental side of where you work."
+      },
+      "anchor": "meta-is-re-evaluating-its-2030-net-zero-goal-amid-record"
+    },
+    {
+      "id": 13,
+      "category": "AI Finance & Investments",
+      "headline": "Anthropic's seven founders each took about $280 million in the record IPO, which raised nearly $105 billion.",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-20T00:43:50+00:00",
+      "explained": {
+        "what_happened": "Anthropic went public on Thursday, raising a total of $81.3 billion, including $1.95 billion for its seven founders. At $83 per share, each founder got about $280 million before fees and taxes. Counting a $26 billion sale of non-voting stock to big tech firms, it raised about $104.8 billion.",
+        "why_it_matters": "This is the largest IPO on record, well past Facebook's $16 billion in 2012. Yet Anthropic says it needs about $70.7 billion for compute and infrastructure in the next 12 months. Its disclosed commitments are around $1.05 trillion to $1.08 trillion, so building AI is extremely expensive even with this much cash.",
+        "what_it_means_for_you": "It shows that AI labs have a lot of money and will likely keep hiring. But the huge spending bills also mean the industry depends on investor confidence. It is a reason to build solid general skills rather than bet on one company."
+      },
+      "anchor": "anthropic-s-seven-founders-each-took-about-280-million-in"
+    },
+    {
+      "id": 26,
+      "category": "AI Finance & Investments",
+      "headline": "Anthropic closed down nearly 9% on its first full trading day at $97.17, still 17% above its $83 IPO price.",
+      "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-20T21:27:51+00:00",
+      "explained": {
+        "what_happened": "Anthropic shares fell 8.5 percent on Friday to close at $97.17 after opening at $111.50 on Thursday. Worries about the AI trade dragged tech stocks lower, with Nvidia and AMD each down more than 13 percent. Analysts were mixed, with one firm neutral and another rating it outperform.",
+        "why_it_matters": "Investors had hoped this IPO would lift the AI trade, but the mood was already shaky. Rising interest rates, souring sentiment around data centers and Jensen Huang's ouster as Nvidia CEO all weighed on it. The stock is still above the $83 IPO price, but the drop shows how nervous the market is about whether huge AI spending will pay off.",
+        "what_it_means_for_you": "Stock swings do not change what you should learn. They do hint that AI hiring and funding could cool if the market stays weak. Keep your skills broad and don't assume the boom is guaranteed."
+      },
+      "anchor": "anthropic-closed-down-nearly-9-on-its-first-full-trading-day"
+    },
+    {
+      "id": 33,
+      "category": "AI Finance & Investments",
+      "headline": "SoftBank had its worst day in over two years as the AI sell-off hit Asian tech stocks.",
+      "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-20T07:23:06+00:00",
+      "explained": {
+        "what_happened": "SoftBank shares closed 14.48 percent lower on Friday, its worst day since August 2024. Asian tech stocks fell broadly after Anthropic's market debut, including Tokyo Electron, SK Hynix, Samsung and TSMC. The Kospi index ended 5.21 percent lower.",
+        "why_it_matters": "SoftBank has put $64.6 billion into OpenAI and owns chip designer Arm. That makes its stock very sensitive to AI sentiment. The sell-off shows investors doubting whether massive AI infrastructure spending will earn enough back.",
+        "what_it_means_for_you": "This barely affects your skills or daily work. It is a reminder that the AI industry is tied to chips and big investors, so a slump in confidence can ripple through jobs and funding. Treat it as context, not a reason to change plans."
+      },
+      "anchor": "softbank-had-its-worst-day-in-over-two-years-as-the-ai-sell"
+    },
+    {
+      "id": 25,
+      "category": "AI Finance & Investments",
+      "headline": "Zscaler stock jumped 18% on a report that CrowdStrike is in talks to buy the security vendor.",
+      "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-20T21:35:24+00:00",
+      "explained": {
+        "what_happened": "Zscaler shares jumped 18 percent in extended trading on Friday after Bloomberg reported that CrowdStrike is in talks to buy it. CrowdStrike shares fell more than 8 percent, and CrowdStrike declined to comment. The talks are ongoing and no deal is confirmed.",
+        "why_it_matters": "A deal would be among the largest in cybersecurity history, though the text only gives other deals like Google's $32 billion Wiz purchase for comparison. Security companies are growing as businesses upgrade their networks for AI. CrowdStrike has also recently announced plans to buy two AI-focused firms.",
+        "what_it_means_for_you": "If you are interested in security, this shows the field is active and attracting big money. It is only a report so far, so nothing is settled. Mergers can change which companies hire, but that is too early to predict."
+      },
+      "anchor": "zscaler-stock-jumped-18-on-a-report-that-crowdstrike-is-in"
+    },
+    {
+      "id": 36,
+      "category": "AI Government & Regulations",
+      "headline": "The Senate passed the BAAJA permitting reform bill backed by AI and energy sectors; the House must still act.",
+      "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-20T03:56:17+00:00",
+      "explained": {
+        "what_happened": "The US Senate passed a bill, the Bipartisan American Affordability and Jobs Act of 2026, by a vote of 62 to 33. It eases environmental permitting rules and overhauls electrical transmission rules, with the aim of speeding up construction for the energy and technology industries. It still has to pass the House before going to President Trump.",
+        "why_it_matters": "AI data centers need huge amounts of electricity, and slow permits for power and grid upgrades are a bottleneck. The bill would help both renewable and fossil energy, and supporters say it could lower energy costs. Critics worry it gives data centers too much freedom and weakens environmental protections, and the bill makes big tech companies pay for grid upgrades.",
+        "what_it_means_for_you": "There is no immediate effect on your coursework or job hunt. If it becomes law, it could speed up data center building, which supports demand for engineers working on infrastructure and cloud systems. For now, it is something to watch, since the House has not acted yet."
+      },
+      "anchor": "the-senate-passed-the-baaja-permitting-reform-bill-backed-by"
+    },
+    {
+      "id": 30,
+      "category": "AI Government & Regulations",
+      "headline": "Cursor told lawmakers it is considering phasing out Chinese open-weight AI models over geopolitical risk.",
+      "url": "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-20T14:07:24+00:00",
+      "explained": {
+        "what_happened": "Cursor, the AI coding tool now owned by SpaceX, told US lawmakers it plans to explore phasing out Chinese open-weight models because of geopolitical risk. Its coding model Composer 2 was built on top of Moonshot AI's Kimi K2.5. A House report says Airbnb and DoorDash also talked with investigators about their use of Chinese models.",
+        "why_it_matters": "The report says companies adopt Chinese models because they are cheap, customizable and nearly as good as top models, and that the US lacks a competitive open alternative. Lawmakers recommend a national American open-weight initiative and a ban on Chinese-developed models in federal systems and contracts. Separately, the US is trying to stop Chinese firms from reaching AI chips remotely.",
+        "what_it_means_for_you": "If you build with open models, the rules about which ones you can use may change, especially for work that touches government contracts. Think of it like choosing a supplier: price and quality matter, but so does whether the supplier might be cut off later. It is wise to keep your code flexible enough to swap models."
+      },
+      "anchor": "cursor-told-lawmakers-it-is-considering-phasing-out-chinese"
+    },
+    {
+      "id": 4,
+      "category": "AI Open Source",
+      "headline": "Hugging Face welcomes Inkling 2 Mini, a model aimed at strong performance on local setups.",
+      "url": "https://huggingface.co/blog/inkling2mini",
+      "source": "Hugging Face",
+      "published": "2026-11-20T00:00:00+00:00",
+      "explained": {
+        "what_happened": "Hugging Face announced Inkling 2 Mini, a model from Thinking Machines Lab designed to run well on local setups. It has about 26 billion parameters in total but uses only 3 billion for each token, and it accepts text and images. It also reuses the same group of middle layers three times in a loop, so it behaves like a bigger model without storing as many weights.",
+        "why_it_matters": "Reusing layers is a way to get more out of a small model without needing much more memory. Hugging Face says that in its informal tests it is at least comparable with Qwen 3.8 27B, though it says more validation is needed. It also works with common tools like transformers, llama.cpp and MLX.",
+        "what_it_means_for_you": "This is good news if you want to run capable models on your own computer without paying for an API. It is a great chance to experiment and learn how local models work. Think of the looped layers like rereading a paragraph several times to understand it better, rather than buying a longer book."
+      },
+      "anchor": "hugging-face-welcomes-inkling-2-mini-a-model-aimed-at-strong"
+    },
+    {
+      "id": 18,
+      "category": "AI Jobs & Career Opportunities",
+      "headline": "Bloomberg's analysis of 10 million postings shows AI-exposed roles in China falling faster, hitting entry-level workers.",
+      "url": "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/",
+      "source": "The Decoder",
+      "published": "2026-11-20T15:56:03+00:00",
+      "explained": {
+        "what_happened": "A Bloomberg analysis of nearly 10 million online job postings in China, from July 2021 to June 2025, found that listings for jobs highly exposed to AI fell about 10 percentage points more than listings for less affected roles. Entry-level workers and the creative industry are reportedly feeling this most. The text is short, so there is little more detail.",
+        "why_it_matters": "China's job market was already weak, and this suggests AI adds extra pressure on top. It is one of the first large-scale data looks at how AI may be changing hiring. It is about job postings, not proof that AI directly caused the drop.",
+        "what_it_means_for_you": "The worry that entry-level roles are hit first is relevant to you, even though this data is from China. Be careful about reading too much into it, but it is a good reason to build skills that go beyond tasks AI handles easily, such as understanding systems, debugging and working with people."
+      },
+      "anchor": "bloomberg-s-analysis-of-10-million-postings-shows-ai-exposed"
+    },
+    {
+      "id": 15,
+      "category": "AI Security & Safety",
+      "headline": "OpenAI cuts reasoning-extraction attack success on GPT-6.2 models from 54% to 0.2% and suspends distillation accounts.",
+      "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+      "source": "The Decoder",
+      "published": "2026-11-20T20:31:50+00:00",
+      "explained": {
+        "what_happened": "OpenAI says it has made it much harder to pull out the protected reasoning of its GPT-6.2 Astra and GPT-6.2 Sol models. In its own automated tests, attacks that grabbed reasoning from a prior request fell from 54.0 percent success to 0.2 percent. Attacks on the current request fell from 22.9 to 0.9 percent. OpenAI also bans thousands to tens of thousands of accounts weekly.",
+        "why_it_matters": "Rivals can copy a strong model by training on its reasoning, a method called distillation. It is like photocopying a top student's worked answers instead of doing the study. Anthropic is also banning tens of thousands of accounts for the same reason, so protecting this reasoning is now a standard part of competing in AI.",
+        "what_it_means_for_you": "Day to day, this changes little for you. If you build on these APIs, expect some reasoning to stay hidden and expect abuse checks on accounts. It also shows that securing AI services against misuse is a real kind of engineering work."
+      },
+      "anchor": "openai-cuts-reasoning-extraction-attack-success-on-gpt-6-2"
+    },
+    {
+      "id": 24,
+      "category": "AI Security & Safety",
+      "headline": "A researcher seeded 2 million canary secrets into prompts and showed that data does not stay private in the AI supply chain.",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-20T20:59:08+00:00",
+      "explained": {
+        "what_happened": "Researcher HD Moore sent nearly two million prompts, each holding a unique fake secret like a cloud key or password, through a chain of AI services. He then watched where the secrets showed up. He found evidence that at least three providers were breached by attackers, that some resellers logged and passed on prompts, and that some providers ignored privacy settings like Zero Data Retention.",
+        "why_it_matters": "Many AI apps use routers that pick a model for each request, and every stop in that chain can read the prompt in plain text. It is like mailing a letter that gets opened and read at each post office. Privacy promises are only as strong as the weakest link.",
+        "what_it_means_for_you": "Do not paste real passwords, keys or private data into prompts, especially in apps that use routers. If you build AI apps, treat every service in the chain as something that could leak, and check what each one logs. Understanding this kind of risk is a useful skill for security-minded developers."
+      },
+      "anchor": "a-researcher-seeded-2-million-canary-secrets-into-prompts"
+    },
+    {
+      "id": 16,
+      "category": "AI Security & Safety",
+      "headline": "Signal blocks screenshots on iOS and Android to stop AI agents from reading private chats.",
+      "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
+      "source": "The Decoder",
+      "published": "2026-11-20T19:50:27+00:00",
+      "explained": {
+        "what_happened": "Signal is blocking screenshots on iOS 27 and triggering protection on supported Android versions when an AI assistant tries to read the screen. It told Reuters this is an existential threat to privacy. Signal says its defenses are incomplete, since macOS screenshots can't be reliably blocked and AI access to files and notifications is still a risk.",
+        "why_it_matters": "End-to-end encryption protects messages while they travel, but an AI agent that reads the screen sees them after they are decrypted. It is like a sealed envelope that is read over your shoulder once opened. Signal wants Apple, Google and Microsoft to let apps block AI agents entirely.",
+        "what_it_means_for_you": "If you build apps that handle sensitive data, you may need to think about AI agents reading your screen, not just about network security. It also shows that agents with broad screen access create new privacy problems. For most students this is background knowledge rather than something to act on today."
+      },
+      "anchor": "signal-blocks-screenshots-on-ios-and-android-to-stop-ai"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 41,
+    "failed_sources": [
+      "FTC"
+    ],
+    "fetched": 156,
+    "candidates": 114,
+    "ranked": 21,
+    "selected": 21
+  }
+}
