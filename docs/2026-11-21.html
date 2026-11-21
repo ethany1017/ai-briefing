@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Saturday, November 21, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Saturday, November 21, 2026 · 10 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#openai-publishes-prompting-templates-and-api-guidance-for">OpenAI publishes prompting templates and API guidance for GPT-6.2 Astra and Sol to fix common behaviors.</a></li>
+  <li><a href="#google-explains-how-duplex-evolved-to-let-gemini-call">Google explains how Duplex evolved to let Gemini call businesses on users&#39; behalf.</a></li>
+  <li><a href="#google-launches-stitch-loop-an-ai-agent-that-ships-fixes-and">Google launches Stitch Loop, an AI agent that ships fixes and monitors the target metric.</a></li>
+  <li><a href="#google-rolls-out-a-new-search-homepage-with-ai-chat-history">Google rolls out a new search homepage with AI chat history and no search button.</a></li>
+  <li><a href="#anthropic-says-claude-proved-the-riemann-hypothesis-stanford">Anthropic says Claude proved the Riemann hypothesis; Stanford publishes an independent all-human competing proof.</a></li>
+  <li><a href="#nvidia-researchers-argue-large-context-windows-are-often">Nvidia researchers argue large context windows are often unnecessary; summaries and keyword search matched full context.</a></li>
+  <li><a href="#anthropic-s-record-nasdaq-debut-coincides-with-tech-s-worst">Anthropic&#39;s record Nasdaq debut coincides with tech&#39;s worst week on Wall Street since 2020.</a></li>
+  <li><a href="#nasdaq-100-enters-a-bear-market-as-nvidia-falls-14-percent">Nasdaq 100 enters a bear market as Nvidia falls 14 percent amid an SEC accounting review and AI valuation doubts.</a></li>
+  <li><a href="#thinking-machines-releases-open-looped-transformer-inkling-2">Thinking Machines releases open looped-transformer Inkling 2 Mini, which runs on a laptop at low cost.</a></li>
+  <li><a href="#bytedance-releases-open-agent-model-axion-1-0-rivaling-top">Bytedance releases open agent model Axion 1.0, rivaling top commercial models after just three training phases.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="openai-publishes-prompting-templates-and-api-guidance-for">
+  <h3>OpenAI publishes prompting templates and API guidance for GPT-6.2 Astra and Sol to fix common behaviors.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/" rel="noopener">The Decoder</a> · <a href="#openai-publishes-prompting-templates-and-api-guidance-for">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI published prompt templates and API guidance for GPT-6.2 Astra and Sol. The models answer more briefly by default and sometimes stop to ask permission. OpenAI suggests prompts telling them to make reversible assumptions, flag them, and keep working. For coding, it suggests reusing existing code, avoiding unnecessary abstractions, and writing new tests only on request. In the API, editing the conversation history discards earlier reasoning steps, and settings like temperature and top_p are gone.</p>
+  <h4>Why it matters</h4>
+  <p>It shows that a new model version can break old prompts. Prompts that worked before may need rewriting. The API changes can also affect token costs and answer quality.</p>
+  <h4>What it means for you</h4>
+  <p>If you use these models in projects, reread your system prompts. A line like be concise may now do too much. Also avoid editing the chat history in the middle of a conversation, and do not rely on temperature settings. Treating prompts like code that needs updating with each model version is a good habit.</p>
+</section>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="google-explains-how-duplex-evolved-to-let-gemini-call">
+  <h3>Google explains how Duplex evolved to let Gemini call businesses on users&#39; behalf.</h3>
+  <div class="meta"><a href="https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/" rel="noopener">Google Research</a> · <a href="#google-explains-how-duplex-evolved-to-let-gemini-call">link</a></div>
+  <h4>What happened</h4>
+  <p>Google described how Duplex, its phone-calling AI that launched in 2018, has changed over time. It began with narrow models trained for specific tasks, later used general models like LaMDA, and now runs on a single stack built with Gemini. This week it launched Duplex in Tasks in the Gemini app, so Gemini can call businesses for you. Duplex has also been used for agentic calling in Search and Ask Maps, and in Pixel features like Call Screen and Hold for Me.</p>
+  <h4>Why it matters</h4>
+  <p>Phone calls are hard for AI. People interrupt, change their minds, and rely on timing and tone. Google says one general model now replaces many task-specific ones. That is a pattern across the field.</p>
+  <h4>What it means for you</h4>
+  <p>It is a good case study in how AI products move from many hand-built parts to one general model. For you, it points to AI agents that act in the real world, such as making calls, as a growing area to learn about. It is a Google product, so it will not change your tools directly.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="google-launches-stitch-loop-an-ai-agent-that-ships-fixes-and">
+  <h3>Google launches Stitch Loop, an AI agent that ships fixes and monitors the target metric.</h3>
+  <div class="meta"><a href="https://www.producthunt.com/products/stitch-loop" rel="noopener">Product Hunt</a> · <a href="#google-launches-stitch-loop-an-ai-agent-that-ships-fixes-and">link</a></div>
+  <h4>What happened</h4>
+  <p>Google launched Stitch Loop, listed on Product Hunt. It is described as an AI agent that ships fixes and watches the metric. The listing gives no more detail than that.</p>
+  <h4>Why it matters</h4>
+  <p>The description suggests an agent that does not just suggest changes but also checks whether they worked. We do not have enough information to say more.</p>
+  <h4>What it means for you</h4>
+  <p>There is too little here to say what it means for you. If it interests you, look at the product page itself before drawing conclusions.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="google-rolls-out-a-new-search-homepage-with-ai-chat-history">
+  <h3>Google rolls out a new search homepage with AI chat history and no search button.</h3>
+  <div class="meta"><a href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" rel="noopener">Ars Technica AI</a> · <a href="#google-rolls-out-a-new-search-homepage-with-ai-chat-history">link</a></div>
+  <h4>What happened</h4>
+  <p>Google rolled out a redesigned search homepage on desktop after testing it for a few weeks. The Google Search button is gone. New buttons under the search bar link to AI features: image generation, file analysis, and brainstorming with Gemini. The I&#39;m Feeling Lucky button stays. Google says the old button was awkward because autocomplete covered it.</p>
+  <h4>Why it matters</h4>
+  <p>The most-used page on the web is now pushing people toward AI chat. That shows how fast Google is shifting search into an AI product.</p>
+  <h4>What it means for you</h4>
+  <p>It barely changes your daily work. If you build websites or content that people find through search, though, it is a reminder that search is changing and traffic patterns may shift.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="anthropic-says-claude-proved-the-riemann-hypothesis-stanford">
+  <h3>Anthropic says Claude proved the Riemann hypothesis; Stanford publishes an independent all-human competing proof.</h3>
+  <div class="meta"><a href="https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/" rel="noopener">The Decoder</a> · <a href="#anthropic-says-claude-proved-the-riemann-hypothesis-stanford">link</a></div>
+  <h4>What happened</h4>
+  <p>Levent Alpöge, a mathematician at Anthropic, said he worked with Claude to find a proof of the Generalized Riemann Hypothesis, a famous open problem about prime numbers. He published the paper and code in the Lean language, which lets a computer check each step. Hours later, Stanford researchers released a competing draft by Alessandro Masullo, which they say used no AI. About eight hours after that, people reported problems in the Stanford draft, found with the help of AI models.</p>
+  <h4>Why it matters</h4>
+  <p>If a proof like this holds up, it would be a big moment for AI doing real research, not just answering questions. But neither proof has been accepted yet. The community still has to check them, and the Lean format makes checking the AI-assisted one easier. It is a good example of AI work and human work being tested side by side.</p>
+  <h4>What it means for you</h4>
+  <p>You do not need to know number theory to take something from this. Tools like Lean, which check a proof by machine, are a skill that sits between programming and math. Treat the claims as unconfirmed for now, and expect the checking to take a while.</p>
+</section>
+<section class="story" id="nvidia-researchers-argue-large-context-windows-are-often">
+  <h3>Nvidia researchers argue large context windows are often unnecessary; summaries and keyword search matched full context.</h3>
+  <div class="meta"><a href="https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/" rel="noopener">The Decoder</a> · <a href="#nvidia-researchers-argue-large-context-windows-are-often">link</a></div>
+  <h4>What happened</h4>
+  <p>Nvidia researchers argue that very large context windows are often more than you need. A context window is how much text a model can hold in view at once. It has grown from 8,192 tokens in GPT-4 to about one million today. The researchers say that in many tests, periodic summaries and targeted lookups worked about as well. The rest of the article is behind a paywall.</p>
+  <h4>Why it matters</h4>
+  <p>Bigger memory costs more to run. If summaries and search can do the same job, builders can save money. The text we have is thin, so we cannot say how broad the findings are.</p>
+  <h4>What it means for you</h4>
+  <p>Think of it like studying for an exam. You can reread the whole textbook, or you can keep good notes and look things up. If you build apps on top of language models, it is worth trying notes and search before you stuff everything into the prompt.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="anthropic-s-record-nasdaq-debut-coincides-with-tech-s-worst">
+  <h3>Anthropic&#39;s record Nasdaq debut coincides with tech&#39;s worst week on Wall Street since 2020.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html" rel="noopener">CNBC Tech</a> · <a href="#anthropic-s-record-nasdaq-debut-coincides-with-tech-s-worst">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic went public on Nasdaq and raised a record $93.5 billion, plus $26 billion from tech giants who bought at the offer price. The stock rose 17% on its first day, for a market value of $1.8 trillion. The same week, Nvidia fell 23% and the Nasdaq dropped 10%, its worst week since 2020. By the end of the week, Anthropic&#39;s fully diluted value was $1.6 trillion.</p>
+  <h4>Why it matters</h4>
+  <p>It is the biggest sign yet that AI labs can raise money from public markets, and it gave venture investors large returns after years of few tech IPOs. It also raises a question: is Anthropic more like an AI hardware stock, or its own thing? Wall Street seemed unsure at the end of the week.</p>
+  <h4>What it means for you</h4>
+  <p>A public AI lab will likely keep hiring and spending, but the market is shaky, so do not read this as guaranteed job growth. Some startups may now see going public as an option again. For you, the safe move is to keep building skills that work across companies rather than betting on one.</p>
+</section>
+<section class="story" id="nasdaq-100-enters-a-bear-market-as-nvidia-falls-14-percent">
+  <h3>Nasdaq 100 enters a bear market as Nvidia falls 14 percent amid an SEC accounting review and AI valuation doubts.</h3>
+  <div class="meta"><a href="https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/" rel="noopener">The Decoder</a> · <a href="#nasdaq-100-enters-a-bear-market-as-nvidia-falls-14-percent">link</a></div>
+  <h4>What happened</h4>
+  <p>The Nasdaq 100 fell 5.6% on Friday and 10.4% over the week, its worst week since the Covid crisis. That puts it 20% below its October peak, which counts as a bear market. Nvidia dropped 14% on Friday after reports that the SEC is reviewing its accounting. Chip and memory stocks also fell, and Anthropic fell 9.1% a day after its market debut.</p>
+  <h4>Why it matters</h4>
+  <p>Several worries hit at once: doubts about huge AI spending, the Nvidia scandal, high interest rates, and politics. It shows how much of the market now rests on AI hopes. When those hopes wobble, it spreads quickly.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly about investors, not your daily coding. But tech hiring can slow when stocks drop and companies get cautious. If you are job hunting, expect some uncertainty and focus on skills that are useful no matter what the market does.</p>
+</section>
+<h2 class="cat">AI Open Source</h2>
+<section class="story" id="thinking-machines-releases-open-looped-transformer-inkling-2">
+  <h3>Thinking Machines releases open looped-transformer Inkling 2 Mini, which runs on a laptop at low cost.</h3>
+  <div class="meta"><a href="https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/" rel="noopener">The Decoder</a> · <a href="#thinking-machines-releases-open-looped-transformer-inkling-2">link</a></div>
+  <h4>What happened</h4>
+  <p>Thinking Machines released Inkling 2 Mini, an open model that reuses some of its own layers several times for each token. It runs 12 of its 24 layers three times in a row. That lets it think longer inside without writing more text. It has 26.4 billion parameters, takes text and images, and is licensed under Apache 2.0. The company says it leads open models under 100 billion parameters on agentic coding tests and runs on Macs with at least 32 GB of memory.</p>
+  <h4>Why it matters</h4>
+  <p>It shows another way to get better answers: think longer inside the model rather than write out more steps. A strong open model that runs on ordinary hardware lowers the cost of trying things out. The scores come from the company and the benchmarks it cites, so they are worth checking independently.</p>
+  <h4>What it means for you</h4>
+  <p>This is something you can actually try. The weights can be downloaded from Hugging Face, and a 32 GB Mac can run it. The Apache 2.0 license means you can use it in side projects, which makes it a cheap way to learn how local models and coding agents work.</p>
+</section>
+<section class="story" id="bytedance-releases-open-agent-model-axion-1-0-rivaling-top">
+  <h3>Bytedance releases open agent model Axion 1.0, rivaling top commercial models after just three training phases.</h3>
+  <div class="meta"><a href="https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/" rel="noopener">The Decoder</a> · <a href="#bytedance-releases-open-agent-model-axion-1-0-rivaling-top">link</a></div>
+  <h4>What happened</h4>
+  <p>A team from Bytedance and several US universities published a paper arguing that agent training has become too complicated. Many developers stack numerous training phases one after another. The team says three steps are enough, and they released an open agent model called Axion 1.0 to back that up. The rest of the article is behind a paywall.</p>
+  <h4>Why it matters</h4>
+  <p>When training has many stages, it is hard to tell which one helps, and it is costly for others to repeat the work. A simpler recipe would be easier to understand and reproduce. We only have the headline claim that the model rivals top commercial models, so treat that cautiously.</p>
+  <h4>What it means for you</h4>
+  <p>Think of a recipe with twenty steps where nobody knows which ones matter. A shorter one is easier to learn from. For you, this mostly matters as a sign that open agent models are getting more approachable, but it will not change your day-to-day work soon.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
