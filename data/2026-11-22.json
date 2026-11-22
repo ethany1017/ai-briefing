@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T13:50:53-07:00",
+  "items": [
+    {
+      "id": 10,
+      "category": "AI Models & Releases",
+      "headline": "OpenAI's GPT-6.2 Astra and Sol give shorter, more direct answers but score lower than Claude on transparency.",
+      "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+      "source": "The Decoder",
+      "published": "2026-11-22T09:41:37+00:00",
+      "explained": {
+        "what_happened": "Artificial Analysis found that OpenAI's GPT-6.2 Astra and Sol give answers 34 to 40 percent shorter than before. They get to the point faster and use far fewer headings. They also admit uncertainty much less: on that trait, Astra dropped from 96 to 24 and Sol from 98 to 51. Anthropic's Claude Fable 5.2 and Opus 5.5 scored higher on transparency and structure.",
+        "why_it_matters": "Models now differ in personality and style, not only in raw ability. A model that rarely says it is unsure can sound confident even when it should not. The scores are relative rankings, and they measure style, not accuracy.",
+        "what_it_means_for_you": "When you pick a model for coding help or a project, try it on your own tasks and notice how it behaves. A model that flags doubts can save you debugging time, and a short direct one can be faster to read. Do not trust confident-sounding answers without checking them."
+      },
+      "anchor": "openai-s-gpt-6-2-astra-and-sol-give-shorter-more-direct"
+    },
+    {
+      "id": 6,
+      "category": "AI Agents & Automation",
+      "headline": "Perplexity launches a Monitor API that searches the web on a schedule and alerts agents by webhook on relevant changes.",
+      "url": "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/",
+      "source": "The Decoder",
+      "published": "2026-11-22T14:20:28+00:00",
+      "explained": {
+        "what_happened": "Perplexity launched a Monitor API that searches the web on a schedule and sends relevant changes to AI agents through webhooks. It can track search topics or up to 10 fixed pages, and it uses a model to filter results for relevance, credibility, novelty and timeliness. It costs $1 per 1,000 requests, and Perplexity says its own early tests beat Firecrawl, Exa and Parallel.",
+        "why_it_matters": "Until now, teams had to run repeated searches themselves and write custom code to remove duplicates and spot changes. This service wakes an agent only when something important changes. Perplexity's comparison numbers are internal and early, so treat them with some caution.",
+        "what_it_means_for_you": "It is a handy building block if you build side projects or agents that need to follow news, prices or policy pages. Think of it as a smoke alarm instead of checking the kitchen every few minutes. Knowing webhooks and scheduled jobs helps you use tools like this."
+      },
+      "anchor": "perplexity-launches-a-monitor-api-that-searches-the-web-on-a"
+    },
+    {
+      "id": 5,
+      "category": "AI Coding & Developer Tools",
+      "headline": "In a simulated developer workplace, AI coding agents including Opus 5.5 and Astra fully complete under one in ten tasks.",
+      "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+      "source": "The Decoder",
+      "published": "2026-11-22T15:15:48+00:00",
+      "explained": {
+        "what_happened": "A new experiment put AI coding agents to work as digital employees inside a simulated software company. The company had colleagues, project boards and chat histories. Even Claude Opus 5.5 and GPT-6 Astra fully completed fewer than one in ten tasks.",
+        "why_it_matters": "Standard benchmarks like SWE-bench are nearly saturated, so top scores there look impressive. This test suggests that scores on isolated tasks do not tell you how well an agent handles a messy workplace. It is like a driver who aces a closed track but struggles in real city traffic.",
+        "what_it_means_for_you": "Real jobs are about more than writing code. They involve talking to people, reading context and following up on work. Those are the skills where agents still struggle, so building them is a safe bet. The text is short, so there are few details beyond this."
+      },
+      "anchor": "in-a-simulated-developer-workplace-ai-coding-agents"
+    },
+    {
+      "id": 9,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Lean and Mathlib community confirms Levent Alpöge's proof of the Riemann hypothesis is correct, years ahead of predictions.",
+      "url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+      "source": "The Decoder",
+      "published": "2026-11-22T11:08:31+00:00",
+      "explained": {
+        "what_happened": "A Stanford mathematician, Levent Alpöge, published a proof of the Riemann hypothesis on Nov. 20, 2026. It is written as 17 million lines of code in Lean, a tool that checks mathematical proofs for errors. The Lean and Mathlib community says it has full confidence the proof is correct, and dozens of people ran the code independently and got the same result.",
+        "why_it_matters": "The Riemann hypothesis was one of the most famous unsolved problems in math. It makes a prediction about how prime numbers are distributed. The answer came much earlier than forecasters expected: Metaculus forecasters had said May 2035, and Terence Tao had said around 2050 for a mix of humans and AI.",
+        "what_it_means_for_you": "The big lesson is about checking work. A proof written as code can be verified by a program, a bit like a spell-checker that cannot be fooled. For your day-to-day work as a student or junior engineer, this changes little right away. But it shows that tools which check correctness automatically are becoming more valuable."
+      },
+      "anchor": "lean-and-mathlib-community-confirms-levent-alp-ge-s-proof-of"
+    },
+    {
+      "id": 15,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Report says 87% of Anthropic's 2028 power supply would come from gas and 11% from coal.",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "source": "Hacker News",
+      "published": "2026-11-22T08:57:34+00:00",
+      "explained": {
+        "what_happened": "A report analyzed Anthropic's data center commitments and estimates that about 87 percent of its power in 2028 will come from gas and 11 percent from coal. It says Anthropic has made no direct renewable commitments in the U.S., and that it bought commitments for 1.7 gigawatts of gas generators for $3.4 billion. The report estimates its emissions could reach 17 to 38 million tonnes of CO2 equivalent in 2028.",
+        "why_it_matters": "AI needs huge amounts of electricity, and this is a case study of how that demand is being met mostly with fossil fuels. The numbers are estimates based on the authors' methods, not company statements. They show the environmental cost behind AI growth.",
+        "what_it_means_for_you": "Energy use is becoming a real part of AI work, so knowing about efficient code and efficient models can be a useful skill. You may also face questions from employers or users about the footprint of AI tools. For most junior work today, though, it is background knowledge rather than a daily task."
+      },
+      "anchor": "report-says-87-of-anthropic-s-2028-power-supply-would-come"
+    },
+    {
+      "id": 12,
+      "category": "AI Finance & Investments",
+      "headline": "Seven Anthropic founders sold nearly $2B in stock, while Amazon and Google still hold much larger stakes.",
+      "url": "https://www.theneurondaily.com/p/who-really-wins-from-anthropic-s-ipo",
+      "source": "The Neuron",
+      "published": "2026-11-22T18:30:00+00:00",
+      "explained": {
+        "what_happened": "Anthropic began trading on Nasdaq on Thursday at $83 a share. Each of its seven founders sold about $280 million in shares, nearly $2 billion in total. Amazon and Google hold much larger stakes, worth roughly $161 billion and $147 billion at the offering price, and they also supply computing power. Anthropic committed to spend at least $110 billion with Amazon from May 2026 through April 2036.",
+        "why_it_matters": "The money from this IPO flows partly to companies that were already giant. Amazon and Google benefit twice, as owners and as sellers of computing. Other AI companies, like OpenAI, have filed or are linked to future listings, though none has a confirmed date.",
+        "what_it_means_for_you": "It shows how much money is moving into AI, which usually means more hiring and more tools. It also shows that a few big companies control much of the computing underneath. If you ever get stock options at an AI company, remember that paper wealth rises and falls with the stock."
+      },
+      "anchor": "seven-anthropic-founders-sold-nearly-2b-in-stock-while"
+    },
+    {
+      "id": 8,
+      "category": "AI Security & Safety",
+      "headline": "Dragos finds compromised cheap inference providers stealing AWS keys; OpenRouter removed three providers and 125 endpoints.",
+      "url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+      "source": "The Decoder",
+      "published": "2026-11-22T12:07:56+00:00",
+      "explained": {
+        "what_happened": "Security researchers at Dragos sent about 2 million AI requests with fake credentials to AI providers between July and November 2026. They found at least three compromised providers where attackers were stealing data, including hundreds of AWS keys. Privacy settings like Zero Data Retention were often ignored. OpenRouter removed three providers and revoked that approval for 125 endpoints.",
+        "why_it_matters": "Cheap AI routers and marketplaces pass your requests through middlemen, and each one can read the full request and response. It is like sending a letter through several mail carriers, any of whom might open it. Dragos says where your prompts go is a decision you make, or the lowest price makes it for you.",
+        "what_it_means_for_you": "Never put real keys, passwords or private data into prompts sent through services you do not understand. Learn to check where your requests are routed and to use fake credentials that alert you when used. This is a practical security habit that employers value."
+      },
+      "anchor": "dragos-finds-compromised-cheap-inference-providers-stealing"
+    },
+    {
+      "id": 7,
+      "category": "AI Security & Safety",
+      "headline": "METR warns frontier models are improving faster than safety tests can reliably measure, and acceleration risk can't be ruled out.",
+      "url": "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/",
+      "source": "The Decoder",
+      "published": "2026-11-22T13:00:43+00:00",
+      "explained": {
+        "what_happened": "The research group METR warns that AI models are improving at AI research tasks faster than they can be reliably measured. On clearly defined coding tasks with quick feedback, models already beat experienced professionals most of the time. The task length they can handle doubles every 3.6 months, and a rough extrapolation puts them at 50 percent success on 200-hour tasks by July 2027.",
+        "why_it_matters": "If tests cannot keep up, people may not be able to judge or react to serious risks from new systems. Easy tests may also overstate real-world ability, because developers train models in very similar settings. The models still struggle with open-ended questions that need real judgment.",
+        "what_it_means_for_you": "Expect the tools you use to keep getting better at well-defined coding work. Judgment, deciding what to build and handling unclear problems are where humans still have an edge. The extrapolation is naive, so do not treat the date as a forecast."
+      },
+      "anchor": "metr-warns-frontier-models-are-improving-faster-than-safety"
+    },
+    {
+      "id": 3,
+      "category": "AI Security & Safety",
+      "headline": "Signal restricts screenshots in its Android and iOS apps, citing AI surveillance as an existential threat.",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-21T21:37:10+00:00",
+      "explained": {
+        "what_happened": "Signal announced it is limiting screenshots in its Android and iOS apps. President Meredith Whittaker called operating systems with built-in AI agents an existential threat. She said those agents can scan what is on a screen, and the data then sits outside Signal's control. Users can turn the setting off, but that would break Signal's privacy guarantees.",
+        "why_it_matters": "A secure app can protect messages in transit, but it cannot control what the phone itself captures. If an OS-level agent reads your screen, the privacy promise weakens. Whittaker admitted the fix is incomplete.",
+        "what_it_means_for_you": "If you build apps that handle private data, think about what the operating system and its AI features can see. It is like having a locked room with a camera already inside. This is a good design topic to know about, though it will not change your daily work much."
+      },
+      "anchor": "signal-restricts-screenshots-in-its-android-and-ios-apps"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 41,
+    "failed_sources": [
+      "FTC"
+    ],
+    "fetched": 37,
+    "candidates": 28,
+    "ranked": 9,
+    "selected": 9
+  }
+}
