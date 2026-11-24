@@ -1,0 +1,297 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T16:39:06-07:00",
+  "items": [
+    {
+      "id": 22,
+      "category": "AI Agents & Automation",
+      "headline": "Anthropic reports over 700 million monthly MCP SDK downloads and adds background tasks and file uploads.",
+      "url": "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/",
+      "source": "The Decoder",
+      "published": "2026-11-24T19:23:41+00:00",
+      "explained": {
+        "what_happened": "Anthropic says its MCP standard now has more than 700 million monthly SDK downloads and over 10,000 connectors for Claude, two years after launch. New features include Tasks for background jobs and Elicitation, where a running process pauses to ask the user for missing details. Skills over MCP is in public beta, and file upload support is coming soon.",
+        "why_it_matters": "MCP is an open standard that gives AI assistants one common way to reach tools and data, a bit like a universal plug. The text notes OpenAI adopted it in 2025, so it is becoming shared infrastructure. The new features let agents run longer jobs more independently. Anthropic also says Tool Search can cut context use by more than 85 percent in multi-server setups.",
+        "what_it_means_for_you": "MCP is a practical, in-demand skill. Building a small MCP server is a good portfolio project that shows you understand how agents connect to real tools. Because it is an open standard used across companies, the knowledge should carry over between employers."
+      },
+      "anchor": "anthropic-reports-over-700-million-monthly-mcp-sdk-downloads"
+    },
+    {
+      "id": 15,
+      "category": "AI Agents & Automation",
+      "headline": "Meta brings its Muse AI assistant directly into Instagram DMs.",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T17:00:00+00:00",
+      "explained": {
+        "what_happened": "Meta has put its AI agent Muse directly into Instagram DMs. Users can chat with it about a post, place or product, or catch up on missed conversations. Muse can also organize saved posts into Collections, and it rolls out first in the U.S., Canada, Mexico, Japan and Singapore for the DM feature.",
+        "why_it_matters": "This puts an AI assistant where users already spend time, so they do not need to switch apps. It also gives Muse access to a place where people find products, places and content. Meta says nothing is shared, published or sent without approval, and users can ask Muse to forget information or undo actions.",
+        "what_it_means_for_you": "It is mostly a consumer feature, so it does not change your work directly. It does show that assistants are being built into existing apps, which means more jobs integrating AI into products people already use. Design questions like approval, undo and privacy controls are worth studying."
+      },
+      "anchor": "meta-brings-its-muse-ai-assistant-directly-into-instagram"
+    },
+    {
+      "id": 11,
+      "category": "AI Agents & Automation",
+      "headline": "Walmart lets customers shop Black Friday deals through Meta's Muse AI agent.",
+      "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T21:32:38+00:00",
+      "explained": {
+        "what_happened": "Walmart and Meta are letting customers shop Walmart's Black Friday deals through Muse. Shoppers sign in to their Walmart account, ask Muse to find products or compare deals, and Walmart returns results and helps build a cart. Walmart says Muse cannot see shopping history or personal information, and shoppers can set spending limits and require approval.",
+        "why_it_matters": "It shows two retail approaches. Amazon has taken steps to stop third-party AI agents from buying for customers, while Walmart is welcoming them. The system behind it is Walmart's Agent Gateway, launched in October, which Walmart plans to open to more developers and AI platforms. Instacart has also joined Muse.",
+        "what_it_means_for_you": "Companies are building official doors for AI agents to use their services, which creates work on APIs, permissions and safe checkout flows. If you build web or backend software, expect to design for agents as well as human users. Spending limits and approval steps are good examples of safety features you may be asked to build."
+      },
+      "anchor": "walmart-lets-customers-shop-black-friday-deals-through-meta"
+    },
+    {
+      "id": 39,
+      "category": "AI Agents & Automation",
+      "headline": "Signal joins United Airlines and JPMorgan Chase in restricting AI agents over customer risks.",
+      "url": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-24T14:46:01+00:00",
+      "explained": {
+        "what_happened": "Signal is tightening protections against AI agents that can read what is on a user's screen, such as those built into phone operating systems. It will block screenshots in its iOS app and turn on screen security on Android when it detects an AI assistant trying to read the screen. United Airlines, JPMorgan Chase and Charles Schwab are also limiting or blocking AI agents over security and customer-protection concerns.",
+        "why_it_matters": "Signal says app developers lack robust tools to stop operating-system AI agents from undermining app-level privacy, and it wants Apple, Google and Microsoft to provide them. Banks worry about account hijacking and unintended purchases, since an agent's actions can look authorized. A survey cited in the text found 88.4% of 750 IT leaders' organizations had at least one AI-agent-related security breach in the past year. Not everyone is blocking agents: Singapore Airlines is an early Muse partner.",
+        "what_it_means_for_you": "Security and privacy for agents is a growing area, and developers will need to decide what agents can see and do in their apps. Learning about permissions, authentication and data classification will help. The fact that there are few good tools today means there is room for people who understand the problem."
+      },
+      "anchor": "signal-joins-united-airlines-and-jpmorgan-chase-in"
+    },
+    {
+      "id": 28,
+      "category": "AI Coding & Developer Tools",
+      "headline": "Anthropic launches Claude Ship in beta, which reviews, fixes and approves pull requests per team guidelines.",
+      "url": "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/",
+      "source": "The Decoder",
+      "published": "2026-11-24T11:26:23+00:00",
+      "explained": {
+        "what_happened": "Anthropic launched Claude Ship in beta. It combines Code Review with two new agents. PR Steward reworks a pull request when tests fail, changes conflict or reviewers leave notes. Claude Approvals checks a policy file in the project to decide whether the AI can approve a routine change or a human must sign off.",
+        "why_it_matters": "With GitHub auto-merge on and the right policy, code can be merged with no human involved. That moves AI from suggesting changes to deciding what ships. It is available on Team and Enterprise plans, billed by token usage, with no default spending cap for PR Steward. Organizations with specific data privacy requirements cannot use it.",
+        "what_it_means_for_you": "Pull requests are a big part of entry-level work, so tools like this may change how juniors get feedback and build trust. Understanding code review, tests and clear team policies will matter more, since those rules now guide the AI. Learn to review code well and write good tests, because that judgment is what decides what gets approved."
+      },
+      "anchor": "anthropic-launches-claude-ship-in-beta-which-reviews-fixes"
+    },
+    {
+      "id": 21,
+      "category": "AI Coding & Developer Tools",
+      "headline": "Anthropic lets users install Claude Artifacts as standalone desktop apps on macOS and Windows.",
+      "url": "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/",
+      "source": "The Decoder",
+      "published": "2026-11-24T20:42:29+00:00",
+      "explained": {
+        "what_happened": "Anthropic now lets you install Claude Artifacts as standalone apps on macOS and Windows, in beta. You build an Artifact in chat and keep it in your dock without writing code. The apps can use OS features, connectors and Claude itself, such as menu bar items, transparent windows and notifications.",
+        "why_it_matters": "Small tools made through chat can now behave like real desktop apps. Examples include custom terminals, file managers and video editors. This lowers the barrier for people who are not programmers to make personal software. A free Claude account is enough for now.",
+        "what_it_means_for_you": "It is a quick way to prototype a desktop idea or build a personal tool without setting up a project. It will not replace learning how to build and maintain real apps. Try it to see what it can and cannot do, and what it tells you about what non-programmers will expect to build themselves."
+      },
+      "anchor": "anthropic-lets-users-install-claude-artifacts-as-standalone"
+    },
+    {
+      "id": 12,
+      "category": "AI Startups & Y Combinator",
+      "headline": "Maple raises $5.3M for encrypted AI products designed so even the company cannot access user data.",
+      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T21:19:52+00:00",
+      "explained": {
+        "what_happened": "Maple, a startup co-founded by a former Apple engineer, raised $5.3 million to build AI products that keep user data private even from the company. Its chat app runs open models inside a trusted execution environment, a server with hardware encryption, so data is decrypted only inside it. It has launched a desktop agent app called Maple Work and plans a cloud-based agent next.",
+        "why_it_matters": "AI agents are getting access to files, email and browsers, so trust in AI companies matters more. Maple's pitch is that you can check the open source code instead of taking its word. Whether privacy can compete with the convenience of bigger services is still an open question.",
+        "what_it_means_for_you": "Privacy-preserving AI is a niche you could explore. Knowing about encryption, trusted execution environments and open models is useful if you work with sensitive data. It is a small startup story, so it is not a signal about the wider job market."
+      },
+      "anchor": "maple-raises-5-3m-for-encrypted-ai-products-designed-so-even"
+    },
+    {
+      "id": 32,
+      "category": "AI Business & Industry Adoption",
+      "headline": "Huang's allies reportedly enlisted Trump and Vance to pressure Nvidia's board into reinstating him.",
+      "url": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-24T14:56:50+00:00",
+      "explained": {
+        "what_happened": "Jensen Huang walked back into Nvidia's headquarters on Monday to cheering staff, less than two weeks after he resigned over an affair with a customer and suspected Chinese spy and a second reported affair. According to the report, a group of his Silicon Valley allies lobbied President Trump and Vice President Vance, and Trump pressed the board over the weekend. Nvidia and Huang still face FBI and SEC probes and congressional investigations.",
+        "why_it_matters": "Nvidia is at the center of the AI boom, and its stock and the wider tech sector fell sharply during his absence. The report says allies argued he was key to the US AI industry and the economy. The episode shows how much the industry depends on a few people and on political ties.",
+        "what_it_means_for_you": "This is unlikely to change what you study or build. It is a reminder that the companies behind the tools you use can be shaken by leadership and legal trouble. Avoid betting your career on a single company."
+      },
+      "anchor": "huang-s-allies-reportedly-enlisted-trump-and-vance-to"
+    },
+    {
+      "id": 31,
+      "category": "AI Business & Industry Adoption",
+      "headline": "Tidal bans AI-generated music and will delete about 27 million tracks, 6.3 percent of its catalog.",
+      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-24T17:34:34+00:00",
+      "explained": {
+        "what_happened": "Tidal will ban fully AI-generated music and delete about 27 million tracks labeled as AI on December 9. That is 6.3 percent of its catalog. Over the past 90 days, 43 percent of new uploads were fully AI-generated, and Tidal says 96 percent of the AI-labeled tracks got zero plays in that time.",
+        "why_it_matters": "Most streaming services only label AI music, so Tidal is taking a harder stance. It says AI tracks can mislead listeners and pull royalty money away from human artists. It also says some uploaders try to steal royalties, and it has already removed about 66,000 tracks for impersonating artists.",
+        "what_it_means_for_you": "If you build tools that generate content, platforms may restrict or remove fully automated output. Tidal still allows AI tools when the final product has human elements. The lesson is that AI works better as a helper than as a replacement for the creator."
+      },
+      "anchor": "tidal-bans-ai-generated-music-and-will-delete-about-27"
+    },
+    {
+      "id": 1,
+      "category": "AI Research & Breakthroughs",
+      "headline": "OpenAI says GPT-6 models can design proteins, with lab tests showing binding across five targets.",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI",
+      "published": "2026-11-24T13:00:00+00:00",
+      "explained": {
+        "what_happened": "OpenAI says its GPT-6 models can design new proteins, both the 3D shape and the order of the chemical building blocks, using only reasoning and general code. They do not call specialized biology models to do the design. In lab tests with Onava, proteins based on GPT-6.2's designs showed signs of binding across five targets, and redesigned antibodies still bound.",
+        "why_it_matters": "Until now, protein design relied on separate specialized models that need expert knowledge to use and combine. OpenAI reports its general model matched or beat those specialized models on most tasks, and could be steered just by changing the prompt. If that holds up, one flexible model could replace a toolkit of narrow ones. Note that specialized models still helped supply sequences and pick candidates for the lab tests, and the claims come from OpenAI's own preprint.",
+        "what_it_means_for_you": "This is far from everyday software work, so it will not change your job search soon. The broader lesson is that general-purpose models keep absorbing tasks that once needed custom tools. If you are curious about biology plus code, it hints at a growing area where you can work with scientists, but you would need domain knowledge too."
+      },
+      "anchor": "openai-says-gpt-6-models-can-design-proteins-with-lab-tests"
+    },
+    {
+      "id": 25,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Anthropic researcher stands by AI-assisted Riemann hypothesis proof but admits errors in how it was announced.",
+      "url": "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout/",
+      "source": "The Decoder",
+      "published": "2026-11-24T14:28:41+00:00",
+      "explained": {
+        "what_happened": "Anthropic researcher Levent Alpöge says his AI-assisted proof of the generalized Riemann hypothesis is mathematically valid. He admits mistakes in how he announced it. He says his remarks about its length were a joke, and he released messy code without cleaning it up.",
+        "why_it_matters": "He says the Lean code, a language that lets a computer check a proof step by step, passes formal verification. But it is full of redundant steps that make it hard to read. The text also notes that passing the check alone does not prove the code states the right theorem with no hidden assumptions. So the claim is still being examined, and how results are presented matters as much as the result.",
+        "what_it_means_for_you": "It is a useful reminder that code that compiles is not the same as code that is correct. Checking that you solved the right problem is a skill worth building. Also, clean, readable work earns trust, and sloppy release habits invite doubt even when the core work is sound."
+      },
+      "anchor": "anthropic-researcher-stands-by-ai-assisted-riemann"
+    },
+    {
+      "id": 10,
+      "category": "AI Research & Breakthroughs",
+      "headline": "New benchmark finds even the best AI agents struggle to complete everyday tasks reliably and safely.",
+      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T21:33:29+00:00",
+      "explained": {
+        "what_happened": "A new benchmark called ShellBench tests AI agents on everyday tasks drawn from more than 10 million real agent interactions. Even the best models from OpenAI, Anthropic and Meta failed more than a third of the time. Across all models, 15.7% of attempts broke at least one safety requirement.",
+        "why_it_matters": "Companies are marketing personal agents as ready to handle daily chores, and millions of people have signed up. This research suggests they are not yet reliable. The top model, GPT-6 Astra, got all three tries right on the same task less than half the time. That is like a helper who does the job properly only some of the time, and you cannot tell which time.",
+        "what_it_means_for_you": "Agents still need guardrails, testing and human checks, and people who can build those will be valuable. The benchmark also shows that the harness, the software that controls how a model uses tools and information, matters more among stronger models. Learning to test agents for consistency and safety, not just one-off success, is a concrete skill to practice."
+      },
+      "anchor": "new-benchmark-finds-even-the-best-ai-agents-struggle-to"
+    },
+    {
+      "id": 81,
+      "category": "AI Research & Breakthroughs",
+      "headline": "GPT-6.2 Astra identified the creator of an anonymous 1808 Yale sketchbook in 22 minutes, a historian reports.",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+      "source": "Simon Willison",
+      "published": "2026-11-24T16:53:59+00:00",
+      "explained": {
+        "what_happened": "History professor Mark Humphries reports that GPT-6.2 Astra, with minimal prompting, identified the creator of an anonymous 1808 sketchbook held at Yale's Beinecke Library. It took 22 minutes and used public sources. It found a little-known source in a paper archive, predicted it would confirm the idea, and it did.",
+        "why_it_matters": "This shows an AI doing real research steps: forming a hypothesis, finding a source and predicting what it would show. Humphries expects a mild crisis of confidence among historians, milder than in math, because history is about reinterpreting the past, not solving one problem. It is a single case study, so it does not show how often this works.",
+        "what_it_means_for_you": "It barely changes your day-to-day work as a developer. It does show that agents are getting good at long, multi-step research tasks, which may spread to other fields. Knowing how to direct such tools and check their claims is a useful skill."
+      },
+      "anchor": "gpt-6-2-astra-identified-the-creator-of-an-anonymous-1808"
+    },
+    {
+      "id": 19,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Amazon is reportedly acquiring Decart for $7.5 billion to improve Trainium chip efficiency against Nvidia.",
+      "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T15:51:07+00:00",
+      "explained": {
+        "what_happened": "Amazon is reportedly buying the technology and team of Decart for about $7.5 billion. Decart makes software that helps AI models run better on many kinds of chips. Amazon wants to use it to get more performance out of its own Trainium chips, and it is not interested in Decart's world models.",
+        "why_it_matters": "Nvidia has a near-monopoly on AI chips, partly because its chips are easy to build on. Amazon is betting that better software can close that gap. Anthropic reportedly tried to buy Decart too, and Nvidia was rumored as a buyer, so several big players valued the technology.",
+        "what_it_means_for_you": "Skills in making AI models run fast on different hardware look valuable. Think of it like tuning the same program to run well on different kinds of engines. Learning how models run on chips, not just how to call them, could set you apart."
+      },
+      "anchor": "amazon-is-reportedly-acquiring-decart-for-7-5-billion-to"
+    },
+    {
+      "id": 13,
+      "category": "AI Finance & Investments",
+      "headline": "Anthropic shares closed below the $83 IPO price after opening at $111.50 on Nov. 19.",
+      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T18:30:42+00:00",
+      "explained": {
+        "what_happened": "Anthropic's stock fell below its $83 IPO price on Tuesday, trading as low as $76 by midday, down nearly 12% from Monday's close. This came less than a week after it debuted on Nasdaq at $111.50. Nvidia also fell more than 7% by midday, after gaining more than 30% on Monday when Jensen Huang was reinstated as CEO.",
+        "why_it_matters": "A stock trading below its IPO price is usually seen as a bad sign. The AI industry is watching Anthropic's shares as a gauge of how public investors value the sector. If the slump continues, it could pressure private startup valuations and weaken IPO prospects for other AI companies.",
+        "what_it_means_for_you": "Stock moves over a few days say little about the tools you use. But if funding gets tighter, AI startups may hire less or change plans. If you are job hunting, look at a company's finances and not just its buzz, and keep your skills useful beyond any one company."
+      },
+      "anchor": "anthropic-shares-closed-below-the-83-ipo-price-after-opening"
+    },
+    {
+      "id": 34,
+      "category": "AI Finance & Investments",
+      "headline": "Dell's sales more than doubled on AI server demand, and it authorized a $25 billion buyback.",
+      "url": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-24T22:07:45+00:00",
+      "explained": {
+        "what_happened": "Dell reported third-quarter results that beat expectations, with adjusted EPS of $9.45 versus $6.59 expected and revenue of $54.94 billion versus $49.32 billion expected. Overall sales more than doubled from a year earlier, driven by AI server demand. AI-optimized server sales were $22 billion, up 291%, and Dell has a $132.3 billion backlog of AI server orders. It also authorized a $25 billion share buyback.",
+        "why_it_matters": "It shows that the spending on AI hardware is still very large. Dell's infrastructure group is now 85% of its revenue, while its PC business missed expectations as rising memory prices hurt that market. Dell also says it vets every AI order for access to capital, customer quality, export compliance, and land and power.",
+        "what_it_means_for_you": "Demand for the physical side of AI, such as servers, data centers and power, is strong. That means jobs in infrastructure, cloud and systems work, not only in building models. The weak PC market also suggests laptops may stay expensive for now, so a student might think twice about timing an upgrade."
+      },
+      "anchor": "dell-s-sales-more-than-doubled-on-ai-server-demand-and-it"
+    },
+    {
+      "id": 36,
+      "category": "AI Finance & Investments",
+      "headline": "AI debt markets grew jittery after Jensen Huang's return as Nvidia CEO.",
+      "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-ai-credit-markets.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-24T21:52:05+00:00",
+      "explained": {
+        "what_happened": "Jensen Huang returned as CEO of Nvidia on Monday after stepping down on Nov. 12 amid allegations of affairs. On Tuesday, markets turned jittery again. CoreWeave's stock fell 13%, and the cost of insuring its debt against nonpayment rose.",
+        "why_it_matters": "Nvidia helps fund companies that rent out AI computing power, often by backing their chip purchases. This is called circular financing: Nvidia's money helps customers buy Nvidia's own chips. Debt investors worry about it, and they don't like the drama around Huang's return, which the story says involved the administration.",
+        "what_it_means_for_you": "This is mostly a finance story, so it won't change your daily work. It does show that the AI boom runs on borrowed money. If you join an AI infrastructure company, its funding could affect hiring and job stability."
+      },
+      "anchor": "ai-debt-markets-grew-jittery-after-jensen-huang-s-return-as"
+    },
+    {
+      "id": 33,
+      "category": "AI Security & Safety",
+      "headline": "Amazon says hackers' AI agents found and exploited a zero-day with little human input.",
+      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "source": "Ars Technica AI",
+      "published": "2026-11-24T12:30:05+00:00",
+      "explained": {
+        "what_happened": "Amazon says AI agents found and exploited a previously unknown flaw, called a zero-day, on an East Asian university server. The agents ran on Cairn, an open source AI penetration-testing framework, and were given only a list of IP addresses and the goal of getting shell access. They found the flaw in an open source medical imaging AI application and took full control.",
+        "why_it_matters": "Cairn was built for defenders, but attackers use it too. Palo Alto Networks reported a campaign with 25 autonomous operations against at least 19 organizations, with at least 10 breached. Attacks can now run at a speed and persistence that humans struggle to match.",
+        "what_it_means_for_you": "Security skills are becoming more important. Writing safe code and keeping systems patched matter more when attackers can use automated tools. Learning basic secure coding and how penetration testing works is a practical step."
+      },
+      "anchor": "amazon-says-hackers-ai-agents-found-and-exploited-a-zero-day"
+    },
+    {
+      "id": 26,
+      "category": "AI Security & Safety",
+      "headline": "Axios reports insiders at OpenAI and Anthropic believe unreleased models have outgrown safety controls.",
+      "url": "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/",
+      "source": "The Decoder",
+      "published": "2026-11-24T14:02:31+00:00",
+      "explained": {
+        "what_happened": "Axios reports, citing more than two dozen insiders, that many employees at OpenAI and Anthropic think their unreleased models are too powerful to control safely. The report says both companies are debating whether to halt release. The supplied text is cut off by a paywall, so details are thin.",
+        "why_it_matters": "If true, the people building the most advanced AI are worried about controlling it. That could affect how fast new models reach the public. With so little detail available, treat it as a claim from insiders and not a confirmed fact.",
+        "what_it_means_for_you": "There is little to act on right now. It may mean new models could be delayed or released with more limits. Following AI safety work is useful, but it shouldn't change your plans today."
+      },
+      "anchor": "axios-reports-insiders-at-openai-and-anthropic-believe"
+    },
+    {
+      "id": 14,
+      "category": "AI Security & Safety",
+      "headline": "UK cyber agency warns AI-driven attacks are exploiting years of basic security weaknesses.",
+      "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-24T18:02:59+00:00",
+      "explained": {
+        "what_happened": "The UK's National Cybersecurity Center says AI-driven cyberattacks have risen markedly in recent months. Since September it has seen several incidents involving autonomous hacking tools, causing intrusions and downtime. The flaws being exploited are not new. They are weaknesses built up over years of technical debt, such as weak passwords and exposed systems.",
+        "why_it_matters": "Free open source tools like Artex and Cairn let anyone run automated attacks. The agency says AI does not make existing security controls obsolete, but weaknesses that went unnoticed for years can now be found in minutes. The FBI has also warned about attackers using these tools.",
+        "what_it_means_for_you": "Basics matter a lot: strong passwords, locking down internet-facing systems, and careful handling of API endpoints. Technical debt is like leaving a door unlocked for years, and now someone is checking every door quickly. Good habits in your own projects are a real, career-relevant skill."
+      },
+      "anchor": "uk-cyber-agency-warns-ai-driven-attacks-are-exploiting-years"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 41,
+    "failed_sources": [
+      "FTC"
+    ],
+    "fetched": 143,
+    "candidates": 107,
+    "ranked": 20,
+    "selected": 20
+  }
+}
