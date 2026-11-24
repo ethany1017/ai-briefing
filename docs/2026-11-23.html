@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Monday, November 23, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Monday, November 23, 2026 · 19 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#openai-makes-gpt-6-2-sol-the-default-chatgpt-model-with">OpenAI makes GPT-6.2 Sol the default ChatGPT model, with sharply better image understanding and instruction following.</a></li>
+  <li><a href="#z-ai-moves-its-750b-glm-5-4-flagship-to-a-loop-transformer">Z.ai moves its 750B GLM-5.4 flagship to a loop transformer architecture, claiming parity with much larger models.</a></li>
+  <li><a href="#anthropic-launches-claude-ship-letting-ai-agents-review-fix">Anthropic launches Claude Ship, letting AI agents review, fix and approve routine code changes.</a></li>
+  <li><a href="#sierra-raises-1-75-billion-in-a-series-f-doubling-its">Sierra raises $1.75 billion in a Series F, doubling its valuation to $30 billion within six months.</a></li>
+  <li><a href="#supertake-raises-20-million-for-ai-agents-that-turn-users">Supertake raises $20 million for AI agents that turn users&#39; market predictions into stock portfolios.</a></li>
+  <li><a href="#google-s-ai-mode-can-now-use-drive-wallet-and-gemini-app">Google&#39;s AI Mode can now use Drive, Wallet and Gemini app data for more personalized Search responses.</a></li>
+  <li><a href="#nvidia-s-board-reinstates-jensen-huang-as-ceo-reversing-his">Nvidia&#39;s board reinstates Jensen Huang as CEO, reversing his departure of about two weeks, with US government support.</a></li>
+  <li><a href="#openai-s-gpt-6-2-astra-produced-the-first-machine-verifiable">OpenAI&#39;s GPT-6.2 Astra produced the first machine-verifiable Lean proof of Smoktunowicz&#39;s gap theorem.</a></li>
+  <li><a href="#deepmind-uses-agent-teams-and-formal-verification-to-improve">DeepMind uses agent teams and formal verification to improve quantum algorithms for fusion and chemistry.</a></li>
+  <li><a href="#openai-s-chief-scientist-releases-gpt-perplexity-scores-and">OpenAI&#39;s chief scientist releases GPT perplexity scores and urges rivals to adopt it as a shared progress metric.</a></li>
+  <li><a href="#amazon-acquires-decart-s-ai-optimization-technology-and-team">Amazon acquires Decart&#39;s AI optimization technology and team in a reported $7.5 billion deal ahead of Trainium chip sales.</a></li>
+  <li><a href="#spacexsi-rents-compute-to-anthropic-and-google-while-scaling">SpaceXSI rents compute to Anthropic and Google while scaling back its own AI projects, the NYT reports.</a></li>
+  <li><a href="#notable-capital-gic-and-baillie-gifford-explain-their">Notable Capital, GIC and Baillie Gifford explain their multibillion-dollar bets on Anthropic ahead of its IPO.</a></li>
+  <li><a href="#jensen-huang-is-scheduled-to-testify-before-the-senate-after">Jensen Huang is scheduled to testify before the Senate after bipartisan calls over his ties to a suspected Chinese spy.</a></li>
+  <li><a href="#megaspeed-tied-to-the-huang-scandal-appears-headed-for-a-us">Megaspeed, tied to the Huang scandal, appears headed for a US blacklist requiring special licenses to trade with US firms.</a></li>
+  <li><a href="#states-sue-spacex-to-stop-grok-from-generating-child-sexual">States sue SpaceX to stop Grok from generating child sexual abuse images and nonconsensual deepfake porn.</a></li>
+  <li><a href="#nariq-releases-3-bit-and-lower-quantizations-of-qwen3-8-27b">NariQ releases 3-bit and lower quantizations of Qwen3.8-27B that reportedly retain near-BF16 quality on agentic tasks.</a></li>
+  <li><a href="#openai-and-cisco-release-shirudo-an-open-source-linux">OpenAI and Cisco release Shirudo, an open-source Linux runtime that helps protect systems while patches roll out.</a></li>
+  <li><a href="#crowdstrike-agrees-to-buy-zscaler-for-44-billion-as-ai">CrowdStrike agrees to buy Zscaler for $44 billion as AI-driven cyberattacks intensify.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="openai-makes-gpt-6-2-sol-the-default-chatgpt-model-with">
+  <h3>OpenAI makes GPT-6.2 Sol the default ChatGPT model, with sharply better image understanding and instruction following.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/" rel="noopener">The Decoder</a> · <a href="#openai-makes-gpt-6-2-sol-the-default-chatgpt-model-with">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI is rolling out a chat-tuned version of GPT-6.2 Sol to Plus, Pro, Business and Enterprise users worldwide. OpenAI says it handles complex requests and web searches better than GPT-6 and asks more relevant follow-up questions. In its own tests, image understanding rose from 47.4 to 71.7 percent and difficult instruction following from 62.5 to 78.1 percent.</p>
+  <h4>Why it matters</h4>
+  <p>OpenAI says the model also follows its safety policies more often in hard conversations, 91 to 94 percent versus 77 to 80 percent for GPT-6. The biggest gains are in youth safety topics like emotional dependency and eating disorders. All of these numbers come from OpenAI&#39;s internal tests, so they are claims, not independent results.</p>
+  <h4>What it means for you</h4>
+  <p>If you use ChatGPT for studying or debugging, you may notice it follows detailed instructions better and handles screenshots or diagrams more reliably. The numbers apply only to chat mode, and the Work and Codex models are unchanged, so coding tools will not change from this update. It is a nice upgrade, not something that changes what you need to learn.</p>
+</section>
+<section class="story" id="z-ai-moves-its-750b-glm-5-4-flagship-to-a-loop-transformer">
+  <h3>Z.ai moves its 750B GLM-5.4 flagship to a loop transformer architecture, claiming parity with much larger models.</h3>
+  <div class="meta"><a href="https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/" rel="noopener">The Decoder</a> · <a href="#z-ai-moves-its-750b-glm-5-4-flagship-to-a-loop-transformer">link</a></div>
+  <h4>What happened</h4>
+  <p>Z.ai released GLM-5.4, a 750-billion-parameter model. It runs 28 of its layers twice, which makes the network effectively deeper without adding parameters. Z.ai says it performs like models with 2 to 3 trillion parameters, and says the weights will follow.</p>
+  <h4>Why it matters</h4>
+  <p>Think of reading a hard paragraph twice instead of buying a longer book. Reusing the same layers is a way to get more thinking out of the same model size. Z.ai says OpenAI has used a similar design since GPT-6 Astra, so this idea is spreading across labs. Z.ai also says looped models trained from scratch have done worse so far, so it retrained an existing model instead.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly of interest if you follow how models are built. Day to day, it points to a trend: labs are looking for ways to get better results without simply making models bigger. If the weights are released, curious students could study how it works, but nothing here changes what you need to do now.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="anthropic-launches-claude-ship-letting-ai-agents-review-fix">
+  <h3>Anthropic launches Claude Ship, letting AI agents review, fix and approve routine code changes.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/" rel="noopener">TechCrunch AI</a> · <a href="#anthropic-launches-claude-ship-letting-ai-agents-review-fix">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic launched Claude Ship, a set of AI agents for reviewing, fixing and approving code changes. Code Review is already generally available. Two new beta agents join it: PR Steward, which fixes failing checks and merge conflicts, and Claude Approvals, which approves changes based on a policy the team writes in the repository. It is available on Team and Enterprise plans for GitHub repositories.</p>
+  <h4>Why it matters</h4>
+  <p>AI can now write so much code that reviewing it has become the bottleneck. Claude Ship tries to remove that bottleneck by letting an AI approve routine changes, not just comment on them. Anthropic suggests starting in observe-only mode, and teams choose which changes still go to a human.</p>
+  <h4>What it means for you</h4>
+  <p>Reviewing code is a common way juniors learn and get feedback, and tools like this may change how that works. It is worth learning to write clear review policies and to judge when an AI approval can be trusted. Being able to read and check code carefully will matter more, not less.</p>
+</section>
+<h2 class="cat">AI Startups &amp; Y Combinator</h2>
+<section class="story" id="sierra-raises-1-75-billion-in-a-series-f-doubling-its">
+  <h3>Sierra raises $1.75 billion in a Series F, doubling its valuation to $30 billion within six months.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/" rel="noopener">TechCrunch AI</a> · <a href="#sierra-raises-1-75-billion-in-a-series-f-doubling-its">link</a></div>
+  <h4>What happened</h4>
+  <p>Sierra, a customer experience company co-founded by former Salesforce co-CEO Bret Taylor, raised $1.75 billion in a Series F round. This doubles its valuation to $30 billion, less than six months after a $15 billion valuation. It says it serves almost half of the Fortune 50 and that its run-rate revenue doubled to $400 million in five months.</p>
+  <h4>Why it matters</h4>
+  <p>Customer service is one of the few areas where companies are really adopting AI quickly. Other startups in the field, such as ElevenLabs, Decagon, Wonderful and Parloa, are also valued in the billions. Sierra&#39;s co-founder argues that most customers move staff to other roles instead of cutting them.</p>
+  <h4>What it means for you</h4>
+  <p>Big funding means these companies will be hiring, including sales and engineering roles. Skills in building and testing AI agents that connect to company systems look useful here. Treat the valuations as investor bets, not proof of lasting success.</p>
+</section>
+<section class="story" id="supertake-raises-20-million-for-ai-agents-that-turn-users">
+  <h3>Supertake raises $20 million for AI agents that turn users&#39; market predictions into stock portfolios.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/" rel="noopener">TechCrunch AI</a> · <a href="#supertake-raises-20-million-for-ai-agents-that-turn-users">link</a></div>
+  <h4>What happened</h4>
+  <p>Supertake raised $20 million in seed funding. Its service lets people describe a belief about how the world will change, and AI helps turn it into an investable stock portfolio. It currently works with Coinbase and Robinhood and shows users&#39; ideas on a public leaderboard.</p>
+  <h4>Why it matters</h4>
+  <p>It is an example of AI moving into financial services, where mistakes cost real money and trust matters. Supertake says its own software directs and limits what the AI can do. Its team compares it to a modern robo-advisor, an automated investing service.</p>
+  <h4>What it means for you</h4>
+  <p>This barely changes your plans, but it shows a pattern: AI agents wrapped in strict guardrails are what startups are building. If you want to work on products like this, learning how to constrain and test AI behavior is a useful skill. Be careful with the idea of investing based on AI output.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="google-s-ai-mode-can-now-use-drive-wallet-and-gemini-app">
+  <h3>Google&#39;s AI Mode can now use Drive, Wallet and Gemini app data for more personalized Search responses.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/" rel="noopener">TechCrunch AI</a> · <a href="#google-s-ai-mode-can-now-use-drive-wallet-and-gemini-app">link</a></div>
+  <h4>What happened</h4>
+  <p>Google is expanding Personal Intelligence in Search&#39;s AI Mode to connect with Google Drive, Google Wallet and the Gemini app. It already works with Gmail, Calendar and Photos. Connecting is optional and can be turned off at any time. Wallet access is read-only.</p>
+  <h4>Why it matters</h4>
+  <p>Google already holds a lot of personal data, and this lets its AI use it to give tailored answers. That is an advantage rivals may find hard to match. Google says users will soon see an icon showing what personal context the AI used.</p>
+  <h4>What it means for you</h4>
+  <p>As a user, you can decide how much of your data to connect. As a future engineer, it shows that useful AI features depend on access to personal data, so privacy controls and clear permissions are design skills worth learning. It does not change your job prospects directly.</p>
+</section>
+<section class="story" id="nvidia-s-board-reinstates-jensen-huang-as-ceo-reversing-his">
+  <h3>Nvidia&#39;s board reinstates Jensen Huang as CEO, reversing his departure of about two weeks, with US government support.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/" rel="noopener">TechCrunch AI</a> · <a href="#nvidia-s-board-reinstates-jensen-huang-as-ceo-reversing-his">link</a></div>
+  <h4>What happened</h4>
+  <p>Nvidia&#39;s board reinstated Jensen Huang as CEO and president less than two weeks after he resigned following his admission of at least two extramarital affairs. One of them was with a woman the US government suspects to be a Chinese spy. The board said it consulted senior government officials and concluded he posed no national security risk. Shares opened about 30 percent higher.</p>
+  <h4>Why it matters</h4>
+  <p>Nvidia is the world&#39;s most valuable chipmaker, so who leads it matters across the AI industry. The board had said days earlier it did not plan to bring him back, then reversed after pressure from executives and support from the US government. The story is still developing.</p>
+  <h4>What it means for you</h4>
+  <p>This has little direct effect on your skills or job search. It does show how much AI depends on one chip company and how much politics can shape the industry. Nvidia&#39;s tools and chips are likely to stay central for now.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="openai-s-gpt-6-2-astra-produced-the-first-machine-verifiable">
+  <h3>OpenAI&#39;s GPT-6.2 Astra produced the first machine-verifiable Lean proof of Smoktunowicz&#39;s gap theorem.</h3>
+  <div class="meta"><a href="https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/" rel="noopener">The Decoder</a> · <a href="#openai-s-gpt-6-2-astra-produced-the-first-machine-verifiable">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI&#39;s GPT-6.2 Astra wrote a machine-checkable proof, in a language called Lean, of Smoktunowicz&#39;s gap theorem, with no human help during the run. Vals AI says it is the first known proof of this theorem in Lean. The model took a different route from the published proofs because some foundations were missing from the Mathlib library, and it delivered an 1,800-line proof after 94 minutes at a cost of $21.58.</p>
+  <h4>Why it matters</h4>
+  <p>Lean checks every step of a proof, like a strict spellchecker for logic, so the result does not rely on trusting the AI. The task came from a test set that ten models in Meta&#39;s study failed to solve. Astra now leads the leaderboard with 49 solved tasks, just ahead of GPT-6.2 Sol and Claude Fable 5.2 at 48 each.</p>
+  <h4>What it means for you</h4>
+  <p>The key idea is that AI work can be checked by software, which makes it much more trustworthy. If you like logic or formal methods, Lean is a skill that is gaining value. For most software jobs, this is background news for now.</p>
+</section>
+<section class="story" id="deepmind-uses-agent-teams-and-formal-verification-to-improve">
+  <h3>DeepMind uses agent teams and formal verification to improve quantum algorithms for fusion and chemistry.</h3>
+  <div class="meta"><a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" rel="noopener">Google DeepMind</a> · <a href="#deepmind-uses-agent-teams-and-formal-verification-to-improve">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind used teams of Gemini 4 agents to improve well-known quantum algorithms. Every result was proved correct with Lean, a tool that checks proofs. Gains included an 11.8 times cost cut for a fusion-related calculation, 8 times for a light-sensitive molecule, 2.5 times for an enzyme important in drug design, 2.57 times for a Grover&#39;s algorithm implementation and 290 times for arcsin. DeepMind is open-sourcing its Lean library and verified solutions on GitHub.</p>
+  <h4>Why it matters</h4>
+  <p>Quantum circuits cannot be tested on today&#39;s computers, so proving they work is the only way to trust them. Pairing AI agents with a proof checker gives results that are both creative and verified. DeepMind says these algorithms still need more resources than the first error-corrected quantum computers will likely offer.</p>
+  <h4>What it means for you</h4>
+  <p>Unless you are heading into quantum computing, this is not urgent. The takeaway is the method: let AI search for solutions and let a strict checker verify them. The open-source Lean library could be a good place to learn if you are curious.</p>
+</section>
+<section class="story" id="openai-s-chief-scientist-releases-gpt-perplexity-scores-and">
+  <h3>OpenAI&#39;s chief scientist releases GPT perplexity scores and urges rivals to adopt it as a shared progress metric.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-warns-that-upcoming-ai-systems-could-outpace-safety-checks-and-urges-rivals-to-agree-on-shared-limits/" rel="noopener">The Decoder</a> · <a href="#openai-s-chief-scientist-releases-gpt-perplexity-scores-and">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI chief scientist Jakub Pachocki published internal perplexity scores for the GPT series and wants perplexity to become an industry-wide measure of progress. Perplexity measures how well a base model predicts the next word, and lower is better. He ties abilities to scores: fluent chat around 0.99, step-by-step reasoning around 0.91, and big gains in cybersecurity and math below 0.8. He also calls on leading labs to agree on shared limits until better oversight methods exist.</p>
+  <h4>Why it matters</h4>
+  <p>A shared yardstick could let labs coordinate their pace around risky capability levels. Pachocki says newer models could get past existing safety checks. Some claims, like a Navier-Stokes solution, are not fully verified yet, and all the data comes from OpenAI itself.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly a policy and research story. It is a reminder that safety and evaluation are becoming real career areas. Read the claims with care, since they come from the company that gains from the framing.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="amazon-acquires-decart-s-ai-optimization-technology-and-team">
+  <h3>Amazon acquires Decart&#39;s AI optimization technology and team in a reported $7.5 billion deal ahead of Trainium chip sales.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/" rel="noopener">TechCrunch AI</a> · <a href="#amazon-acquires-decart-s-ai-optimization-technology-and-team">link</a></div>
+  <h4>What happened</h4>
+  <p>Amazon agreed to acquire a large part of Israeli startup Decart, reportedly for $7.5 billion according to Bloomberg. Amazon gets the technology behind the Decart Optimization Stack, which helps AI models run efficiently on Nvidia, Amazon and Google hardware, plus Decart&#39;s founding team and researchers. Amazon plans to start selling its Trainium chips to customers.</p>
+  <h4>Why it matters</h4>
+  <p>Most AI software is built around Nvidia chips. Software that makes models run well on other chips could make Amazon&#39;s chips a more realistic alternative. Think of it as a translator that lets the same program run well on a different engine.</p>
+  <h4>What it means for you</h4>
+  <p>It signals that skills in making AI run efficiently on different hardware are valuable. If you enjoy low-level performance work, that area looks strong. For most students, it will not change daily work soon.</p>
+</section>
+<section class="story" id="spacexsi-rents-compute-to-anthropic-and-google-while-scaling">
+  <h3>SpaceXSI rents compute to Anthropic and Google while scaling back its own AI projects, the NYT reports.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/" rel="noopener">The Decoder</a> · <a href="#spacexsi-rents-compute-to-anthropic-and-google-while-scaling">link</a></div>
+  <h4>What happened</h4>
+  <p>The New York Times reports that xAI has rented out computing power to rivals since May. Anthropic is now its biggest customer, with a contract worth roughly $3.1 billion a month, and Google spends $800 million. Either deal can be canceled with 90 days&#39; notice. xAI is cutting its own projects, including disbanding the 60-person Grok Imagine team, and the text says OpenAI also killed its Sora video model over capacity limits.</p>
+  <h4>Why it matters</h4>
+  <p>It is like a restaurant that finds renting out its kitchen pays better than cooking. The report says xAI&#39;s own models struggle to compete, so selling compute is easier money. It also shows how hungry Anthropic is for computing power. The text contains a garbled line about xAI&#39;s revenue share, so treat that detail with care.</p>
+  <h4>What it means for you</h4>
+  <p>It shows that computing power is the scarce resource, and that even big labs can drop products when it runs short. For a job seeker, that means AI company projects can change fast, so favor transferable skills over one product. Otherwise it does not directly affect your work.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="notable-capital-gic-and-baillie-gifford-explain-their">
+  <h3>Notable Capital, GIC and Baillie Gifford explain their multibillion-dollar bets on Anthropic ahead of its IPO.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/" rel="noopener">TechCrunch AI</a> · <a href="#notable-capital-gic-and-baillie-gifford-explain-their">link</a></div>
+  <h4>What happened</h4>
+  <p>Three big investors explained why they put billions into Anthropic before its IPO. Notable Capital put in early at a $61.5 billion valuation after finding that developers were using Claude 70% of the time. Anthropic then raised $81.3 billion in the largest IPO in history, at a value of about $1.5 trillion, and shares began trading the next day.</p>
+  <h4>Why it matters</h4>
+  <p>It shows how fast money moved to AI labs that developers actually use. Investors said developer adoption and growing business use were the signals that convinced them. Notable&#39;s stake grew about 15 times on paper, which is a very large return.</p>
+  <h4>What it means for you</h4>
+  <p>The story backs up that developers are the early adopters who shape which AI tools win. Knowing how to work with tools like Claude Code is a useful skill. The IPO itself is about investors, so it changes little for your daily work.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="jensen-huang-is-scheduled-to-testify-before-the-senate-after">
+  <h3>Jensen Huang is scheduled to testify before the Senate after bipartisan calls over his ties to a suspected Chinese spy.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/" rel="noopener">TechCrunch AI</a> · <a href="#jensen-huang-is-scheduled-to-testify-before-the-senate-after">link</a></div>
+  <h4>What happened</h4>
+  <p>Jensen Huang is set to testify before the Senate Banking Committee on December 3. He was reinstated as Nvidia CEO hours earlier, less than two weeks after resigning over extramarital affairs, one with a woman the U.S. government suspects of working as a Chinese spy. He has also agreed to appear before three House committees on December 1.</p>
+  <h4>Why it matters</h4>
+  <p>The Senate Banking Committee oversees export controls, the rules meant to keep powerful AI chips out of foreign militaries and governments. Lawmakers from both parties want answers about the affair and possible chip smuggling. It puts pressure on the head of the company that makes the main chips for AI.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly a business and politics story, and it does not change your skills or tools. If you work with AI hardware later, export rules are a real factor in who can buy which chips. Otherwise, you can just keep an eye on it.</p>
+</section>
+<section class="story" id="megaspeed-tied-to-the-huang-scandal-appears-headed-for-a-us">
+  <h3>Megaspeed, tied to the Huang scandal, appears headed for a US blacklist requiring special licenses to trade with US firms.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/" rel="noopener">TechCrunch AI</a> · <a href="#megaspeed-tied-to-the-huang-scandal-appears-headed-for-a-us">link</a></div>
+  <h4>What happened</h4>
+  <p>Semafor reported that Megaspeed will be added to the U.S. Commerce Department&#39;s Entity List. Megaspeed is a Singapore-based cloud and AI infrastructure company that was once one of Nvidia&#39;s biggest chip customers. The U.S. and Singapore are investigating whether it illegally sent Nvidia chips to China, and the company denies wrongdoing.</p>
+  <h4>Why it matters</h4>
+  <p>Being on the list means U.S. firms need a special government license to sell to the company. The move is meant to stop it from getting U.S.-made chips. It shows how closely authorities now watch where advanced AI chips end up.</p>
+  <h4>What it means for you</h4>
+  <p>This barely touches your day-to-day work. It is a reminder that AI hardware is tied up with law and national security. That could matter if you ever work in cloud or infrastructure companies that handle these chips.</p>
+</section>
+<section class="story" id="states-sue-spacex-to-stop-grok-from-generating-child-sexual">
+  <h3>States sue SpaceX to stop Grok from generating child sexual abuse images and nonconsensual deepfake porn.</h3>
+  <div class="meta"><a href="https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/" rel="noopener">Ars Technica AI</a> · <a href="#states-sue-spacex-to-stop-grok-from-generating-child-sexual">link</a></div>
+  <h4>What happened</h4>
+  <p>Virginia and Oregon became the first states to sue SpaceX, which now owns xAI, the maker of Grok. They say Grok still generates sexual images of real people, mostly women and children, including child abuse images. They also say the company&#39;s claims about new safeguards were misleading, and that the safety team for testing Grok was cut to two or three people. SpaceX&#39;s side says it has a zero-tolerance policy and screens prompts and outputs.</p>
+  <h4>Why it matters</h4>
+  <p>It is a legal test of whether AI companies are responsible for harmful content their models produce. The states argue that putting up guardrails is not enough, and that companies must keep checking that the guardrails hold. The outcome could shape what safety work regulators expect.</p>
+  <h4>What it means for you</h4>
+  <p>If you build with AI, safety testing, sometimes called red-teaming (trying to break your own system), is a real part of the job. Skills in content filtering and testing for misuse are valued. Shipping a feature without them can bring legal risk.</p>
+</section>
+<h2 class="cat">AI Open Source</h2>
+<section class="story" id="nariq-releases-3-bit-and-lower-quantizations-of-qwen3-8-27b">
+  <h3>NariQ releases 3-bit and lower quantizations of Qwen3.8-27B that reportedly retain near-BF16 quality on agentic tasks.</h3>
+  <div class="meta"><a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF" rel="noopener">Hacker News</a> · <a href="#nariq-releases-3-bit-and-lower-quantizations-of-qwen3-8-27b">link</a></div>
+  <h4>What happened</h4>
+  <p>A group called NariQ released smaller versions of the Qwen3.8-27B model. Using a compression method called quantization, which stores the model&#39;s numbers with fewer bits, they shrank a 53.8 GB model to about 10 GB at 3 bits. Their tests show the 3-bit and 2.5-bit versions score about the same as the full model on agent, math and image tasks, while the 2-bit version scores lower. You need their custom version of llama.cpp to run them.</p>
+  <h4>Why it matters</h4>
+  <p>A model that fits on one GPU means strong AI can run on ordinary hardware instead of big servers. These are the group&#39;s own results, so they should be checked independently. Still, it points to a trend of shrinking models without losing much quality.</p>
+  <h4>What it means for you</h4>
+  <p>This is something you can try yourself. A 10 GB file is about the size that fits on a 24 GB graphics card, so you could run a capable coding-agent model locally. It is a good project for learning how local models and quantization work.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="openai-and-cisco-release-shirudo-an-open-source-linux">
+  <h3>OpenAI and Cisco release Shirudo, an open-source Linux runtime that helps protect systems while patches roll out.</h3>
+  <div class="meta"><a href="https://openai.com/index/introducing-shirudo" rel="noopener">OpenAI</a> · <a href="#openai-and-cisco-release-shirudo-an-open-source-linux">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI and Cisco released Shirudo, an open-source tool that protects running Linux systems while teams wait to install patches. It uses eBPF, a Linux feature that runs small programs inside the operating system. In one test, a shield made with Codex blocked a Java4Shell attack on a running Elasticsearch service without a restart.</p>
+  <h4>Why it matters</h4>
+  <p>Patching can take days or weeks, and blocking a risky operation outright can take a service offline. Shirudo aims to block only the bad behavior, like a temporary guard on one door instead of closing the whole building. Humans approve what gets deployed, and shields are cryptographically signed.</p>
+  <h4>What it means for you</h4>
+  <p>It is open source and the companies invite developers to help. That makes it a way to learn eBPF and Linux security, which are useful skills. It also shows AI agents being used for defensive security work.</p>
+</section>
+<section class="story" id="crowdstrike-agrees-to-buy-zscaler-for-44-billion-as-ai">
+  <h3>CrowdStrike agrees to buy Zscaler for $44 billion as AI-driven cyberattacks intensify.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html" rel="noopener">CNBC Tech</a> · <a href="#crowdstrike-agrees-to-buy-zscaler-for-44-billion-as-ai">link</a></div>
+  <h4>What happened</h4>
+  <p>CrowdStrike plans to buy Zscaler for $43.9 billion in an all-stock deal, expected to close in the second half of its fiscal year 2028. CrowdStrike&#39;s shares fell 9% and Zscaler&#39;s rose nearly 18% on Monday. It is CrowdStrike&#39;s biggest purchase so far, and it adds network security to its products.</p>
+  <h4>Why it matters</h4>
+  <p>Companies are racing to defend against attacks that AI makes faster and stronger. The deal is part of a wave of large security purchases, including Google and Wiz, Cisco and Splunk, and Palo Alto Networks and CyberArk. CrowdStrike&#39;s CEO says it wants to become the largest AI safety and security company.</p>
+  <h4>What it means for you</h4>
+  <p>Security is a growing area with strong demand, and companies are spending heavily on it. Skills in cloud, networking and securing AI systems could help your job prospects. A merger like this will not change much for you right away.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
