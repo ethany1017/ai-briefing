@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Wednesday, November 25, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Wednesday, November 25, 2026 · 20 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#google-deepmind-s-gemini-4-neon-reportedly-beats-astra-and">Google DeepMind&#39;s Gemini 4 Neon reportedly beats Astra and Fable on LiveBench, marking its return as a frontier lab.</a></li>
+  <li><a href="#prismml-releases-ternary-bonsai-2-5-27b-compressing-a-54-gb">PrismML releases Ternary Bonsai 2.5 27B, compressing a 54 GB model to 5.9 GB using three-value weights.</a></li>
+  <li><a href="#openai-is-testing-private-inference-letting-companies-query">OpenAI is testing &#39;Private Inference&#39;, letting companies query its top models without OpenAI accessing their data.</a></li>
+  <li><a href="#amazon-and-meta-are-in-talks-to-end-the-block-on-meta-s-muse">Amazon and Meta are in talks to end the block on Meta&#39;s Muse shopping agent, stuck on ad revenue and search control.</a></li>
+  <li><a href="#deepmind-lets-ai-agents-run-gemini-experiments-on-part-of">DeepMind lets AI agents run Gemini experiments on part of its compute, but says recursive self-improvement remains distant.</a></li>
+  <li><a href="#versine-yc-f26-launches-an-mcp-that-lets-ai-agents-send-and">Versine (YC F26) launches an MCP that lets AI agents send and request money from a wallet.</a></li>
+  <li><a href="#anthropic-study-of-300-deployments-at-58-us-firms-finds">Anthropic study of 300 deployments at 58 US firms finds nearly one in five delivers no business value.</a></li>
+  <li><a href="#openai-merges-chatgpt-chat-and-work-under-a-single-usage">OpenAI merges ChatGPT Chat and Work under a single usage meter, so heavy users may hit limits sooner.</a></li>
+  <li><a href="#frontier-ai-is-solving-problems-that-once-took-top">Frontier AI is solving problems that once took top physicists a full day, Ars reports.</a></li>
+  <li><a href="#mit-method-trains-ai-climate-emulators-in-one-run-instead-of">MIT method trains AI climate emulators in one run instead of six to eight using deliberately unrealistic scenarios.</a></li>
+  <li><a href="#us-chip-curbs-and-anti-distillation-measures-reportedly-slow">US chip curbs and anti-distillation measures reportedly slow Chinese labs, with Deepseek up to nine months behind.</a></li>
+  <li><a href="#nvidia-won-t-backstop-ai-data-centers-until-nearly-ready-to">Nvidia won&#39;t backstop AI data centers until nearly ready to run, as neoclouds face delays and costlier debt.</a></li>
+  <li><a href="#nvidia-gpu-sellers-seek-new-buyers-after-new-us-rules">Nvidia GPU sellers seek new buyers after new US rules tighten remote access to advanced chips for China-linked customers.</a></li>
+  <li><a href="#s-p-is-considering-downgrading-nvidia-s-credit-rating-to-aa">S&amp;P is considering downgrading Nvidia&#39;s credit rating to AA- over governance and key-man risks.</a></li>
+  <li><a href="#lenders-are-becoming-pickier-on-corporate-bonds-raising">Lenders are becoming pickier on corporate bonds, raising concerns about Big Tech&#39;s debt funding for AI buildout.</a></li>
+  <li><a href="#ai-linked-tech-stocks-fell-and-anthropic-s-shares-struggle">AI-linked tech stocks fell and Anthropic&#39;s shares struggle to rebound above its IPO price.</a></li>
+  <li><a href="#new-york-bans-ai-chatbot-toys-for-five-years-as-common-sense">New York bans AI chatbot toys for five years as Common Sense Media reports safety failures.</a></li>
+  <li><a href="#state-attorneys-general-challenge-character-ai-s-bankruptcy">State attorneys general challenge Character.AI&#39;s bankruptcy plan to auction chats from over 21 million US accounts.</a></li>
+  <li><a href="#breaches-hit-fincen-and-the-cia-nga-and-odni-with">Breaches hit FinCEN and the CIA, NGA and ODNI, with investigators suspecting attackers used the AI defense tool Artex.</a></li>
+  <li><a href="#contextlure-research-shows-attackers-can-use-benign">ContextLure research shows attackers can use benign conversation history to craft stronger indirect prompt injections on agents.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="google-deepmind-s-gemini-4-neon-reportedly-beats-astra-and">
+  <h3>Google DeepMind&#39;s Gemini 4 Neon reportedly beats Astra and Fable on LiveBench, marking its return as a frontier lab.</h3>
+  <div class="meta"><a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/" rel="noopener">Latent Space</a> · <a href="#google-deepmind-s-gemini-4-neon-reportedly-beats-astra-and">link</a></div>
+  <h4>What happened</h4>
+  <p>Google DeepMind&#39;s new model Gemini 4 Neon is getting a lot of attention. Three months ago many people had written Google off as a top AI lab, and now some are apologizing. Google says Neon set a first-day usage record on its paid APIs, and Perplexity says it has passed 120B Neon tokens.</p>
+  <h4>Why it matters</h4>
+  <p>The race between top AI labs can change fast. A lab people doubted a few months ago is now seen as a leader again. One person at Perplexity placed Neon between two rival models in intelligence, but best on response style, so opinions vary and the details are thin.</p>
+  <h4>What it means for you</h4>
+  <p>Do not tie your skills to one company&#39;s model. The best choice keeps shifting, so learn to swap models in and out of your projects. Think of it like picking a database: you pick the one that fits the job today and stay ready to change.</p>
+</section>
+<section class="story" id="prismml-releases-ternary-bonsai-2-5-27b-compressing-a-54-gb">
+  <h3>PrismML releases Ternary Bonsai 2.5 27B, compressing a 54 GB model to 5.9 GB using three-value weights.</h3>
+  <div class="meta"><a href="https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/" rel="noopener">The Decoder</a> · <a href="#prismml-releases-ternary-bonsai-2-5-27b-compressing-a-54-gb">link</a></div>
+  <h4>What happened</h4>
+  <p>A startup called PrismML released Ternary Bonsai 2.5 27B, a very compressed language model. Each weight, one of the numbers inside the model, can only be -1, 0 or +1. That shrinks the model from about 54 GB to 5.9 GB. It scores 75.6 percent on SWE-bench Verified, a coding test, compared with 80.6 for the full model it is based on.</p>
+  <h4>Why it matters</h4>
+  <p>Smaller models are cheaper and easier to run. It is like turning a huge photo into a small file that still looks almost the same. This one comes close to the full model on some tests, though it scores slightly lower than its predecessor on one coding test.</p>
+  <h4>What it means for you</h4>
+  <p>You can try capable models on your own gaming PC, Mac or even an iPhone. The weights are open under an Apache 2.0 license and run with tools like llama.cpp. Learning how to run and compress models locally is a practical skill that is easy to start.</p>
+</section>
+<section class="story" id="openai-is-testing-private-inference-letting-companies-query">
+  <h3>OpenAI is testing &#39;Private Inference&#39;, letting companies query its top models without OpenAI accessing their data.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/" rel="noopener">The Decoder</a> · <a href="#openai-is-testing-private-inference-letting-companies-query">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI is testing a feature called Private Inference with its first business customers. It lets companies use OpenAI&#39;s most powerful models without OpenAI being able to see their data. The queries run on specially isolated hardware whose security can be independently checked.</p>
+  <h4>Why it matters</h4>
+  <p>Many companies hold back on AI because they fear sharing sensitive data. If the privacy promise can be verified, AI could be used for more kinds of work. Google is pursuing a similar approach.</p>
+  <h4>What it means for you</h4>
+  <p>If you build software for businesses, privacy and security will be a selling point, not an afterthought. Knowing how to handle data safely is a useful skill. For now this is only a pilot for business customers, so it will not change your daily tools yet.</p>
+</section>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="amazon-and-meta-are-in-talks-to-end-the-block-on-meta-s-muse">
+  <h3>Amazon and Meta are in talks to end the block on Meta&#39;s Muse shopping agent, stuck on ad revenue and search control.</h3>
+  <div class="meta"><a href="https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/" rel="noopener">The Decoder</a> · <a href="#amazon-and-meta-are-in-talks-to-end-the-block-on-meta-s-muse">link</a></div>
+  <h4>What happened</h4>
+  <p>Amazon and Meta are talking about ending Amazon&#39;s block on Meta&#39;s AI shopping agent, Muse. Amazon blocked it in September. The sticking points are ad revenue and control over search results. Amazon&#39;s ad business brings in $68.6 billion a year.</p>
+  <h4>Why it matters</h4>
+  <p>If AI agents do the shopping, stores lose the chance to show their own ads and keep the customer relationship. That is why Amazon is wary. Muse has more than 10 million users in the US and Canada and made up 51 percent of agentic orders in one dataset.</p>
+  <h4>What it means for you</h4>
+  <p>AI agents that act for users, like buying things, are becoming a real product area. Skills in connecting software to outside services and handling access rules will matter. This story is mostly a business fight, so it will not change your daily work soon.</p>
+</section>
+<section class="story" id="deepmind-lets-ai-agents-run-gemini-experiments-on-part-of">
+  <h3>DeepMind lets AI agents run Gemini experiments on part of its compute, but says recursive self-improvement remains distant.</h3>
+  <div class="meta"><a href="https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/" rel="noopener">The Decoder</a> · <a href="#deepmind-lets-ai-agents-run-gemini-experiments-on-part-of">link</a></div>
+  <h4>What happened</h4>
+  <p>A Google DeepMind research leader said AI agents now control part of the lab&#39;s computing power to run experiments for the next Gemini model. He said the lab is still far from full recursive self-improvement, meaning AI that keeps making itself better. As a safety step, DeepMind does not reward the agents&#39; internal thinking during training, so their reasoning stays readable.</p>
+  <h4>Why it matters</h4>
+  <p>AI is starting to help build AI. That could speed up research, but the lab says humans are still very much involved. The safety choice is meant to keep the agents&#39; reasoning honest and reviewable.</p>
+  <h4>What it means for you</h4>
+  <p>Research workflows are slowly becoming a mix of people and automated agents. Learning to design, run and check experiments will be valuable, not just writing code. Treat the self-improvement talk as a distant idea for now, since the lab itself says it is far away.</p>
+</section>
+<h2 class="cat">AI Startups &amp; Y Combinator</h2>
+<section class="story" id="versine-yc-f26-launches-an-mcp-that-lets-ai-agents-send-and">
+  <h3>Versine (YC F26) launches an MCP that lets AI agents send and request money from a wallet.</h3>
+  <div class="meta"><a href="https://news.ycombinator.com/item?id=50634426" rel="noopener">Hacker News</a> · <a href="#versine-yc-f26-launches-an-mcp-that-lets-ai-agents-send-and">link</a></div>
+  <h4>What happened</h4>
+  <p>Versine, a Y Combinator startup, launched an MCP, a standard way to connect tools to AI assistants, that lets an AI agent send and request money. It works through a wallet holding USDC stablecoin on Base, where the user approves payments with a passkey. Users can also set trusted contacts that the agent can pay without asking each time.</p>
+  <h4>Why it matters</h4>
+  <p>It is an early try at letting AI agents handle money, not just give advice. The team chose self-custodial wallets, where users hold their own keys, partly to move fast and avoid some regulation. Letting an agent move money raises obvious safety questions, which the approval step tries to address.</p>
+  <h4>What it means for you</h4>
+  <p>This shows the kind of small product a few engineers can build on top of agent standards like MCP, which is a useful skill to learn. It is also a reminder to think about permissions and approvals when an agent can take real actions. It is a launch post, so treat the claims as the company&#39;s own.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="anthropic-study-of-300-deployments-at-58-us-firms-finds">
+  <h3>Anthropic study of 300 deployments at 58 US firms finds nearly one in five delivers no business value.</h3>
+  <div class="meta"><a href="https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/" rel="noopener">The Decoder</a> · <a href="#anthropic-study-of-300-deployments-at-58-us-firms-finds">link</a></div>
+  <h4>What happened</h4>
+  <p>Anthropic interviewed people at 58 US companies about nearly 300 AI uses. In 55 percent of cases they reported more output or better quality, but 19 percent delivered no business value yet. The biggest problems were inside the companies: too much AI output to review, employee resistance, and the need for expert checks. The sample is not representative because everyone interviewed is an Anthropic customer.</p>
+  <h4>Why it matters</h4>
+  <p>Better models alone do not guarantee results. Think of a fast kitchen with only one person to check each plate: the checking becomes the bottleneck. Two-thirds of the companies said they are hiring fewer people because of AI, and nine cut outside contractors.</p>
+  <h4>What it means for you</h4>
+  <p>Writing code with AI is not enough. Being able to review, test and explain AI output is a real skill, and sloppy output annoys teammates. Entry-level hiring may be tighter, so show that you can check work carefully and own the result.</p>
+</section>
+<section class="story" id="openai-merges-chatgpt-chat-and-work-under-a-single-usage">
+  <h3>OpenAI merges ChatGPT Chat and Work under a single usage meter, so heavy users may hit limits sooner.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/" rel="noopener">TechCrunch AI</a> · <a href="#openai-merges-chatgpt-chat-and-work-under-a-single-usage">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI is starting to merge Chat and Work in ChatGPT under one shared usage meter. It began with a small group of Pro subscribers. OpenAI says most users will not notice, but a small group of the heaviest users may hit their limits sooner. Conversations with the Instant model stay unlimited, and wider rollout is planned for December.</p>
+  <h4>Why it matters</h4>
+  <p>AI companies face high computing costs and strong demand. Shared limits are one way to manage that. Some subscribers worry they will get less access to advanced models for the same price.</p>
+  <h4>What it means for you</h4>
+  <p>If you use ChatGPT heavily, you may run out of advanced-model use sooner. Plan for it by using the simpler Instant model for easy tasks. It is a small product change, not a big shift for your career.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="frontier-ai-is-solving-problems-that-once-took-top">
+  <h3>Frontier AI is solving problems that once took top physicists a full day, Ars reports.</h3>
+  <div class="meta"><a href="https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/" rel="noopener">Ars Technica AI</a> · <a href="#frontier-ai-is-solving-problems-that-once-took-top">link</a></div>
+  <h4>What happened</h4>
+  <p>Physicist Suvrat Raju and colleagues built a benchmark of unpublished theoretical physics problems that take top humans about a day each. Early results showed leading models solving about 60 percent. Later, GPT-6 Astra solved nearly 90 percent, and when checked against the human answers it turned out to be right on 49 of 50, at under $3 of compute per correct answer on average.</p>
+  <h4>Why it matters</h4>
+  <p>The benchmark was effectively maxed out before release, so the team says there will be no second version. Physicists say AI is already speeding up calculation and research, and they are asking how to train the next generation. Physics is tied to real experiments, so it may not follow the same path as math.</p>
+  <h4>What it means for you</h4>
+  <p>Routine, well-defined technical work is increasingly something AI can do quickly and cheaply. Skills like choosing good problems, checking results and understanding the concepts underneath become more valuable. Using these tools well while still understanding the basics yourself is a sensible approach.</p>
+</section>
+<section class="story" id="mit-method-trains-ai-climate-emulators-in-one-run-instead-of">
+  <h3>MIT method trains AI climate emulators in one run instead of six to eight using deliberately unrealistic scenarios.</h3>
+  <div class="meta"><a href="https://the-decoder.com/mit-team-discovers-that-unrealistic-training-data-makes-ai-climate-predictions-more-reliable/" rel="noopener">The Decoder</a> · <a href="#mit-method-trains-ai-climate-emulators-in-one-run-instead-of">link</a></div>
+  <h4>What happened</h4>
+  <p>MIT researchers, with ETH Zurich and Imperial College London, found a way to train AI climate models using deliberately unrealistic data, such as a sudden CO2 spike in 2050 or a methane drop in 2037. This lets them train on a single run of a big climate simulation instead of six to eight. The models can then give fast answers in seconds instead of months of supercomputer time.</p>
+  <h4>Why it matters</h4>
+  <p>Slow training meant finished models were often outdated and sometimes failed on unfamiliar situations. Extreme test cases act like stress tests that teach the model how the system really responds. Faster, cheaper models could help with planning for power grids, public health and agriculture.</p>
+  <h4>What it means for you</h4>
+  <p>It is a nice example that better training data can matter more than more data. For most students it is background knowledge. If you are interested in science or climate software, it shows a path where machine learning speeds up heavy simulations.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="us-chip-curbs-and-anti-distillation-measures-reportedly-slow">
+  <h3>US chip curbs and anti-distillation measures reportedly slow Chinese labs, with Deepseek up to nine months behind.</h3>
+  <div class="meta"><a href="https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/" rel="noopener">The Decoder</a> · <a href="#us-chip-curbs-and-anti-distillation-measures-reportedly-slow">link</a></div>
+  <h4>What happened</h4>
+  <p>The Information reports that US limits on Chinese firms&#39; remote access to advanced Nvidia chips, plus anti-distillation efforts by OpenAI and Anthropic, are slowing Chinese AI labs. Distillation means training a model by learning from another model&#39;s answers. Deepseek researchers estimated their gap to top US models could grow from three to six months to nine months if distillation disappears. Moonshot AI canceled a $150 million chip deal.</p>
+  <h4>Why it matters</h4>
+  <p>Access to chips and to rival models&#39; outputs shapes who leads in AI. Politics and trade rules affect the pace of research. Chinese firms are looking for workarounds, such as renting computing power through non-Chinese third parties, using domestic chips and investing more in their own training data.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly policy news and will not change your daily work. It does show that AI depends on hardware supply and government rules. If you work near AI infrastructure, expect rules like these to keep changing.</p>
+</section>
+<section class="story" id="nvidia-won-t-backstop-ai-data-centers-until-nearly-ready-to">
+  <h3>Nvidia won&#39;t backstop AI data centers until nearly ready to run, as neoclouds face delays and costlier debt.</h3>
+  <div class="meta"><a href="https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/" rel="noopener">TechCrunch AI</a> · <a href="#nvidia-won-t-backstop-ai-data-centers-until-nearly-ready-to">link</a></div>
+  <h4>What happened</h4>
+  <p>Nvidia has said it won&#39;t backstop an AI data center until it is nearly ready to run. Meanwhile, neoclouds, which are companies that rent out AI computing power, report construction delays and more expensive debt. A TechCrunch podcast guest says land, power and a finished building now matter more than a pitch deck.</p>
+  <h4>Why it matters</h4>
+  <p>The AI boom needs huge physical buildings, power and money. Projects built on hope alone may be the first to fail, and the guest talks about a possible shakeout in 2027. Labs and big cloud companies might build more of their own data centers.</p>
+  <h4>What it means for you</h4>
+  <p>The money behind AI is not unlimited, so some AI companies may struggle. When choosing employers, look at whether a company has real customers and a solid base. Your own coding skills are not affected much right now.</p>
+</section>
+<section class="story" id="nvidia-gpu-sellers-seek-new-buyers-after-new-us-rules">
+  <h3>Nvidia GPU sellers seek new buyers after new US rules tighten remote access to advanced chips for China-linked customers.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html" rel="noopener">CNBC Tech</a> · <a href="#nvidia-gpu-sellers-seek-new-buyers-after-new-us-rules">link</a></div>
+  <h4>What happened</h4>
+  <p>Since new US rules were announced on Nov. 16, an unusually high number of Nvidia GPUs have been put up for sale, according to CNBC&#39;s sources. The rules limit Chinese companies from renting advanced Nvidia chips in data centers abroad, and they took effect on Nov. 19. Sellers are looking for new buyers for chips that were meant for those renters, including thousands of B300 GPUs.</p>
+  <h4>Why it matters</h4>
+  <p>Export controls once targeted selling chips directly to China. Now they also target renting access remotely. This shows how quickly policy can change who can use powerful AI hardware.</p>
+  <h4>What it means for you</h4>
+  <p>For you this is background news. It could eventually affect GPU prices or availability, but the story gives no sign of that. If you rent cloud GPUs for projects, know that rules about who can use them can change.</p>
+</section>
+<h2 class="cat">AI Finance &amp; Investments</h2>
+<section class="story" id="s-p-is-considering-downgrading-nvidia-s-credit-rating-to-aa">
+  <h3>S&amp;P is considering downgrading Nvidia&#39;s credit rating to AA- over governance and key-man risks.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/" rel="noopener">TechCrunch AI</a> · <a href="#s-p-is-considering-downgrading-nvidia-s-credit-rating-to-aa">link</a></div>
+  <h4>What happened</h4>
+  <p>S&amp;P Global Ratings is considering lowering Nvidia&#39;s credit rating from AA to AA-. It cites concerns about weak executive oversight, lack of succession planning, and heavy reliance on Jensen Huang after his ouster and reinstatement as CEO. Nvidia would still keep an investment-grade rating, and S&amp;P expects to finish its review within 90 days.</p>
+  <h4>Why it matters</h4>
+  <p>A credit rating is like a score that decides how cheaply a company can borrow. Nvidia backstops many AI infrastructure companies, so a lower rating could make their debt costlier. Lenders could also ask for larger guarantees.</p>
+  <h4>What it means for you</h4>
+  <p>This is finance news with little direct effect on your skills or job search. It shows that much of the AI buildout runs on borrowed money, which is useful context. Do not change your career plans because of it.</p>
+</section>
+<section class="story" id="lenders-are-becoming-pickier-on-corporate-bonds-raising">
+  <h3>Lenders are becoming pickier on corporate bonds, raising concerns about Big Tech&#39;s debt funding for AI buildout.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html" rel="noopener">CNBC Tech</a> · <a href="#lenders-are-becoming-pickier-on-corporate-bonds-raising">link</a></div>
+  <h4>What happened</h4>
+  <p>Lenders are getting pickier about corporate bonds, which could make it harder for Big Tech to fund the AI buildout. Analysts say Microsoft, Amazon, Meta and Alphabet are on track to spend more on capital projects than they earn in cash in 2026 and 2027. Some heavy spenders, like Oracle and Alphabet, fell 25-45% from their June peaks, per one analysis.</p>
+  <h4>Why it matters</h4>
+  <p>The AI buildout is being paid for with large amounts of debt. Investors now want proof the spending pays off. It is like a family borrowing more and more for a bigger house and then being asked about their income.</p>
+  <h4>What it means for you</h4>
+  <p>Tighter money could mean slower hiring or budget cuts at companies spending heavily on AI. It could also favor teams that show real value over flashy demos. Aim to build skills that clearly save or earn money for a business.</p>
+</section>
+<section class="story" id="ai-linked-tech-stocks-fell-and-anthropic-s-shares-struggle">
+  <h3>AI-linked tech stocks fell and Anthropic&#39;s shares struggle to rebound above its IPO price.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html" rel="noopener">CNBC Tech</a> · <a href="#ai-linked-tech-stocks-fell-and-anthropic-s-shares-struggle">link</a></div>
+  <h4>What happened</h4>
+  <p>Tech stocks fell on Wednesday. The Nasdaq dropped 0.6% after recovering from bigger early losses. Nvidia slid 4% and Oracle fell more than 5%, while Anthropic rose more than 4% after its shares had dropped below last week&#39;s IPO price.</p>
+  <h4>Why it matters</h4>
+  <p>Investors are worried about the high cost of building AI and whether the boom can last. One Barclays strategist said the market is acting as if the AI growth story has hit a wall. A hot inflation reading also raised fears of higher interest rates, which hurt growth stocks.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly market noise for you today. Still, if AI spending slows, hiring at AI-heavy companies could tighten. It is a good reminder to build skills that are useful beyond one hot trend.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="new-york-bans-ai-chatbot-toys-for-five-years-as-common-sense">
+  <h3>New York bans AI chatbot toys for five years as Common Sense Media reports safety failures.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/" rel="noopener">TechCrunch AI</a> · <a href="#new-york-bans-ai-chatbot-toys-for-five-years-as-common-sense">link</a></div>
+  <h4>What happened</h4>
+  <p>New York&#39;s governor signed a bill banning the making, distribution and sale of toys with built-in AI chatbots for five years. It is the second state to do this, after California. A Common Sense Media study of five popular AI toys found safety failures, such as claiming to love kids, keeping secrets, and in one case role-playing a mass shooting in detail.</p>
+  <h4>Why it matters</h4>
+  <p>It shows lawmakers are willing to act fast on AI products aimed at children rather than wait for the industry to fix problems. The same group found similar issues in January, and at least one toy was in both tests. Enforcement is unclear, though the state points to fines of $15,000 a day.</p>
+  <h4>What it means for you</h4>
+  <p>If you build chatbots, expect more rules about kids, privacy and safe behavior. Knowing how to test and limit what a chatbot says is a useful skill. If you never work on consumer products for children, this affects you less directly.</p>
+</section>
+<section class="story" id="state-attorneys-general-challenge-character-ai-s-bankruptcy">
+  <h3>State attorneys general challenge Character.AI&#39;s bankruptcy plan to auction chats from over 21 million US accounts.</h3>
+  <div class="meta"><a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/" rel="noopener">TechCrunch AI</a> · <a href="#state-attorneys-general-challenge-character-ai-s-bankruptcy">link</a></div>
+  <h4>What happened</h4>
+  <p>Character.ai filed for Chapter 11 bankruptcy in October and plans to auction its assets, including private chats. Attorneys general from 42 states are stepping in to stop the data sale. They say the data covers more than 21 million US accounts, over 2.1 million of them minors, and that the company had told users their data would not be sold.</p>
+  <h4>Why it matters</h4>
+  <p>It raises a new question: what happens to your data when an AI company fails? Chat logs can be very personal, and bankruptcy could let a buyer ignore the old privacy promises. The outcome could set an example for other AI startups.</p>
+  <h4>What it means for you</h4>
+  <p>Think of user data like a diary kept at a company: the company&#39;s promises may not survive if it goes under. As an engineer, collecting less data, deleting it sooner, and writing honest privacy policies can protect users and you. Also, be careful about what you type into any chatbot.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="breaches-hit-fincen-and-the-cia-nga-and-odni-with">
+  <h3>Breaches hit FinCEN and the CIA, NGA and ODNI, with investigators suspecting attackers used the AI defense tool Artex.</h3>
+  <div class="meta"><a href="https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/" rel="noopener">The Decoder</a> · <a href="#breaches-hit-fincen-and-the-cia-nga-and-odni-with">link</a></div>
+  <h4>What happened</h4>
+  <p>The US financial crimes agency FinCEN reported unauthorized access to part of its systems and took some systems offline as a precaution. Hours earlier, the New York Times reported a separate breach at the CIA, NGA and ODNI, in a system that analyzes publicly available data. Investigators suspect attackers used Artex, an AI tool released in July for defense that has since been repurposed for attacks.</p>
+  <h4>Why it matters</h4>
+  <p>It shows how a tool built to defend can be turned around to attack, like a lock-picking kit sold as a locksmith&#39;s training aid. US officials also say AI is finding software flaws that must be patched quickly. Classified information was not at risk in the intelligence breach, according to sources.</p>
+  <h4>What it means for you</h4>
+  <p>Security skills are becoming more valuable as AI speeds up both attacking and defending. Learning to patch quickly, manage access carefully and read security advisories is practical. Even if you are not in security, writing safer code matters.</p>
+</section>
+<section class="story" id="contextlure-research-shows-attackers-can-use-benign">
+  <h3>ContextLure research shows attackers can use benign conversation history to craft stronger indirect prompt injections on agents.</h3>
+  <div class="meta"><a href="https://arxiv.org/abs/2611.31424" rel="noopener">arXiv cs.AI</a> · <a href="#contextlure-research-shows-attackers-can-use-benign">link</a></div>
+  <h4>What happened</h4>
+  <p>Researchers introduced ContextLure, a way to test AI agents against a sneaky attack. An attacker quietly watches a normal conversation, picks useful details from it, and uses them to write a more convincing hidden instruction that tricks the agent into doing something unauthorized. They report success rates of 67.4% on one test set (AgentDojo) and 87.3% on another (InjecAgent).</p>
+  <h4>Why it matters</h4>
+  <p>Agents that use tools and remember long conversations give attackers more material to work with. The attack does not need to change the earlier conversation. It suggests that current defenses against this kind of trick may not be strong enough.</p>
+  <h4>What it means for you</h4>
+  <p>If you build agents, treat any text coming from outside, such as web pages or tool results, as untrusted, like input from a stranger. Limit what an agent is allowed to do and ask for user approval on risky actions. This is a research paper, so it will not change your daily work yet, but it is good background for agent projects.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
