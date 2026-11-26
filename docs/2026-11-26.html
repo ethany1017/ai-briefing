@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Thursday, November 26, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Thursday, November 26, 2026 · 8 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#openai-patches-a-gpt-6-2-billing-bug-so-astra-and-sol-users">OpenAI patches a GPT-6.2 billing bug, so Astra and Sol users hit usage limits 40% and 25% faster.</a></li>
+  <li><a href="#study-tests-how-much-reasoning-effort-claude-5-5-models-need">Study tests how much reasoning effort Claude 5.5 models need as code reviewers to catch plausible-but-wrong patches.</a></li>
+  <li><a href="#chinese-ai-firms-z-ai-and-moonshot-ai-delay-flagship-models">Chinese AI firms Z.AI and Moonshot AI delay flagship models and seek training data from Google and Meta.</a></li>
+  <li><a href="#scott-aaronson-says-ai-produced-math-proofs-matter-for-their">Scott Aaronson says AI-produced math proofs matter for their broader implications, and suspects labs hold cryptography breakthroughs.</a></li>
+  <li><a href="#nvidia-tells-partners-to-halt-server-shipments-to-malaysia">Nvidia tells partners to halt server shipments to Malaysia, Singapore, Thailand and Indonesia after new US export controls.</a></li>
+  <li><a href="#fcc-authorizes-spacex-to-deploy-up-to-1-million-starmind">FCC authorizes SpaceX to deploy up to 1 million Starmind satellites as orbital AI data centers by 2040.</a></li>
+  <li><a href="#new-york-bans-ai-toys-including-those-that-use-the-internet">New York bans AI toys, including those that use the internet to talk to children.</a></li>
+  <li><a href="#microsoft-details-artex-an-ai-framework-state-backed-hackers">Microsoft details ARTEX, an AI framework state-backed hackers use to automate cyberattacks with specialized agents.</a></li>
+</ul>
+<h2 class="cat">AI Models &amp; Releases</h2>
+<section class="story" id="openai-patches-a-gpt-6-2-billing-bug-so-astra-and-sol-users">
+  <h3>OpenAI patches a GPT-6.2 billing bug, so Astra and Sol users hit usage limits 40% and 25% faster.</h3>
+  <div class="meta"><a href="https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/" rel="noopener">The Decoder</a> · <a href="#openai-patches-a-gpt-6-2-billing-bug-so-astra-and-sol-users">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI says a billing bug during the GPT-6.2 rollout gave most users the wrong discounts on GPT-6.2 Astra and Sol. After the fix, users hit their limits 40 percent faster on Astra and 25 percent faster on Sol than last week. OpenAI will not charge back for the difference and is giving paid subscribers an extra saved reset.</p>
+  <h4>Why it matters</h4>
+  <p>It shows that AI usage limits are really a pricing decision, and companies adjust them often. OpenAI is also testing a merge of its Chat and Work modes, as Anthropic did with Cowork. In that setup the model decides whether to answer directly or start a bigger multi-step task.</p>
+  <h4>What it means for you</h4>
+  <p>If you use these tools for coding or study, expect your usage limits to change without much warning. Do not build your workflow around one exact quota. It is also worth noticing that the tools are moving toward models that decide on their own when to do bigger tasks.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="study-tests-how-much-reasoning-effort-claude-5-5-models-need">
+  <h3>Study tests how much reasoning effort Claude 5.5 models need as code reviewers to catch plausible-but-wrong patches.</h3>
+  <div class="meta"><a href="https://arxiv.org/abs/2611.33639" rel="noopener">arXiv cs.AI</a> · <a href="#study-tests-how-much-reasoning-effort-claude-5-5-models-need">link</a></div>
+  <h4>What happened</h4>
+  <p>Researchers tested how much reasoning effort Claude 5.5 models need when reviewing code written by AI agents. They gave Opus, Sonnet and Haiku 90 patches, of which 55 were wrong but passed the original tests. In every model, high effort accepted fewer wrong patches than low effort, but every setting still accepted at least 45 percent of the wrong ones.</p>
+  <h4>Why it matters</h4>
+  <p>AI writes code faster than people can review it, so teams use AI reviewers too. This study suggests that more effort helps, but no setting works as a reliable gate. For Opus, medium effort did about as well as high within the study&#39;s margin and cost 20 percent less.</p>
+  <h4>What it means for you</h4>
+  <p>Do not treat an AI code review as proof that code is correct. Strong tests and your own reading still matter. Being good at spotting patches that look right but are wrong is a useful skill, since you will likely review AI-written code often.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="chinese-ai-firms-z-ai-and-moonshot-ai-delay-flagship-models">
+  <h3>Chinese AI firms Z.AI and Moonshot AI delay flagship models and seek training data from Google and Meta.</h3>
+  <div class="meta"><a href="https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/" rel="noopener">The Decoder</a> · <a href="#chinese-ai-firms-z-ai-and-moonshot-ai-delay-flagship-models">link</a></div>
+  <h4>What happened</h4>
+  <p>Chinese AI companies Z.AI and Moonshot AI are delaying their next flagship models, according to Reuters. Z.AI&#39;s GLM-5.5 will likely slip to early 2027, and Moonshot&#39;s Kimi K4 to mid-2027. Moonshot is now turning to models from Google and Meta for training data and is looking for computing capacity in Europe.</p>
+  <h4>Why it matters</h4>
+  <p>The delays follow the US closing the cloud loophole for Nvidia chips, Nvidia halting shipments to Southeast Asia, and US firms cracking down on distillation. Distillation means training a model on another model&#39;s outputs, like learning from a teacher&#39;s answers. The story shows how much progress depends on chips and access to other models.</p>
+  <h4>What it means for you</h4>
+  <p>This has little direct effect on your daily work. It does show that computing power and training data limit who can build top models. If you use models from these companies, expect new versions to arrive later than planned.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="scott-aaronson-says-ai-produced-math-proofs-matter-for-their">
+  <h3>Scott Aaronson says AI-produced math proofs matter for their broader implications, and suspects labs hold cryptography breakthroughs.</h3>
+  <div class="meta"><a href="https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/" rel="noopener">The Decoder</a> · <a href="#scott-aaronson-says-ai-produced-math-proofs-matter-for-their">link</a></div>
+  <h4>What happened</h4>
+  <p>Scott Aaronson, a computer scientist and former OpenAI researcher, wrote a blog post on recent AI math results. He says the bigger point is that AI can do this work at all, not any single proof. He describes OpenAI proofs on matrix multiplication and the Fourier transform that include lower bounds, which show how fast something can possibly get.</p>
+  <h4>Why it matters</h4>
+  <p>A lower bound is a hard limit, like proving that no car can ever drive a certain route faster than a set time. Aaronson says the results now make him feel that a proof of P versus NP is not far off. He also says he is virtually certain, from multiple sources, that AI labs hold major cryptography results, though he has no details.</p>
+  <h4>What it means for you</h4>
+  <p>Algorithms and theory classes may matter more, not less, since AI is now producing real results there. The cryptography claim is unconfirmed, so do not act on it. Learning how to read and check proofs and algorithm analysis is a solid long-term skill.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="nvidia-tells-partners-to-halt-server-shipments-to-malaysia">
+  <h3>Nvidia tells partners to halt server shipments to Malaysia, Singapore, Thailand and Indonesia after new US export controls.</h3>
+  <div class="meta"><a href="https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/" rel="noopener">The Decoder</a> · <a href="#nvidia-tells-partners-to-halt-server-shipments-to-malaysia">link</a></div>
+  <h4>What happened</h4>
+  <p>Nvidia told partners such as Dell and Supermicro to stop shipping servers to Malaysia, Singapore, Thailand and Indonesia. This follows new US export controls meant to stop Chinese companies from renting AI chips through foreign cloud providers. Cloud firms in the region have 90 days to apply for a license, and dealers are now listing thousands of B300 chips for sale.</p>
+  <h4>Why it matters</h4>
+  <p>The US is no longer only blocking chip sales to China. It is also closing the back door where Chinese firms rent computing power abroad. Think of it as locking not just the front door but also the window. The change is already causing confusion, and banks halted about $500 million in loans for one Singapore cloud provider&#39;s planned deal with ByteDance.</p>
+  <h4>What it means for you</h4>
+  <p>Chip supply and cloud access are shaped by politics as well as technology. That can affect prices and availability of AI computing in some regions. For most students it changes little day to day, but it is useful context if you ever work on AI infrastructure or at a cloud company.</p>
+</section>
+<section class="story" id="fcc-authorizes-spacex-to-deploy-up-to-1-million-starmind">
+  <h3>FCC authorizes SpaceX to deploy up to 1 million Starmind satellites as orbital AI data centers by 2040.</h3>
+  <div class="meta"><a href="https://the-decoder.com/fcc-clears-spacex-to-deploy-up-to-1-million-starmind-satellites-for-orbital-ai-data-centers-by-2040/" rel="noopener">The Decoder</a> · <a href="#fcc-authorizes-spacex-to-deploy-up-to-1-million-starmind">link</a></div>
+  <h4>What happened</h4>
+  <p>The FCC has approved SpaceX&#39;s plan to launch up to 1 million satellites called Starmind. They would act as data centers in orbit that process AI data. The approval also covers radio links so SpaceX can control the satellites if their optical connections fail.</p>
+  <h4>Why it matters</h4>
+  <p>Demand for AI computing power on Earth is growing fast. This plan is one attempt to meet part of it by moving computers into space. The text is short, so it does not say how or when this would actually work.</p>
+  <h4>What it means for you</h4>
+  <p>This is far off and barely affects your skills or job search now. It is a sign that people are looking for unusual ways to get more computing power. Treat it as something to watch, not something to prepare for.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="new-york-bans-ai-toys-including-those-that-use-the-internet">
+  <h3>New York bans AI toys, including those that use the internet to talk to children.</h3>
+  <div class="meta"><a href="https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys" rel="noopener">Hacker News</a> · <a href="#new-york-bans-ai-toys-including-those-that-use-the-internet">link</a></div>
+  <h4>What happened</h4>
+  <p>New York Governor Kathy Hochul signed a law placing a five-year ban on making and selling toys powered by AI chatbots, such as talking stuffed animals, dolls and robots. Officials pointed to tests where such toys talked about sexual topics and violence with young children. The text says California passed a similar four-year ban.</p>
+  <h4>Why it matters</h4>
+  <p>It is one of the clearest examples of a government limiting a specific AI product. The concerns were weak parental controls, safety limits that weakened in long chats, and toys that could record a child&#39;s voice or scan their face. Advocates are also pushing Amazon and eBay to keep AI toys off their platforms.</p>
+  <h4>What it means for you</h4>
+  <p>If you build products with chatbots, especially for young users, expect more rules and more scrutiny. Safety that holds up in long conversations, parental controls and privacy handling are real engineering concerns. For most other projects, the effect is small.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="microsoft-details-artex-an-ai-framework-state-backed-hackers">
+  <h3>Microsoft details ARTEX, an AI framework state-backed hackers use to automate cyberattacks with specialized agents.</h3>
+  <div class="meta"><a href="https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/" rel="noopener">The Decoder</a> · <a href="#microsoft-details-artex-an-ai-framework-state-backed-hackers">link</a></div>
+  <h4>What happened</h4>
+  <p>Microsoft published an analysis of ARTEX, an AI framework released in July 2026 that automates cyberattacks. It uses several specialized AI agents to run existing hacking tools with little human help. Microsoft says state-backed groups from China and North Korea, as well as criminal groups, use it.</p>
+  <h4>Why it matters</h4>
+  <p>ARTEX does not invent new attacks. It makes known attacks fast and cheap, like a robot that works through a checklist nonstop. Microsoft says defenders can have just minutes to respond, and it suggests tricks like decoy systems and fake success signals to make the AI give up.</p>
+  <h4>What it means for you</h4>
+  <p>Security skills are becoming more valuable, since defenders must now respond at machine speed. Learning the basics of secure coding, credential handling and monitoring is a concrete step. One lesson from the report: do not leave secrets like keys in public code repositories, because automated agents find them quickly.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>
