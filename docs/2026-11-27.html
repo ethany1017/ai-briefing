@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Briefing · Friday, November 27, 2026</title>
+<style>
+:root { --bg:#fbfbfa; --fg:#1d1d1f; --muted:#6b6b70; --accent:#2457d6; --card:#ffffff; --line:#e6e6e3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#121214; --fg:#ececee; --muted:#9a9aa2; --accent:#8fb0ff; --card:#1b1b1f; --line:#2c2c31; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 8px 0 4px; }
+h2.cat { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 40px 0 8px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+nav.top { font-size: .95rem; }
+ul.toc { padding-left: 1.1em; margin: 6px 0 0; }
+ul.toc li { margin: 4px 0; }
+section.story { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 12px 0; scroll-margin-top: 16px; }
+section.story:target { outline: 2px solid var(--accent); }
+section.story h3 { font-size: 1.2rem; line-height: 1.35; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+h4 { font-size: .95rem; margin: 14px 0 2px; }
+p { margin: 0 0 6px; }
+ul.days { padding-left: 1.2em; }
+ul.days li { margin: 6px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="index.html">&larr; All briefings</a></nav>
+<h1>AI Briefing</h1>
+<p class="sub">Friday, November 27, 2026 · 10 stories, explained in plain English</p>
+<ul class="toc">
+  <li><a href="#openai-is-building-a-semantic-data-layer-called-athena-to">OpenAI is building a semantic data layer called Athena to make its data agents more accurate.</a></li>
+  <li><a href="#ai-shopping-agents-from-openai-meta-and-google-face-blocking">AI shopping agents from OpenAI, Meta and Google face blocking by Amazon and other retailers.</a></li>
+  <li><a href="#ai-coding-agents-are-speeding-efforts-to-port-a-leaked-gta-6">AI coding agents are speeding efforts to port a leaked GTA 6 Xbox build to PC through reverse engineering.</a></li>
+  <li><a href="#openai-countersues-apple-in-california-over-alleged-trade">OpenAI countersues Apple in California over alleged trade secret theft and coercion of shared suppliers.</a></li>
+  <li><a href="#three-meta-and-ami-labs-studies-report-progress-on-jepa">Three Meta and AMI Labs studies report progress on JEPA world models in robot planning and training efficiency.</a></li>
+  <li><a href="#bloomberg-finds-banned-nvidia-blackwell-chips-in-a-shanghai">Bloomberg finds banned Nvidia Blackwell chips in a Shanghai data center linked to Alice Huang.</a></li>
+  <li><a href="#commerce-s-ita-creates-an-on-demand-consortia-pathway-under">Commerce&#39;s ITA creates an On-Demand Consortia pathway under the American SI Exports Program.</a></li>
+  <li><a href="#sap-plans-to-cut-at-least-10-000-jobs-as-it-restructures">SAP plans to cut at least 10,000 jobs as it restructures around AI, Bloomberg reports.</a></li>
+  <li><a href="#hackers-breached-the-us-air-force-s-cloud-one-cloud">Hackers breached the US Air Force&#39;s Cloud One cloud computing platform, according to a report.</a></li>
+  <li><a href="#mitre-atlas-v2026-11-adds-new-techniques-including-llm">MITRE ATLAS v2026.11 adds new techniques, including LLM response manipulation and renamed AI model poisoning.</a></li>
+</ul>
+<h2 class="cat">AI Agents &amp; Automation</h2>
+<section class="story" id="openai-is-building-a-semantic-data-layer-called-athena-to">
+  <h3>OpenAI is building a semantic data layer called Athena to make its data agents more accurate.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/" rel="noopener">The Decoder</a> · <a href="#openai-is-building-a-semantic-data-layer-called-athena-to">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI is building a data platform called Athena, according to The Information. It works like a semantic layer, which is software that sets consistent definitions for business terms such as revenue and customer count. At least one customer found OpenAI&#39;s data analysis agent not accurate enough. Athena is in early development, with no timeline or pricing.</p>
+  <h4>Why it matters</h4>
+  <p>AI agents guess when they do not know what a business term means. Giving them shared definitions should cut mistakes. The report also says switching semantic layers is harder than switching AI models, so this could help OpenAI keep customers.</p>
+  <h4>What it means for you</h4>
+  <p>Making AI useful on real company data depends on clean definitions and good documentation, not only on the model. Knowing SQL, data modeling and how metrics are defined is practical and lasting. Snowflake and Databricks already offer similar layers, so those are worth learning about.</p>
+</section>
+<section class="story" id="ai-shopping-agents-from-openai-meta-and-google-face-blocking">
+  <h3>AI shopping agents from OpenAI, Meta and Google face blocking by Amazon and other retailers.</h3>
+  <div class="meta"><a href="https://www.cnbc.com/2026/11/27/ai-shopping-agents-retailer-blocks.html" rel="noopener">CNBC Tech</a> · <a href="#ai-shopping-agents-from-openai-meta-and-google-face-blocking">link</a></div>
+  <h4>What happened</h4>
+  <p>Companies such as OpenAI, Meta and Google have released AI agents that can buy things for users. Results are mixed. Walmart and Sephora have opened their sites to agents, while Amazon, eBay, United Airlines and Kohl&#39;s limit or block them. In one example, an order placed through Meta&#39;s Muse agent was canceled by AutoZone after about 17 hours.</p>
+  <h4>Why it matters</h4>
+  <p>Agents are only useful if websites let them in. Retailers are deciding who gets access, and it is unclear who is to blame when a purchase goes wrong. Analysts still forecast that US agentic commerce revenue could reach up to $1 trillion by 2030.</p>
+  <h4>What it means for you</h4>
+  <p>Building agents that work across many websites is hard. They get stuck on logins and bot checks, and each site has different rules. Skills in web automation, handling errors and designing safe approval steps are useful here.</p>
+</section>
+<h2 class="cat">AI Coding &amp; Developer Tools</h2>
+<section class="story" id="ai-coding-agents-are-speeding-efforts-to-port-a-leaked-gta-6">
+  <h3>AI coding agents are speeding efforts to port a leaked GTA 6 Xbox build to PC through reverse engineering.</h3>
+  <div class="meta"><a href="https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/" rel="noopener">The Decoder</a> · <a href="#ai-coding-agents-are-speeding-efforts-to-port-a-leaked-gta-6">link</a></div>
+  <h4>What happened</h4>
+  <p>After GTA 6 launched on consoles, a hacking group distributed a stolen Xbox image and the game&#39;s executable leaked. Developers are now porting it to PC through reverse engineering, with AI coding tools like Claude Code speeding up the work. A tracking platform lists 40 active projects, and the furthest is rated more than 90 percent of the way to a playable build. No finished version is ready for the public.</p>
+  <h4>Why it matters</h4>
+  <p>Rockstar has usually released on consoles first and PC much later. AI tools appear to be cutting the time it takes to reverse engineer a game from months to days. Take-Two earns nearly 80 percent of its revenue from microtransactions and recurring digital spending, so a free community-run multiplayer mode targets its main income.</p>
+  <h4>What it means for you</h4>
+  <p>This shows how much AI coding agents can speed up hard, tedious work like understanding unfamiliar code. Reading and checking code you did not write is becoming a core skill. Be careful with leaked or stolen material, because it carries legal risk.</p>
+</section>
+<h2 class="cat">AI Business &amp; Industry Adoption</h2>
+<section class="story" id="openai-countersues-apple-in-california-over-alleged-trade">
+  <h3>OpenAI countersues Apple in California over alleged trade secret theft and coercion of shared suppliers.</h3>
+  <div class="meta"><a href="https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/" rel="noopener">The Decoder</a> · <a href="#openai-countersues-apple-in-california-over-alleged-trade">link</a></div>
+  <h4>What happened</h4>
+  <p>OpenAI filed a countersuit against Apple in a California court. It accuses Apple of trade secret theft and unfair business practices, including pressuring suppliers that work with both companies. This follows Apple&#39;s own lawsuit from the summer, which accused former employees of leaking confidential information to OpenAI.</p>
+  <h4>Why it matters</h4>
+  <p>Two companies that once announced a partnership to bring ChatGPT to the iPhone are now suing each other. OpenAI is also preparing its own devices to rival Apple, so this is a fight between future competitors. It shows how much money and talent are at stake in AI hardware.</p>
+  <h4>What it means for you</h4>
+  <p>Day to day, this changes little for you. One practical lesson is that what you carry out of a job, such as files and product details, can become a legal issue. Keep work data on work systems and take care when you switch employers.</p>
+</section>
+<h2 class="cat">AI Research &amp; Breakthroughs</h2>
+<section class="story" id="three-meta-and-ami-labs-studies-report-progress-on-jepa">
+  <h3>Three Meta and AMI Labs studies report progress on JEPA world models in robot planning and training efficiency.</h3>
+  <div class="meta"><a href="https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/" rel="noopener">The Decoder</a> · <a href="#three-meta-and-ami-labs-studies-report-progress-on-jepa">link</a></div>
+  <h4>What happened</h4>
+  <p>Three new studies from Meta and AMI Labs back Yann LeCun&#39;s JEPA approach. JEPA aims to build systems that model cause and effect and plan ahead, rather than just predict text. LeCun left Meta in late 2025 and co-founded AMI Labs in Paris, which raised more than $1 billion. The text we have is short, so details of the studies are limited.</p>
+  <h4>Why it matters</h4>
+  <p>Most of the industry is betting on ever larger chatbots. LeCun is betting that a different design is needed for machines that work in the physical world, such as robots. If he is right, the field&#39;s direction could shift.</p>
+  <h4>What it means for you</h4>
+  <p>Large language models are not the only path in AI research. If robotics or systems that act in the real world interest you, this is an area to watch. For most jobs today, chatbot-based tools are still what you will meet.</p>
+</section>
+<h2 class="cat">AI Hardware &amp; Infrastructure</h2>
+<section class="story" id="bloomberg-finds-banned-nvidia-blackwell-chips-in-a-shanghai">
+  <h3>Bloomberg finds banned Nvidia Blackwell chips in a Shanghai data center linked to Alice Huang.</h3>
+  <div class="meta"><a href="https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/" rel="noopener">The Decoder</a> · <a href="#bloomberg-finds-banned-nvidia-blackwell-chips-in-a-shanghai">link</a></div>
+  <h4>What happened</h4>
+  <p>Bloomberg reports that two Chinese companies installed Nvidia Blackwell chips at a Shanghai data center linked to Alice Huang. Loan documents list the hardware as collateral, and exporting these chips to China without a US license is banned. One of the firms is closely tied to Megaspeed, a company the US added to a trade blacklist this month on suspicion of chip smuggling.</p>
+  <h4>Why it matters</h4>
+  <p>The most powerful AI chips are a major part of the competition between the US and China, and export rules are meant to limit who gets them. This report suggests the rules are leaky. It also puts a spotlight on Nvidia&#39;s partner approval process.</p>
+  <h4>What it means for you</h4>
+  <p>This is mostly background for you. It shows that access to AI hardware is shaped by politics and law as well as engineering. If you ever work near hardware sales or cloud infrastructure, compliance knowledge will matter.</p>
+</section>
+<h2 class="cat">AI Government &amp; Regulations</h2>
+<section class="story" id="commerce-s-ita-creates-an-on-demand-consortia-pathway-under">
+  <h3>Commerce&#39;s ITA creates an On-Demand Consortia pathway under the American SI Exports Program.</h3>
+  <div class="meta"><a href="https://www.federalregister.gov/documents/2026/11/27/2026-24107/american-si-exports-program-on-demand-consortia-for-specific-foreign-opportunities" rel="noopener">Federal Register</a> · <a href="#commerce-s-ita-creates-an-on-demand-consortia-pathway-under">link</a></div>
+  <h4>What happened</h4>
+  <p>The supplied text for this story is only a website notice about automated access and a bot check. It contains no information about the program itself. The headline says the Commerce Department&#39;s International Trade Administration is creating an On-Demand Consortia pathway under the American SI Exports Program.</p>
+  <h4>Why it matters</h4>
+  <p>The supplied text does not say what the program does, so we cannot say why it matters. It appears to be a government trade program, but the details are not available.</p>
+  <h4>What it means for you</h4>
+  <p>For a student or early-career engineer, this is unlikely to matter much right now. We cannot judge more without the actual notice.</p>
+</section>
+<h2 class="cat">AI Jobs &amp; Career Opportunities</h2>
+<section class="story" id="sap-plans-to-cut-at-least-10-000-jobs-as-it-restructures">
+  <h3>SAP plans to cut at least 10,000 jobs as it restructures around AI, Bloomberg reports.</h3>
+  <div class="meta"><a href="https://the-decoder.com/sap-plans-to-cut-at-least-10000-jobs-as-it-pivots-to-ai/" rel="noopener">The Decoder</a> · <a href="#sap-plans-to-cut-at-least-10-000-jobs-as-it-restructures">link</a></div>
+  <h4>What happened</h4>
+  <p>Bloomberg reports that SAP plans to cut at least 10,000 jobs, which is at least nine percent of its workforce. Product development, engineering and sales would be hit hardest. The final number is not set and could change after talks with employee representatives. SAP declined to comment on the cuts.</p>
+  <h4>Why it matters</h4>
+  <p>SAP is reshaping itself around AI tools in its products. The report says Oracle and Microsoft are making similar moves, so this looks like a wider pattern among big software companies. Money is being shifted toward AI and away from other roles.</p>
+  <h4>What it means for you</h4>
+  <p>Engineering is among the areas named for cuts, so entry-level hiring at large enterprise software firms may be tight. It is wise not to rely on one big employer. Building skills in using and integrating AI tools makes you more useful to companies that are going this way.</p>
+</section>
+<h2 class="cat">AI Security &amp; Safety</h2>
+<section class="story" id="hackers-breached-the-us-air-force-s-cloud-one-cloud">
+  <h3>Hackers breached the US Air Force&#39;s Cloud One cloud computing platform, according to a report.</h3>
+  <div class="meta"><a href="https://the-decoder.com/hackers-breached-the-us-air-forces-flagship-cloud-one-platform-report-says/" rel="noopener">The Decoder</a> · <a href="#hackers-breached-the-us-air-force-s-cloud-one-cloud">link</a></div>
+  <h4>What happened</h4>
+  <p>Reuters reports that hackers breached Cloud One, the US Air Force&#39;s central cloud platform. It may have exposed tactical, personnel and logistics data. The attackers reportedly used a software vulnerability to reach the platform&#39;s control plane. In response, the Air Force paused moving more applications onto it, blocked updates and revoked administrator privileges. Who did it and whether data was taken are still unknown.</p>
+  <h4>Why it matters</h4>
+  <p>Cloud One runs important systems such as air defense radar and munitions management. The report also links the breach to concern that AI models can quickly find weaknesses across large cloud networks. It adds to at least six other recent incidents at US government agencies.</p>
+  <h4>What it means for you</h4>
+  <p>Security skills are in demand, especially cloud security and handling vulnerabilities. Even large, well-funded systems get breached through ordinary software flaws. Learning secure coding and how access permissions work is a good investment.</p>
+</section>
+<section class="story" id="mitre-atlas-v2026-11-adds-new-techniques-including-llm">
+  <h3>MITRE ATLAS v2026.11 adds new techniques, including LLM response manipulation and renamed AI model poisoning.</h3>
+  <div class="meta"><a href="https://github.com/mitre-atlas/atlas-data/releases/tag/v2026.11" rel="noopener">MITRE ATLAS</a> · <a href="#mitre-atlas-v2026-11-adds-new-techniques-including-llm">link</a></div>
+  <h4>What happened</h4>
+  <p>MITRE released version 2026.11 of ATLAS, a catalog of ways attackers target AI systems. It adds new techniques, including ones about manipulating parts of an AI model&#39;s responses, poisoning AI models, hiding malicious code in AI files, and attacks involving hardware. It also renames several existing items. The data now holds 137 techniques and 85 case studies.</p>
+  <h4>Why it matters</h4>
+  <p>A shared list of attack methods gives security teams a common language for AI risks. Adding hardware-related techniques suggests attention is widening beyond software to the chips that run AI. Think of it as a field guide to how AI systems get attacked.</p>
+  <h4>What it means for you</h4>
+  <p>This is a free reference you can read to learn how AI systems can be attacked. Knowing terms like model poisoning helps if you build or review AI features. It will not change your day-to-day work unless you head toward security.</p>
+</section>
+<footer>Stories are picked and summarized by Claude from the linked sources. Always check the source.</footer>
+</main>
+</body>
+</html>

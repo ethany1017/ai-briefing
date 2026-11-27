@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T15:56:35-07:00",
+  "items": [
+    {
+      "id": 8,
+      "category": "AI Agents & Automation",
+      "headline": "OpenAI is building a semantic data layer called Athena to make its data agents more accurate.",
+      "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
+      "source": "The Decoder",
+      "published": "2026-11-27T16:05:23+00:00",
+      "explained": {
+        "what_happened": "OpenAI is building a data platform called Athena, according to The Information. It works like a semantic layer, which is software that sets consistent definitions for business terms such as revenue and customer count. At least one customer found OpenAI's data analysis agent not accurate enough. Athena is in early development, with no timeline or pricing.",
+        "why_it_matters": "AI agents guess when they do not know what a business term means. Giving them shared definitions should cut mistakes. The report also says switching semantic layers is harder than switching AI models, so this could help OpenAI keep customers.",
+        "what_it_means_for_you": "Making AI useful on real company data depends on clean definitions and good documentation, not only on the model. Knowing SQL, data modeling and how metrics are defined is practical and lasting. Snowflake and Databricks already offer similar layers, so those are worth learning about."
+      },
+      "anchor": "openai-is-building-a-semantic-data-layer-called-athena-to"
+    },
+    {
+      "id": 12,
+      "category": "AI Agents & Automation",
+      "headline": "AI shopping agents from OpenAI, Meta and Google face blocking by Amazon and other retailers.",
+      "url": "https://www.cnbc.com/2026/11/27/ai-shopping-agents-retailer-blocks.html",
+      "source": "CNBC Tech",
+      "published": "2026-11-27T16:43:14+00:00",
+      "explained": {
+        "what_happened": "Companies such as OpenAI, Meta and Google have released AI agents that can buy things for users. Results are mixed. Walmart and Sephora have opened their sites to agents, while Amazon, eBay, United Airlines and Kohl's limit or block them. In one example, an order placed through Meta's Muse agent was canceled by AutoZone after about 17 hours.",
+        "why_it_matters": "Agents are only useful if websites let them in. Retailers are deciding who gets access, and it is unclear who is to blame when a purchase goes wrong. Analysts still forecast that US agentic commerce revenue could reach up to $1 trillion by 2030.",
+        "what_it_means_for_you": "Building agents that work across many websites is hard. They get stuck on logins and bot checks, and each site has different rules. Skills in web automation, handling errors and designing safe approval steps are useful here."
+      },
+      "anchor": "ai-shopping-agents-from-openai-meta-and-google-face-blocking"
+    },
+    {
+      "id": 9,
+      "category": "AI Coding & Developer Tools",
+      "headline": "AI coding agents are speeding efforts to port a leaked GTA 6 Xbox build to PC through reverse engineering.",
+      "url": "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/",
+      "source": "The Decoder",
+      "published": "2026-11-27T15:37:47+00:00",
+      "explained": {
+        "what_happened": "After GTA 6 launched on consoles, a hacking group distributed a stolen Xbox image and the game's executable leaked. Developers are now porting it to PC through reverse engineering, with AI coding tools like Claude Code speeding up the work. A tracking platform lists 40 active projects, and the furthest is rated more than 90 percent of the way to a playable build. No finished version is ready for the public.",
+        "why_it_matters": "Rockstar has usually released on consoles first and PC much later. AI tools appear to be cutting the time it takes to reverse engineer a game from months to days. Take-Two earns nearly 80 percent of its revenue from microtransactions and recurring digital spending, so a free community-run multiplayer mode targets its main income.",
+        "what_it_means_for_you": "This shows how much AI coding agents can speed up hard, tedious work like understanding unfamiliar code. Reading and checking code you did not write is becoming a core skill. Be careful with leaked or stolen material, because it carries legal risk."
+      },
+      "anchor": "ai-coding-agents-are-speeding-efforts-to-port-a-leaked-gta-6"
+    },
+    {
+      "id": 4,
+      "category": "AI Business & Industry Adoption",
+      "headline": "OpenAI countersues Apple in California over alleged trade secret theft and coercion of shared suppliers.",
+      "url": "https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers/",
+      "source": "The Decoder",
+      "published": "2026-11-27T19:38:37+00:00",
+      "explained": {
+        "what_happened": "OpenAI filed a countersuit against Apple in a California court. It accuses Apple of trade secret theft and unfair business practices, including pressuring suppliers that work with both companies. This follows Apple's own lawsuit from the summer, which accused former employees of leaking confidential information to OpenAI.",
+        "why_it_matters": "Two companies that once announced a partnership to bring ChatGPT to the iPhone are now suing each other. OpenAI is also preparing its own devices to rival Apple, so this is a fight between future competitors. It shows how much money and talent are at stake in AI hardware.",
+        "what_it_means_for_you": "Day to day, this changes little for you. One practical lesson is that what you carry out of a job, such as files and product details, can become a legal issue. Keep work data on work systems and take care when you switch employers."
+      },
+      "anchor": "openai-countersues-apple-in-california-over-alleged-trade"
+    },
+    {
+      "id": 6,
+      "category": "AI Research & Breakthroughs",
+      "headline": "Three Meta and AMI Labs studies report progress on JEPA world models in robot planning and training efficiency.",
+      "url": "https://the-decoder.com/three-studies-from-meta-and-ami-labs-back-yann-lecuns-bet-on-jepa-world-models-over-large-language-models/",
+      "source": "The Decoder",
+      "published": "2026-11-27T16:58:56+00:00",
+      "explained": {
+        "what_happened": "Three new studies from Meta and AMI Labs back Yann LeCun's JEPA approach. JEPA aims to build systems that model cause and effect and plan ahead, rather than just predict text. LeCun left Meta in late 2025 and co-founded AMI Labs in Paris, which raised more than $1 billion. The text we have is short, so details of the studies are limited.",
+        "why_it_matters": "Most of the industry is betting on ever larger chatbots. LeCun is betting that a different design is needed for machines that work in the physical world, such as robots. If he is right, the field's direction could shift.",
+        "what_it_means_for_you": "Large language models are not the only path in AI research. If robotics or systems that act in the real world interest you, this is an area to watch. For most jobs today, chatbot-based tools are still what you will meet."
+      },
+      "anchor": "three-meta-and-ami-labs-studies-report-progress-on-jepa"
+    },
+    {
+      "id": 5,
+      "category": "AI Hardware & Infrastructure",
+      "headline": "Bloomberg finds banned Nvidia Blackwell chips in a Shanghai data center linked to Alice Huang.",
+      "url": "https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/",
+      "source": "The Decoder",
+      "published": "2026-11-27T18:27:02+00:00",
+      "explained": {
+        "what_happened": "Bloomberg reports that two Chinese companies installed Nvidia Blackwell chips at a Shanghai data center linked to Alice Huang. Loan documents list the hardware as collateral, and exporting these chips to China without a US license is banned. One of the firms is closely tied to Megaspeed, a company the US added to a trade blacklist this month on suspicion of chip smuggling.",
+        "why_it_matters": "The most powerful AI chips are a major part of the competition between the US and China, and export rules are meant to limit who gets them. This report suggests the rules are leaky. It also puts a spotlight on Nvidia's partner approval process.",
+        "what_it_means_for_you": "This is mostly background for you. It shows that access to AI hardware is shaped by politics and law as well as engineering. If you ever work near hardware sales or cloud infrastructure, compliance knowledge will matter."
+      },
+      "anchor": "bloomberg-finds-banned-nvidia-blackwell-chips-in-a-shanghai"
+    },
+    {
+      "id": 24,
+      "category": "AI Government & Regulations",
+      "headline": "Commerce's ITA creates an On-Demand Consortia pathway under the American SI Exports Program.",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24107/american-si-exports-program-on-demand-consortia-for-specific-foreign-opportunities",
+      "source": "Federal Register",
+      "published": "2026-11-27T11:00:00+00:00",
+      "explained": {
+        "what_happened": "The supplied text for this story is only a website notice about automated access and a bot check. It contains no information about the program itself. The headline says the Commerce Department's International Trade Administration is creating an On-Demand Consortia pathway under the American SI Exports Program.",
+        "why_it_matters": "The supplied text does not say what the program does, so we cannot say why it matters. It appears to be a government trade program, but the details are not available.",
+        "what_it_means_for_you": "For a student or early-career engineer, this is unlikely to matter much right now. We cannot judge more without the actual notice."
+      },
+      "anchor": "commerce-s-ita-creates-an-on-demand-consortia-pathway-under"
+    },
+    {
+      "id": 10,
+      "category": "AI Jobs & Career Opportunities",
+      "headline": "SAP plans to cut at least 10,000 jobs as it restructures around AI, Bloomberg reports.",
+      "url": "https://the-decoder.com/sap-plans-to-cut-at-least-10000-jobs-as-it-pivots-to-ai/",
+      "source": "The Decoder",
+      "published": "2026-11-27T14:57:25+00:00",
+      "explained": {
+        "what_happened": "Bloomberg reports that SAP plans to cut at least 10,000 jobs, which is at least nine percent of its workforce. Product development, engineering and sales would be hit hardest. The final number is not set and could change after talks with employee representatives. SAP declined to comment on the cuts.",
+        "why_it_matters": "SAP is reshaping itself around AI tools in its products. The report says Oracle and Microsoft are making similar moves, so this looks like a wider pattern among big software companies. Money is being shifted toward AI and away from other roles.",
+        "what_it_means_for_you": "Engineering is among the areas named for cuts, so entry-level hiring at large enterprise software firms may be tight. It is wise not to rely on one big employer. Building skills in using and integrating AI tools makes you more useful to companies that are going this way."
+      },
+      "anchor": "sap-plans-to-cut-at-least-10-000-jobs-as-it-restructures"
+    },
+    {
+      "id": 7,
+      "category": "AI Security & Safety",
+      "headline": "Hackers breached the US Air Force's Cloud One cloud computing platform, according to a report.",
+      "url": "https://the-decoder.com/hackers-breached-the-us-air-forces-flagship-cloud-one-platform-report-says/",
+      "source": "The Decoder",
+      "published": "2026-11-27T16:06:43+00:00",
+      "explained": {
+        "what_happened": "Reuters reports that hackers breached Cloud One, the US Air Force's central cloud platform. It may have exposed tactical, personnel and logistics data. The attackers reportedly used a software vulnerability to reach the platform's control plane. In response, the Air Force paused moving more applications onto it, blocked updates and revoked administrator privileges. Who did it and whether data was taken are still unknown.",
+        "why_it_matters": "Cloud One runs important systems such as air defense radar and munitions management. The report also links the breach to concern that AI models can quickly find weaknesses across large cloud networks. It adds to at least six other recent incidents at US government agencies.",
+        "what_it_means_for_you": "Security skills are in demand, especially cloud security and handling vulnerabilities. Even large, well-funded systems get breached through ordinary software flaws. Learning secure coding and how access permissions work is a good investment."
+      },
+      "anchor": "hackers-breached-the-us-air-force-s-cloud-one-cloud"
+    },
+    {
+      "id": 2,
+      "category": "AI Security & Safety",
+      "headline": "MITRE ATLAS v2026.11 adds new techniques, including LLM response manipulation and renamed AI model poisoning.",
+      "url": "https://github.com/mitre-atlas/atlas-data/releases/tag/v2026.11",
+      "source": "MITRE ATLAS",
+      "published": "2026-11-27T18:43:48+00:00",
+      "explained": {
+        "what_happened": "MITRE released version 2026.11 of ATLAS, a catalog of ways attackers target AI systems. It adds new techniques, including ones about manipulating parts of an AI model's responses, poisoning AI models, hiding malicious code in AI files, and attacks involving hardware. It also renames several existing items. The data now holds 137 techniques and 85 case studies.",
+        "why_it_matters": "A shared list of attack methods gives security teams a common language for AI risks. Adding hardware-related techniques suggests attention is widening beyond software to the chips that run AI. Think of it as a field guide to how AI systems get attacked.",
+        "what_it_means_for_you": "This is a free reference you can read to learn how AI systems can be attacked. Knowing terms like model poisoning helps if you build or review AI features. It will not change your day-to-day work unless you head toward security."
+      },
+      "anchor": "mitre-atlas-v2026-11-adds-new-techniques-including-llm"
+    }
+  ],
+  "stats": {
+    "sources_total": 42,
+    "sources_ok": 41,
+    "failed_sources": [
+      "FTC"
+    ],
+    "fetched": 87,
+    "candidates": 32,
+    "ranked": 10,
+    "selected": 10
+  }
+}
